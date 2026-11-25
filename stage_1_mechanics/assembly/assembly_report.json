@@ -1,0 +1,558 @@
+{
+ "script": "stage_1_mechanics/assembly/assembly.py",
+ "root": "C:\\Users\\ptsk\\Documents\\adast-maxima-debugging\\stage_1_mechanics",
+ "project": "C:\\Users\\ptsk\\Documents\\adast-maxima-debugging",
+ "project_found": "found walking up from the script",
+ "section10": "C:\\Users\\ptsk\\Documents\\adast-maxima-debugging\\static_dynamic_memory\\blocks\\generation_001\\sections\\10_safety_devices_and_sensors.md",
+ "inputs_sha256": {
+  "out/frame.glb": "a8d21237381212f25ae88553405fcc9a1e3a4705d7475a06f8793c20b07b1ad5",
+  "out/frame_anchors.json": "ada61b68b42f7d7370dcb0fb757589dd65ef3d6e3dfe42320e35e9efa0b010ff",
+  "spec/frame.md": "45cc3c8d1e54ae49379c5a07f646587da8e5b909f89a1b021a3802d7dc89bdb5",
+  "out/knife.glb": "3ba3603f06cbcb02461e9c7c9fe1e09363a430552130cc8166d854058430a3d8",
+  "out/knife_anchors.json": "83251a6deded13761fc478f2de46636dba8c9195406ac228e540ef76499b17e5",
+  "spec/knife.md": "03472f15c1a26510c59500dcb73f4479b71112d5df1315c32b169a1e20c7511a",
+  "out/clamp.glb": "99b8c2074d597da183deda6fa9f55bb623bcb133582c783a306723abeafcd20a",
+  "out/clamp_anchors.json": "94d7a5a867eb846777e630aab69144c60bb38541fe4fa692a88276bed5f98600",
+  "spec/clamp.md": "b1ff99a8f9c2cbcce41ecd8eb5b24fc4bc51ee0327f46a1bab1fc5d5234db87d",
+  "out/backgauge.glb": "dd0a89f78d8857cf6e00923dad112cce04cfd678e0c6ad102f330b329f9a22f9",
+  "out/backgauge_anchors.json": "d30e425604099a4b5510da783e4cb6783ee99dad35a64e4710d55a439a811600",
+  "spec/backgauge.md": "d6533139e43f2582ebb71812eb5cc69fda7f13cc6fddb35716fa86b14541d09d",
+  "out/housing.glb": "e7b26488143c90ad9e5093f6cc58519bd4e4a5dc99d2dd95ebf85631dc8d4f41",
+  "out/housing_anchors.json": "fe7544c35cccf7c1c83b0196a44c1b92b739518305cf99d56dedf703e7ecf318",
+  "spec/housing.md": "04eba07b0b8ce6133f7b4b40e6c4c2a12691779c6edbcc6c106dad02745d1232",
+  "out/safety_sensors.glb": "d5112da324882b079919946bf7643cc85738c5d2f43abce7e6dd28666ab131c8",
+  "out/safety_sensors_anchors.json": "815696d4dfd2da9828fbe77de96a3954aa405317ceb957a3d3f5c1eb9ecf68ff",
+  "spec/safety_sensors.md": "624815d6615ee484fe93154339a78dceee3554e0e4339d1104d99f842fc7d289",
+  "section10": "4e5a2cf3274df38c3e286e1a5c491141d53e0043f850afcd0516302889a2c289"
+ },
+ "summary": {
+  "PASS": 41,
+  "FAIL": 0,
+  "OPEN": 1
+ },
+ "checks": [
+  {
+   "check": "B1",
+   "status": "PASS",
+   "text": "loaded 125 bodies: frame 14, knife 32, clamp 18, backgauge 33, housing 10, safety_sensors 18; each part's GLB JSON names the same mesh nodes, each once"
+  },
+  {
+   "check": "B2",
+   "status": "PASS",
+   "text": "every body is a closed solid with volume > 0 (manifold3d): 125/125"
+  },
+  {
+   "check": "D2",
+   "status": "PASS",
+   "text": "passage joint.passage.clamp_brake.crossbar (clamp): box x [-70.0, 45.0] y [70.0, 150.0] z [1415.0, 1535.0] cut from frame.crossbar: removed 1104000.0 mm3, frame material left in it 0.000 mm3"
+  },
+  {
+   "check": "D2",
+   "status": "PASS",
+   "text": "passage joint.passage.clamp_tie.support_left (clamp): box x [-637.3, -562.5] y [40.0, 160.0] z [500.0, 655.0] cut from frame.support_left: removed 1391159.4 mm3, frame material left in it 0.000 mm3"
+  },
+  {
+   "check": "D2",
+   "status": "PASS",
+   "text": "passage joint.bore.spindle.base_front (backgauge): bore d30 along Y x [-15.0, 15.0] y [-214.0, -184.0] z [710.0, 740.0] cut from frame.base_front: removed 21171.7 mm3, frame material left in it 0.000 mm3"
+  },
+  {
+   "check": "D2",
+   "status": "PASS",
+   "text": "passage joint.slot.front_extension (backgauge): box x [-20.0, 20.0] y [235.0, 420.0] z [785.0, 885.0] cut from frame.table: removed 740000.0 mm3, frame material left in it 0.000 mm3"
+  },
+  {
+   "check": "B3",
+   "status": "PASS",
+   "text": "out/assembly.glb: 125 nodes, each equal to its part body (bounds 0,01 mm, volume 0,5 mm3; frame bodies after the cuts)"
+  },
+  {
+   "check": "1",
+   "status": "PASS",
+   "text": "overall Y -894.0..1901.0 = 2795.0 vs 2795 (D) +-10"
+  },
+  {
+   "check": "1",
+   "status": "PASS",
+   "text": "overall X right end 1553.0 vs 1553 (D) +-10"
+  },
+  {
+   "check": "1",
+   "status": "OPEN",
+   "text": "overall X left end -1420.0 (housing.cabinet) vs -1307 (D): X span 2973.0 vs 2860; B (built): cabinet X -1420.0..-1250.0, span 2973.0; without the cabinet and the 4 devices on it (Q1, Q2, S4, S2): left end -1253.0 (housing.left_side_panel_front, housing.left_side_panel_rear), span 2806.0; A (spec/housing.md): cabinet X -1307..-1137, devices moved with it by +113.0: left end -1307.0, span 2860.0. Open conflict, DECISION 3 (option B kept for this episode; option A puts the cabinet over the left column; housing M9-M11 settle it on site)",
+   "data": {
+    "built_option": "B",
+    "built_cabinet_x": [
+     -1420.0,
+     -1250.0
+    ],
+    "built_left": -1420.0,
+    "built_right": 1553.0,
+    "built_span": 2973.0,
+    "devices_on_cabinet": [
+     "Q1",
+     "Q2",
+     "S4",
+     "S2"
+    ],
+    "without_cabinet_left": -1253.0,
+    "without_cabinet_left_body": "housing.left_side_panel_front, housing.left_side_panel_rear",
+    "without_cabinet_span": 2806.0,
+    "other_option": "A",
+    "other_cabinet_x": [
+     -1307.0,
+     -1137.0
+    ],
+    "other_left": -1307.0,
+    "other_span": 2860.0
+   }
+  },
+  {
+   "check": "1",
+   "status": "PASS",
+   "text": "left end without the cabinet and its 4 devices -1253.0 (housing.left_side_panel_front, housing.left_side_panel_rear) vs body line -1250 (D) +-10; option A left end -1307.0 vs -1307 (D) +-10; built option B"
+  },
+  {
+   "check": "1",
+   "status": "PASS",
+   "text": "Z top 1535.0 (frame.crossbar) vs frame top 1535 (T) +-10; floor Z 0.0; lifting eyes are anchors only (lift.eye_* Z 1687, excluded; lift.eye_left: D (X, Z); E (Y) x +-10, y +-280, z +-10); named exception housing.cover_11 top Z 1565.0",
+   "data": {
+    "reads": [
+     [
+      "frame",
+      "lift.eye_left"
+     ]
+    ]
+   }
+  },
+  {
+   "check": "2",
+   "status": "PASS",
+   "text": "table top Z 885.0 (anchor table.top), frame.table top 885.0; target 885 E +-100 (OM p.19 elevation 20261115_010448, error 100; W 900); estimated, on the tape-measure list (table.top: E +-100)",
+   "data": {
+    "reads": [
+     [
+      "frame",
+      "table.top"
+     ]
+    ]
+   }
+  },
+  {
+   "check": "3",
+   "status": "PASS",
+   "text": "table X -575.0..575.0 = 1150.0 (T 1150) +-10, Y -729.0..1901.0 = 2630.0 (D 2630) +-10; knife length 1320.0 >= 1150 (T cutting width; the knife's own size is W 1320, see the open item on estimated values)"
+  },
+  {
+   "check": "4",
+   "status": "PASS",
+   "text": "clamp face at the top Z 1015.0 (anchor clamp.face: T/E z +-100, y +-2), lowest beam body 1015.0 (= anchor +-1): 130.0 above the table (T 130) +-10, the table top being table.top: E +-100; knife edge at rest 1034.85 (knife.edge.rest: E +-30; body 1034.85, = anchor +-1): 149.85 above (>= 130), margin 19.85 against its error: see the open item on estimated values",
+   "data": {
+    "reads": [
+     [
+      "frame",
+      "table.top"
+     ],
+     [
+      "clamp",
+      "clamp.face"
+     ],
+     [
+      "knife",
+      "knife.edge.rest"
+     ]
+    ]
+   }
+  },
+  {
+   "check": "5",
+   "status": "PASS",
+   "text": "backgauge face Y 25.0..1150.0 (anchor backgauge.face: T/E y +-10, z +-100, range [0.0, 1125.0]); comb front at rest 1150.0 (= face +-1); target 25..1150 (T; certificate 1160) +-10 at each end",
+   "data": {
+    "reads": [
+     [
+      "backgauge",
+      "backgauge.face"
+     ]
+    ]
+   }
+  },
+  {
+   "check": "6",
+   "status": "PASS",
+   "text": "clamp stroke 130.0 (T 130) +-10 (range of clamp.face: T/E z +-100, y +-2); knife stroke from the crank model 150.01 (the model built from crank.centre: E +-50, crank.pin.tdc: E +-50, holder.pin.rest: E +-40; anchor range 150.0 +-0.5; knife.edge.rest: E +-30), edge at the bottom Z 884.84 (anchor 884.85 +-0.05; knife.edge.bottom: E +-100), cutting stick top 885.00: 0.16 into the stick (T 0,1-0,2, checked as 0.1..0.2); contact.knife_edge.cutting_stick at the bottom: 6.5 mm3 in [[-575.0, -0.07, 884.84], [575.0, 0.0, 885.0]]",
+   "data": {
+    "reads": [
+     [
+      "clamp",
+      "clamp.face"
+     ],
+     [
+      "knife",
+      "knife.edge.rest"
+     ],
+     [
+      "knife",
+      "knife.edge.bottom"
+     ],
+     [
+      "knife",
+      "crank.centre"
+     ],
+     [
+      "knife",
+      "crank.pin.tdc"
+     ],
+     [
+      "knife",
+      "holder.pin.rest"
+     ]
+    ],
+    "stroke": 150.00880412649224,
+    "range": 150.0,
+    "edge_rest": 1034.8499755859375,
+    "bottom": 884.8411714594453,
+    "kb": 884.85,
+    "stick_top": 885.0,
+    "depth": 0.15882854055473672
+   }
+  },
+  {
+   "check": "7",
+   "status": "PASS",
+   "text": "frame: GLB X -1250.0..1400.0 Y -894.0..1901.0 Z 0.0..1535.0 vs spec (line 'Bounding box of all ...') X -1250.0..1400.0 Y -894.0..1901.0 Z 0.0..1535.0: max deviation 0.00 (+-1)"
+  },
+  {
+   "check": "7",
+   "status": "PASS",
+   "text": "knife: GLB X -719.5..1540.0 Y -185.0..567.5 Z 62.5..1500.0 vs spec (union of 32 component rows) X -719.5..1540.0 Y -185.0..567.5 Z 62.5..1500.0: max deviation 0.00 (+-1)"
+  },
+  {
+   "check": "7",
+   "status": "PASS",
+   "text": "clamp: GLB X -720.0..1130.0 Y -611.0..505.0 Z 30.0..1535.0 vs spec (OUTER block) X -720.0..1130.0 Y -611.0..505.0 Z 30.0..1535.0: max deviation 0.00 (+-1)"
+  },
+  {
+   "check": "7",
+   "status": "PASS",
+   "text": "backgauge: GLB X -550.0..550.0 Y -725.0..1880.0 Z 460.0..991.0 vs spec (OUTER block) X -550.0..550.0 Y -725.0..1880.0 Z 460.0..991.0: max deviation 0.00 (+-1)"
+  },
+  {
+   "check": "7",
+   "status": "PASS",
+   "text": "housing: GLB X -1420.0..1553.0 Y -454.0..545.0 Z 0.0..1565.0 vs spec (union of 10 component rows) X -1420.0..1553.0 Y -454.0..545.0 Z 0.0..1565.0: max deviation 0.00 (+-1)"
+  },
+  {
+   "check": "7",
+   "status": "PASS",
+   "text": "safety_sensors: GLB X -1365.8..1550.0 Y -739.0..1375.0 Z 125.0..1435.5 vs spec (Bodies table: 18 rows placed on their host anchors) X -1365.8..1550.0 Y -739.0..1375.0 Z 125.0..1435.5: max deviation 0.00 (+-1)"
+  },
+  {
+   "check": "8",
+   "status": "PASS",
+   "text": "at rest, 89 cross-part body pairs with touching boxes intersected (manifold3d); 2 with volume > 0.01 mm3, 0 not inside a joint box or pocket"
+  },
+  {
+   "check": "8e",
+   "status": "PASS",
+   "text": "7 envelope / corridor boxes (envelope.clamp.pull_rod_right, envelope.clamp.pull_rod_left, envelope.clamp.levers_tie, envelope.clamp.pedal_link, envelope.clamp.pedal_link_rise, corridor.front_table_centre, corridor.base_cavity_centre) against every mesh of the other parts (frame after the cuts) and each other: 0 overlaps"
+  },
+  {
+   "check": "9",
+   "status": "PASS",
+   "text": "knife sweep resolution: 180 crank steps of 2.0 deg over the whole turn; holder moves <= 3.01 mm and any conrod point <= 3.10 mm per step (<= 10)"
+  },
+  {
+   "check": "9",
+   "status": "PASS",
+   "text": "knife turn, clamp up, backgauge at rest: 180 states, moving 5 bodies; 0 colliding pairs"
+  },
+  {
+   "check": "9",
+   "status": "PASS",
+   "text": "knife turn, clamp up, backgauge at the front: 180 states, moving 5 bodies; 0 colliding pairs"
+  },
+  {
+   "check": "9",
+   "status": "PASS",
+   "text": "knife turn, clamp down, backgauge at rest: 180 states, moving 5 bodies; 0 colliding pairs"
+  },
+  {
+   "check": "9",
+   "status": "PASS",
+   "text": "knife turn, clamp down, backgauge at the front: 180 states, moving 5 bodies; 0 colliding pairs"
+  },
+  {
+   "check": "9",
+   "status": "PASS",
+   "text": "clamp stroke, backgauge at rest: 27 states, moving 7 bodies; 0 colliding pairs"
+  },
+  {
+   "check": "9",
+   "status": "PASS",
+   "text": "clamp stroke, backgauge at the front (comb interleave): 27 states, moving 7 bodies; 0 colliding pairs"
+  },
+  {
+   "check": "9",
+   "status": "PASS",
+   "text": "backgauge travel: 226 states, moving 9 bodies; 0 colliding pairs"
+  },
+  {
+   "check": "9x",
+   "status": "PASS",
+   "text": "pedal 5 turn: 16 states, moving 1 bodies; 0 colliding pairs"
+  },
+  {
+   "check": "9x",
+   "status": "PASS",
+   "text": "handwheel push-in: 3 states, moving 3 bodies; 0 colliding pairs"
+  },
+  {
+   "check": "9x",
+   "status": "PASS",
+   "text": "lock pin 1 stroke (Y01): 4 states, moving 2 bodies; 0 colliding pairs"
+  },
+  {
+   "check": "10",
+   "status": "PASS",
+   "text": "28 designations of section 10 + cabinet = 29: each exactly one device anchor of the kind and host part section 10 names (prefixes button, sensor, magnet, clutch, valve, brake, motor, switch, cabinet; foot.* and body.* not counted)"
+  },
+  {
+   "check": "12",
+   "status": "PASS",
+   "text": "each D number +-10: anchor-bolt axes X [-790.0, 932.0] (D -790 / +932; anchor_bolt.left_front: D/P x +-15, y +-95, z +-15; anchor_bolt.left_rear: D/P x +-15, y +-95, z +-15); rear ring foot outer 165.0 wide (D 165) at X 0.0 (D 0), Y 1136.0 = 1130.0 behind anchor line A (Y 6.0, y_anchor_line_A: E +-80) (D 1130); right pad Y -214.0..236.0 = 450.0 deep, 220.0 in front of / 230.0 behind line A (D 450 = 220 + 230)",
+   "data": {
+    "reads": [
+     [
+      "frame",
+      "y_anchor_line_A"
+     ],
+     [
+      "frame",
+      "anchor_bolt.left_front"
+     ],
+     [
+      "frame",
+      "anchor_bolt.left_rear"
+     ],
+     [
+      "frame",
+      "anchor_bolt.right_front"
+     ],
+     [
+      "frame",
+      "anchor_bolt.right_rear"
+     ]
+    ]
+   }
+  },
+  {
+   "check": "11",
+   "status": "PASS",
+   "text": "sources.md: 127 rows for 125/125 bodies; each with an existing source file and a class of DTPEW: yes; 116 rows are E or W: each with an error and a measure row (linked by the spec itself: 70, by a row whose 'what' names the body: 46); 0 of them had no row in their spec and got assembly rows -. measure_list.md: 120 spec rows (frame 26, knife 16, clamp 10, backgauge 41, housing 18, safety_sensors 9) + 10 gap groups + 5 assembly rows; rows with an empty where, current value or error cell: none; error '-' as the spec writes it (not modelled or a which-type question): 5 (backgauge.G3c, backgauge.G6c, backgauge.G7c, backgauge.G8b, housing.M16); unresolved cross-references: none",
+   "data": {
+    "bodies": 125,
+    "source_rows": 127,
+    "e_or_w_rows": 116,
+    "assembly_rows_for_unlinked": [],
+    "spec_measure_rows": {
+     "frame": 26,
+     "knife": 16,
+     "clamp": 10,
+     "backgauge": 41,
+     "housing": 18,
+     "safety_sensors": 9
+    },
+    "gap_groups": 10,
+    "assembly_rows": 5,
+    "problems": [],
+    "bad_refs": [],
+    "empty_measure_cells": [],
+    "error_dash_rows": [
+     "backgauge.G3c",
+     "backgauge.G6c",
+     "backgauge.G7c",
+     "backgauge.G8b",
+     "housing.M16"
+    ],
+    "linked_by_name": [
+     "frame.side_table_left",
+     "knife.clutch_y10",
+     "knife.conrod",
+     "knife.crank_disc",
+     "knife.crank_pin",
+     "knife.crank_shaft",
+     "knife.flange_2",
+     "knife.flywheel_2",
+     "knife.gear_box",
+     "knife.guide_12_left",
+     "knife.guide_12_right",
+     "knife.guide_13_left",
+     "knife.guide_13_right",
+     "knife.guide_15_left",
+     "knife.guide_15_right",
+     "knife.holder",
+     "knife.holder_pin",
+     "knife.knife",
+     "knife.lever_7_left",
+     "knife.lever_7_right",
+     "knife.lock_cover",
+     "knife.lock_pin_1",
+     "knife.m1_motor",
+     "knife.m1_pulley",
+     "knife.m1_shaft",
+     "knife.slip_rings",
+     "knife.worm",
+     "knife.worm_shaft",
+     "knife.y01_magnet",
+     "safety_sensors.M3",
+     "safety_sensors.Q1",
+     "safety_sensors.Q2",
+     "safety_sensors.S1",
+     "safety_sensors.S10",
+     "safety_sensors.S11",
+     "safety_sensors.S12",
+     "safety_sensors.S13",
+     "safety_sensors.S14",
+     "safety_sensors.S2",
+     "safety_sensors.S28",
+     "safety_sensors.S30",
+     "safety_sensors.S4",
+     "safety_sensors.S5",
+     "safety_sensors.SQ1",
+     "safety_sensors.SQ2",
+     "safety_sensors.Y3"
+    ],
+    "aliases": {
+     "knife.conrod": [
+      "rod"
+     ],
+     "knife.gear_box": [
+      "wheel housing",
+      "worm-gear housing"
+     ],
+     "knife.lock_pin_1": [
+      "pin 1"
+     ]
+    }
+   }
+  },
+  {
+   "check": "N",
+   "status": "PASS",
+   "text": "names in the check lines and open items: 138 '<part>.<name>' tokens, each a body, an anchor or a measure ID: yes"
+  },
+  {
+   "check": "EW",
+   "status": "PASS",
+   "text": "checks that read a P, E or W value (class from the anchors files; what checks 1-6 and 12 read is recorded while they run, and a check that uses a motion of the motion model is charged with the anchors that motion was built from): [1] lift.eye_left; [2] table.top; [4] table.top, clamp.face, knife.edge.rest; [5] backgauge.face; [6] clamp.face, knife.edge.rest, knife.edge.bottom, crank.centre, crank.pin.tdc, holder.pin.rest; [12] y_anchor_line_A, anchor_bolt.left_front, anchor_bolt.left_rear; each declares it, prints it as '<name>: <class> <error>' and has a clause in the open item 'checks on estimated values' that names it: yes; check lines that print an E or W letter: [2], [3], [4], [6], [12], each named in that item: yes"
+  },
+  {
+   "check": "V",
+   "status": "PASS",
+   "text": "viewer/index.html, one file of 0.73 MB: 125/125 bodies (19450 triangles, frame bodies with the DECISION 2 passages cut: 4), 158 anchors of which 29 device anchors with search and locate; references that would load from elsewhere (://, fetch, XMLHttpRequest, link, img, src=, import, url): none; knife: 360 crank poses of knife.knife, knife.holder, knife.holder_pin, knife.conrod, knife.crank_pin read back equal to the motion model within 1.0e-05 mm, down 0.0 at rest and 150.0 at +196 deg; clamp slider 0..130 along [0.0, 0.0, -1.0], backgauge slider 0..1125 along [0.0, -1.0, 0.0]; anchors with a motion: 14 carried by a moving body of the page and read back where their own published motion puts them (trans at the end of its range, rot and planar at +90, +196, +270 deg): max error 0.01 mm (<= 0,5) [sensor.S28 at clamp 130: Z 891.0 = rest 1021.0 - 130.0, inside safety_sensors.S28 moved; backgauge.face at backgauge 1125: Y 25.0; body.S28 at clamp 130: Z 891.0 = rest 1021.0 - 130.0, inside safety_sensors.S28 moved]; 15 turn on their own axis and stay; 3 are moved by no slider of the page and stay (magnet.Y01 (knife), lock.pin_1 (knife), pedal.5 (clamp))",
+   "data": {
+    "file": "C:\\Users\\ptsk\\Documents\\adast-maxima-debugging\\stage_1_mechanics\\viewer\\index.html",
+    "bytes": 727888,
+    "bodies": 125,
+    "triangles": 19450,
+    "anchors": 158,
+    "device_anchors": 29,
+    "device_anchor_names": [
+     "brake.Y14",
+     "button.S1",
+     "button.S10",
+     "button.S11",
+     "cabinet.578-20.0000",
+     "clutch.Y10",
+     "magnet.Y01",
+     "motor.M1",
+     "motor.M2",
+     "motor.M3",
+     "sensor.BR40",
+     "sensor.FF1",
+     "sensor.S12",
+     "sensor.S13",
+     "sensor.S14",
+     "sensor.S19",
+     "sensor.S24",
+     "sensor.S27",
+     "sensor.S28",
+     "sensor.S30",
+     "sensor.S5",
+     "sensor.SQ1",
+     "sensor.SQ2",
+     "switch.Q1",
+     "switch.Q2",
+     "switch.S2",
+     "switch.S4",
+     "valve.Y11",
+     "valve.Y3"
+    ],
+    "network_refs": [],
+    "knife_bodies": [
+     "knife.knife",
+     "knife.holder",
+     "knife.holder_pin",
+     "knife.conrod",
+     "knife.crank_pin"
+    ],
+    "knife_pose_max_dev": 1.017867862174171e-05,
+    "knife_down_max": 150.007,
+    "knife_bdc_deg": 196,
+    "carried_anchors": {
+     "knife.edge.rest": "knife.knife",
+     "holder.pin.rest": "knife.holder_pin",
+     "conrod.mid.rest": "knife.conrod",
+     "crank.pin.tdc": "knife.crank_pin",
+     "clamp.face": "clamp.false_plate",
+     "sensor.S28": "safety_sensors.S28",
+     "piston.OA1": "clamp.oa1_piston_rod",
+     "clamp.pull_rod_right.top": "clamp.bar",
+     "clamp.pull_rod_left.top": "clamp.bar",
+     "backgauge.face": "backgauge.comb_fingers",
+     "backgauge.nut": "backgauge.nut",
+     "backgauge.neck.slot": "backgauge.neck",
+     "backgauge.apex_link.slot": "backgauge.apex_link",
+     "body.S28": "safety_sensors.S28"
+    },
+    "carried_max_error_mm": 0.0069427490234375,
+    "carried_problems": [],
+    "still_on_own_axis": [
+     "motor.M1",
+     "clutch.Y10",
+     "crank.centre",
+     "worm.axis",
+     "flywheel.centre",
+     "eccentric_pin.left",
+     "eccentric_pin.right",
+     "gear.8",
+     "pump.OP1",
+     "knob.3",
+     "knob.4",
+     "spindle.front_end",
+     "spindle.rear_end",
+     "motor.M2",
+     "handwheel.1"
+    ],
+    "still_no_slider": [
+     "magnet.Y01 (knife)",
+     "lock.pin_1 (knife)",
+     "pedal.5 (clamp)"
+    ]
+   }
+  }
+ ],
+ "open_items": [
+  "DECISION 2: 4 frame passages cut at assembly (backgauge: joint.bore.spindle.base_front (cut from frame.base_front), joint.slot.front_extension (cut from frame.table); clamp: joint.passage.clamp_brake.crossbar (cut from frame.crossbar), joint.passage.clamp_tie.support_left (cut from frame.support_left)); published in out/assembly_anchors.json; the frame files are unchanged",
+  "DECISION 3: built option B: cabinet X -1420..-1250, machine X -1420..1553, span 2973 against the plan's 2860 (D, Fig. 4.2.2); without the cabinet and its devices (Q1, Q2, S4, S2) the left end is -1253 (housing.left_side_panel_front, housing.left_side_panel_rear); option A (python parts/housing/housing.py --option A): cabinet X -1307..-1137, machine X -1307..1553, span 2860; housing measure rows M9-M11 settle it on site",
+  "DECISION 4: cam sensors S12, S13, S14 are flagged placeholders (place and cam reading not known); measure row safety_sensors.SS2 = knife.M9 asks for a site photo",
+  "housing.cover_11 stands 30 above the frame top (Z 1535..1565): named exception to check 1 (housing M13)",
+  "clamp open item 1: the frame wall that carries gear 8's two bearings (clamp.gear_8 X -40..40, Z 1340..1420) is in no frame body; the frame thread is closed (frame M7, clamp M7)",
+  "checks on estimated values (value, class, error, can the verdict flip within it): [1] the left end is OPEN (DECISION 3, above); the Z line reads lift.eye_left (D (X, Z); E (Y) x +-10, y +-280, z +-10) only to print the lifting eyes it leaves out (Z 1687): they are anchors, not bodies, and the check compares bodies only, so that error cannot flip it; [2] table top Z 885 is E +-100 (frame anchors table.top error_mm; frame measure row M4; OM p.19 elevation; W 900): the model takes this estimate, so the check cannot fail on it; the true height waits for M4; [3] knife length 1320 is W/E (web price list) with error 'size ±20, bevel ±4°, Z ±30' (sources.md row knife.knife, spec/knife.md:99; measure rows knife.M1, knife.M6, knife.M9, knife.M15): the check needs >= 1150, margin 170 > size error 20, so the verdict cannot flip; [4] reads table.top (E +-100), clamp.face (T/E z +-100, y +-2) and knife.edge.rest (E +-30). Clamp half: the clamp face at Z 1015 (source 'P7 lift 130; FR table.top 885', keys of spec/clamp.md: P7 = OM/20261114_215113.jpg and ART/crops/01_om_a/p07_tech_data_1.4_table_top_rows.jpg, FR = stage_1_mechanics/out/frame_anchors.json) stands on the table top (its z error is the table top's +-100), so the difference 130 against T 130 moves with the table and cannot flip. Knife half: the edge at rest at Z 1034.85 (source 'kinematics') stands 149.85 above the table top, margin 19.85 over 130 < its error 30, so this half CAN flip: the stroke 150 is chosen (spec/knife.md:84: 'not printed; ≥ 130 pile (P7) + clearance; edge at rest ≥ 1015', E +-30), and knife.M2 settles it; [5] reads backgauge.face (T/E y +-10, z +-100) (source 'p7 (travel 25..1150); Z = frame table.top (E)', keys of spec/backgauge.md: p7 = OM/20261114_215113.jpg) and compares only its Y, at both ends of the travel (25 and 1150 against T 25 and 1150): the model takes the T numbers (difference up to 0.0), so the check cannot fail on the model, and on the machine its y error +-10 does not exceed the margin 10.0 (+-10 less the difference), so the Y verdict cannot flip. The estimated part is the Z it takes from the table top, which the check does not compare; [6] reads clamp.face (T/E z +-100, y +-2), knife.edge.rest (E +-30), knife.edge.bottom (E +-100) and, through the knife motion of the motion model, crank.centre (E +-50), crank.pin.tdc (E +-50), holder.pin.rest (E +-40), and each quantity it compares is weighed against the errors that stay on it. Clamp stroke: the range of clamp.face, 130 against T 130 +-10 (margin 10.0), is a length (source 'P7 lift 130; FR table.top 885', keys of spec/clamp.md: P7 = OM/20261114_215113.jpg and ART/crops/01_om_a/p07_tech_data_1.4_table_top_rows.jpg, FR = stage_1_mechanics/out/frame_anchors.json), a number its source names, class T/E, with no error of its own, so the z and y errors, which move the face and not the length, cannot flip it. Knife stroke: the crank model gives 150.01 against the range of knife.edge.rest, 150 +-0.5 (margin 0.49), the range being the chosen stroke (the stroke 150 is chosen (spec/knife.md:84: 'not printed; ≥ 130 pile (P7) + clearance; edge at rest ≥ 1015', E +-30)): on it stay crank.centre +-50, crank.pin.tdc +-50, holder.pin.rest +-40, knife.edge.rest +-30, largest 50 > the margin 0.49, so it CAN flip. Edge at the bottom: the knife body's edge at rest 1034.85 less the crank stroke, 884.84, against knife.edge.bottom 884.85 +-0.05 (margin 0.04): knife.edge.rest is knife.edge.bottom plus the range (1034.85 - 884.85 = 150), so the height they share cancels (knife.edge.bottom's z error +-100 is not on it) and knife.edge.rest's +-30, the chosen stroke's error (spec/knife.md:89, edge_z_rest derived as edge_z_bottom + stroke), does not, and on it stay crank.centre +-50, crank.pin.tdc +-50, holder.pin.rest +-40, knife.edge.rest +-30, largest 50 > the margin 0.04, so it CAN flip. Cut depth: the cutting-stick top 885.00 less that bottom, 0.16, in 0.1..0.2 (margin 0.04): knife.edge.bottom's z error is the stick top's (+-100, frame anchor cutting_stick.top) and its source names the stick top, so with the tie the stick's error cancels as well (source 'stick top Z 885 (FR, E ±100) − 0,15 (P23: 0,1-0,2 into the stick, T ±0,05)', keys of spec/knife.md: FR = stage_1_mechanics/out/frame_anchors.json and stage_1_mechanics/spec/frame.md, P23 = OM/20261115_013519.jpg), and on it stay crank.centre +-50, crank.pin.tdc +-50, holder.pin.rest +-40, knife.edge.rest +-30, largest 50 > the margin 0.04, so it CAN flip. The knife path and the crank are conflict 4 of spec/knife.md ('Knife path and crank radius, both E; site decides (M2): modelled: straight vertical path, crank radius 51,52 derived from the stroke 150, against the drawn 95-120 (P19)') (keys of spec/knife.md: P19 = OM/20261115_010448.jpg and OM/20261115_011021.jpg). So the knife stroke, the edge at the bottom and the cut depth CAN flip until knife.M2 and knife.M3 settle the stroke and the crank. The S12-S14 cam turns on the same crank shaft (crank.centre motion note), so its switching angles wait for the same rows. On the machine the depth is set as on OM p.21 (20261115_012035); [12] reads y_anchor_line_A (E +-80) (Y 6.0, frame.M1): the foot and pad offsets are measured from it, so its error cannot flip them, and where the line really is waits for frame.M1. It reads anchor_bolt.left_front (D/P x +-15, y +-95, z +-15) and anchor_bolt.left_rear (D/P x +-15, y +-95, z +-15) and compares only their X with the D numbers -790 / +932, which the model takes (difference up to 0.0), so the check cannot fail on the model, and on the machine their x error +-15 exceeds the margin 10.0 (+-10 less the difference), so the X verdict CAN flip, and frame.M2 settles it. Their y error (+-95) is not compared; [7], [8] and [9] compare the model with the specs and with itself; 116 of 127 source rows are E or W (sources.md), so they show that the parts fit as specified, not that the specified sizes are true",
+  "clamp open item 4: the 7 envelope and corridor boxes (corridor.base_cavity_centre, corridor.front_table_centre, envelope.clamp.levers_tie, envelope.clamp.pedal_link, envelope.clamp.pedal_link_rise, envelope.clamp.pull_rod_left, envelope.clamp.pull_rod_right) stay JSON-only keep-out boxes, not bodies; check 8e tests each against every mesh of the other parts and against each other; the viewer shows their centre anchors only",
+  "safety_sensors: S19's actuation not known (SS5); S28 sits in a pocket of clamp.front_block (clamp open item 5)"
+ ],
+ "legend": "Tolerances: a D or T target is checked to +-10 mm (section 04) unless its line prints another bound; P, E and W values carry their own stated error (check EW: a check that reads one prints it with its class and error from the anchors file, and the open item 'checks on estimated values' names it in that check's clause). Classes: D drawing, T table or text, P photo proportion, E estimated, W web.",
+ "abbreviations": "Abbreviations: GLB (binary GL Transmission Format, GL = Graphics Library), JSON (JavaScript Object Notation), MB (megabytes), ID (identifier), mm (millimetres), mm3 (cubic millimetres), deg (degrees), vs (versus), trans and rot (translation and rotation, motion types of the anchors files), p. (page), Fig. (figure), OM (operating manual of this variant), OM/, DOC/, PH/ and ART/ (the folders of the operating manual, the other documents, the machine photos and the memory block's artifacts, as the header of sources.md writes them out), DTPEW (the five classes D, T, P, E, W), DECISION n (a ruling of the meta orchestrator of the workflow). [1] to [12] are the checks of section 04, [8e] (envelope boxes) and [9x] (the other motions) belong to checks 8 and 9; [B1], [B2], [B3], [D2], [N], [EW] and [V] are the script's own checks, EW standing for values of class E or W (P counts with them). M7, G3a, SS5 and the like are rows of a spec's measure table (measure_list.md lists them); Q1, S28, Y01, OA1 and the like are device designations of the electrical legend (wiring set 568-70.9001) and of the hydraulic parts list. Quoted sources use the specs' own source keys, for example P6, P7 or P36 (OM page 6, 7 or 36), P37f (OM p.37, Fig. 7.1 front view close-up), F412, F63 and F81 (OM Figs. 4.1.2, 6.3 and 8.1), PLAN (OM Fig. 4.2.2, the foundation plan), CERT (certificate of this machine), OLD-I (Fig. I of the Russian manual of the older relay variant), PH-cross1 (one machine photo): a key means what its own spec says, and each spec's keys with the files they resolve to are listed in sources.md, section 'Source keys of each spec and the files they resolve to'."
+}

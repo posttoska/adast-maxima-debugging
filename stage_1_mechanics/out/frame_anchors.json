@@ -1,0 +1,908 @@
+{
+ "meta": {
+  "part": "frame",
+  "units": "mm",
+  "coordinates": "X along knife +right, Y +rear from cutting line, Z up, Z0 floor",
+  "y_anchor_line_A": 6.0,
+  "y_anchor_line_A_error": 80.0,
+  "errors": "error_mm = error to the machine axes (Y 0 = cutting line). Anchors that carry error_rel_line_A_mm have their Y placed through line A: error_mm.y = error_rel_line_A_mm.y + 80 (Y_A = +6, E +-80, spec Datum, measure row M1)",
+  "spec": "spec/frame.md",
+  "script": "parts/frame/frame.py"
+ },
+ "anchors": {
+  "button.S10": {
+   "xyz": [
+    -290.0,
+    -729.0,
+    845.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 100,
+    "y": 100.0,
+    "z": 100
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261114_215242.jpg (Fig. 2.1); preparatory_data_analysis/maxima_photos/20261102_144447.jpg; preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "note": "two-hand button, front-table apron, left of centre",
+   "error_rel_line_A_mm": {
+    "x": 100,
+    "y": 20,
+    "z": 100
+   }
+  },
+  "button.S11": {
+   "xyz": [
+    300.0,
+    -729.0,
+    845.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 100,
+    "y": 100.0,
+    "z": 100
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261114_215242.jpg (Fig. 2.1); preparatory_data_analysis/maxima_photos/20261102_144447.jpg; preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "note": "two-hand button, front-table apron, right of centre",
+   "error_rel_line_A_mm": {
+    "x": 100,
+    "y": 20,
+    "z": 100
+   }
+  },
+  "sensor.FF1": {
+   "xyz": [
+    -700.0,
+    -700.0,
+    885.0
+   ],
+   "class": "E",
+   "error_mm": 200,
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_004719.jpg (Fig. 3.1)",
+   "note": "light curtain, option; certificate '-', none in photos: probably not fitted; packing list PL2 item 25 'svetelna clona (dle varianty)', 1: listed per variant"
+  },
+  "motor.M3": {
+   "xyz": [
+    0.0,
+    1250.0,
+    250.0
+   ],
+   "class": "P",
+   "error_mm": {
+    "x": 350,
+    "y": 330.0,
+    "z": 150
+   },
+   "source": "preparatory_data_analysis/maxima_photos/20261102_144524.jpg (blower ~120 px behind the stand's foot, camera at X < 0 looking +X); preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_022423.jpg (p.37 Fig. 7.1 pos 26, under the rear table, centre line); preparatory_data_analysis/maxima_documents/adast_guillotine_packing_list/20261114_202913.jpg (PL1 item 13 'dmychadlo s elektromotorem', its own item with 13.1 cap and 13.2 two rubber hoses: a loose unit)",
+   "note": "air-table blower on a loose block on the floor; the stand's diagonal leg passes in front of it (X about -50 near Z 250); y error covers the mirrored camera side (Y 1016)",
+   "error_rel_line_A_mm": {
+    "x": 350,
+    "y": 250,
+    "z": 150
+   }
+  },
+  "valve.Y3": {
+   "xyz": [
+    0.0,
+    900.0,
+    600.0
+   ],
+   "class": "E",
+   "error_mm": 400,
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_022909.jpg; preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_022935.jpg (p.45 Fig. 10.1, undimensioned; leader ends outside the rear-table outline [?])",
+   "note": "air valve EVJ 2112 of the air table; place not shown"
+  },
+  "joint.knife_guides.left": {
+   "xyz": [
+    -720.0,
+    0.0,
+    1150.0
+   ],
+   "class": "E",
+   "error_mm": 60,
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2); preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_022159.jpg, 20261115_022253.jpg (p.35-37, holder guides pos 12, 13, 15)",
+   "face": {
+    "normal": [
+     1,
+     0,
+     0
+    ],
+    "y": [
+     -394.0,
+     406.0
+    ],
+    "z": [
+     885.0,
+     1415.0
+    ]
+   }
+  },
+  "joint.knife_guides.right": {
+   "xyz": [
+    720.0,
+    0.0,
+    1150.0
+   ],
+   "class": "E",
+   "error_mm": 60,
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2); preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_022159.jpg, 20261115_022253.jpg (p.35-37, holder guides pos 12, 13, 15)",
+   "face": {
+    "normal": [
+     -1,
+     0,
+     0
+    ],
+    "y": [
+     -394.0,
+     406.0
+    ],
+    "z": [
+     885.0,
+     1415.0
+    ]
+   }
+  },
+  "joint.clamp_guides.left": {
+   "xyz": [
+    -720.0,
+    100.0,
+    1150.0
+   ],
+   "class": "E",
+   "error_mm": 60,
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "face": {
+    "normal": [
+     1,
+     0,
+     0
+    ],
+    "y": [
+     -394.0,
+     406.0
+    ],
+    "z": [
+     885.0,
+     1415.0
+    ]
+   },
+   "note": "same cheek face as the knife guides; clamp behind the knife line"
+  },
+  "joint.clamp_guides.right": {
+   "xyz": [
+    720.0,
+    100.0,
+    1150.0
+   ],
+   "class": "E",
+   "error_mm": 60,
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "face": {
+    "normal": [
+     -1,
+     0,
+     0
+    ],
+    "y": [
+     -394.0,
+     406.0
+    ],
+    "z": [
+     885.0,
+     1415.0
+    ]
+   }
+  },
+  "frame.cavity.right_support": {
+   "xyz": [
+    932.0,
+    11.0,
+    402.5
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 50,
+    "y": 130.0,
+    "z": 50
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_022221.jpg (p.36, hydraulic box in the right support)",
+   "min": [
+    723.7,
+    -129.8,
+    20.0
+   ],
+   "max": [
+    1140.3,
+    151.8,
+    785.0
+   ],
+   "error_rel_line_A_mm": {
+    "x": 50,
+    "y": 50,
+    "z": 50
+   }
+  },
+  "frame.cavity.left_support": {
+   "xyz": [
+    -790.0,
+    11.0,
+    402.5
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 50,
+    "y": 130.0,
+    "z": 50
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "min": [
+    -942.7,
+    -139.2,
+    20.0
+   ],
+   "max": [
+    -637.3,
+    161.2,
+    785.0
+   ],
+   "error_rel_line_A_mm": {
+    "x": 50,
+    "y": 50,
+    "z": 50
+   }
+  },
+  "frame.cavity.column_right": {
+   "xyz": [
+    1080.0,
+    6.0,
+    1145.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 60,
+    "y": 140.0,
+    "z": 60
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "min": [
+    760.0,
+    -364.0,
+    785.0
+   ],
+   "max": [
+    1400.0,
+    376.0,
+    1505.0
+   ],
+   "note": "open to X+ (side panel = housing); worm gear, crank (knife thread)",
+   "error_rel_line_A_mm": {
+    "x": 60,
+    "y": 60,
+    "z": 60
+   }
+  },
+  "frame.cavity.column_left": {
+   "xyz": [
+    -1005.0,
+    6.0,
+    1145.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 60,
+    "y": 140.0,
+    "z": 60
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "min": [
+    -1250.0,
+    -364.0,
+    785.0
+   ],
+   "max": [
+    -760.0,
+    376.0,
+    1505.0
+   ],
+   "note": "open to X-",
+   "error_rel_line_A_mm": {
+    "x": 60,
+    "y": 60,
+    "z": 60
+   }
+  },
+  "frame.cavity.base": {
+   "xyz": [
+    38.5,
+    26.0,
+    467.5
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 100,
+    "y": 180.0,
+    "z": 100
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261114_215031.jpg (p.6, base with M1 and pump)",
+   "min": [
+    -562.5,
+    -184.0,
+    150.0
+   ],
+   "max": [
+    639.5,
+    236.0,
+    785.0
+   ],
+   "note": "between the supports, under the table; open below Z 150 and at the rear (no rear member in any source, r5; measure row M19)",
+   "error_rel_line_A_mm": {
+    "x": 100,
+    "y": 100,
+    "z": 100
+   }
+  },
+  "joint.knife_bearing_seat.right_column": {
+   "xyz": [
+    760.0,
+    0.0,
+    1100.0
+   ],
+   "class": "E",
+   "error_mm": 150,
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_004647.jpg (Fig. 3.1); preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_012035.jpg (p.21 Fig. 4.3): worm gear upper right, as drawn",
+   "note": "inner face of the right cheek; the bearing seat itself has no source"
+  },
+  "joint.crossbar.underside": {
+   "xyz": [
+    0.0,
+    0.0,
+    1415.0
+   ],
+   "class": "E",
+   "error_mm": 50,
+   "source": "preparatory_data_analysis/maxima_photos/20261102_144601.jpg; preparatory_data_analysis/maxima_photos/20261102_150825.jpg",
+   "y": [
+    -150.0,
+    150.0
+   ],
+   "x": [
+    -720.0,
+    720.0
+   ]
+  },
+  "joint.window.conrod.right_cheek": {
+   "xyz": [
+    740.0,
+    -52.0,
+    990.0
+   ],
+   "class": "E",
+   "error_mm": 60,
+   "source": "stage_1_mechanics/out/knife_anchors.json and spec/knife.md (knife thread t2), asked for in signal REQUEST_meta_frame_passages_from_t2, taken by meta orc decision 1: the connecting rod's sweep crosses the right cheek X 720...760 at Y -77...-27, Z 870...1110",
+   "passage": [
+    [
+     720.0,
+     760.0
+    ],
+    [
+     -77.0,
+     -27.0
+    ],
+    [
+     870.0,
+     1110.0
+    ]
+   ],
+   "note": "window cut through the right cheek; it lies inside the guide face region, so the guide strips must leave it free"
+  },
+  "joint.bore.worm_shaft.support_right": {
+   "xyz": [
+    1182.4,
+    40.0,
+    629.0
+   ],
+   "class": "E",
+   "error_mm": 100,
+   "source": "stage_1_mechanics/out/knife_anchors.json and spec/knife.md (knife thread t2), asked for in signal REQUEST_meta_frame_passages_from_t2, taken by meta orc decision 1: worm shaft 14 runs along X through the right support's right wall",
+   "passage": [
+    [
+     1135.0,
+     1230.0
+    ],
+    [
+     10.0,
+     70.0
+    ],
+    [
+     599.0,
+     659.0
+    ]
+   ],
+   "bore_d": 50.0,
+   "axis": [
+    1,
+    0,
+    0
+   ],
+   "note": "bore cut through the right support's right wall only; passage = the knife thread's box around it"
+  },
+  "table.top": {
+   "xyz": [
+    0.0,
+    0.0,
+    885.0
+   ],
+   "class": "E",
+   "error_mm": 100,
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_010448.jpg (p.19 scaled); W 900 pressdepo"
+  },
+  "table.underside": {
+   "xyz": [
+    0.0,
+    0.0,
+    785.0
+   ],
+   "class": "E",
+   "error_mm": 110,
+   "source": "table top - envelope depth 100 (E)"
+  },
+  "table.front_edge": {
+   "xyz": [
+    0.0,
+    -729.0,
+    885.0
+   ],
+   "class": "D/E",
+   "error_mm": {
+    "x": 10,
+    "y": 100.0,
+    "z": 100
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2) (rear apex y_A +1895); preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_005319.jpg (OM p.17 Fig. 4.1.2) (table length 2630)",
+   "note": "rear end - 2630; losers: plan centre front line y_A -717 = Y -711 (900 - 183), W 710 (MAXIMAMS115BPa.htm, later variant); spec conflict 5",
+   "error_rel_line_A_mm": {
+    "x": 10,
+    "y": 20,
+    "z": 100
+   }
+  },
+  "table.rear_end": {
+   "xyz": [
+    0.0,
+    1901.0,
+    885.0
+   ],
+   "class": "D",
+   "error_mm": {
+    "x": 10,
+    "y": 100.0,
+    "z": 100
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2) (rear apex y_A +1895 = rear block end, as preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_005319.jpg (OM p.17 Fig. 4.1.2))",
+   "note": "Y through line A: Y_A itself is E +-80 (M1)",
+   "error_rel_line_A_mm": {
+    "x": 10,
+    "y": 20,
+    "z": 100
+   }
+  },
+  "cutting_line": {
+   "xyz": [
+    0.0,
+    0.0,
+    885.0
+   ],
+   "class": "D",
+   "error_mm": 0,
+   "source": "definition: Y 0, knife edge meets the stick",
+   "x": [
+    -575.0,
+    575.0
+   ]
+  },
+  "cutting_stick.top": {
+   "xyz": [
+    0.0,
+    0.0,
+    885.0
+   ],
+   "class": "E",
+   "error_mm": 100,
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_013519.jpg (p.23, knife 0,1-0,2 into the stick)",
+   "section": [
+    20.0,
+    20.0
+   ],
+   "x": [
+    -575.0,
+    575.0
+   ]
+  },
+  "table.slot": {
+   "xyz": [
+    0.0,
+    1140.0,
+    835.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "width": 20,
+    "front_end": 300,
+    "rear_end": 40
+   },
+   "source": "preparatory_data_analysis/maxima_photos/20261102_150836.jpg (slot from the pusher link back to a block at the table's rear edge); ends = link travel Y 439...1840 (face 25...1150, T p.7; link 414...690 behind the face: pusher depth 0,4-0,6 of the face, P, photos 20261102_150809.jpg, 20261102_144601.jpg, 20261102_150836.jpg) -/+ 20",
+   "min": [
+    -20.0,
+    420.0,
+    785.0
+   ],
+   "max": [
+    20.0,
+    1860.0,
+    885.0
+   ],
+   "note": "width E; the link drops through it to the carriage"
+  },
+  "frame.keepout.backgauge_drive": {
+   "xyz": [
+    0.0,
+    1068.5,
+    710.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 50,
+    "z": 100,
+    "y": 90.0
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_004719.jpg (Fig.3.1 p.14, spindle on X 0 under the rear table); 20261115_021648.jpg (Fig.6.3 p.31, carriage under the table plate, neck through the slot)",
+   "min": [
+    -100.0,
+    236.0,
+    635.0
+   ],
+   "max": [
+    100.0,
+    1901.0,
+    785.0
+   ],
+   "note": "space kept free for the backgauge spindle, nut, carriage and guide strips; no frame body enters it (checked)",
+   "error_rel_line_A_mm": {
+    "x": 50,
+    "z": 100,
+    "y": 10
+   }
+  },
+  "table.rear_outline": {
+   "xyz": [
+    0.0,
+    1334.0,
+    885.0
+   ],
+   "class": "D/P",
+   "error_mm": {
+    "x": 50,
+    "y": 130.0,
+    "z": 50
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_005319.jpg (OM p.17 Fig. 4.1.2); preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "polygon_xy": [
+    [
+     -575.0,
+     -729.0
+    ],
+    [
+     575.0,
+     -729.0
+    ],
+    [
+     575.0,
+     1334.0
+    ],
+    [
+     92.5,
+     1806.0
+    ],
+    [
+     92.5,
+     1901.0
+    ],
+    [
+     -92.5,
+     1901.0
+    ],
+    [
+     -92.5,
+     1806.0
+    ],
+    [
+     -575.0,
+     1334.0
+    ]
+   ],
+   "error_rel_line_A_mm": {
+    "x": 50,
+    "y": 50,
+    "z": 50
+   }
+  },
+  "frame.envelope": {
+   "xyz": [
+    75.0,
+    6.0,
+    767.5
+   ],
+   "class": "D",
+   "error_mm": {
+    "x": 10,
+    "y": 90.0,
+    "z": 10
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2); preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_005319.jpg (OM p.17 Fig. 4.1.2)",
+   "min": [
+    -1250.0,
+    -394.0,
+    0.0
+   ],
+   "max": [
+    1400.0,
+    406.0,
+    1535.0
+   ],
+   "note": "body lines and 800 band; overall 2860 (-1307 ... +1553) includes housing and drive",
+   "error_rel_line_A_mm": {
+    "x": 10,
+    "y": 10,
+    "z": 10
+   }
+  },
+  "plan.pedal": {
+   "xyz": [
+    0.0,
+    -591.0,
+    75.0
+   ],
+   "class": "D/P/E",
+   "error_mm": {
+    "y": 120.0,
+    "x": 100,
+    "z": 150
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2) (hatched bar: printed chain 50 from the 932 dimension line, y_A -527 by scale, to the bar, then 40 = the bar's depth; scaled depth 70 loses to the printed 40, r5)",
+   "min": [
+    -200,
+    -611.0,
+    0
+   ],
+   "max": [
+    200,
+    -571.0,
+    150
+   ],
+   "note": "for the clamp thread; X, Z not printed; r1 had y_A -450...-490 (chain misread from the body front), corrected in r2; depth 40 printed (r5)",
+   "error_rel_line_A_mm": {
+    "y": 40,
+    "x": 100,
+    "z": 150
+   }
+  },
+  "lift.eye_left": {
+   "xyz": [
+    -677.0,
+    6.0,
+    1687.0
+   ],
+   "class": "D (X, Z); E (Y)",
+   "error_mm": {
+    "x": 10,
+    "y": 280.0,
+    "z": 10
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_005319.jpg (OM p.17 Fig. 4.1.2)",
+   "note": "M36x3 eye bolt (PL 2.5), not modelled; Y placeholder on line A (F412 gives X only)",
+   "error_rel_line_A_mm": {
+    "x": 10,
+    "y": 200,
+    "z": 10
+   }
+  },
+  "lift.eye_right": {
+   "xyz": [
+    828.0,
+    6.0,
+    1687.0
+   ],
+   "class": "D (X, Z); E (Y)",
+   "error_mm": {
+    "x": 10,
+    "y": 280.0,
+    "z": 10
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_005319.jpg (OM p.17 Fig. 4.1.2)",
+   "note": "Y placeholder on line A (F412 gives X only)",
+   "error_rel_line_A_mm": {
+    "x": 10,
+    "y": 200,
+    "z": 10
+   }
+  },
+  "foot.S1": {
+   "xyz": [
+    932.0,
+    11.0,
+    0.0
+   ],
+   "class": "D",
+   "error_mm": {
+    "x": 10,
+    "y": 90.0,
+    "z": 10
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "area_cm2": 1460,
+   "load_daN": 1850,
+   "error_rel_line_A_mm": {
+    "x": 10,
+    "y": 10,
+    "z": 10
+   }
+  },
+  "foot.S2": {
+   "xyz": [
+    -790.0,
+    11.0,
+    0.0
+   ],
+   "class": "D",
+   "error_mm": {
+    "x": 30,
+    "y": 110.0,
+    "z": 30
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "area_cm2": 1130,
+   "load_daN": 1250,
+   "error_rel_line_A_mm": {
+    "x": 30,
+    "y": 30,
+    "z": 30
+   }
+  },
+  "foot.S3": {
+   "xyz": [
+    0.0,
+    1136.0,
+    0.0
+   ],
+   "class": "D",
+   "error_mm": {
+    "x": 10,
+    "y": 90.0,
+    "z": 10
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2)",
+   "area_cm2": 37,
+   "load_daN": 150,
+   "error_rel_line_A_mm": {
+    "x": 10,
+    "y": 10,
+    "z": 10
+   }
+  },
+  "side_table_right.pivot": {
+   "xyz": [
+    1200.0,
+    -644.0,
+    860.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 150,
+    "y": 230.0,
+    "z": 150
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_013741.jpg (p.24 §5.1.13: for MS 115 the right side table and the right cover are tipped over, RU опрокинутие, to change the connecting rod's safety screws; MS 80: removed; no hinge, axis or angle on the page)",
+   "motion": {
+    "type": "rotate",
+    "axis": [
+     0,
+     1,
+     0
+    ],
+    "range_deg": [
+     0,
+     90
+    ],
+    "class": "E",
+    "error": {
+     "pivot_mm": 150,
+     "axis": "Y or X [?]",
+     "range_end_deg": 90
+    },
+    "basis": "placeholders: P24 gives only 'tipped over'; pivot at the outer edge, axis along Y, turned until the plate stands vertical"
+   },
+   "note": "tipping T (P24); pivot place, axis direction and range E, not on the page (spec measure row M10)",
+   "error_rel_line_A_mm": {
+    "x": 150,
+    "y": 150,
+    "z": 150
+   }
+  },
+  "anchor_bolt.left_front": {
+   "xyz": [
+    -790.0,
+    -214.0,
+    0.0
+   ],
+   "class": "D/P",
+   "error_mm": {
+    "x": 15,
+    "y": 95.0,
+    "z": 15
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2) (90x90 pocket drawn centred on the pad's front edge y_A -220; pockets 441 apart by scale); preparatory_data_analysis/maxima_documents/adast_guillotine_packing_list/20261114_202935.jpg (PL 21.1, M20x200)",
+   "error_rel_line_A_mm": {
+    "x": 15,
+    "y": 15,
+    "z": 15
+   }
+  },
+  "anchor_bolt.left_rear": {
+   "xyz": [
+    -790.0,
+    236.0,
+    0.0
+   ],
+   "class": "D/P",
+   "error_mm": {
+    "x": 15,
+    "y": 95.0,
+    "z": 15
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2) (pocket drawn centred on the pad's rear edge y_A +230); preparatory_data_analysis/maxima_documents/adast_guillotine_packing_list/20261114_202935.jpg (PL 21.1, M20x200)",
+   "error_rel_line_A_mm": {
+    "x": 15,
+    "y": 15,
+    "z": 15
+   }
+  },
+  "anchor_bolt.right_front": {
+   "xyz": [
+    932.0,
+    -214.0,
+    0.0
+   ],
+   "class": "D",
+   "error_mm": {
+    "x": 15,
+    "y": 95.0,
+    "z": 15
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2) (90x90 pocket drawn centred on the pad's front edge y_A -220; pockets 441 apart by scale); preparatory_data_analysis/maxima_documents/adast_guillotine_packing_list/20261114_202935.jpg (PL 21.1, M20x200)",
+   "error_rel_line_A_mm": {
+    "x": 15,
+    "y": 15,
+    "z": 15
+   }
+  },
+  "anchor_bolt.right_rear": {
+   "xyz": [
+    932.0,
+    236.0,
+    0.0
+   ],
+   "class": "D",
+   "error_mm": {
+    "x": 15,
+    "y": 95.0,
+    "z": 15
+   },
+   "source": "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_011021.jpg (OM p.19 Fig. 4.2.2) (pocket drawn centred on the pad's rear edge y_A +230); preparatory_data_analysis/maxima_documents/adast_guillotine_packing_list/20261114_202935.jpg (PL 21.1, M20x200)",
+   "error_rel_line_A_mm": {
+    "x": 15,
+    "y": 15,
+    "z": 15
+   }
+  }
+ }
+}

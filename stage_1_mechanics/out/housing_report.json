@@ -1,0 +1,472 @@
+{
+ "option": "B",
+ "checks": {
+  "1_bounds_watertight": {
+   "pass": true,
+   "bodies": {
+    "console": {
+     "bounds": [
+      -835.0,
+      850.0,
+      -454.0,
+      -394.0,
+      1190.0,
+      1535.0
+     ],
+     "spec": [
+      -835.0,
+      850.0,
+      -454.0,
+      -394.0,
+      1190.0,
+      1535.0
+     ],
+     "watertight": true,
+     "volume_mm3": 34082550.0,
+     "pass": true
+    },
+    "instrument_panel": {
+     "bounds": [
+      860.0,
+      997.0,
+      -397.0,
+      -394.0,
+      1189.0,
+      1454.0
+     ],
+     "spec": [
+      860.0,
+      997.0,
+      -397.0,
+      -394.0,
+      1189.0,
+      1454.0
+     ],
+     "watertight": true,
+     "volume_mm3": 93299.9,
+     "pass": true
+    },
+    "right_front_cover": {
+     "bounds": [
+      720.0,
+      997.0,
+      -397.0,
+      -394.0,
+      1030.0,
+      1177.0
+     ],
+     "spec": [
+      720.0,
+      997.0,
+      -397.0,
+      -394.0,
+      1030.0,
+      1177.0
+     ],
+     "watertight": true,
+     "volume_mm3": 108912.9,
+     "pass": true
+    },
+    "belt_pulley_cover": {
+     "bounds": [
+      1400.0,
+      1553.0,
+      -394.0,
+      545.0,
+      70.0,
+      1000.0
+     ],
+     "spec": [
+      1400.0,
+      1553.0,
+      -394.0,
+      545.0,
+      70.0,
+      1000.0
+     ],
+     "watertight": true,
+     "volume_mm3": 4296510.0,
+     "pass": true
+    },
+    "right_side_panel": {
+     "bounds": [
+      1400.0,
+      1403.0,
+      -394.0,
+      406.0,
+      1000.0,
+      1535.0
+     ],
+     "spec": [
+      1400.0,
+      1403.0,
+      -394.0,
+      406.0,
+      1000.0,
+      1535.0
+     ],
+     "watertight": true,
+     "volume_mm3": 1284000.0,
+     "pass": true
+    },
+    "left_side_panel_front": {
+     "bounds": [
+      -1253.0,
+      -1250.0,
+      -394.0,
+      -200.0,
+      785.0,
+      1535.0
+     ],
+     "spec": [
+      -1253.0,
+      -1250.0,
+      -394.0,
+      -200.0,
+      785.0,
+      1535.0
+     ],
+     "watertight": true,
+     "volume_mm3": 436500.0,
+     "pass": true
+    },
+    "left_side_panel_rear": {
+     "bounds": [
+      -1253.0,
+      -1250.0,
+      300.0,
+      406.0,
+      785.0,
+      1535.0
+     ],
+     "spec": [
+      -1253.0,
+      -1250.0,
+      300.0,
+      406.0,
+      785.0,
+      1535.0
+     ],
+     "watertight": true,
+     "volume_mm3": 238500.0,
+     "pass": true
+    },
+    "cabinet": {
+     "bounds": [
+      -1420.0,
+      -1250.0,
+      -200.0,
+      300.0,
+      0.0,
+      1535.0
+     ],
+     "spec": [
+      -1420.0,
+      -1250.0,
+      -200.0,
+      300.0,
+      0.0,
+      1535.0
+     ],
+     "watertight": true,
+     "volume_mm3": 130475000.0,
+     "pass": true
+    },
+    "cover_11": {
+     "bounds": [
+      -80.0,
+      55.0,
+      60.0,
+      150.0,
+      1535.0,
+      1565.0
+     ],
+     "spec": [
+      -80.0,
+      55.0,
+      60.0,
+      150.0,
+      1535.0,
+      1565.0
+     ],
+     "watertight": true,
+     "volume_mm3": 71928.0,
+     "pass": true
+    },
+    "right_support_front_cover": {
+     "bounds": [
+      724.0,
+      1140.0,
+      -217.0,
+      -214.0,
+      350.0,
+      650.0
+     ],
+     "spec": [
+      724.0,
+      1140.0,
+      -217.0,
+      -214.0,
+      350.0,
+      650.0
+     ],
+     "watertight": true,
+     "volume_mm3": 374400.0,
+     "pass": true
+    }
+   }
+  },
+  "2_no_overlap_own": {
+   "pass": true,
+   "pairs": []
+  },
+  "3_no_overlap_neighbours_at_rest": {
+   "pass": true,
+   "pairs": [],
+   "neighbour_bodies": 115,
+   "unreadable_neighbour_meshes": []
+  },
+  "4_swept_motions": {
+   "pass": true,
+   "sweeps": {
+    "knife_0_to_-150": {
+     "steps": 16,
+     "hits": [],
+     "n_hits": 0,
+     "missing": [],
+     "pass": true
+    },
+    "clamp_0_to_-130": {
+     "steps": 14,
+     "hits": [],
+     "n_hits": 0,
+     "missing": [],
+     "pass": true
+    },
+    "backgauge_face_1150_to_25": {
+     "steps": 114,
+     "hits": [],
+     "n_hits": 0,
+     "missing": [],
+     "pass": true
+    },
+    "right_front_cover_0_to_90deg": {
+     "steps": 19,
+     "hits": [],
+     "n_hits": 0,
+     "end_bounds": [
+      [
+       720.0,
+       -544.0,
+       1030.0
+      ],
+      [
+       997.0,
+       -397.0,
+       1033.0
+      ]
+     ],
+     "turns_forward": true,
+     "pass": true
+    }
+   }
+  },
+  "5_belt_cover_clearance_ge_5": {
+   "pass": true,
+   "min_gap_mm": {
+    "knife.belt": 27.0,
+    "knife.m1_pulley": 27.0,
+    "knife.m1_shaft": 73.0,
+    "knife.slip_rings": 10.0,
+    "knife.flywheel_2": 50.0,
+    "knife.worm_shaft": 10.0
+   }
+  },
+  "6_cover_11_over_passage": {
+   "pass": true,
+   "cover": [
+    -80.0,
+    55.0,
+    60.0,
+    150.0,
+    1535.0,
+    1565.0
+   ],
+   "passage_xy": [
+    -70.0,
+    45.0,
+    70.0,
+    150.0
+   ]
+  },
+  "6b_cavity_faces_covered": {
+   "pass": true,
+   "uncovered_grid_points": {
+    "left": 0,
+    "right": 0
+   }
+  },
+  "10_lamps_on_their_F101_surface": {
+   "pass": true,
+   "lamps": {
+    "lamp.E1": {
+     "xyz": [
+      -400.0,
+      -424.0,
+      1190.0
+     ],
+     "relation": "console bottom edge",
+     "pass": true
+    },
+    "lamp.E2": {
+     "xyz": [
+      377.0,
+      -424.0,
+      1190.0
+     ],
+     "relation": "console bottom edge",
+     "pass": true
+    },
+    "lamp.E3": {
+     "xyz": [
+      -768.0,
+      -454.0,
+      1467.0
+     ],
+     "relation": "console face, 55.8 inside the left edge",
+     "pass": true
+    },
+    "lamp.E4": {
+     "xyz": [
+      903.0,
+      -394.0,
+      1474.0
+     ],
+     "relation": "56.5 right of the console's right edge, on frame.column_right's front face: True",
+     "pass": true
+    }
+   }
+  },
+  "8_cabinet_other_option_info": {
+   "option": "A",
+   "overlap_with_frame_column_left_mm3": 1695000.0,
+   "note": "information only (DECISION 3): A needs the frame's left column face near -1117"
+  },
+  "9_side_table_tipping_info": {
+   "readings": {
+    "frame_published_axis_Y_at_outer_edge": {
+     "axis": [
+      0.0,
+      1.0,
+      0.0
+     ],
+     "pivot": [
+      1200.0,
+      -644.0,
+      860.0
+     ],
+     "positive": "right-hand rule about the axis",
+     "first_contact_deg": {
+      "housing.right_front_cover": 20.0,
+      "housing.console": 30.0,
+      "safety_sensors.S1": 40.0,
+      "housing.instrument_panel": 45.0,
+      "clamp.knob_3": 55.0,
+      "clamp.knob_4": 60.0,
+      "clamp.gauge_oz13": 60.0
+     },
+     "clear": false,
+     "end_bounds_90deg": [
+      [
+       1140.0,
+       -894.0,
+       860.0
+      ],
+      [
+       1225.0,
+       -394.0,
+       1485.0
+      ]
+     ]
+    },
+    "alternative_axis_X_at_front_edge": {
+     "axis": [
+      1.0,
+      0.0,
+      0.0
+     ],
+     "pivot": [
+      887.5,
+      -894.0,
+      860.0
+     ],
+     "positive": "right-hand rule about the axis",
+     "first_contact_deg": {},
+     "clear": true,
+     "end_bounds_90deg": [
+      [
+       575.0,
+       -919.0,
+       860.0
+      ],
+      [
+       1200.0,
+       -834.0,
+       1360.0
+      ]
+     ]
+    }
+   },
+   "note": "information only (conflict 15, M5): OM24 gives no axis"
+  },
+  "7_anchors_once": {
+   "pass": true,
+   "where": {
+    "button.S1": [
+     "housing_anchors.json"
+    ],
+    "switch.Q1": [
+     "housing_anchors.json"
+    ],
+    "switch.Q2": [
+     "housing_anchors.json"
+    ],
+    "switch.S2": [
+     "housing_anchors.json"
+    ],
+    "switch.S4": [
+     "housing_anchors.json"
+    ],
+    "lamp.E1": [
+     "housing_anchors.json"
+    ],
+    "lamp.E2": [
+     "housing_anchors.json"
+    ],
+    "lamp.E3": [
+     "housing_anchors.json"
+    ],
+    "lamp.E4": [
+     "housing_anchors.json"
+    ],
+    "connector.XC1": [
+     "housing_anchors.json"
+    ],
+    "connector.XC2": [
+     "housing_anchors.json"
+    ],
+    "connector.XC3": [
+     "housing_anchors.json"
+    ],
+    "connector.XC4": [
+     "housing_anchors.json"
+    ]
+   },
+   "cabinet": [
+    "housing_anchors.json:cabinet.578-20.0000"
+   ],
+   "knife_anchors_wrongly_here": []
+  }
+ },
+ "pass": true
+}

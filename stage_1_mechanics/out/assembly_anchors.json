@@ -1,0 +1,157 @@
+{
+ "meta": {
+  "part": "assembly",
+  "units": "mm",
+  "coordinates": "X along knife +right, Y +rear from cutting line, Z up, Z0 floor",
+  "note": "frame passages cut at assembly (DECISION 2, signals/DECISION_2_passages_at_assembly.txt); each is named as the requesting part names it, at the same xyz",
+  "script": "stage_1_mechanics/assembly/assembly.py"
+ },
+ "anchors": {
+  "joint.passage.clamp_brake.crossbar": {
+   "xyz": [
+    -12.5,
+    110.0,
+    1475.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "P36 §7.4 (opening in the frame for bearing 16); F71; P33",
+   "motion": {
+    "kind": "fixed",
+    "note": "the rack and the top 5 of gear 8"
+   },
+   "passage": [
+    [
+     -70.0,
+     45.0
+    ],
+    [
+     70.0,
+     150.0
+    ],
+    [
+     1415.0,
+     1535.0
+    ]
+   ],
+   "cut_at": "assembly",
+   "cut_from": "frame.crossbar",
+   "mark": "frame passage, cut at assembly (DECISION 2)",
+   "requested_by": "clamp",
+   "cut_shape": "box",
+   "removed_mm3": 1104000.0,
+   "left_mm3": 0.0
+  },
+  "joint.passage.clamp_tie.support_left": {
+   "xyz": [
+    -599.9,
+    100.0,
+    577.5
+   ],
+   "class": "E",
+   "error_mm": 150.0,
+   "source": "OLD-I (tie between the levers, levers just below the table: Z ≈ 640 by Fig. I proportion)",
+   "motion": {
+    "kind": "fixed",
+    "note": "the tie from the left lever (in the left support) to levers_tie crosses the support's inner wall"
+   },
+   "passage": [
+    [
+     -637.3,
+     -562.5
+    ],
+    [
+     40.0,
+     160.0
+    ],
+    [
+     500.0,
+     655.0
+    ]
+   ],
+   "cut_at": "assembly",
+   "cut_from": "frame.support_left",
+   "mark": "frame passage, cut at assembly (DECISION 2)",
+   "requested_by": "clamp",
+   "cut_shape": "box",
+   "removed_mm3": 1391159.4,
+   "left_mm3": 0.0
+  },
+  "joint.bore.spindle.base_front": {
+   "xyz": [
+    0.0,
+    -199.0,
+    725.0
+   ],
+   "class": "E",
+   "error_mm": 60.0,
+   "source": "F81 (double nut in the wall); F71 pos 23",
+   "motion": {
+    "kind": "fixed",
+    "note": "frame passage, cut at assembly (DECISION 2): the journal Ø25 passes frame.base_front (Y -214..-184) to coupling 1 through a Ø30 bore on the spindle axis; out/frame_anchors.json does not name it"
+   },
+   "passage": [
+    [
+     -15.0,
+     15.0
+    ],
+    [
+     -214.0,
+     -184.0
+    ],
+    [
+     710.0,
+     740.0
+    ]
+   ],
+   "bore_d": 30.0,
+   "axis": [
+    0.0,
+    1.0,
+    0.0
+   ],
+   "cut_at": "assembly",
+   "cut_from": "frame.base_front",
+   "mark": "frame passage, cut at assembly (DECISION 2)",
+   "requested_by": "backgauge",
+   "cut_shape": "bore d30 along Y",
+   "removed_mm3": 21171.7,
+   "left_mm3": 0.0
+  },
+  "joint.slot.front_extension": {
+   "xyz": [
+    0.0,
+    327.5,
+    835.0
+   ],
+   "class": "P/E",
+   "error_mm": 40.0,
+   "source": "F71 pos 17; F63",
+   "motion": {
+    "kind": "fixed",
+    "note": "frame passage, cut at assembly (DECISION 2): extends the frame's table.slot (X -20..20, Y 420..1860) forward to Y 235, because the neck (face + 223..283) reaches Y 248 at the minimum cut 25 (the slot start 420 came from the apex-link reading of photo 150809, the loser of conflict 1); out/frame_anchors.json does not name it"
+   },
+   "passage": [
+    [
+     -20.0,
+     20.0
+    ],
+    [
+     235.0,
+     420.0
+    ],
+    [
+     785.0,
+     885.0
+    ]
+   ],
+   "cut_at": "assembly",
+   "cut_from": "frame.table",
+   "mark": "frame passage, cut at assembly (DECISION 2)",
+   "requested_by": "backgauge",
+   "cut_shape": "box",
+   "removed_mm3": 740000.0,
+   "left_mm3": 0.0
+  }
+ }
+}

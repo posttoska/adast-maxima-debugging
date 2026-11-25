@@ -1,0 +1,387 @@
+{
+ "meta": {
+  "part": "housing",
+  "units": "mm",
+  "coordinates": "X along knife +right, Y +rear from cutting line, Z up, Z0 floor",
+  "cabinet_option": "B",
+  "errors": "error_mm = [X, Y, Z] to the machine axes",
+  "spec": "spec/housing.md",
+  "script": "parts/housing/housing.py"
+ },
+ "anchors": {
+  "button.S1": {
+   "xyz": [
+    773.0,
+    -454.0,
+    1297.0
+   ],
+   "class": "P",
+   "error_mm": [
+    60,
+    40,
+    60
+   ],
+   "source": "PH152550 (plate centre x 1060 = 1.037 O from the left inner face, 0.69 down); F31f",
+   "note": "E-stop (emergency stop), console front face, right end; M3"
+  },
+  "display.T": {
+   "xyz": [
+    238.0,
+    -454.0,
+    1354.0
+   ],
+   "class": "P",
+   "error_mm": [
+    60,
+    40,
+    60
+   ],
+   "source": "PH152550 (centre x 725.6 = 0.665 O, 0.525 down); OM19 (Z 1260-1420)",
+   "note": "PANELWARE display, not a section-10 device; M3"
+  },
+  "ref.console_toggle": {
+   "xyz": [
+    -195.0,
+    -454.0,
+    1366.0
+   ],
+   "class": "P",
+   "error_mm": [
+    60,
+    40,
+    60
+   ],
+   "source": "PH152550 (nut x 455 = 0.364 O)",
+   "note": "toggle switch on the console, designation unknown [?]; M3"
+  },
+  "switch.Q1": {
+   "xyz": [
+    -1324.8,
+    -200.0,
+    1387.0
+   ],
+   "class": "P",
+   "error_mm": [
+    115,
+    40,
+    30
+   ],
+   "source": "F102 (y 180, fraction 0.56); PH142747 (0.58); OM19 (Q1 Z 1380)",
+   "note": "main switch (\"INTER PRINCIPAL\"); cabinet front face; M12"
+  },
+  "switch.Q2": {
+   "xyz": [
+    -1314.6,
+    -200.0,
+    1282.0
+   ],
+   "class": "P",
+   "error_mm": [
+    115,
+    40,
+    30
+   ],
+   "source": "F102 (y 240, 0.62); PH142747 (0.63)",
+   "note": "M1 switch (\"MOTOR M1\"); cabinet front face; M12"
+  },
+  "switch.S4": {
+   "xyz": [
+    -1346.9,
+    -200.0,
+    1143.0
+   ],
+   "class": "P",
+   "error_mm": [
+    115,
+    40,
+    30
+   ],
+   "source": "F102 (y 320, 0.43); PH142747 (0.54)",
+   "note": "blower switch (section 10), left of S2; cabinet front face; M12"
+  },
+  "switch.S2": {
+   "xyz": [
+    -1285.7,
+    -200.0,
+    1143.0
+   ],
+   "class": "P",
+   "error_mm": [
+    115,
+    40,
+    30
+   ],
+   "source": "F102 (y 320, 0.79); PH142747 (0.82)",
+   "note": "light selector (section 10) [?], right of S4; cabinet front face; M12"
+  },
+  "cabinet.578-20.0000": {
+   "xyz": [
+    -1335.0,
+    50.0,
+    767.5
+   ],
+   "class": "P/E",
+   "error_mm": [
+    115,
+    40,
+    30
+   ],
+   "source": "PL 2.8; F102; F422; PH142830",
+   "note": "electrical cabinet (электрораспределитель; CZ elektrorozvaděč 578-20.0000), centre of the outer box; option B (DECISION 3); door on the -X face, no door body; M9, M10, M11",
+   "min": [
+    -1420.0,
+    -200.0,
+    0.0
+   ],
+   "max": [
+    -1250.0,
+    300.0,
+    1535.0
+   ]
+  },
+  "knob.8": {
+   "xyz": [
+    1553.0,
+    40.0,
+    815.0
+   ],
+   "class": "P/E",
+   "error_mm": [
+    3,
+    150,
+    40
+   ],
+   "source": "F31f (Z 810); F422 front view (Z 826); OM11 (Ø60)",
+   "note": "knob 8 on the belt-pulley cover's outer face, Y = flywheel axis (E); anchor only; M6"
+  },
+  "hole.crank": {
+   "xyz": [
+    1553.0,
+    40.0,
+    629.0
+   ],
+   "class": "E",
+   "error_mm": [
+    3,
+    50,
+    50
+   ],
+   "source": "OM11; NB (knife worm-shaft axis Y 40, Z 629)",
+   "note": "hand-crank hole in the belt-pulley cover; place inferred on the worm-shaft axis, not drawn; M6"
+  },
+  "hole.right_front_cover": {
+   "xyz": [
+    867.0,
+    -397.0,
+    1076.0
+   ],
+   "class": "P",
+   "error_mm": [
+    30,
+    2,
+    30
+   ],
+   "source": "PH150616",
+   "note": "round hole Ø75; inspection hole 6 or another hole [?] (conflict 11); M5"
+  },
+  "knob.right_front_cover": {
+   "xyz": [
+    881.0,
+    -397.0,
+    1146.0
+   ],
+   "class": "P",
+   "error_mm": [
+    30,
+    2,
+    30
+   ],
+   "source": "PH150616",
+   "note": "black knob on the right front cover [?]; M5"
+  },
+  "right_front_cover.pivot": {
+   "xyz": [
+    858.5,
+    -397.0,
+    1030.0
+   ],
+   "class": "E",
+   "error_mm": [
+    30,
+    2,
+    30
+   ],
+   "source": "OM24",
+   "note": "hinge axis along X at the cover's bottom front edge; M5",
+   "motion": {
+    "type": "rotation",
+    "axis": [
+     1,
+     0,
+     0
+    ],
+    "pivot": [
+     858.5,
+     -397.0,
+     1030.0
+    ],
+    "range_deg": [
+     0,
+     90.0
+    ],
+    "direction": "positive about +X: top edge forward (-Y)",
+    "body": "housing.right_front_cover"
+   }
+  },
+  "cover.pedal": {
+   "xyz": [
+    0.0,
+    -571.0,
+    95.0
+   ],
+   "class": "E",
+   "error_mm": [
+    260,
+    100,
+    95
+   ],
+   "source": "F31f (outline X +-216..262, Z 0..190); F31p; PL 15",
+   "note": "pedal cover, NOT modelled (depth unknown; inside = clamp pedal-link keep-out); M14"
+  },
+  "cover.right_support_front": {
+   "xyz": [
+    932.0,
+    -217.0,
+    500.0
+   ],
+   "class": "E",
+   "error_mm": [
+    200,
+    3,
+    100
+   ],
+   "source": "P36 7.2 (MS 115 PS, DS: the hydraulic box is filled through an opening once the cover in the front part of the right support is removed); NB (frame.support_right front face Y -214, cavity X 723.7..1140.3)",
+   "note": "removable cover on the right support's front face; behind it the filler of the clamp's tank OZ1 (front strip Y -129.8..-77); size and place E: the placeholder spans the whole cavity X 724..1140, the real cover can sit anywhere along it (X +-200); M17"
+  },
+  "lamp.E1": {
+   "xyz": [
+    -400.0,
+    -424.0,
+    1190.0
+   ],
+   "class": "E",
+   "error_mm": [
+    450,
+    60,
+    100
+   ],
+   "source": "F101 (Fig.10.1 front view, own scale)",
+   "note": "lamp E1, under the console's bottom edge, left of the centre (drawn at Z 1248); fitted state open, PH151822 shows two light bars (conflict 16); M15"
+  },
+  "lamp.E2": {
+   "xyz": [
+    377.0,
+    -424.0,
+    1190.0
+   ],
+   "class": "E",
+   "error_mm": [
+    450,
+    60,
+    100
+   ],
+   "source": "F101 (Fig.10.1 front view, own scale)",
+   "note": "lamp E2, under the console's bottom edge, right of the centre (drawn at Z 1253); fitted state open, PH151822 shows two light bars (conflict 16); M15"
+  },
+  "lamp.E3": {
+   "xyz": [
+    -768.0,
+    -454.0,
+    1467.0
+   ],
+   "class": "E",
+   "error_mm": [
+    450,
+    60,
+    100
+   ],
+   "source": "F101 (Fig.10.1 front view, own scale)",
+   "note": "lamp E3, console front face near its upper left corner, 56 inside the left edge (drawn 11 px inside; the drawing's own X -675); fitted state open, PH151822 shows two light bars (conflict 16); M15"
+  },
+  "lamp.E4": {
+   "xyz": [
+    903.0,
+    -394.0,
+    1474.0
+   ],
+   "class": "E",
+   "error_mm": [
+    450,
+    60,
+    100
+   ],
+   "source": "F101 (Fig.10.1 front view, own scale)",
+   "note": "lamp E4, right column front face just right of the console's upper right corner, 56 right of its edge, above the instrument panel (drawn 11 px outside; the drawing's own X 650); fitted state open, PH151822 shows two light bars (conflict 16); M15"
+  },
+  "connector.XC2": {
+   "xyz": [
+    -1250.0,
+    50.0,
+    686.0
+   ],
+   "class": "E",
+   "error_mm": [
+    115,
+    250,
+    100
+   ],
+   "source": "F102 (side strip and view P, Z by its scale); PH144555; OM20 (p.20 4.5: the job)",
+   "note": "cabinet connector XC2, round, small (view P, top); job (OM20): the machine-to-cabinet link; on the cabinet's face toward the machine (PH144555), in the open space before frame.support_left (X -1017.5); place along Y open; conflict 18; M18"
+  },
+  "connector.XC4": {
+   "xyz": [
+    -1250.0,
+    50.0,
+    612.0
+   ],
+   "class": "E",
+   "error_mm": [
+    115,
+    250,
+    100
+   ],
+   "source": "F102 (side strip and view P, Z by its scale); PH144555; OM20 (p.20 4.5: the job); OM41 (p.41 8.3: the encoder's outputs through XC4); BGS (sensor.BR40: connector XC4, p41 8.3)",
+   "note": "cabinet connector XC4, round, larger (view P); job (OM20, OM41 8.3, spec/backgauge.md): the backgauge position sensor BR40; OM20 prints it XC40 (conflict 18); on the cabinet's face toward the machine (PH144555), in the open space before frame.support_left (X -1017.5); place along Y open; conflict 18; M18"
+  },
+  "connector.XC1": {
+   "xyz": [
+    -1250.0,
+    50.0,
+    508.0
+   ],
+   "class": "E",
+   "error_mm": [
+    115,
+    250,
+    100
+   ],
+   "source": "F102 (side strip and view P, Z by its scale); PH144555; OM20 (p.20 4.5: the job)",
+   "note": "cabinet connector XC1, rectangular multi-pin (view P); job (OM20): the feed motor, the backgauge motor M2 [?]; on the cabinet's face toward the machine (PH144555), in the open space before frame.support_left (X -1017.5); place along Y open; conflict 18; M18"
+  },
+  "connector.XC3": {
+   "xyz": [
+    -1250.0,
+    50.0,
+    396.0
+   ],
+   "class": "E",
+   "error_mm": [
+    115,
+    250,
+    100
+   ],
+   "source": "F102 (side strip and view P, Z by its scale); PH144555; OM20 (p.20 4.5: the job)",
+   "note": "cabinet connector XC3, rectangular multi-pin (view P, bottom); job (OM20): the air-cushion motor, the air-table blower M3; on the cabinet's face toward the machine (PH144555), in the open space before frame.support_left (X -1017.5); place along Y open; conflict 18; M18"
+  }
+ }
+}

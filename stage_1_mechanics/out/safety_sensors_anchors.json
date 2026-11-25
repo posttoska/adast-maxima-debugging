@@ -1,0 +1,990 @@
+{
+ "meta": {
+  "part": "safety_sensors",
+  "units": "mm",
+  "coordinates": "X along knife +right, Y +rear from cutting line, Z up, Z0 floor; glTF readers: scale 0.001 and turn -90 deg about X",
+  "spec": "spec/safety_sensors.md",
+  "script": "parts/safety_sensors/safety_sensors.py",
+  "state": "at rest: knife up, clamp up",
+  "naming": "one anchor body.<designation> per body, at its actuation point; the device anchors (button., sensor., switch., motor., valve. ...) stay published once, by the hosts",
+  "groups": {
+   "fixed": "no motion",
+   "clamp.beam": "moves with clamp.beam: translate along (0, 0, -1) by 0..130"
+  },
+  "bodies": {
+   "safety_sensors.S10": {
+    "designation": "S10",
+    "host_anchor": "button.S10 (frame)",
+    "group": "fixed",
+    "bounds": [
+     [
+      -305.0,
+      -739.0,
+      830.0
+     ],
+     [
+      -275.0,
+      -729.0,
+      860.0
+     ]
+    ],
+    "volume_mm3": 7057.2,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S11": {
+    "designation": "S11",
+    "host_anchor": "button.S11 (frame)",
+    "group": "fixed",
+    "bounds": [
+     [
+      285.0,
+      -739.0,
+      830.0
+     ],
+     [
+      315.0,
+      -729.0,
+      860.0
+     ]
+    ],
+    "volume_mm3": 7057.2,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S1": {
+    "designation": "S1",
+    "host_anchor": "button.S1 (housing)",
+    "group": "fixed",
+    "bounds": [
+     [
+      735.5,
+      -492.0,
+      1259.5
+     ],
+     [
+      810.5,
+      -454.0,
+      1334.5
+     ]
+    ],
+    "volume_mm3": 60786.7,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.Q1": {
+    "designation": "Q1",
+    "host_anchor": "switch.Q1 (housing)",
+    "group": "fixed",
+    "bounds": [
+     [
+      -1365.8,
+      -250.0,
+      1338.5
+     ],
+     [
+      -1283.8,
+      -200.0,
+      1435.5
+     ]
+    ],
+    "volume_mm3": 221648.8,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.Q2": {
+    "designation": "Q2",
+    "host_anchor": "switch.Q2 (housing)",
+    "group": "fixed",
+    "bounds": [
+     [
+      -1338.6,
+      -240.0,
+      1258.0
+     ],
+     [
+      -1290.6,
+      -200.0,
+      1306.0
+     ]
+    ],
+    "volume_mm3": 50720.0,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S4": {
+    "designation": "S4",
+    "host_anchor": "switch.S4 (housing)",
+    "group": "fixed",
+    "bounds": [
+     [
+      -1360.9,
+      -230.0,
+      1129.0
+     ],
+     [
+      -1332.9,
+      -200.0,
+      1157.0
+     ]
+    ],
+    "volume_mm3": 18442.9,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S2": {
+    "designation": "S2",
+    "host_anchor": "switch.S2 (housing)",
+    "group": "fixed",
+    "bounds": [
+     [
+      -1299.7,
+      -230.0,
+      1129.0
+     ],
+     [
+      -1271.7,
+      -200.0,
+      1157.0
+     ]
+    ],
+    "volume_mm3": 18442.9,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S14": {
+    "designation": "S14",
+    "host_anchor": "sensor.S14 (knife)",
+    "group": "fixed",
+    "bounds": [
+     [
+      870.4,
+      155.0,
+      855.98
+     ],
+     [
+      919.4,
+      180.0,
+      873.98
+     ]
+    ],
+    "volume_mm3": 22050.0,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S13": {
+    "designation": "S13",
+    "host_anchor": "sensor.S13 (knife)",
+    "group": "fixed",
+    "bounds": [
+     [
+      995.26,
+      150.0,
+      785.75
+     ],
+     [
+      1044.26,
+      175.0,
+      803.75
+     ]
+    ],
+    "volume_mm3": 22050.0,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S12": {
+    "designation": "S12",
+    "host_anchor": "sensor.S12 (knife)",
+    "group": "fixed",
+    "bounds": [
+     [
+      945.55,
+      150.0,
+      785.04
+     ],
+     [
+      994.55,
+      175.0,
+      803.04
+     ]
+    ],
+    "volume_mm3": 22050.0,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.SQ1": {
+    "designation": "SQ1",
+    "host_anchor": "sensor.SQ1 (knife)",
+    "group": "fixed",
+    "bounds": [
+     [
+      880.0,
+      340.5,
+      900.0
+     ],
+     [
+      905.0,
+      352.0,
+      924.0
+     ]
+    ],
+    "volume_mm3": 6900.0,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.SQ2": {
+    "designation": "SQ2",
+    "host_anchor": "sensor.SQ2 (knife)",
+    "group": "fixed",
+    "bounds": [
+     [
+      880.0,
+      353.0,
+      900.0
+     ],
+     [
+      905.0,
+      364.5,
+      924.0
+     ]
+    ],
+    "volume_mm3": 6900.0,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S5": {
+    "designation": "S5",
+    "host_anchor": "sensor.S5 (knife)",
+    "group": "fixed",
+    "bounds": [
+     [
+      1519.0,
+      185.0,
+      302.5
+     ],
+     [
+      1550.0,
+      215.0,
+      397.5
+     ]
+    ],
+    "volume_mm3": 88350.0,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S19": {
+    "designation": "S19",
+    "host_anchor": "sensor.S19 (knife)",
+    "group": "fixed",
+    "bounds": [
+     [
+      1368.0,
+      185.0,
+      372.5
+     ],
+     [
+      1399.0,
+      215.0,
+      467.5
+     ]
+    ],
+    "volume_mm3": 88350.0,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S30": {
+    "designation": "S30",
+    "host_anchor": "sensor.S30 (clamp)",
+    "group": "fixed",
+    "bounds": [
+     [
+      264.5,
+      150.5,
+      1235.0
+     ],
+     [
+      295.5,
+      245.5,
+      1265.0
+     ]
+    ],
+    "volume_mm3": 88350.0,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.S28": {
+    "designation": "S28",
+    "host_anchor": "sensor.S28 (clamp)",
+    "group": "clamp.beam",
+    "bounds": [
+     [
+      -505.5,
+      2.0,
+      1021.0
+     ],
+     [
+      -474.5,
+      24.0,
+      1101.0
+     ]
+    ],
+    "volume_mm3": 54560.0,
+    "excused_overlap_with": [
+     "clamp.front_block"
+    ]
+   },
+   "safety_sensors.M3": {
+    "designation": "M3",
+    "host_anchor": "motor.M3 (frame)",
+    "group": "fixed",
+    "bounds": [
+     [
+      85.0,
+      1125.0,
+      125.0
+     ],
+     [
+      385.0,
+      1375.0,
+      375.0
+     ]
+    ],
+    "volume_mm3": 18750000.0,
+    "excused_overlap_with": []
+   },
+   "safety_sensors.Y3": {
+    "designation": "Y3",
+    "host_anchor": "valve.Y3 (frame)",
+    "group": "fixed",
+    "bounds": [
+     [
+      -25.0,
+      875.0,
+      544.0
+     ],
+     [
+      25.0,
+      925.0,
+      634.0
+     ]
+    ],
+    "volume_mm3": 225000.0,
+    "excused_overlap_with": []
+   }
+  }
+ },
+ "anchors": {
+  "body.S10": {
+   "xyz": [
+    -290.0,
+    -739.0,
+    845.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 5.0,
+    "y": 5.0,
+    "z": 5.0
+   },
+   "source": "P44; PH144447; frame button.S10",
+   "motion": {
+    "kind": "fixed",
+    "note": "push travel not modelled"
+   },
+   "host_anchor": "button.S10",
+   "host": "frame",
+   "host_error_mm": {
+    "x": 100,
+    "y": 100.0,
+    "z": 100
+   },
+   "offset_from_host_anchor_mm": [
+    0.0,
+    -10.0,
+    0.0
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "push face of the green head, pressed by the operator's left hand (two-hand start, both within 0,5 s)"
+  },
+  "body.S11": {
+   "xyz": [
+    300.0,
+    -739.0,
+    845.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 5.0,
+    "y": 5.0,
+    "z": 5.0
+   },
+   "source": "P44; PH144447 (left button; the right one is the same type); frame button.S11",
+   "motion": {
+    "kind": "fixed",
+    "note": "push travel not modelled"
+   },
+   "host_anchor": "button.S11",
+   "host": "frame",
+   "host_error_mm": {
+    "x": 100,
+    "y": 100.0,
+    "z": 100
+   },
+   "offset_from_host_anchor_mm": [
+    0.0,
+    -10.0,
+    0.0
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "push face of the green head, pressed by the operator's right hand"
+  },
+  "body.S1": {
+   "xyz": [
+    773.0,
+    -492.0,
+    1297.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 15.0,
+    "y": 5.0,
+    "z": 12.0
+   },
+   "source": "P44; PH152554; housing button.S1",
+   "motion": {
+    "kind": "fixed",
+    "note": "push travel not modelled"
+   },
+   "host_anchor": "button.S1",
+   "host": "housing",
+   "host_error_mm": [
+    60,
+    40,
+    60
+   ],
+   "offset_from_host_anchor_mm": [
+    0.0,
+    -38.0,
+    0.0
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "red mushroom, pressed by hand, latches; turn to release"
+  },
+  "body.Q1": {
+   "xyz": [
+    -1324.8,
+    -250.0,
+    1387.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 12.0,
+    "y": 10.0,
+    "z": 15.0
+   },
+   "source": "P44; PH142747; housing switch.Q1",
+   "motion": {
+    "kind": "fixed",
+    "note": "turning not modelled"
+   },
+   "host_anchor": "switch.Q1",
+   "host": "housing",
+   "host_error_mm": [
+    115,
+    40,
+    30
+   ],
+   "offset_from_host_anchor_mm": [
+    0.0,
+    -50.0,
+    0.0
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "red rotary handle, turned 0 / I by hand"
+  },
+  "body.Q2": {
+   "xyz": [
+    -1314.6,
+    -240.0,
+    1282.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 8.0,
+    "y": 10.0,
+    "z": 8.0
+   },
+   "source": "P44; PH142747; housing switch.Q2",
+   "motion": {
+    "kind": "fixed",
+    "note": "turning not modelled"
+   },
+   "host_anchor": "switch.Q2",
+   "host": "housing",
+   "host_error_mm": [
+    115,
+    40,
+    30
+   ],
+   "offset_from_host_anchor_mm": [
+    0.0,
+    -40.0,
+    0.0
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "black lever handle, turned by hand"
+  },
+  "body.S4": {
+   "xyz": [
+    -1346.9,
+    -230.0,
+    1143.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 5.0,
+    "y": 10.0,
+    "z": 5.0
+   },
+   "source": "P44; PH142747; housing switch.S4",
+   "motion": {
+    "kind": "fixed",
+    "note": "turning not modelled"
+   },
+   "host_anchor": "switch.S4",
+   "host": "housing",
+   "host_error_mm": [
+    115,
+    40,
+    30
+   ],
+   "offset_from_host_anchor_mm": [
+    0.0,
+    -30.0,
+    0.0
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "black selector knob (blower symbol), turned by hand"
+  },
+  "body.S2": {
+   "xyz": [
+    -1285.7,
+    -230.0,
+    1143.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 5.0,
+    "y": 10.0,
+    "z": 5.0
+   },
+   "source": "P44; PH142747; housing switch.S2",
+   "motion": {
+    "kind": "fixed",
+    "note": "turning not modelled"
+   },
+   "host_anchor": "switch.S2",
+   "host": "housing",
+   "host_error_mm": [
+    115,
+    40,
+    30
+   ],
+   "offset_from_host_anchor_mm": [
+    0.0,
+    -30.0,
+    0.0
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "black selector knob (lamp symbols), turned by hand"
+  },
+  "body.S14": {
+   "xyz": [
+    894.9,
+    155.0,
+    864.98
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 27.0,
+    "y": 20.0,
+    "z": 10.0
+   },
+   "source": "P44; P42; knife sensor.S14 (W568)",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   },
+   "host_anchor": "sensor.S14",
+   "host": "knife",
+   "host_error_mm": 100.0,
+   "offset_from_host_anchor_mm": [
+    16.5,
+    10.0,
+    0.0
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "actuation not known (DECISION 4): placeholder for the switch that reads the vane on knife.cam_disc (r 90), here behind knife.gear_box's rear wall (Y 140..150) and knife.lock_cover's front wall (Y 150..155), which the knife model closes (conflict 2); offset +16,5 X, +10 Y out of the walls"
+  },
+  "body.S13": {
+   "xyz": [
+    1019.76,
+    150.0,
+    794.75
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 10.0,
+    "y": 15.0,
+    "z": 40.0
+   },
+   "source": "P44; knife sensor.S13",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   },
+   "host_anchor": "sensor.S13",
+   "host": "knife",
+   "host_error_mm": 100.0,
+   "offset_from_host_anchor_mm": [
+    0.0,
+    5.0,
+    30.0
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "actuation not known (DECISION 4): placeholder for the switch that reads the vane on knife.cam_disc (conflict 2); offset +5 Y out of the gear-box wall, +30 Z above frame.support_right's top (Z 785)"
+  },
+  "body.S12": {
+   "xyz": [
+    970.05,
+    150.0,
+    794.04
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 49.0,
+    "y": 15.0,
+    "z": 61.0
+   },
+   "source": "P44; knife sensor.S12",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   },
+   "host_anchor": "sensor.S12",
+   "host": "knife",
+   "host_error_mm": 100.0,
+   "offset_from_host_anchor_mm": [
+    -39.0,
+    5.0,
+    50.2
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "actuation not known (DECISION 4): placeholder for the switch that reads the vane on knife.cam_disc (conflict 2); offset +5 Y out of the gear-box wall, +50,2 Z above frame.support_right's top, -39 X beside S13"
+  },
+  "body.SQ1": {
+   "xyz": [
+    905.0,
+    345.0,
+    912.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 25.0,
+    "y": 7.0,
+    "z": 10.0
+   },
+   "source": "P44; F62; knife sensor.SQ1",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   },
+   "host_anchor": "sensor.SQ1",
+   "host": "knife",
+   "host_error_mm": 100.0,
+   "offset_from_host_anchor_mm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "faces": [
+    1,
+    0,
+    0
+   ],
+   "target": "flag on knife.y01_tail at its pin-1-IN station (Y 345)"
+  },
+  "body.SQ2": {
+   "xyz": [
+    905.0,
+    360.0,
+    912.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 25.0,
+    "y": 7.0,
+    "z": 10.0
+   },
+   "source": "P44; knife sensor.SQ2",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   },
+   "host_anchor": "sensor.SQ2",
+   "host": "knife",
+   "host_error_mm": 100.0,
+   "offset_from_host_anchor_mm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "faces": [
+    1,
+    0,
+    0
+   ],
+   "target": "flag on knife.y01_tail at its pin-1-OUT station (Y 360)"
+  },
+  "body.S5": {
+   "xyz": [
+    1550.0,
+    200.0,
+    350.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 15.0,
+    "y": 15.0,
+    "z": 15.0
+   },
+   "source": "P44; W568; knife sensor.S5; housing belt_pulley_cover",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   },
+   "host_anchor": "sensor.S5",
+   "host": "knife",
+   "host_error_mm": 200.0,
+   "offset_from_host_anchor_mm": [
+    140.0,
+    0.0,
+    0.0
+   ],
+   "faces": [
+    1,
+    0,
+    0
+   ],
+   "target": "plunger held in by the inner face of housing.belt_pulley_cover's outer wall while the cover is on (conflict 4)"
+  },
+  "body.S19": {
+   "xyz": [
+    1383.5,
+    200.0,
+    467.5
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 15.0,
+    "y": 15.0,
+    "z": 15.0
+   },
+   "source": "P46; W568; P11 item 8; knife sensor.S19",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   },
+   "host_anchor": "sensor.S19",
+   "host": "knife",
+   "host_error_mm": 200.0,
+   "offset_from_host_anchor_mm": [
+    -26.5,
+    0.0,
+    47.5
+   ],
+   "faces": [
+    0,
+    0,
+    1
+   ],
+   "target": "plunger faces nothing modelled: S19 reports cut clutch Y10 engaged for knife change, but the linkage from knob 8 to the clutch is in no file, so its actuation is not known (conflict 5, SS5)"
+  },
+  "body.S30": {
+   "xyz": [
+    280.0,
+    150.5,
+    1250.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 15.0,
+    "y": 15.0,
+    "z": 15.0
+   },
+   "source": "P46; P41; clamp sensor.S30",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   },
+   "host_anchor": "sensor.S30",
+   "host": "clamp",
+   "host_error_mm": {
+    "x": 80.0,
+    "y": 50.0,
+    "z": 100.0
+   },
+   "offset_from_host_anchor_mm": [
+    0.0,
+    0.5,
+    0.0
+   ],
+   "faces": [
+    0,
+    -1,
+    0
+   ],
+   "target": "roller on clamp.bar's rear face (Y 150), 5 below its top edge at rest: closed with the clamp up"
+  },
+  "body.S28": {
+   "xyz": [
+    -490.0,
+    13.0,
+    1021.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 5.0,
+    "y": 8.0,
+    "z": 15.0
+   },
+   "source": "P46; clamp sensor.S28 zone, open item 5",
+   "motion": {
+    "kind": "trans",
+    "note": "rides the clamp beam",
+    "axis": [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    "range": [
+     0.0,
+     130.0
+    ],
+    "unit": "mm",
+    "with": "clamp.beam"
+   },
+   "host_anchor": "sensor.S28",
+   "host": "clamp",
+   "host_error_mm": {
+    "x": 80.0,
+    "y": 10.0,
+    "z": 100.0
+   },
+   "offset_from_host_anchor_mm": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "faces": [
+    0,
+    0,
+    -1
+   ],
+   "target": "plunger on clamp.false_plate's top face (Z 1021): pressed while the plate is fitted"
+  },
+  "body.M3": {
+   "xyz": [
+    235.0,
+    1250.0,
+    250.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 300.0,
+    "y": 60.0,
+    "z": 60.0
+   },
+   "source": "P44; PH144524; P37; PL1; frame motor.M3",
+   "motion": {
+    "kind": "fixed",
+    "note": "loose unit standing on a loose wooden block about 125 high (PH144524; block not machine, not modelled): bottom Z 125 ±150"
+   },
+   "host_anchor": "motor.M3",
+   "host": "frame",
+   "host_error_mm": {
+    "x": 350,
+    "y": 330.0,
+    "z": 150
+   },
+   "offset_from_host_anchor_mm": [
+    235.0,
+    0.0,
+    0.0
+   ],
+   "faces": [
+    0,
+    0,
+    1
+   ],
+   "target": "centre of the blower unit (motor and side-channel housing); hoses to the air table not modelled; offset +235 X: beyond the stand's diagonal leg as PH144524 shows it from X < 0, at about the foot's Y, clear of frame.rear_stand (X <= 82,5)"
+  },
+  "body.Y3": {
+   "xyz": [
+    0.0,
+    900.0,
+    589.0
+   ],
+   "class": "E",
+   "error_mm": {
+    "x": 20.0,
+    "y": 20.0,
+    "z": 41.0
+   },
+   "source": "P46; F101; frame valve.Y3",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   },
+   "host_anchor": "valve.Y3",
+   "host": "frame",
+   "host_error_mm": 400,
+   "offset_from_host_anchor_mm": [
+    0.0,
+    0.0,
+    -11.0
+   ],
+   "faces": [
+    0,
+    0,
+    1
+   ],
+   "target": "centre of the solenoid valve (no mechanical actuator: its coil is switched by its circuit, episode 2); offset -11 Z out of frame.keepout.backgauge_drive (Z >= 635)"
+  }
+ }
+}

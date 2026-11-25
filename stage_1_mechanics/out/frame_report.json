@@ -1,0 +1,366 @@
+{
+ "bodies": {
+  "foot_right": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 2920000.0,
+   "bounds": [
+    [
+     639.5,
+     -214.0,
+     0.0
+    ],
+    [
+     1224.5,
+     236.0,
+     20.0
+    ]
+   ]
+  },
+  "foot_left": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 2260000.0,
+   "bounds": [
+    [
+     -1017.5,
+     -214.0,
+     0.0
+    ],
+    [
+     -562.5,
+     236.0,
+     20.0
+    ]
+   ]
+  },
+  "foot_rear": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 74167.1,
+   "bounds": [
+    [
+     -82.5,
+     1053.5,
+     0.0
+    ],
+    [
+     82.5,
+     1218.5,
+     20.0
+    ]
+   ]
+  },
+  "support_right": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 111524701.0,
+   "bounds": [
+    [
+     639.5,
+     -214.0,
+     20.0
+    ],
+    [
+     1224.5,
+     236.0,
+     785.0
+    ]
+   ]
+  },
+  "support_left": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 86445000.0,
+   "bounds": [
+    [
+     -1017.5,
+     -214.0,
+     20.0
+    ],
+    [
+     -562.5,
+     236.0,
+     785.0
+    ]
+   ]
+  },
+  "base_front": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 22898100.0,
+   "bounds": [
+    [
+     -562.5,
+     -214.0,
+     150.0
+    ],
+    [
+     639.5,
+     -184.0,
+     785.0
+    ]
+   ]
+  },
+  "column_left": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 56928000.0,
+   "bounds": [
+    [
+     -1250.0,
+     -394.0,
+     785.0
+    ],
+    [
+     -720.0,
+     406.0,
+     1535.0
+    ]
+   ]
+  },
+  "column_right": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 66528000.0,
+   "bounds": [
+    [
+     720.0,
+     -394.0,
+     785.0
+    ],
+    [
+     1400.0,
+     406.0,
+     1535.0
+    ]
+   ]
+  },
+  "crossbar": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 51840000.0,
+   "bounds": [
+    [
+     -720.0,
+     -150.0,
+     1415.0
+    ],
+    [
+     720.0,
+     150.0,
+     1535.0
+    ]
+   ]
+  },
+  "table": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 264288500.0,
+   "bounds": [
+    [
+     -575.0,
+     -729.0,
+     785.0
+    ],
+    [
+     575.0,
+     1901.0,
+     885.0
+    ]
+   ]
+  },
+  "cutting_stick": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 460000.0,
+   "bounds": [
+    [
+     -575.0,
+     -10.0,
+     865.0
+    ],
+    [
+     575.0,
+     10.0,
+     885.0
+    ]
+   ]
+  },
+  "side_table_left": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 8378825.0,
+   "bounds": [
+    [
+     -1200.0,
+     -894.0,
+     800.0
+    ],
+    [
+     -575.0,
+     -394.0,
+     885.0
+    ]
+   ]
+  },
+  "side_table_right": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 8378825.0,
+   "bounds": [
+    [
+     575.0,
+     -894.0,
+     800.0
+    ],
+    [
+     1200.0,
+     -394.0,
+     885.0
+    ]
+   ]
+  },
+  "rear_stand": {
+   "watertight": true,
+   "is_volume": true,
+   "volume_mm3": 6719973.6,
+   "bounds": [
+    [
+     -210.0,
+     1053.5,
+     20.0
+    ],
+    [
+     82.5,
+     1376.0,
+     785.0
+    ]
+   ]
+  }
+ },
+ "pairs_overlapping": [],
+ "checks": {
+  "bounding_box": {
+   "got": [
+    [
+     -1250.0,
+     -894.0,
+     0.0
+    ],
+    [
+     1400.0,
+     1901.0,
+     1535.0
+    ]
+   ],
+   "spec": [
+    [
+     -1250.0,
+     -894.0,
+     0.0
+    ],
+    [
+     1400.0,
+     1901.0,
+     1535.0
+    ]
+   ],
+   "pass": true
+  },
+  "plan_envelope": {
+   "got_xy": [
+    [
+     -1250.0,
+     -894.0
+    ],
+    [
+     1400.0,
+     1901.0
+    ]
+   ],
+   "limits_xy": [
+    [
+     -1317.0,
+     -904.0
+    ],
+    [
+     1563.0,
+     1911.0
+    ]
+   ],
+   "pass": true
+  },
+  "floor_contact_cm2_at_z1": {
+   "got": {
+    "foot_right": 1460.0,
+    "foot_left": 1130.0,
+    "foot_rear": 37.08
+   },
+   "printed": {
+    "foot_right": 1460.0,
+    "foot_left": 1130.0,
+    "foot_rear": 37.0
+   },
+   "pass": true
+  },
+  "table_and_stick": {
+   "table_bounds": [
+    [
+     -575.0,
+     -729.0,
+     785.0
+    ],
+    [
+     575.0,
+     1901.0,
+     885.0
+    ]
+   ],
+   "stick_bounds": [
+    [
+     -575.0,
+     -10.0,
+     865.0
+    ],
+    [
+     575.0,
+     10.0,
+     885.0
+    ]
+   ],
+   "pass": true
+  },
+  "no_interpenetration": {
+   "pass": true
+  },
+  "keepout_backgauge_drive_free": {
+   "box": [
+    [
+     -100.0,
+     236.0,
+     635.0
+    ],
+    [
+     100.0,
+     1901.0,
+     785.0
+    ]
+   ],
+   "bodies_inside_mm3": {},
+   "pass": true
+  },
+  "knife_passages_free": {
+   "bodies_inside_mm3": {
+    "window_conrod_right_cheek": {},
+    "bore_worm_shaft_support_right": {}
+   },
+   "pass": true
+  }
+ },
+ "pass": true,
+ "walls_mm": {
+  "foot_right": 84.25,
+  "foot_left": 74.79
+ }
+}

@@ -1,0 +1,1008 @@
+{
+ "meta": {
+  "part": "clamp",
+  "units": "mm",
+  "coordinates": "X along knife +right, Y +rear from cutting line, Z up, Z0 floor; glTF readers: scale 0.001 and turn -90 deg about X",
+  "spec": "spec/clamp.md",
+  "script": "parts/clamp/clamp.py",
+  "state": "at rest: clamp up (lowest surface Z 1015), knife up",
+  "groups": {
+   "beam": "translate along (0, 0, -1) by 0..130 (clamp down)",
+   "piston": "translate along (0, 0, +1) by the beam's travel (ratio 1:1, E)",
+   "gear": "turns about (0, -1, 0) through X 0, Z 1380, so its -X side, where the rack meshes, moves down with the beam; round, the solid does not change",
+   "pedal": "turns about (1, 0, 0) through (0, -571, 70) by 0..15 deg",
+   "fixed": "no motion"
+  },
+  "bodies": {
+   "clamp.false_plate": {
+    "component": "false plate",
+    "group": "beam",
+    "bounds": [
+     [
+      -575.0,
+      2.0,
+      1015.0
+     ],
+     [
+      575.0,
+      24.0,
+      1021.0
+     ]
+    ],
+    "volume_mm3": 151800.0
+   },
+   "clamp.front_block": {
+    "component": "front block",
+    "group": "beam",
+    "bounds": [
+     [
+      -575.0,
+      2.0,
+      1021.0
+     ],
+     [
+      575.0,
+      24.0,
+      1155.0
+     ]
+    ],
+    "volume_mm3": 3390200.0
+   },
+   "clamp.fingers": {
+    "component": "comb",
+    "group": "beam",
+    "bounds": [
+     [
+      -535.8,
+      24.0,
+      1021.0
+     ],
+     [
+      535.8,
+      84.0,
+      1155.0
+     ]
+    ],
+    "volume_mm3": 3859200.0
+   },
+   "clamp.bar": {
+    "component": "clamp bar",
+    "group": "beam",
+    "bounds": [
+     [
+      -690.0,
+      2.0,
+      1155.0
+     ],
+     [
+      690.0,
+      150.0,
+      1255.0
+     ]
+    ],
+    "volume_mm3": 20424000.0
+   },
+   "clamp.rack": {
+    "component": "brake rack",
+    "group": "beam",
+    "bounds": [
+     [
+      -60.0,
+      80.0,
+      1255.0
+     ],
+     [
+      -40.0,
+      120.0,
+      1535.0
+     ]
+    ],
+    "volume_mm3": 224000.0
+   },
+   "clamp.gear_8": {
+    "component": "gear 8 with shaft",
+    "group": "gear",
+    "bounds": [
+     [
+      -40.0,
+      90.0,
+      1340.0
+     ],
+     [
+      40.0,
+      150.0,
+      1420.0
+     ]
+    ],
+    "volume_mm3": 128598.5
+   },
+   "clamp.brake_y14": {
+    "component": "clamp brake Y14",
+    "group": "fixed",
+    "bounds": [
+     [
+      -80.0,
+      150.0,
+      1300.0
+     ],
+     [
+      80.0,
+      250.0,
+      1460.0
+     ]
+    ],
+    "volume_mm3": 2007391.0
+   },
+   "clamp.guide_left": {
+    "component": "guide",
+    "group": "fixed",
+    "bounds": [
+     [
+      -720.0,
+      50.0,
+      1000.0
+     ],
+     [
+      -690.0,
+      150.0,
+      1280.0
+     ]
+    ],
+    "volume_mm3": 840000.0
+   },
+   "clamp.guide_right": {
+    "component": "guide",
+    "group": "fixed",
+    "bounds": [
+     [
+      690.0,
+      50.0,
+      1000.0
+     ],
+     [
+      720.0,
+      150.0,
+      1280.0
+     ]
+    ],
+    "volume_mm3": 840000.0
+   },
+   "clamp.oa1_body": {
+    "component": "cylinder OA1 body",
+    "group": "fixed",
+    "bounds": [
+     [
+      450.0,
+      50.0,
+      400.0
+     ],
+     [
+      550.0,
+      150.0,
+      750.0
+     ]
+    ],
+    "volume_mm3": 1399684.8
+   },
+   "clamp.oa1_piston_rod": {
+    "component": "OA1 piston and rod",
+    "group": "piston",
+    "bounds": [
+     [
+      465.5,
+      65.5,
+      250.0
+     ],
+     [
+      534.5,
+      134.5,
+      450.0
+     ]
+    ],
+    "volume_mm3": 195312.9
+   },
+   "clamp.tank_oz1": {
+    "component": "tank OZ1",
+    "group": "fixed",
+    "bounds": [
+     [
+      735.0,
+      -70.0,
+      30.0
+     ],
+     [
+      1130.0,
+      145.0,
+      470.0
+     ]
+    ],
+    "volume_mm3": 37367000.0
+   },
+   "clamp.pump_op1": {
+    "component": "pump OP1",
+    "group": "fixed",
+    "bounds": [
+     [
+      870.0,
+      405.0,
+      125.0
+     ],
+     [
+      1010.0,
+      505.0,
+      225.0
+     ]
+    ],
+    "volume_mm3": 1097792.0
+   },
+   "clamp.valve_block_ov2": {
+    "component": "valve block OV2 with Y11",
+    "group": "fixed",
+    "bounds": [
+     [
+      241.0,
+      270.0,
+      390.0
+     ],
+     [
+      401.0,
+      370.0,
+      510.0
+     ]
+    ],
+    "volume_mm3": 1920000.0
+   },
+   "clamp.gauge_oz13": {
+    "component": "gauge OZ13",
+    "group": "fixed",
+    "bounds": [
+     [
+      907.0,
+      -434.0,
+      1347.0
+     ],
+     [
+      967.0,
+      -394.0,
+      1407.0
+     ]
+    ],
+    "volume_mm3": 112915.7
+   },
+   "clamp.knob_4": {
+    "component": "knob 4 (OV9)",
+    "group": "fixed",
+    "bounds": [
+     [
+      922.0,
+      -464.0,
+      1294.0
+     ],
+     [
+      952.0,
+      -394.0,
+      1324.0
+     ]
+    ],
+    "volume_mm3": 49400.6
+   },
+   "clamp.knob_3": {
+    "component": "knob 3 (OV8)",
+    "group": "fixed",
+    "bounds": [
+     [
+      917.0,
+      -464.0,
+      1224.0
+     ],
+     [
+      957.0,
+      -394.0,
+      1264.0
+     ]
+    ],
+    "volume_mm3": 87823.4
+   },
+   "clamp.pedal_5": {
+    "component": "pedal 5",
+    "group": "pedal",
+    "bounds": [
+     [
+      -150.0,
+      -611.0,
+      60.0
+     ],
+     [
+      150.0,
+      -571.0,
+      80.0
+     ]
+    ],
+    "volume_mm3": 240000.0
+   }
+  }
+ },
+ "anchors": {
+  "clamp.face": {
+   "xyz": [
+    0.0,
+    13.0,
+    1015.0
+   ],
+   "class": "T/E",
+   "error_mm": {
+    "z": 100.0,
+    "y": 2.0
+   },
+   "source": "P7 lift 130; FR table.top 885",
+   "motion": {
+    "kind": "trans",
+    "note": "lowest clamp surface (false-plate bottom) at rest; the beam group moves with it",
+    "axis": [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    "range": [
+     0.0,
+     130.0
+    ],
+    "unit": "mm"
+   }
+  },
+  "clamp.face.bottom": {
+   "xyz": [
+    0.0,
+    13.0,
+    885.0
+   ],
+   "class": "T/E",
+   "error_mm": {
+    "z": 100.0
+   },
+   "source": "P7",
+   "motion": {
+    "kind": "state",
+    "note": "on the table top with no pile; no end switch at the bottom, the clamp stops on the pile (block section 08)",
+    "at": 130.0,
+    "of": "clamp.face"
+   }
+  },
+  "joint.clamp_guides.left": {
+   "xyz": [
+    -720.0,
+    100.0,
+    1150.0
+   ],
+   "class": "E",
+   "error_mm": 60.0,
+   "source": "FR joint.clamp_guides.left; P24 провод штампа",
+   "motion": {
+    "kind": "fixed",
+    "note": "guide_left lies on this cheek face"
+   }
+  },
+  "joint.clamp_guides.right": {
+   "xyz": [
+    720.0,
+    100.0,
+    1150.0
+   ],
+   "class": "E",
+   "error_mm": 60.0,
+   "source": "FR joint.clamp_guides.right; P24",
+   "motion": {
+    "kind": "fixed",
+    "note": "guide_right lies on this cheek face"
+   }
+  },
+  "joint.M1.pump_end": {
+   "xyz": [
+    1010.0,
+    455.0,
+    175.0
+   ],
+   "class": "E",
+   "error_mm": 200.0,
+   "source": "KN joint.M1.pump_end; HL OP1, OM1",
+   "motion": {
+    "kind": "fixed",
+    "note": "pump OP1 flange on the left end of M1"
+   }
+  },
+  "interface.clamp.comb_interleave": {
+   "xyz": [
+    0.0,
+    55.0,
+    938.5
+   ],
+   "class": "P/E",
+   "error_mm": 20.0,
+   "source": "BG interface.clamp.comb_interleave; PH69",
+   "motion": {
+    "kind": "fixed",
+    "note": "clamp plates centred in the 28,4 gaps (X -527,8 + 36,4·k ± 8), 6,2 clear of each backgauge finger; above Z 991 only the bar (bottom Z 1025 at the clamp's bottom)",
+    "pitch": 36.4,
+    "finger_t": 16.0,
+    "n": 30.0
+   },
+   "zone": [
+    [
+     -550.0,
+     550.0
+    ],
+    [
+     25.0,
+     85.0
+    ],
+    [
+     886.0,
+     991.0
+    ]
+   ]
+  },
+  "sensor.S28": {
+   "xyz": [
+    -490.0,
+    13.0,
+    1021.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 80.0,
+    "y": 10.0,
+    "z": 100.0
+   },
+   "source": "F101 front view (X −488, left of centre); P46 XCK-A 110 \"выключатель пластины прижима\"; \"д. пресса с пластиной\" (sensor of the clamp with the plate; block section 10)",
+   "motion": {
+    "kind": "trans",
+    "note": "on the beam: actuation point of the mechanical switch on the false plate's top face (Z 1021, under the front block), closed when the plate is fitted; zone = pocket in clamp.front_block that moves with the beam, the room the beam offers for the switch body with its plunger down onto the plate (E: 40 x 22 x 80 is not the switch's size; the XCK-A body size is in none of the files, M7); z error ±100 absolute with the table top, 0..+40 relative to the plate; body: thread 5 (open item 5)",
+    "axis": [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    "range": [
+     0.0,
+     130.0
+    ],
+    "unit": "mm"
+   },
+   "zone": [
+    [
+     -510.0,
+     -470.0
+    ],
+    [
+     2.0,
+     24.0
+    ],
+    [
+     1021.0,
+     1101.0
+    ]
+   ]
+  },
+  "sensor.S30": {
+   "xyz": [
+    280.0,
+    150.0,
+    1250.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 80.0,
+    "y": 50.0,
+    "z": 100.0
+   },
+   "source": "F101 front view (X +282, right of centre); P46 XCK-A 102 \"выключатель положения прижима\"; P41 §8.3 (backgauge feeds only with the clamp in the upper position, switch 30)",
+   "motion": {
+    "kind": "fixed",
+    "note": "roller point on the bar's rear face (Y 150) 5 below its top edge at rest: closed only with the clamp up, open after about 5 of descent; housing behind it at Y > 150 (bracket not printed, M7); body: thread 5 (open item 5)"
+   }
+  },
+  "brake.Y14": {
+   "xyz": [
+    0.0,
+    200.0,
+    1380.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 50.0,
+    "y": 50.0,
+    "z": 100.0
+   },
+   "source": "P33; F101 plan (centre, rear edge of the frame band); P36 §7.4",
+   "motion": {
+    "kind": "fixed",
+    "note": "housing on the rear face of the frame wall that carries gear 8's shaft (its top on the crossbar's rear face); released when energized (P33), holds gear 8 and so the clamp"
+   }
+  },
+  "gear.8": {
+   "xyz": [
+    0.0,
+    100.0,
+    1380.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "P33 шестерня 8",
+   "motion": {
+    "kind": "rot",
+    "note": "about -Y, so that its -X side, where the rack meshes, moves down with the beam (r6, tester 2 r3); turns 130 / (π·80) of a turn as the rack moves 130",
+    "axis": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "pivot": [
+     0.0,
+     100.0,
+     1380.0
+    ],
+    "range": [
+     0.0,
+     186.2
+    ],
+    "unit": "deg"
+   }
+  },
+  "valve.Y11": {
+   "xyz": [
+    321.0,
+    320.0,
+    450.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 100.0,
+    "y": 150.0,
+    "z": 150.0
+   },
+   "source": "F101 plan (Y11, centre X ≈ 321 by the plan's own scale); HL OY11 EVJ 4132 in OV2; HS1; HS3",
+   "motion": {
+    "kind": "fixed",
+    "note": "main-clamp solenoid valve in valve block OV2: switched in state 3 (main clamp) [?], off in state 1 (idle) [?]"
+   }
+  },
+  "cylinder.OA1": {
+   "xyz": [
+    500.0,
+    100.0,
+    575.0
+   ],
+   "class": "T/E",
+   "error_mm": 300.0,
+   "source": "HC; HL",
+   "motion": {
+    "kind": "fixed",
+    "note": "body of OA1 (Ø70 x 130 inside)"
+   }
+  },
+  "piston.OA1": {
+   "xyz": [
+    500.0,
+    100.0,
+    250.0
+   ],
+   "class": "T/E",
+   "error_mm": 300.0,
+   "source": "HC; HS2; HS3; HS4",
+   "motion": {
+    "kind": "trans",
+    "note": "rod end; piston up in states 2-3 (beam down), driven down by the spring in state 4 (beam up); ratio 1:1 [E]",
+    "axis": [
+     0.0,
+     0.0,
+     1.0
+    ],
+    "range": [
+     0.0,
+     130.0
+    ],
+    "unit": "mm"
+   }
+  },
+  "pump.OP1": {
+   "xyz": [
+    940.0,
+    455.0,
+    175.0
+   ],
+   "class": "E",
+   "error_mm": 200.0,
+   "source": "HL OP1; KN",
+   "motion": {
+    "kind": "rot",
+    "note": "turns with M1",
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     940.0,
+     455.0,
+     175.0
+    ],
+    "range": [
+     0.0,
+     360.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "tank.OZ1": {
+   "xyz": [
+    932.5,
+    37.5,
+    250.0
+   ],
+   "class": "T/E",
+   "error_mm": 60.0,
+   "source": "P36 §7.2; HL OZ1; REQ",
+   "motion": {
+    "kind": "fixed",
+    "note": "filler opening in the front strip Y -129,8..-77 (kept free)"
+   }
+  },
+  "gauge.OZ13": {
+   "xyz": [
+    937.0,
+    -434.0,
+    1377.0
+   ],
+   "class": "P/E",
+   "error_mm": {
+    "x": 150.0,
+    "y": 20.0,
+    "z": 50.0
+   },
+   "source": "F101 front view (by its own scale); P8 [block]",
+   "motion": {
+    "kind": "fixed",
+    "note": "face of the 0-16 MPa gauge"
+   }
+  },
+  "knob.3": {
+   "xyz": [
+    937.0,
+    -464.0,
+    1244.0
+   ],
+   "class": "T/P/E",
+   "error_mm": {
+    "x": 150.0,
+    "y": 30.0,
+    "z": 50.0
+   },
+   "source": "P11 Ø40; P8 [block]; HC OV8 1~11 MPa; F101 front view",
+   "motion": {
+    "kind": "rot",
+    "note": "OV8 pressure setting, right = more",
+    "axis": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "pivot": [
+     937.0,
+     -464.0,
+     1244.0
+    ],
+    "range": [
+     0.0,
+     360.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "knob.4": {
+   "xyz": [
+    937.0,
+    -464.0,
+    1309.0
+   ],
+   "class": "T/P/E",
+   "error_mm": {
+    "x": 150.0,
+    "y": 30.0,
+    "z": 50.0
+   },
+   "source": "P11 Ø30; P8 [block]; F101 front view",
+   "motion": {
+    "kind": "rot",
+    "note": "OV9 gauge closed / on / deaerate",
+    "axis": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "pivot": [
+     937.0,
+     -464.0,
+     1309.0
+    ],
+    "range": [
+     0.0,
+     360.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "pedal.5": {
+   "xyz": [
+    0.0,
+    -591.0,
+    70.0
+   ],
+   "class": "D/T/E",
+   "error_mm": {
+    "x": 100.0,
+    "y": 40.0,
+    "z": 50.0
+   },
+   "source": "FR plan.pedal; P11 300x50; P10 [block]; HS2; HS4",
+   "motion": {
+    "kind": "rot",
+    "note": "pressed: state 2, the clamp descends at a fixed speed; released: state 4, it rises",
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     0.0,
+     -571.0,
+     70.0
+    ],
+    "range": [
+     0.0,
+     15.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "joint.passage.clamp_brake.crossbar": {
+   "xyz": [
+    -12.5,
+    110.0,
+    1475.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "P36 §7.4 (opening in the frame for bearing 16); F71; P33",
+   "motion": {
+    "kind": "fixed",
+    "note": "the rack and the top 5 of gear 8"
+   },
+   "passage": [
+    [
+     -70.0,
+     45.0
+    ],
+    [
+     70.0,
+     150.0
+    ],
+    [
+     1415.0,
+     1535.0
+    ]
+   ],
+   "cut_at": "assembly",
+   "cut_from": "frame.crossbar",
+   "mark": "frame passage, cut at assembly (DECISION 2)"
+  },
+  "clamp.pull_rod_right.top": {
+   "xyz": [
+    607.5,
+    100.0,
+    1155.0
+   ],
+   "class": "E",
+   "error_mm": 150.0,
+   "source": "OLD-I; OLD-II",
+   "motion": {
+    "kind": "trans",
+    "note": "top of the right pull rod on the bar's underside, moves with the beam (internal, not a joint with another part)",
+    "axis": [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    "range": [
+     0.0,
+     130.0
+    ],
+    "unit": "mm"
+   }
+  },
+  "clamp.pull_rod_left.top": {
+   "xyz": [
+    -665.0,
+    100.0,
+    1155.0
+   ],
+   "class": "E",
+   "error_mm": 150.0,
+   "source": "OLD-I; OLD-II",
+   "motion": {
+    "kind": "trans",
+    "note": "top of the left pull rod on the bar's underside, moves with the beam (internal)",
+    "axis": [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    "range": [
+     0.0,
+     130.0
+    ],
+    "unit": "mm"
+   }
+  },
+  "envelope.clamp.pull_rod_right": {
+   "xyz": [
+    607.5,
+    100.0,
+    777.5
+   ],
+   "class": "E",
+   "error_mm": 150.0,
+   "source": "OLD-I; OLD-II",
+   "motion": {
+    "kind": "fixed",
+    "note": "OLD variant МС 115, contents unknown; swept: holds the right pull rod at rest and at the bottom (rod top 1155 → 1025); in the gap between the table end (575) and the right support (639,5)",
+    "touches": "clamp.bar,envelope.clamp.levers_tie"
+   },
+   "min": [
+    580.0,
+    40.0,
+    400.0
+   ],
+   "max": [
+    635.0,
+    160.0,
+    1155.0
+   ],
+   "box_kind": "envelope"
+  },
+  "envelope.clamp.pull_rod_left": {
+   "xyz": [
+    -663.65,
+    100.0,
+    777.5
+   ],
+   "class": "E",
+   "error_mm": 150.0,
+   "source": "OLD-I; OLD-II",
+   "motion": {
+    "kind": "fixed",
+    "note": "OLD variant МС 115, contents unknown; swept as the right one; below Z 785 inside the hollow left support (cavity X -942,7..-637,3), up to the support's inner wall, where the tie's passage starts (r4: was -640, 2,7 short of it)",
+    "touches": "clamp.bar,joint.passage.clamp_tie.support_left"
+   },
+   "min": [
+    -690.0,
+    40.0,
+    400.0
+   ],
+   "max": [
+    -637.3,
+    160.0,
+    1155.0
+   ],
+   "box_kind": "envelope"
+  },
+  "envelope.clamp.levers_tie": {
+   "xyz": [
+    36.25,
+    100.0,
+    402.5
+   ],
+   "class": "E",
+   "error_mm": 150.0,
+   "source": "OLD-I; OLD-II; OLD-XI; P22",
+   "motion": {
+    "kind": "fixed",
+    "note": "OLD variant МС 115, contents unknown; existence of the eccentric pins of the pressing mechanism (прессовочный механизм): this variant, P22 (T); geometry: OLD only (E); swept: levers 7 on eccentric pins, tie rod, OA1 rod end (Z 250 → 380); below the backgauge corridor (Z 661)",
+    "touches": "clamp.oa1_piston_rod,envelope.clamp.pull_rod_right,joint.passage.clamp_tie.support_left"
+   },
+   "min": [
+    -562.5,
+    40.0,
+    150.0
+   ],
+   "max": [
+    635.0,
+    160.0,
+    655.0
+   ],
+   "box_kind": "envelope"
+  },
+  "joint.passage.clamp_tie.support_left": {
+   "xyz": [
+    -599.9,
+    100.0,
+    577.5
+   ],
+   "class": "E",
+   "error_mm": 150.0,
+   "source": "OLD-I (tie between the levers, levers just below the table: Z ≈ 640 by Fig. I proportion)",
+   "motion": {
+    "kind": "fixed",
+    "note": "the tie from the left lever (in the left support) to levers_tie crosses the support's inner wall"
+   },
+   "passage": [
+    [
+     -637.3,
+     -562.5
+    ],
+    [
+     40.0,
+     160.0
+    ],
+    [
+     500.0,
+     655.0
+    ]
+   ],
+   "cut_at": "assembly",
+   "cut_from": "frame.support_left",
+   "mark": "frame passage, cut at assembly (DECISION 2)"
+  },
+  "envelope.clamp.pedal_link": {
+   "xyz": [
+    125.5,
+    -120.5,
+    75.0
+   ],
+   "class": "E",
+   "error_mm": 150.0,
+   "source": "HL (OV2 = OY11 + pedal valve); F101 plan; FR plan.pedal",
+   "motion": {
+    "kind": "fixed",
+    "note": "contents unknown; swept over the pedal's travel: floor run of the link from pedal 5, under frame.base_front, to below OV2 (X up to OV2's right face 401; r4: was 500, OV2's r2 place)",
+    "touches": "clamp.pedal_5,envelope.clamp.pedal_link_rise"
+   },
+   "min": [
+    -150.0,
+    -611.0,
+    0.0
+   ],
+   "max": [
+    401.0,
+    370.0,
+    150.0
+   ],
+   "box_kind": "envelope"
+  },
+  "envelope.clamp.pedal_link_rise": {
+   "xyz": [
+    321.0,
+    320.0,
+    270.0
+   ],
+   "class": "E",
+   "error_mm": 150.0,
+   "source": "HL (OV2 = OY11 + pedal valve); F101 plan",
+   "motion": {
+    "kind": "fixed",
+    "note": "contents unknown; rise of the link (r4, critic g5) from the floor run up to the pedal valve at OV2's bottom face (Z 390), in OV2's footprint behind the base",
+    "touches": "envelope.clamp.pedal_link,clamp.valve_block_ov2"
+   },
+   "min": [
+    241.0,
+    270.0,
+    150.0
+   ],
+   "max": [
+    401.0,
+    370.0,
+    390.0
+   ],
+   "box_kind": "envelope"
+  }
+ }
+}

@@ -1,0 +1,35 @@
+# Only the results the workflow made are committed; everything else in this
+# folder stays local (source photos and documents, preparatory data, the
+# workflow's own static_dynamic_memory). Each part adds its own result folder.
+/*
+!/.gitignore
+!/stage_1_mechanics/
+
+# Never commit photos or documents
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.webp
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.heic
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.mht
+*.mhtml
+# PNG only for the model renders made by the part scripts
+*.png
+!/stage_1_mechanics/parts/*/renders/*.png
+
+# Generated test copies, caches and logs (the scripts make them again)
+/stage_1_mechanics/parts/*/mutants/
+/stage_1_mechanics/parts/safety_sensors/closed_checks_copy/
+__pycache__/
+*.pyc
+*.log

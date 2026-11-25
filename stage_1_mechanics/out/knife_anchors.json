@@ -1,0 +1,635 @@
+{
+ "meta": {
+  "part": "knife",
+  "units": "mm",
+  "coordinates": "X along knife +right, Y +rear from cutting line, Z up, Z0 floor",
+  "spec": "spec/knife.md",
+  "script": "parts/knife/knife.py",
+  "state": "at rest: knife up, crank at top dead centre"
+ },
+ "anchors": {
+  "motor.M1": {
+   "xyz": [
+    1205.0,
+    455.0,
+    175.0
+   ],
+   "class": "E",
+   "error_mm": 200.0,
+   "source": "P44; F43; F101",
+   "motion": {
+    "kind": "rot",
+    "note": "rotor, continuous while M1 runs; direction not known (M8); pump end = joint.M1.pump_end",
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     1205.0,
+     455.0,
+     175.0
+    ],
+    "range": [
+     0.0,
+     360.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "joint.M1.pump_end": {
+   "xyz": [
+    1010.0,
+    455.0,
+    175.0
+   ],
+   "class": "E",
+   "error_mm": 200.0,
+   "source": "P44 (M1 drives knife and pump); clamp thread mounts the pump here",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   }
+  },
+  "clutch.Y10": {
+   "xyz": [
+    1355.0,
+    40.0,
+    629.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "F61; F101; conflict 6",
+   "motion": {
+    "kind": "rot",
+    "note": "turns with shaft 14 while engaged, continuous; direction not known (M8)",
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     1355.0,
+     40.0,
+     629.0
+    ],
+    "range": [
+     0.0,
+     360.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "magnet.Y01": {
+   "xyz": [
+    935.0,
+    252.5,
+    912.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "F62; F31; conflict 6",
+   "motion": {
+    "kind": "trans",
+    "note": "plunger pulls pin 1 out of the slot at cut start; stroke E ±10 (M10)",
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "range": [
+     0.0,
+     15.0
+    ],
+    "unit": "mm"
+   }
+  },
+  "sensor.SQ1": {
+   "xyz": [
+    905.0,
+    345.0,
+    912.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "P44 type BZ-2RQ 181M-A2, Honeywell; F62 view P and section: at the rear end of Y01, one behind the other along the pin axis, beside the flag on y01_tail; modelled at the flag's station with pin 1 IN; which sensor reads which state (SQ1 in / SQ2 out, the reverse, or a redundant pair reading one state) is not printed (OM pp. 28-30: P28, F62, P30; P40 §8.2.2: Y01's pull is signalled by the change of state of SQ1 and SQ2, which fits both readings; W568 \"SNÍMAČE ZAJIŠTĚNÍ NOŽE\" + red ink \"(на оси стопора)\"; W554 l.3 (another set) \"BEZDOTYK. SNÍMAČ NA ELEKTROMAG. Y01\"); modelled as two stations from view P's spacing along the axis, E [?] (M10)",
+   "motion": {
+    "kind": "fixed",
+    "note": "reads the flag on y01_tail"
+   }
+  },
+  "sensor.SQ2": {
+   "xyz": [
+    905.0,
+    360.0,
+    912.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "P44 type BZ-2RQ 181M-A2, Honeywell; F62 view P and section; modelled at the flag's station with pin 1 OUT, one pin stroke (15) behind SQ1; which sensor reads which state is not printed (see sensor.SQ1), E [?] (M10)",
+   "motion": {
+    "kind": "fixed",
+    "note": "reads the flag on y01_tail"
+   }
+  },
+  "sensor.S12": {
+   "xyz": [
+    1009.05,
+    145.0,
+    743.84
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "P44 type BZ-2RQ 181M-A2, Honeywell; F101 front view (right, below table level; one leader for S12-S14, none in the plan); W568; P30; P40; on r 90 at the bottom crank angle −34,64° [?] (conflict 7), behind the cam disc at the shaft's far end (conflict 6)",
+   "motion": {
+    "kind": "fixed",
+    "note": "reads the vane on cam_disc, which turns with crank.centre; function: knife position, a badly set S12 vane is one printed cause of the knife stopping past its upper position (P23 5.1.8; read: its vane sets the top stop) and it changes state at the bottom (P40 §8.2.2) [?]; modelled switching angle -34,64° (E [?], conflict 7)"
+   }
+  },
+  "sensor.S13": {
+   "xyz": [
+    1019.76,
+    145.0,
+    764.75
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "P44 type BZ-2RQ 181M-A2, Honeywell; W568; P40; next to S12 on r 90 at −19,64°, reached 15° after the bottom in the modelled turn, so that S12 switches first as sets 552 and 554 print (W552 note 1, W554 note 116: \"VE SMYSLU OTÁČENÍ VAČKY SPÍNÁ DŘÍVE S12\"; other sets with two cam sensors, where S13 is the top sensor: weak transfer) [?] (conflict 7)",
+   "motion": {
+    "kind": "fixed",
+    "note": "reads the vane on cam_disc, which turns with crank.centre; function: changes state at the bottom with S12 (P40 §8.2.2); modelled switching angle -19,64°, 15° after S12 (set 568 prints no order; S12 first after W552, W554) (E [?], conflict 7)"
+   }
+  },
+  "sensor.S14": {
+   "xyz": [
+    878.4,
+    145.0,
+    864.98
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "P44 type BZ-2RQ 181M-A2, Honeywell; W568; P42 §8.5; on r 90 at the TDC crank angle 128,97° [?] (conflict 7)",
+   "motion": {
+    "kind": "fixed",
+    "note": "reads the vane on cam_disc, which turns with crank.centre; function: knife at its upper position, the BMR input that keeps the clamp brake released there (P42 §8.5); modelled switching angle 128,97° = TDC (E [?], conflict 7)"
+   }
+  },
+  "sensor.S19": {
+   "xyz": [
+    1410.0,
+    200.0,
+    420.0
+   ],
+   "class": "E",
+   "error_mm": 200.0,
+   "source": "W568 \"SPÍNAČ SPOJKY ŘEZU (PRO VÝMĚNU NOŽE)\" + red ink \"(у маховика)\"; P46 (\"выключатель муфты реза Y10 для замены ножа\"); F101 (low, right)",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   }
+  },
+  "sensor.S5": {
+   "xyz": [
+    1410.0,
+    200.0,
+    350.0
+   ],
+   "class": "E",
+   "error_mm": 200.0,
+   "source": "W568 \"KONCOVÝ SPÍNAČ - BLOKOVÁNÍ KRYTU ŘEMENICE\" + red ink \"(у маховика)\"; P44 (выключатель блокировки двигателя M1); F101",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   }
+  },
+  "joint.knife_guides.left": {
+   "xyz": [
+    -720.0,
+    0.0,
+    1150.0
+   ],
+   "class": "E",
+   "error_mm": 60.0,
+   "source": "FR (same point); guides 12/13 on the cheek face",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   }
+  },
+  "joint.knife_guides.right": {
+   "xyz": [
+    720.0,
+    0.0,
+    1150.0
+   ],
+   "class": "E",
+   "error_mm": 60.0,
+   "source": "FR (same point)",
+   "motion": {
+    "kind": "fixed",
+    "note": ""
+   }
+  },
+  "joint.window.conrod.right_cheek": {
+   "xyz": [
+    740.0,
+    -52.0,
+    990.0
+   ],
+   "class": "E",
+   "error_mm": 60.0,
+   "source": "rod sweep crosses the right cheek X 720…760 at Y −77…−27, Z 870…1110",
+   "motion": {
+    "kind": "fixed",
+    "note": "the frame must cut this window and name the joint"
+   },
+   "passage": [
+    [
+     720.0,
+     760.0
+    ],
+    [
+     -77.0,
+     -27.0
+    ],
+    [
+     870.0,
+     1110.0
+    ]
+   ]
+  },
+  "joint.bore.worm_shaft.support_right": {
+   "xyz": [
+    1182.4,
+    40.0,
+    629.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "worm shaft 14 Ø50 through the right support's right wall (frame X 1140,3…1224,5 at the worm line Y 15…65, Z 604…654)",
+   "motion": {
+    "kind": "fixed",
+    "note": "the frame must bore Ø50 and name the joint"
+   },
+   "passage": [
+    [
+     1135.0,
+     1230.0
+    ],
+    [
+     10.0,
+     70.0
+    ],
+    [
+     599.0,
+     659.0
+    ]
+   ]
+  },
+  "space.knife.drive_unit": {
+   "xyz": [
+    962.65,
+    36.5,
+    680.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "P36; HL; F62; P19; conflict 6: extent of the knife bodies in frame.cavity.right_support at rest and over the stroke (check_spec s.8)",
+   "motion": {
+    "kind": "fixed",
+    "note": "room the knife takes in the right support's top rear corner; the hydraulic box (clamp thread) must leave it free"
+   },
+   "min": [
+    785.0,
+    -77.0,
+    575.0
+   ],
+   "max": [
+    1140.3,
+    150.0,
+    785.0
+   ]
+  },
+  "knife.edge.rest": {
+   "xyz": [
+    0.0,
+    0.0,
+    1034.85
+   ],
+   "class": "E",
+   "error_mm": 30.0,
+   "source": "kinematics",
+   "motion": {
+    "kind": "trans",
+    "note": "knife and holder from rest to the bottom (straight vertical path, E, conflict 4)",
+    "axis": [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    "range": [
+     0.0,
+     150.0
+    ],
+    "unit": "mm"
+   }
+  },
+  "knife.edge.bottom": {
+   "xyz": [
+    0.0,
+    0.0,
+    884.85
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "stick top Z 885 (FR, E ±100) − 0,15 (P23: 0,1-0,2 into the stick, T ±0,05)",
+   "motion": {
+    "kind": "state",
+    "note": "end of the stroke",
+    "at": 150.0,
+    "of": "knife.edge.rest"
+   }
+  },
+  "holder.pin.rest": {
+   "xyz": [
+    660.0,
+    -52.0,
+    1135.0
+   ],
+   "class": "E",
+   "error_mm": 40.0,
+   "source": "kinematics",
+   "motion": {
+    "kind": "trans",
+    "note": "moves with the holder",
+    "axis": [
+     0.0,
+     0.0,
+     -1.0
+    ],
+    "range": [
+     0.0,
+     150.0
+    ],
+    "unit": "mm"
+   }
+  },
+  "conrod.mid.rest": {
+   "xyz": [
+    781.3,
+    -52.0,
+    985.03
+   ],
+   "class": "E",
+   "error_mm": 50.0,
+   "source": "kinematics: midpoint of the rod at rest",
+   "motion": {
+    "kind": "planar",
+    "note": "range = the rod's angle to the horizontal in its plane over one crank turn (deg); big end turns with the crank pin, small end moves with the holder pin",
+    "normal": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "range": [
+     32.2,
+     54.6
+    ],
+    "unit": "deg",
+    "plane": -52.0,
+    "ends": [
+     "crank.pin.tdc",
+     "holder.pin.rest"
+    ]
+   }
+  },
+  "crank.centre": {
+   "xyz": [
+    935.0,
+    -52.0,
+    795.0
+   ],
+   "class": "E",
+   "error_mm": 50.0,
+   "source": "kinematics",
+   "motion": {
+    "kind": "rot",
+    "note": "one turn per cut, counter-clockwise seen from the front (E: cut over 196,4°, return over 163,6°; drawn cues P10 Fig. 2.2 with P28, and P19, both [?]; M9); carries worm wheel 3, flange 2 with the slot for pin 1, crank_shaft, crank_disc with crank_pin, and cam_disc with the S12-S14 vane",
+    "axis": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "pivot": [
+     935.0,
+     -52.0,
+     795.0
+    ],
+    "range": [
+     0.0,
+     360.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "crank.pin.tdc": {
+   "xyz": [
+    902.6,
+    -52.0,
+    835.06
+   ],
+   "class": "E",
+   "error_mm": 50.0,
+   "source": "kinematics (rest = TDC, PL 2.1)",
+   "motion": {
+    "kind": "rot",
+    "note": "circle r 51,52 about crank.centre, 0 = TDC = rest",
+    "axis": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "pivot": [
+     935.0,
+     -52.0,
+     795.0
+    ],
+    "range": [
+     0.0,
+     360.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "crank.pin.bottom": {
+   "xyz": [
+    977.39,
+    -52.0,
+    765.71
+   ],
+   "class": "E",
+   "error_mm": 50.0,
+   "source": "kinematics",
+   "motion": {
+    "kind": "state",
+    "note": "BDC (bottom dead centre)",
+    "at": 196.39,
+    "of": "crank.pin.tdc"
+   }
+  },
+  "worm.axis": {
+   "xyz": [
+    935.0,
+    40.0,
+    629.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "P19; F62 (worm in the wheel's mid-plane)",
+   "motion": {
+    "kind": "rot",
+    "note": "shaft 14, continuous while Y10 is engaged; turns per cut = ratio ≈ 10 (E, M4); direction not known (M8)",
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     935.0,
+     40.0,
+     629.0
+    ],
+    "range": [
+     0.0,
+     360.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "flywheel.centre": {
+   "xyz": [
+    1450.0,
+    40.0,
+    629.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "F43; conflicts 2 and 6; PH3",
+   "motion": {
+    "kind": "rot",
+    "note": "continuous while M1 runs; direction not known (M8)",
+    "axis": [
+     1.0,
+     0.0,
+     0.0
+    ],
+    "pivot": [
+     1450.0,
+     40.0,
+     629.0
+    ],
+    "range": [
+     0.0,
+     360.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "lock.pin_1": {
+   "xyz": [
+    935.0,
+    132.5,
+    912.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "F62; conflict 6",
+   "motion": {
+    "kind": "trans",
+    "note": "Y01 pulls it out of the slot of flange 2 at cut start, spring 4 pushes it back at TDC; y01_tail with the flag moves with it; stroke E ±10 (M10)",
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "range": [
+     0.0,
+     15.0
+    ],
+    "unit": "mm"
+   }
+  },
+  "lock.stop_5": {
+   "xyz": [
+    935.0,
+    85.0,
+    950.0
+   ],
+   "class": "E",
+   "error_mm": 100.0,
+   "source": "F62 emergency stop 5 (аварийный упор; CZ havarijní narážka, PL 20.6: 4 spare [?]) at flange 2; place E (M10)",
+   "motion": {
+    "kind": "fixed",
+    "note": "deforms on overrun"
+   }
+  },
+  "eccentric_pin.left": {
+   "xyz": [
+    -712.25,
+    -54.0,
+    1265.0
+   ],
+   "class": "E",
+   "error_mm": 40.0,
+   "source": "P8; P11 item 7; F71 pos 15",
+   "motion": {
+    "kind": "rot",
+    "note": "turned by hand with lever 7, then locked; lever turned right (arrow): knife closer to the cutting stick (марзан), left: away (P11 item 7); the mechanism (holder pivot or knife height in the holder), axis and throw not shown (E, M6)",
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "pivot": [
+     -712.25,
+     -54.0,
+     1265.0
+    ],
+    "range": [
+     -90.0,
+     90.0
+    ],
+    "unit": "deg"
+   }
+  },
+  "eccentric_pin.right": {
+   "xyz": [
+    712.25,
+    -54.0,
+    1265.0
+   ],
+   "class": "E",
+   "error_mm": 40.0,
+   "source": "P8; P11 item 7; F71 pos 15",
+   "motion": {
+    "kind": "rot",
+    "note": "as left (P11 item 7: lever turned right, knife closer to the cutting stick)",
+    "axis": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "pivot": [
+     712.25,
+     -54.0,
+     1265.0
+    ],
+    "range": [
+     -90.0,
+     90.0
+    ],
+    "unit": "deg"
+   }
+  }
+ }
+}

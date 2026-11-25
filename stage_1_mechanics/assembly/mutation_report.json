@@ -1,0 +1,1055 @@
+{
+ "summary": "36/36 mutants caught; 10/10 clause cases as expected; base copy clean: True",
+ "base_clean": true,
+ "mutants": [
+  {
+   "mutant": "MB1",
+   "targets": [
+    "B1"
+   ],
+   "planted": "housing GLB: node housing.cabinet renamed to belt_pulley_cover (two nodes, one name)",
+   "files_changed": [
+    "out\\housing.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "B1": [
+     "loaded 124 bodies: frame 14, knife 32, clamp 18, backgauge 33, housing 9, safety_sensors 18; each part's GLB JSON names the same mesh nodes, each once; housing: file names 10 mesh nodes, twice: ['belt_pulley_cover'], loa"
+    ]
+   },
+   "other_failing_checks": [
+    "1",
+    "7"
+   ],
+   "seconds": 8.9
+  },
+  {
+   "mutant": "MB2",
+   "targets": [
+    "B2"
+   ],
+   "planted": "housing GLB: last triangle of housing.instrument_panel dropped (an open body)",
+   "files_changed": [
+    "out\\housing.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "B2": [
+     "every body is a closed solid with volume > 0 (manifold3d): 124/125; not closed: ['housing.instrument_panel']"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 0.1
+  },
+  {
+   "mutant": "MB3",
+   "targets": [
+    "B3"
+   ],
+   "planted": "assembly GLB writer shifts one body by +1 mm X before export (writer fault)",
+   "files_changed": [
+    "(writer fault)"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "B3": [
+     "out/assembly.glb: 125 nodes, each equal to its part body (bounds 0,01 mm, volume 0,5 mm3; frame bodies after the cuts); differ: ['backgauge.M2']"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.4
+  },
+  {
+   "mutant": "MD2a",
+   "targets": [
+    "D2",
+    "8"
+   ],
+   "planted": "clamp anchors: joint.passage.clamp_brake.crossbar without cut_at (uncut passage)",
+   "files_changed": [
+    "out\\clamp_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "D2": [
+     "expected the 4 passages of DECISION 2 (2 clamp, 2 backgauge), found 3"
+    ],
+    "8": [
+     "at rest, 89 cross-part body pairs with touching boxes intersected (manifold3d); 4 with volume > 0.01 mm3, 2 not inside a joint box or pocket; frame.crossbar x clamp.gear_8 2590.6 mm3 at [[-19.3, 90.0, 1415.0], [19.3, 110"
+    ]
+   },
+   "other_failing_checks": [
+    "9"
+   ],
+   "seconds": 8.8
+  },
+  {
+   "mutant": "MD2b",
+   "targets": [
+    "D2"
+   ],
+   "planted": "backgauge anchors: passage box of joint.slot.front_extension 1000 mm up (cuts no frame)",
+   "files_changed": [
+    "out\\backgauge_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "D2": [
+     "passage joint.slot.front_extension (backgauge): box x [-20.0, 20.0] y [235.0, 420.0] z [1785.0, 1885.0] cut from frame.table: removed 0.0 mm3, frame material left in it 0.000 mm3"
+    ]
+   },
+   "other_failing_checks": [
+    "9"
+   ],
+   "seconds": 8.8
+  },
+  {
+   "mutant": "M1",
+   "targets": [
+    "1"
+   ],
+   "planted": "housing GLB: right-most body housing.belt_pulley_cover moved +60 X",
+   "files_changed": [
+    "out\\housing.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "1": [
+     "overall X right end 1613.0 vs 1553 (D) +-10"
+    ]
+   },
+   "other_failing_checks": [
+    "7"
+   ],
+   "seconds": 9.0
+  },
+  {
+   "mutant": "M1b",
+   "targets": [
+    "1~-1353.0 (housing.left_side_panel_rear) vs body line -1250"
+   ],
+   "planted": "housing GLB: housing.left_side_panel_rear moved -100 X (left end without the cabinet -1253.0 -> -1353.0; the cabinet stays the left-most body, so the left-end line stays OPEN)",
+   "files_changed": [
+    "out\\housing.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "1~-1353.0 (housing.left_side_panel_rear) vs body line -1250": [
+     "left end without the cabinet and its 4 devices -1353.0 (housing.left_side_panel_rear) vs body line -1250 (D) +-10; option A left end -1353.0 vs -1307 (D) +-10; built option B"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.5
+  },
+  {
+   "mutant": "M2",
+   "targets": [
+    "2"
+   ],
+   "planted": "frame anchors: table.top Z +20 (body unchanged)",
+   "files_changed": [
+    "out\\frame_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "2": [
+     "table top Z 905.0 (anchor table.top), frame.table top 885.0; target 885 E +-100 (OM p.19 elevation 20261115_010448, error 100; W 900); estimated, on the tape-measure list (table.top: E +-100)"
+    ]
+   },
+   "other_failing_checks": [
+    "4"
+   ],
+   "seconds": 8.5
+  },
+  {
+   "mutant": "M2b",
+   "targets": [
+    "2~table top Z 1005.0 (anchor table.top), frame.table top 1005.0"
+   ],
+   "planted": "frame GLB + anchors: frame.table body and table.top anchor both +120 Z (only the 885 +-100 band breaks)",
+   "files_changed": [
+    "out\\frame.glb",
+    "out\\frame_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "2~table top Z 1005.0 (anchor table.top), frame.table top 1005.0": [
+     "table top Z 1005.0 (anchor table.top), frame.table top 1005.0; target 885 E +-100 (OM p.19 elevation 20261115_010448, error 100; W 900); estimated, on the tape-measure list (table.top: E +-100)"
+    ]
+   },
+   "other_failing_checks": [
+    "4",
+    "8",
+    "9",
+    "D2"
+   ],
+   "seconds": 10.4
+  },
+  {
+   "mutant": "M3",
+   "targets": [
+    "3"
+   ],
+   "planted": "knife GLB: knife.knife scaled 0,8 along X about its centre (1056 < 1150)",
+   "files_changed": [
+    "out\\knife.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "3": [
+     "table X -575.0..575.0 = 1150.0 (T 1150) +-10, Y -729.0..1901.0 = 2630.0 (D 2630) +-10; knife length 1056.0 >= 1150 (T cutting width; the knife's own size is W 1320, see the open item on estimated values)"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.4
+  },
+  {
+   "mutant": "M3b",
+   "targets": [
+    "3~= 1127.0 (T 1150)"
+   ],
+   "planted": "frame GLB: frame.table scaled 0,98 along X about its centre (1127.0 < 1140)",
+   "files_changed": [
+    "out\\frame.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "3~= 1127.0 (T 1150)": [
+     "table X -563.5..563.5 = 1127.0 (T 1150) +-10, Y -729.0..1901.0 = 2630.0 (D 2630) +-10; knife length 1320.0 >= 1150 (T cutting width; the knife's own size is W 1320, see the open item on estimated values)"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.4
+  },
+  {
+   "mutant": "M4",
+   "targets": [
+    "4"
+   ],
+   "planted": "knife anchors: knife.edge.rest Z -20 (edge 130 - 20 above the table)",
+   "files_changed": [
+    "out\\knife_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "4": [
+     "clamp face at the top Z 1015.0 (anchor clamp.face: T/E z +-100, y +-2), lowest beam body 1015.0 (= anchor +-1): 130.0 above the table (T 130) +-10, the table top being table.top: E +-100; knife edge at rest 1014.85 (knif"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 10.5
+  },
+  {
+   "mutant": "M4b",
+   "targets": [
+    "4~: 110.0 above the table (T 130)"
+   ],
+   "planted": "clamp GLB + anchors: clamp.face anchor and the clamp beam bodies (clamp.false_plate, clamp.front_block, clamp.fingers, clamp.bar, clamp.rack) -20 Z together (face 110 above the table, beam bottom still = face)",
+   "files_changed": [
+    "out\\clamp.glb",
+    "out\\clamp_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "4~: 110.0 above the table (T 130)": [
+     "clamp face at the top Z 995.0 (anchor clamp.face: T/E z +-100, y +-2), lowest beam body 995.0 (= anchor +-1): 110.0 above the table (T 130) +-10, the table top being table.top: E +-100; knife edge at rest 1034.85 (knife."
+    ]
+   },
+   "other_failing_checks": [
+    "7",
+    "9"
+   ],
+   "seconds": 11.0
+  },
+  {
+   "mutant": "M5",
+   "targets": [
+    "5"
+   ],
+   "planted": "backgauge anchors: backgauge.face range 0..1100 (front end Y 50)",
+   "files_changed": [
+    "out\\backgauge_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "5": [
+     "backgauge face Y 50.0..1150.0 (anchor backgauge.face: T/E y +-10, z +-100, range [0.0, 1100.0]); comb front at rest 1150.0 (= face +-1); target 25..1150 (T; certificate 1160) +-10 at each end"
+    ]
+   },
+   "other_failing_checks": [
+    "V"
+   ],
+   "seconds": 10.3
+  },
+  {
+   "mutant": "M6",
+   "targets": [
+    "6"
+   ],
+   "planted": "knife anchors: crank.pin.tdc 1 mm further from crank.centre (crank radius +1)",
+   "files_changed": [
+    "out\\knife_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "6": [
+     "clamp stroke 130.0 (T 130) +-10 (range of clamp.face: T/E z +-100, y +-2); knife stroke from the crank model 153.55 (the model built from crank.centre: E +-50, crank.pin.tdc: E +-50, holder.pin.rest: E +-40; anchor range"
+    ]
+   },
+   "other_failing_checks": [
+    "V"
+   ],
+   "seconds": 9.6
+  },
+  {
+   "mutant": "M6b",
+   "targets": [
+    "6~clamp stroke 115.0 (T 130)"
+   ],
+   "planted": "clamp anchors: clamp.face motion range 0..115 (clamp stroke 115)",
+   "files_changed": [
+    "out\\clamp_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "6~clamp stroke 115.0 (T 130)": [
+     "clamp stroke 115.0 (T 130) +-10 (range of clamp.face: T/E z +-100, y +-2); knife stroke from the crank model 150.01 (the model built from crank.centre: E +-50, crank.pin.tdc: E +-50, holder.pin.rest: E +-40; anchor range"
+    ]
+   },
+   "other_failing_checks": [
+    "V"
+   ],
+   "seconds": 9.6
+  },
+  {
+   "mutant": "M7",
+   "targets": [
+    "7"
+   ],
+   "planted": "backgauge GLB: left-most body backgauge.pusher_body moved -5 X",
+   "files_changed": [
+    "out\\backgauge.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "7": [
+     "backgauge: GLB X -555.0..550.0 Y -725.0..1880.0 Z 460.0..991.0 vs spec (OUTER block) X -550.0..550.0 Y -725.0..1880.0 Z 460.0..991.0: max deviation 5.00 (+-1)"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 9.6
+  },
+  {
+   "mutant": "M8",
+   "targets": [
+    "8"
+   ],
+   "planted": "safety_sensors GLB: safety_sensors.SQ2 moved into frame.table (centre X 300, Y 586, Z 835)",
+   "files_changed": [
+    "out\\safety_sensors.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "8": [
+     "at rest, 88 cross-part body pairs with touching boxes intersected (manifold3d); 3 with volume > 0.01 mm3, 1 not inside a joint box or pocket; frame.table x safety_sensors.SQ2 6900.0 mm3 at [[287.5, 580.2, 823.0], [312.5,"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 9.6
+  },
+  {
+   "mutant": "M8e",
+   "targets": [
+    "8e"
+   ],
+   "planted": "clamp anchors: envelope.clamp.pedal_link box moved into frame.table",
+   "files_changed": [
+    "out\\clamp_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "8e": [
+     "7 envelope / corridor boxes (envelope.clamp.pull_rod_right, envelope.clamp.pull_rod_left, envelope.clamp.levers_tie, envelope.clamp.pedal_link, envelope.clamp.pedal_link_rise, corridor.front_table_centre, corridor.base_c"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 9.8
+  },
+  {
+   "mutant": "M9a",
+   "targets": [
+    "9:knife turn"
+   ],
+   "planted": "safety_sensors GLB: safety_sensors.SQ1 shrunk to 8 mm, under the knife edge (X 300, Y -6.0, Z 959.9)",
+   "files_changed": [
+    "out\\safety_sensors.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "9:knife turn": [
+     "knife turn, clamp up, backgauge at rest: 180 states, moving 5 bodies; 1 colliding pairs; knife.knife x safety_sensors.SQ1 226.1 mm3 at crank +118 deg (knife down 97.8), clamp up, backgauge at rest [[296.0, -7.8, 956.1], ",
+     "knife turn, clamp up, backgauge at the front: 180 states, moving 5 bodies; 1 colliding pairs; knife.knife x safety_sensors.SQ1 226.1 mm3 at crank +118 deg (knife down 97.8), clamp up, backgauge at the front [[296.0, -7.8",
+     "knife turn, clamp down, backgauge at rest: 180 states, moving 5 bodies; 1 colliding pairs; knife.knife x safety_sensors.SQ1 226.1 mm3 at crank +118 deg (knife down 97.8), clamp down, backgauge at rest [[296.0, -7.8, 956.",
+     "knife turn, clamp down, backgauge at the front: 180 states, moving 5 bodies; 1 colliding pairs; knife.knife x safety_sensors.SQ1 226.1 mm3 at crank +118 deg (knife down 97.8), clamp down, backgauge at the front [[296.0, "
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 9.7
+  },
+  {
+   "mutant": "M9b",
+   "targets": [
+    "9:backgauge travel"
+   ],
+   "planted": "safety_sensors GLB: safety_sensors.S11 shrunk to 8 mm on the table in the pusher's path (X 400, Y 600, Z 940)",
+   "files_changed": [
+    "out\\safety_sensors.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "9:backgauge travel": [
+     "backgauge travel: 226 states, moving 9 bodies; 3 colliding pairs; backgauge.comb_fingers x safety_sensors.S11 131.3 mm3 at face Y 595 [[396.4, 598.7, 936.0], [404.0, 601.3, 944.0]]; backgauge.comb_strip x safety_sensors."
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 9.7
+  },
+  {
+   "mutant": "M9c",
+   "targets": [
+    "9:clamp stroke, backgauge at rest"
+   ],
+   "planted": "safety_sensors GLB: safety_sensors.S10 shrunk to 8 mm under clamp.false_plate (X 300, Y 13.0, Z 950)",
+   "files_changed": [
+    "out\\safety_sensors.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "9:clamp stroke, backgauge at rest": [
+     "clamp stroke, backgauge at rest: 27 states, moving 7 bodies; 2 colliding pairs; clamp.false_plate x safety_sensors.S10 88.0 mm3 at clamp down 70, backgauge at rest [[296.0, 11.7, 946.0], [304.0, 14.3, 951.0]]; clamp.fron"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 9.6
+  },
+  {
+   "mutant": "M9x",
+   "targets": [
+    "9x:handwheel push-in"
+   ],
+   "planted": "safety_sensors GLB: safety_sensors.S12 shrunk to 4 mm, 5 mm to -X of the handwheel group (X -249.0)",
+   "files_changed": [
+    "out\\safety_sensors.glb"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "9x:handwheel push-in": [
+     "handwheel push-in: 3 states, moving 3 bodies; 1 colliding pairs; backgauge.handwheel_gear x safety_sensors.S12 12.0 mm3 at pushed 10 [[-251.0, -696.0, 709.3], [-247.0, -694.0, 710.7]]"
+    ]
+   },
+   "other_failing_checks": [
+    "8e"
+   ],
+   "seconds": 9.3
+  },
+  {
+   "mutant": "M10",
+   "targets": [
+    "10"
+   ],
+   "planted": "housing anchors: a second sensor.S24 (doubled device anchor)",
+   "files_changed": [
+    "out\\housing_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "10": [
+     "28 designations of section 10 + cabinet = 29: each exactly one device anchor of the kind and host part section 10 names (prefixes button, sensor, magnet, clutch, valve, brake, motor, switch, cabinet; foot.* and body.* no"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.3
+  },
+  {
+   "mutant": "M11",
+   "targets": [
+    "11"
+   ],
+   "planted": "spec/frame.md: measure row M13 dropped (base_front's row cites it)",
+   "files_changed": [
+    "spec\\frame.md"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "11": [
+     "sources.md: 127 rows for 125/125 bodies; each with an existing source file and a class of DTPEW: yes; 116 rows are E or W: each with an error and a measure row (linked by the spec itself: 69, by a row whose 'what' names "
+    ]
+   },
+   "other_failing_checks": [
+    "N"
+   ],
+   "seconds": 8.4
+  },
+  {
+   "mutant": "M12",
+   "targets": [
+    "12"
+   ],
+   "planted": "frame anchors: anchor_bolt axis +20 X on one bolt",
+   "files_changed": [
+    "out\\frame_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "12": [
+     "each D number +-10: anchor-bolt axes X [-790.0, -770.0, 932.0] (D -790 / +932; anchor_bolt.left_front: D/P x +-15, y +-95, z +-15; anchor_bolt.left_rear: D/P x +-15, y +-95, z +-15); rear ring foot outer 165.0 wide (D 16"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 9.1
+  },
+  {
+   "mutant": "MV",
+   "targets": [
+    "V"
+   ],
+   "planted": "viewer template copy with <script src=\"https://...\"> (a load from the web)",
+   "files_changed": [
+    "(writer fault)"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "V": [
+     "viewer/index.html, one file of 0.73 MB: 125/125 bodies (19450 triangles, frame bodies with the DECISION 2 passages cut: 4), 158 anchors of which 29 device anchors with search and locate; references that would load from e"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.6
+  },
+  {
+   "mutant": "MVc",
+   "targets": [
+    "V"
+   ],
+   "planted": "clamp anchors: sensor.S28 motion axis flipped to 0,0,1 (the page carries it down, its own motion says up)",
+   "files_changed": [
+    "out\\clamp_anchors.json"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "V": [
+     "viewer/index.html, one file of 0.73 MB: 125/125 bodies (19450 triangles, frame bodies with the DECISION 2 passages cut: 4), 158 anchors of which 29 device anchors with search and locate; references that would load from e"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.5
+  },
+  {
+   "mutant": "MN",
+   "targets": [
+    "N~frame.frame."
+   ],
+   "planted": "open item 1 written with a doubled prefix 'frame.frame.<body>' (a name that is no body, anchor or measure ID)",
+   "files_changed": [
+    "(writer fault)"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "N~frame.frame.": [
+     "names in the check lines and open items: 138 '<part>.<name>' tokens, each a body, an anchor or a measure ID: NO, unknown: frame.frame.base_front in open item 1"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.5
+  },
+  {
+   "mutant": "MEW",
+   "targets": [
+    "EW~missing [3]"
+   ],
+   "planted": "open item 'checks on estimated values' written without [3] (check 3 prints the knife's W 1320)",
+   "files_changed": [
+    "(writer fault)"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "EW~missing [3]": [
+     "checks that read a P, E or W value (class from the anchors files; what checks 1-6 and 12 read is recorded while they run, and a check that uses a motion of the motion model is charged with the anchors that motion was bui"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.3
+  },
+  {
+   "mutant": "MEW4a",
+   "targets": [
+    "EW~the [4] line does not print knife.edge.rest"
+   ],
+   "planted": "the [4] line printed without 'knife.edge.rest: <class> <error>' (its data still declares it)",
+   "files_changed": [
+    "(writer fault)"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "EW~the [4] line does not print knife.edge.rest": [
+     "checks that read a P, E or W value (class from the anchors files; what checks 1-6 and 12 read is recorded while they run, and a check that uses a motion of the motion model is charged with the anchors that motion was bui"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.4
+  },
+  {
+   "mutant": "MEW4b",
+   "targets": [
+    "EW~the [4] clause does not name knife.edge.rest"
+   ],
+   "planted": "open item 'checks on estimated values' with the round-2 joint clause '[4] and [6] ... cannot flip them' in place of its [4] and [6] clauses (critic g9 F1)",
+   "files_changed": [
+    "(writer fault)"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "EW~the [4] clause does not name knife.edge.rest": [
+     "checks that read a P, E or W value (class from the anchors files; what checks 1-6 and 12 read is recorded while they run, and a check that uses a motion of the motion model is charged with the anchors that motion was bui"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.3
+  },
+  {
+   "mutant": "MEW4c",
+   "targets": [
+    "EW~[4] reads knife.edge.rest"
+   ],
+   "planted": "the [4] line declares its reads without knife.edge.rest (the code still reads it)",
+   "files_changed": [
+    "(writer fault)"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "EW~[4] reads knife.edge.rest": [
+     "checks that read a P, E or W value (class from the anchors files; what checks 1-6 and 12 read is recorded while they run, and a check that uses a motion of the motion model is charged with the anchors that motion was bui"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.3
+  },
+  {
+   "mutant": "MEW1",
+   "targets": [
+    "EW~[1] reads lift.eye_left"
+   ],
+   "planted": "the check 1 lines declare no reads (the Z line still reads lift.eye_left, D (X, Z); E (Y)), critic g10",
+   "files_changed": [
+    "(writer fault)"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "EW~[1] reads lift.eye_left": [
+     "checks that read a P, E or W value (class from the anchors files; what checks 1-6 and 12 read is recorded while they run, and a check that uses a motion of the motion model is charged with the anchors that motion was bui"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.2
+  },
+  {
+   "mutant": "MEW6",
+   "targets": [
+    "EW~[6] reads crank.centre"
+   ],
+   "planted": "KNIFE_CRANK emptied: check 6 neither declares nor prints the crank anchors, so only the motion model's charge (Charged) can find them, critic g10",
+   "files_changed": [
+    "(writer fault)"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "EW~[6] reads crank.centre": [
+     "checks that read a P, E or W value (class from the anchors files; what checks 1-6 and 12 read is recorded while they run, and a check that uses a motion of the motion model is charged with the anchors that motion was bui"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.2
+  },
+  {
+   "mutant": "MEW3",
+   "targets": [
+    "EW~[3] reads crank.centre"
+   ],
+   "planted": "motion_model built without its windows (rec dropped): its reads fall into check 3's window, as before round 3 (critic g10)",
+   "files_changed": [
+    "(writer fault)"
+   ],
+   "exit": 1,
+   "caught": true,
+   "error": null,
+   "target_fail_lines": {
+    "EW~[3] reads crank.centre": [
+     "checks that read a P, E or W value (class from the anchors files; what checks 1-6 and 12 read is recorded while they run, and a check that uses a motion of the motion model is charged with the anchors that motion was bui"
+    ]
+   },
+   "other_failing_checks": [],
+   "seconds": 8.4
+  }
+ ],
+ "clause_cases": [
+  {
+   "case": "F0",
+   "changed": "nothing (the base copy)",
+   "files_changed": [],
+   "exit": 0,
+   "fail_checks": [],
+   "words": [
+    {
+     "clause": "4",
+     "lead": "Clamp half:",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    },
+    {
+     "clause": "4",
+     "lead": "Knife half:",
+     "expected": "can",
+     "found": "can",
+     "ok": true
+    },
+    {
+     "clause": "5",
+     "lead": "[5]",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    },
+    {
+     "clause": "6",
+     "lead": "Clamp stroke:",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    },
+    {
+     "clause": "6",
+     "lead": "Knife stroke:",
+     "expected": "can",
+     "found": "can",
+     "ok": true
+    },
+    {
+     "clause": "6",
+     "lead": "Edge at the bottom:",
+     "expected": "can",
+     "found": "can",
+     "ok": true
+    },
+    {
+     "clause": "6",
+     "lead": "Cut depth:",
+     "expected": "can",
+     "found": "can",
+     "ok": true
+    },
+    {
+     "clause": "12",
+     "lead": "X verdict",
+     "expected": "can",
+     "found": "can",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "error": null
+  },
+  {
+   "case": "Fe",
+   "changed": "knife.edge.rest error 30 -> 15 (tester 3)",
+   "files_changed": [
+    "out\\knife_anchors.json"
+   ],
+   "exit": 0,
+   "fail_checks": [],
+   "words": [
+    {
+     "clause": "4",
+     "lead": "Knife half:",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "error": null
+  },
+  {
+   "case": "Ff",
+   "changed": "backgauge.face y error 10 -> 15 (tester 3)",
+   "files_changed": [
+    "out\\backgauge_anchors.json"
+   ],
+   "exit": 0,
+   "fail_checks": [],
+   "words": [
+    {
+     "clause": "5",
+     "lead": "[5]",
+     "expected": "can",
+     "found": "can",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "error": null
+  },
+  {
+   "case": "Fg",
+   "changed": "clamp.face z error 100 -> 50 (tester 3)",
+   "files_changed": [
+    "out\\clamp_anchors.json"
+   ],
+   "exit": 0,
+   "fail_checks": [],
+   "words": [
+    {
+     "clause": "4",
+     "lead": "Clamp half:",
+     "expected": "can",
+     "found": "can",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "error": null
+  },
+  {
+   "case": "Fh",
+   "changed": "anchor-bolt x errors 15 -> 5 (tester 3)",
+   "files_changed": [
+    "out\\frame_anchors.json"
+   ],
+   "exit": 0,
+   "fail_checks": [],
+   "words": [
+    {
+     "clause": "12",
+     "lead": "X verdict",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "error": null
+  },
+  {
+   "case": "F6a",
+   "changed": "errors of crank.centre, crank.pin.tdc, holder.pin.rest and knife.edge.rest -> 0.01",
+   "files_changed": [
+    "out\\knife_anchors.json"
+   ],
+   "exit": 0,
+   "fail_checks": [],
+   "words": [
+    {
+     "clause": "6",
+     "lead": "Knife stroke:",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    },
+    {
+     "clause": "6",
+     "lead": "Edge at the bottom:",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    },
+    {
+     "clause": "6",
+     "lead": "Cut depth:",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "error": null
+  },
+  {
+   "case": "F6i",
+   "changed": "as F6a, and knife.edge.bottom error 100 -> 1 (the share broken by its error)",
+   "files_changed": [
+    "out\\knife_anchors.json"
+   ],
+   "exit": 0,
+   "fail_checks": [],
+   "words": [
+    {
+     "clause": "6",
+     "lead": "Knife stroke:",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    },
+    {
+     "clause": "6",
+     "lead": "Edge at the bottom:",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    },
+    {
+     "clause": "6",
+     "lead": "Cut depth:",
+     "expected": "can + 'knife.edge.bottom +-1'",
+     "found": "can",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "error": null
+  },
+  {
+   "case": "F6k",
+   "changed": "as F6a, and knife.edge.bottom's source without 'stick top' (the share broken by its source)",
+   "files_changed": [
+    "out\\knife_anchors.json"
+   ],
+   "exit": 0,
+   "fail_checks": [],
+   "words": [
+    {
+     "clause": "6",
+     "lead": "Edge at the bottom:",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    },
+    {
+     "clause": "6",
+     "lead": "Cut depth:",
+     "expected": "can + 'cutting_stick.top +-'",
+     "found": "can",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "error": null
+  },
+  {
+   "case": "F6t",
+   "changed": "as F6a, and knife.edge.rest Z + 0.5 (the tie broken; check 4 allows the body 1 from the anchor)",
+   "files_changed": [
+    "out\\knife_anchors.json"
+   ],
+   "exit": 0,
+   "fail_checks": [],
+   "words": [
+    {
+     "clause": "6",
+     "lead": "Knife stroke:",
+     "expected": "cannot",
+     "found": "cannot",
+     "ok": true
+    },
+    {
+     "clause": "6",
+     "lead": "Edge at the bottom:",
+     "expected": "can + 'knife.edge.bottom +-'",
+     "found": "can",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "error": null
+  },
+  {
+   "case": "F6c",
+   "changed": "clamp.face's source without the number 130 (the clamp range no longer a number its source names)",
+   "files_changed": [
+    "out\\clamp_anchors.json"
+   ],
+   "exit": 0,
+   "fail_checks": [],
+   "words": [
+    {
+     "clause": "6",
+     "lead": "Clamp stroke:",
+     "expected": "can",
+     "found": "can",
+     "ok": true
+    }
+   ],
+   "ok": true,
+   "error": null
+  }
+ ]
+}
