@@ -1,0 +1,471 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1233" viewBox="0 0 1680 1233">
+<style>.w,.e{fill:none;stroke:#000;stroke-width:1.2}.wq{fill:none;stroke:#000;stroke-width:1.2;stroke-dasharray:5 3}.b{fill:#fff;stroke:#000;stroke-width:1.2}.bd{fill:none;stroke:#000;stroke-width:1;stroke-dasharray:4 3}.z{fill:#f3f3f3;stroke:#000;stroke-width:0.8}.r{fill:none;stroke:#000;stroke-width:0.8}.act{fill:none;stroke:#000;stroke-width:0.9;stroke-dasharray:3 2}.tc{fill:#fff;stroke:#000;stroke-width:1}.dot{fill:#000}text{font-family:Consolas,"DejaVu Sans Mono","Courier New",monospace;fill:#000}.d{font-weight:bold}.n{fill:#333}.q{fill:#b00000}.ink{fill:#666;font-style:italic}.wl{fill:#0b4a8f}</style>
+<rect x="0" y="0" width="1680" height="1233" fill="#fff"/>
+<rect x="8" y="8" width="1664" height="1217" class="r"/>
+<text x="30" y="24" font-size="11" class="d">568-70.9001 sheet 6 (redrawn): connection of the cut-control module BMR1, inputs 1-18</text>
+<rect x="30" y="38" width="90" height="16" class="r"/>
+<text x="75" y="50" font-size="8" text-anchor="middle" class="d">01</text>
+<text x="34" y="50" font-size="8" class="d">6:</text>
+<rect x="120" y="38" width="90" height="16" class="r"/>
+<text x="165" y="50" font-size="8" text-anchor="middle" class="d">02</text>
+<rect x="210" y="38" width="90" height="16" class="r"/>
+<text x="255" y="50" font-size="8" text-anchor="middle" class="d">03</text>
+<rect x="300" y="38" width="90" height="16" class="r"/>
+<text x="345" y="50" font-size="8" text-anchor="middle" class="d">04</text>
+<rect x="390" y="38" width="90" height="16" class="r"/>
+<text x="435" y="50" font-size="8" text-anchor="middle" class="d">05</text>
+<rect x="480" y="38" width="90" height="16" class="r"/>
+<text x="525" y="50" font-size="8" text-anchor="middle" class="d">06</text>
+<rect x="570" y="38" width="90" height="16" class="r"/>
+<text x="615" y="50" font-size="8" text-anchor="middle" class="d">07</text>
+<rect x="660" y="38" width="90" height="16" class="r"/>
+<text x="705" y="50" font-size="8" text-anchor="middle" class="d">08</text>
+<rect x="750" y="38" width="90" height="16" class="r"/>
+<text x="795" y="50" font-size="8" text-anchor="middle" class="d">09</text>
+<rect x="840" y="38" width="90" height="16" class="r"/>
+<text x="885" y="50" font-size="8" text-anchor="middle" class="d">10</text>
+<rect x="930" y="38" width="90" height="16" class="r"/>
+<text x="975" y="50" font-size="8" text-anchor="middle" class="d">11</text>
+<rect x="1020" y="38" width="90" height="16" class="r"/>
+<text x="1065" y="50" font-size="8" text-anchor="middle" class="d">12</text>
+<rect x="1110" y="38" width="90" height="16" class="r"/>
+<text x="1155" y="50" font-size="8" text-anchor="middle" class="d">13</text>
+<rect x="1200" y="38" width="90" height="16" class="r"/>
+<text x="1245" y="50" font-size="8" text-anchor="middle" class="d">14</text>
+<rect x="1290" y="38" width="90" height="16" class="r"/>
+<text x="1335" y="50" font-size="8" text-anchor="middle" class="d">15</text>
+<rect x="1380" y="38" width="90" height="16" class="r"/>
+<text x="1425" y="50" font-size="8" text-anchor="middle" class="d">16</text>
+<rect x="1470" y="38" width="90" height="16" class="r"/>
+<text x="1515" y="50" font-size="8" text-anchor="middle" class="d">17</text>
+<rect x="1560" y="38" width="90" height="16" class="r"/>
+<text x="1605" y="50" font-size="8" text-anchor="middle" class="d">18</text>
+<rect x="31" y="62" width="1618" height="36" class="z"/>
+<text x="840" y="71" font-size="7" text-anchor="middle" class="t">(25, number cut off on the photo) connection of the cut-control module (PŘIPOJENÍ MODULU ŘÍZENÍ ŘEZU)</text>
+<rect x="31" y="100" width="268" height="36" class="z"/>
+<text x="165" y="109" font-size="7" text-anchor="middle" class="t">(26) cut start buttons S10, S11 (TLAČÍTKA SPOUŠTĚNÍ ŘEZU</text>
+<text x="165" y="117.5" font-size="7" text-anchor="middle" class="t">S10,S11)</text>
+<rect x="301" y="100" width="178" height="36" class="z"/>
+<text x="390" y="109" font-size="7" text-anchor="middle" class="t">(27) cut clutch contactors - feedback</text>
+<text x="390" y="117.5" font-size="7" text-anchor="middle" class="t">KM6, KM7 (STYKAČE SPOJKY ŘEZU - ZPĚTNÁ</text>
+<text x="390" y="126" font-size="7" text-anchor="middle" class="t">VAZBA KM6,KM7)</text>
+<rect x="481" y="100" width="268" height="36" class="z"/>
+<text x="615" y="109" font-size="7" text-anchor="middle" class="t">(26) cut start buttons S10, S11 (TLAČÍTKA SPOUŠTĚNÍ ŘEZU</text>
+<text x="615" y="117.5" font-size="7" text-anchor="middle" class="t">S10,S11)</text>
+<rect x="751" y="100" width="178" height="36" class="z"/>
+<text x="840" y="109" font-size="7" text-anchor="middle" class="t">(29) knife-lock position sensors SQ1, SQ2</text>
+<text x="840" y="117.5" font-size="7" text-anchor="middle" class="t">(SNÍMAČE POLOHY ZAJIŠTĚNÍ NOŽE SQ1,SQ2)</text>
+<rect x="931" y="100" width="268" height="36" class="z"/>
+<text x="1065" y="109" font-size="7" text-anchor="middle" class="t">(28) knife position sensors S12, S13, S14 (SNÍMAČE POLOHY NOŽE</text>
+<text x="1065" y="117.5" font-size="7" text-anchor="middle" class="t">S12,S13,S14)</text>
+<rect x="1381" y="100" width="88" height="36" class="z"/>
+<text x="1425" y="108.5" font-size="6.5" text-anchor="middle" class="t">(30) clamp position</text>
+<text x="1425" y="116.5" font-size="6.5" text-anchor="middle" class="t">switch S30 (SPÍNAČ</text>
+<text x="1425" y="124.5" font-size="6.5" text-anchor="middle" class="t">POLOHY LISOVADLA S30)</text>
+<rect x="1471" y="100" width="88" height="36" class="z"/>
+<text x="1515" y="108.5" font-size="6.5" text-anchor="middle" class="t">(32) feed-cut</text>
+<text x="1515" y="116.5" font-size="6.5" text-anchor="middle" class="t">blocking 17</text>
+<text x="1515" y="124.5" font-size="6.5" text-anchor="middle" class="t">(BLOKOVÁNÍ POSUV-ŘEZ</text>
+<text x="1515" y="132.5" font-size="6.5" text-anchor="middle" class="t">17)</text>
+<rect x="1561" y="100" width="88" height="36" class="z"/>
+<text x="1605" y="108" font-size="6" text-anchor="middle" class="t">(31) cut clutch switch</text>
+<text x="1605" y="115.5" font-size="6" text-anchor="middle" class="t">(knife change) S19</text>
+<text x="1605" y="123" font-size="6" text-anchor="middle" class="t">(SPÍNAČ SPOJKY ŘEZU</text>
+<text x="1605" y="130.5" font-size="6" text-anchor="middle" class="t">(VÝMĚNA NOŽE: S19)</text>
+<rect x="34.5" y="150" width="1611" height="46" class="b"/>
+<text x="40.5" y="163" font-size="8.5" class="d">BMR1 cut-control module (MODUL ŘÍZENÍ ŘEZU): inputs 1-18 (outputs 19-29, 0V, +24V on sheet 7)</text>
+<text x="750" y="177" font-size="9" text-anchor="middle" class="d">BMR1</text>
+<text x="75" y="190" font-size="7.5" text-anchor="middle" class="n">1</text>
+<text x="165" y="190" font-size="7.5" text-anchor="middle" class="n">2</text>
+<text x="255" y="190" font-size="7.5" text-anchor="middle" class="n">3</text>
+<text x="345" y="190" font-size="7.5" text-anchor="middle" class="n">4</text>
+<text x="435" y="190" font-size="7.5" text-anchor="middle" class="n">5</text>
+<text x="525" y="190" font-size="7.5" text-anchor="middle" class="n">6</text>
+<text x="615" y="190" font-size="7.5" text-anchor="middle" class="n">7</text>
+<text x="705" y="190" font-size="7.5" text-anchor="middle" class="n">8</text>
+<text x="795" y="190" font-size="7.5" text-anchor="middle" class="n">9</text>
+<text x="885" y="190" font-size="7.5" text-anchor="middle" class="n">10</text>
+<text x="975" y="190" font-size="7.5" text-anchor="middle" class="n">11</text>
+<text x="1065" y="190" font-size="7.5" text-anchor="middle" class="n">12</text>
+<text x="1155" y="190" font-size="7.5" text-anchor="middle" class="n">13</text>
+<text x="1245" y="190" font-size="7.5" text-anchor="middle" class="n">14</text>
+<text x="1335" y="190" font-size="7.5" text-anchor="middle" class="n">15</text>
+<text x="1425" y="190" font-size="7.5" text-anchor="middle" class="n">16</text>
+<text x="1515" y="190" font-size="7.5" text-anchor="middle" class="n">17</text>
+<text x="1605" y="190" font-size="7.5" text-anchor="middle" class="n">18</text>
+<circle cx="75" cy="240" r="2.8" class="tc"/>
+<text x="80" y="237" font-size="7" class="n">5X11</text>
+<circle cx="75" cy="280" r="2.8" class="tc"/>
+<text x="80" y="277" font-size="7" class="n">6X11</text>
+<text x="80" y="262" font-size="6.5" class="q">print: 3X11</text>
+<text x="80" y="300" font-size="6.5" class="q">print: 4X11</text>
+<circle cx="75" cy="330" r="2.8" class="tc"/>
+<text x="80" y="327" font-size="7" class="n">4XC2</text>
+<circle cx="165" cy="330" r="2.8" class="tc"/>
+<text x="170" y="327" font-size="7" class="n">5XC2</text>
+<circle cx="255" cy="330" r="2.8" class="tc"/>
+<text x="260" y="327" font-size="7" class="n">6XC2</text>
+<circle cx="525" cy="330" r="2.8" class="tc"/>
+<text x="530" y="327" font-size="7" class="n">7XC2</text>
+<circle cx="615" cy="330" r="2.8" class="tc"/>
+<text x="620" y="327" font-size="7" class="n">8XC2</text>
+<circle cx="705" cy="330" r="2.8" class="tc"/>
+<text x="710" y="327" font-size="7" class="n">9XC2</text>
+<text x="45" y="346" font-size="7" text-anchor="middle" class="q">XC2 [?]</text>
+<polyline points="165,380 165,394" class="w"/>
+<polyline points="165,410 165,424" class="w"/>
+<polyline points="165,394 174,394" class="e"/>
+<polyline points="165,410 176,391" class="e"/>
+<polyline points="160,402 149,402" class="act"/>
+<polyline points="149,398 149,406" class="e"/>
+<text x="169" y="389" font-size="7" class="n">2A</text>
+<text x="169" y="421" font-size="7" class="n">1A</text>
+<text x="143" y="400" font-size="8" text-anchor="end" class="d">S10</text>
+<polyline points="255,380 255,394" class="w"/>
+<polyline points="255,410 255,424" class="w"/>
+<polyline points="255,410 246,396" class="e"/>
+<text x="259" y="389" font-size="7" class="n">4A</text>
+<text x="259" y="421" font-size="7" class="n">3A</text>
+<text x="269" y="400" font-size="8" class="d">S10</text>
+<polyline points="615,380 615,394" class="w"/>
+<polyline points="615,410 615,424" class="w"/>
+<polyline points="615,394 624,394" class="e"/>
+<polyline points="615,410 626,391" class="e"/>
+<polyline points="610,402 599,402" class="act"/>
+<polyline points="599,398 599,406" class="e"/>
+<text x="619" y="389" font-size="7" class="n">2A</text>
+<text x="619" y="421" font-size="7" class="n">1A</text>
+<text x="593" y="400" font-size="8" text-anchor="end" class="d">S11</text>
+<polyline points="705,380 705,394" class="w"/>
+<polyline points="705,410 705,424" class="w"/>
+<polyline points="705,410 696,396" class="e"/>
+<text x="709" y="389" font-size="7" class="n">4A</text>
+<text x="709" y="421" font-size="7" class="n">3A</text>
+<text x="719" y="400" font-size="8" class="d">S11</text>
+<polyline points="345,260 345,274" class="w"/>
+<polyline points="345,290 345,304" class="w"/>
+<polyline points="345,274 354,274" class="e"/>
+<polyline points="345,290 356,271" class="e"/>
+<text x="349" y="269" font-size="7" class="n">61</text>
+<text x="349" y="301" font-size="7" class="n">62</text>
+<text x="359" y="280" font-size="8" class="d">KM6</text>
+<text x="359" y="289" font-size="7" class="t">(4:17)</text>
+<polyline points="345,340 345,354" class="w"/>
+<polyline points="345,370 345,384" class="w"/>
+<polyline points="345,354 354,354" class="e"/>
+<polyline points="345,370 356,351" class="e"/>
+<text x="349" y="349" font-size="7" class="n">22</text>
+<text x="349" y="381" font-size="7" class="n">21</text>
+<text x="359" y="360" font-size="8" class="d">KM7</text>
+<text x="359" y="369" font-size="7" class="t">(4:19)</text>
+<text x="359" y="378" font-size="6.5" class="q">print 62-61 [?]</text>
+<circle cx="795" cy="240" r="2.8" class="tc"/>
+<text x="800" y="237" font-size="7" class="n">37X10</text>
+<circle cx="885" cy="240" r="2.8" class="tc"/>
+<text x="890" y="237" font-size="7" class="n">38X10</text>
+<circle cx="975" cy="240" r="2.8" class="tc"/>
+<text x="980" y="237" font-size="7" class="n">39X10</text>
+<circle cx="1065" cy="240" r="2.8" class="tc"/>
+<text x="1070" y="237" font-size="7" class="n">41X10</text>
+<circle cx="1155" cy="240" r="2.8" class="tc"/>
+<text x="1160" y="237" font-size="7" class="n">40X10</text>
+<circle cx="1065" cy="275" r="2.8" class="tc"/>
+<text x="1070" y="272" font-size="7" class="n">42X10</text>
+<circle cx="795" cy="320" r="2.8" class="tc"/>
+<text x="800" y="317" font-size="7" class="n">2X8</text>
+<circle cx="885" cy="320" r="2.8" class="tc"/>
+<text x="890" y="317" font-size="7" class="n">3X8</text>
+<circle cx="975" cy="320" r="2.8" class="tc"/>
+<text x="980" y="317" font-size="7" class="n">4X8</text>
+<circle cx="1065" cy="320" r="2.8" class="tc"/>
+<text x="1070" y="317" font-size="7" class="n">5X8</text>
+<circle cx="1155" cy="320" r="2.8" class="tc"/>
+<text x="1160" y="317" font-size="7" class="n">6X8</text>
+<text x="765" y="336" font-size="7" text-anchor="middle" class="q">X8 [?]</text>
+<polyline points="795,370 795,384" class="w"/>
+<polyline points="795,400 795,414" class="w"/>
+<polyline points="795,400 786,386" class="e"/>
+<polyline points="789,392 783,392" class="act"/>
+<polyline points="779,388 783,392 779,396 775,392 779,388" class="e"/>
+<text x="799" y="379" font-size="7" class="n">4</text>
+<text x="799" y="411" font-size="7" class="n">1</text>
+<text x="773" y="390" font-size="8" text-anchor="end" class="d">SQ1</text>
+<polyline points="885,370 885,384" class="w"/>
+<polyline points="885,400 885,414" class="w"/>
+<polyline points="885,400 876,386" class="e"/>
+<polyline points="879,392 873,392" class="act"/>
+<polyline points="869,388 873,392 869,396 865,392 869,388" class="e"/>
+<text x="889" y="379" font-size="7" class="n">4</text>
+<text x="889" y="411" font-size="7" class="n">1</text>
+<text x="863" y="390" font-size="8" text-anchor="end" class="d">SQ2</text>
+<polyline points="975,370 975,384" class="w"/>
+<polyline points="975,400 975,414" class="w"/>
+<polyline points="975,384 984,384" class="e"/>
+<polyline points="975,400 986,381" class="e"/>
+<polyline points="969,392 963,392" class="act"/>
+<polyline points="959,388 963,392 959,396 955,392 959,388" class="e"/>
+<text x="979" y="379" font-size="7" class="n">2</text>
+<text x="979" y="411" font-size="7" class="n">1</text>
+<text x="953" y="390" font-size="8" text-anchor="end" class="d">S12</text>
+<polyline points="1065,370 1065,384" class="w"/>
+<polyline points="1065,400 1065,414" class="w"/>
+<polyline points="1065,384 1074,384" class="e"/>
+<polyline points="1065,400 1076,381" class="e"/>
+<polyline points="1059,392 1053,392" class="act"/>
+<polyline points="1049,388 1053,392 1049,396 1045,392 1049,388" class="e"/>
+<text x="1069" y="379" font-size="7" class="n">2</text>
+<text x="1069" y="411" font-size="7" class="n">1</text>
+<text x="1043" y="390" font-size="8" text-anchor="end" class="d">S13</text>
+<polyline points="1155,370 1155,384" class="w"/>
+<polyline points="1155,400 1155,414" class="w"/>
+<polyline points="1155,384 1164,384" class="e"/>
+<polyline points="1155,400 1166,381" class="e"/>
+<polyline points="1149,392 1143,392" class="act"/>
+<polyline points="1139,388 1143,392 1139,396 1135,392 1139,388" class="e"/>
+<text x="1159" y="379" font-size="7" class="n">2</text>
+<text x="1159" y="411" font-size="7" class="n">1</text>
+<text x="1133" y="390" font-size="8" text-anchor="end" class="d">S14</text>
+<circle cx="1200" cy="470" r="2.8" class="tc"/>
+<text x="1205" y="467" font-size="7" class="n">1X8</text>
+<polyline points="1245,270 1245,284" class="w"/>
+<polyline points="1245,300 1245,314" class="w"/>
+<polyline points="1245,300 1236,286" class="e"/>
+<polyline points="1240,292 1230,292" class="act"/>
+<polyline points="1226,288 1230,288 1230,296" class="e"/>
+<text x="1249" y="279" font-size="7" class="n">7</text>
+<text x="1249" y="311" font-size="7" class="n">8</text>
+<text x="1223" y="290" font-size="8" text-anchor="end" class="d">Q2</text>
+<circle cx="1425" cy="240" r="2.8" class="tc"/>
+<text x="1430" y="237" font-size="7" class="n">43X10</text>
+<polyline points="1425,300 1425,314" class="w"/>
+<polyline points="1425,330 1425,344" class="w"/>
+<polyline points="1425,314 1434,314" class="e"/>
+<polyline points="1425,330 1436,311" class="e"/>
+<polyline points="1419,322 1410,322" class="act"/>
+<polyline points="1410,318 1406,322 1410,326" class="e"/>
+<text x="1429" y="309" font-size="7" class="n">21</text>
+<text x="1429" y="341" font-size="7" class="n">22</text>
+<text x="1403" y="320" font-size="8" text-anchor="end" class="d">S30</text>
+<polyline points="1515,300 1515,314" class="w"/>
+<polyline points="1515,330 1515,344" class="w"/>
+<polyline points="1515,330 1506,316" class="e"/>
+<text x="1519" y="309" font-size="7" class="n">11</text>
+<text x="1519" y="341" font-size="7" class="n">14</text>
+<text x="1529" y="320" font-size="8" class="d">K2</text>
+<text x="1529" y="329" font-size="7" class="t">(5:16)</text>
+<text x="1529" y="338" font-size="6.5" class="q">print 13-14</text>
+<circle cx="1605" cy="240" r="2.8" class="tc"/>
+<text x="1610" y="237" font-size="7" class="n">44X10</text>
+<polyline points="1605,300 1605,314" class="w"/>
+<polyline points="1605,330 1605,344" class="w"/>
+<polyline points="1605,314 1614,314" class="e"/>
+<polyline points="1605,330 1616,311" class="e"/>
+<polyline points="1599,322 1590,322" class="act"/>
+<polyline points="1590,318 1586,322 1590,326" class="e"/>
+<text x="1609" y="309" font-size="7" class="n">21</text>
+<text x="1609" y="341" font-size="7" class="n">22</text>
+<text x="1583" y="320" font-size="8" text-anchor="end" class="d">S19</text>
+<circle cx="1335" cy="560" r="2.8" class="tc"/>
+<text x="1340" y="556" font-size="7" class="n">33X10</text>
+<circle cx="1425" cy="560" r="2.8" class="tc"/>
+<text x="1430" y="556" font-size="7" class="n">34X10</text>
+<circle cx="1515" cy="560" r="2.8" class="tc"/>
+<text x="1520" y="556" font-size="7" class="n">35X10</text>
+<circle cx="1605" cy="560" r="2.8" class="tc"/>
+<text x="1610" y="556" font-size="7" class="n">36X10</text>
+<polygon points="1196,680 1204,680 1200,688" class="b"/>
+<text x="1200" y="698" font-size="7.5" text-anchor="middle" class="d">UZ1 K14</text>
+<text x="1200" y="707" font-size="7" text-anchor="middle" class="t">(2:26)</text>
+<polygon points="1241,680 1249,680 1245,688" class="b"/>
+<text x="1245" y="698" font-size="7.5" text-anchor="middle" class="d">TABLO +24V</text>
+<text x="1245" y="707" font-size="7" text-anchor="middle" class="t">(8:03)</text>
+<polygon points="1421,680 1429,680 1425,688" class="b"/>
+<text x="1425" y="698" font-size="7.5" text-anchor="middle" class="d">BMR1 +24V</text>
+<text x="1425" y="707" font-size="7" text-anchor="middle" class="t">(7:13)</text>
+<polygon points="1511,680 1519,680 1515,688" class="b"/>
+<text x="1515" y="698" font-size="7.5" text-anchor="middle" class="d">PLC</text>
+<text x="1515" y="707" font-size="7" text-anchor="middle" class="t">+24V PLC</text>
+<text x="1515" y="716" font-size="7" text-anchor="middle" class="t">(8:03)</text>
+<polygon points="1601,680 1609,680 1605,688" class="b"/>
+<text x="1605" y="698" font-size="7.5" text-anchor="middle" class="d">5UG50</text>
+<text x="1605" y="707" font-size="7" text-anchor="middle" class="t">(3:04)</text>
+<text x="1605" y="716" font-size="7" text-anchor="middle" class="t">+24V</text>
+<polyline points="75,196 75,240" class="w"/>
+<polyline points="75,240 75,280" class="w"/>
+<polyline points="75,280 75,330" class="w"/>
+<polyline points="75,330 75,450 255,450 255,424" class="w"/>
+<polyline points="255,424 165,424" class="w"/>
+<polyline points="165,380 165,330" class="w"/>
+<polyline points="165,330 165,196" class="w"/>
+<polyline points="255,380 255,330" class="w"/>
+<polyline points="255,330 255,196" class="w"/>
+<polyline points="345,196 345,260" class="w"/>
+<polyline points="345,304 345,340" class="wq"/>
+<polyline points="345,384 345,410 435,410 435,196" class="wq"/>
+<polyline points="525,196 525,330" class="w"/>
+<polyline points="525,330 525,450 705,450 705,424" class="w"/>
+<polyline points="705,424 615,424" class="w"/>
+<polyline points="615,380 615,330" class="w"/>
+<polyline points="615,330 615,196" class="w"/>
+<polyline points="705,380 705,330" class="w"/>
+<polyline points="705,330 705,196" class="w"/>
+<polyline points="795,196 795,240" class="w"/>
+<polyline points="795,240 795,320" class="w"/>
+<polyline points="795,320 795,370" class="w"/>
+<polyline points="795,414 795,470 1200,470" class="w"/>
+<polyline points="885,196 885,240" class="w"/>
+<polyline points="885,240 885,320" class="w"/>
+<polyline points="885,320 885,370" class="w"/>
+<polyline points="885,414 885,470 1200,470" class="w"/>
+<polyline points="975,196 975,240" class="w"/>
+<polyline points="975,240 975,320" class="w"/>
+<polyline points="975,320 975,370" class="w"/>
+<polyline points="975,414 975,470 1200,470" class="w"/>
+<polyline points="1065,196 1065,240" class="w"/>
+<polyline points="1065,240 1065,275" class="w"/>
+<polyline points="1065,275 1065,320" class="w"/>
+<polyline points="1065,320 1065,370" class="w"/>
+<polyline points="1065,414 1065,470 1200,470" class="w"/>
+<polyline points="1155,196 1155,240" class="w"/>
+<polyline points="1155,240 1155,320" class="w"/>
+<polyline points="1155,320 1155,370" class="w"/>
+<polyline points="1155,414 1155,470 1200,470" class="w"/>
+<polyline points="1200,470 1200,560 1335,560" class="w"/>
+<polyline points="1335,560 1335,625 1245,625 1245,680" class="w"/>
+<polyline points="1335,560 1425,560" class="w"/>
+<polyline points="1425,560 1515,560" class="w"/>
+<polyline points="1515,560 1605,560" class="w"/>
+<polyline points="1605,560 1605,680" class="w"/>
+<polyline points="1425,560 1425,600 1200,600 1200,680" class="w"/>
+<polyline points="1425,560 1425,680" class="w"/>
+<polyline points="1515,560 1515,680" class="w"/>
+<polyline points="1245,196 1245,270" class="w"/>
+<polyline points="1245,314 1245,340 1335,340 1335,196" class="w"/>
+<polyline points="1425,196 1425,240" class="w"/>
+<polyline points="1425,240 1425,300" class="w"/>
+<polyline points="1425,344 1425,560" class="w"/>
+<polyline points="1515,196 1515,300" class="w"/>
+<polyline points="1515,344 1515,560" class="w"/>
+<polyline points="1605,196 1605,240" class="w"/>
+<polyline points="1605,240 1605,300" class="w"/>
+<polyline points="1605,344 1605,560" class="w"/>
+<text x="348" y="231" font-size="7" class="wl">61KM6</text>
+<text x="348" y="325" font-size="7" class="q">[?]</text>
+<text x="438" y="306" font-size="7" class="q">[?]</text>
+<polyline points="1335,560 1335,680" class="w"/>
+<polygon points="1331,680 1339,680 1335,688" class="b"/>
+<text x="1335" y="698" font-size="7.5" text-anchor="middle" class="d">32X10</text>
+<text x="1335" y="707" font-size="7" text-anchor="middle" class="t">(5:14)</text>
+<text x="395" y="530" font-size="7" class="d">Knife-position sensors over one stroke (from the clean copy of sheet 6, timing diagram under columns 05-10 (photo 20261114_014537))</text>
+<text x="395" y="540" font-size="7" class="q">bar ends estimated ±10 % of the stroke; what a bar means (contact closed or sensor actuated): [?]</text>
+<polyline points="435,559 435,670" class="act"/>
+<polyline points="454.2,559 454.2,670" class="act"/>
+<polyline points="675,559 675,670" class="act"/>
+<polyline points="915,559 915,670" class="act"/>
+<text x="444.6" y="556" font-size="7" text-anchor="middle" class="t">START</text>
+<polyline points="422.6,722 466.6,722" class="e"/>
+<polyline points="424.6,718 450.6,718" class="e"/>
+<polyline points="424.6,714 450.6,714" class="e"/>
+<polyline points="424.6,710 450.6,710" class="e"/>
+<polyline points="424.6,706 450.6,706" class="e"/>
+<polygon points="441.6,678 447.6,678 447.6,694 441.6,700" fill="#000"/>
+<polyline points="653,722 697,722" class="e"/>
+<polyline points="655,718 671,718" class="e"/>
+<polyline points="679,718 695,718" class="e"/>
+<polyline points="655,714 671,714" class="e"/>
+<polyline points="679,714 695,714" class="e"/>
+<polyline points="655,710 671,710" class="e"/>
+<polyline points="679,710 695,710" class="e"/>
+<polyline points="655,706 671,706" class="e"/>
+<polyline points="679,706 695,706" class="e"/>
+<polygon points="672,696 678,696 678,716 672,722" fill="#000"/>
+<polyline points="893,722 937,722" class="e"/>
+<polyline points="895,718 911,718" class="e"/>
+<polyline points="919,718 935,718" class="e"/>
+<polyline points="895,714 911,714" class="e"/>
+<polyline points="919,714 935,714" class="e"/>
+<polyline points="895,710 911,710" class="e"/>
+<polyline points="919,710 935,710" class="e"/>
+<polyline points="895,706 911,706" class="e"/>
+<polyline points="919,706 935,706" class="e"/>
+<polygon points="912,678 918,678 918,694 912,700" fill="#000"/>
+<polygon points="556.8,684 562.8,684 562.8,698 566.8,698 559.8,708 552.8,698 556.8,698" class="b"/>
+<polygon points="792,708 798,708 798,694 802,694 795,684 788,694 792,694" class="b"/>
+<text x="395" y="574" font-size="7.5" class="d">SQ1</text>
+<polyline points="435,571 915,571" class="r"/>
+<rect x="435" y="566" width="19.2" height="8" fill="#555"/>
+<rect x="756.6" y="566" width="158.4" height="8" fill="#555"/>
+<text x="395" y="596" font-size="7.5" class="d">SQ2</text>
+<polyline points="435,593 915,593" class="r"/>
+<rect x="454.2" y="588" width="268.8" height="8" fill="#555"/>
+<text x="395" y="618" font-size="7.5" class="d">S12</text>
+<polyline points="435,615 915,615" class="r"/>
+<rect x="665.4" y="610" width="240" height="8" fill="#555"/>
+<text x="395" y="640" font-size="7.5" class="d">S13</text>
+<polyline points="435,637 915,637" class="r"/>
+<rect x="435" y="632" width="235.2" height="8" fill="#555"/>
+<rect x="905.4" y="632" width="9.6" height="8" fill="#555"/>
+<text x="395" y="662" font-size="7.5" class="d">S14</text>
+<polyline points="435,659 915,659" class="r"/>
+<rect x="435" y="654" width="38.4" height="8" fill="#555"/>
+<rect x="886.2" y="654" width="28.8" height="8" fill="#555"/>
+<circle cx="255" cy="424" r="2.3" class="dot"/>
+<circle cx="705" cy="424" r="2.3" class="dot"/>
+<circle cx="885" cy="470" r="2.3" class="dot"/>
+<circle cx="975" cy="470" r="2.3" class="dot"/>
+<circle cx="1065" cy="470" r="2.3" class="dot"/>
+<circle cx="1155" cy="470" r="2.3" class="dot"/>
+<circle cx="1335" cy="625" r="2.3" class="dot"/>
+<circle cx="1425" cy="600" r="2.3" class="dot"/>
+<text x="38" y="818" font-size="8.5" class="d">Notes on reading this sheet</text>
+<text x="40" y="830" font-size="7.5" class="t">- BMR1 1 line: wired 5X11 -&gt; bridge -&gt; 6X11 -&gt; 4XC2, as the hand correction on the clean copy (20261114_014439) and the blue wires on X11 5 and 6 in photo 20261102_144309; the print has 3X11/4X11 (20261113_194606). X11 5-6 is likely a bridged light-curtain place (estimated); the light curtain FF1 is not fitted.</text>
+<text x="40" y="840" font-size="7.5" class="t">- K2 contact at BMR1 17: wired 11-14 (hand &quot;11&quot; over &quot;13&quot; on 20261114_014513, marker 11K2 in photo 20261102_144324); print 13-14. Whether +24V on BMR1 17 allows or blocks the cut is not printed [?].</text>
+<text x="40" y="850" font-size="7.5" class="t">- KM6/KM7 feedback: print KM6 61-62 + KM7 62-61; photo: KM7 has only its built-in NC 21-22 (markers 21KM7, 22KM7), so KM7 is drawn 22-21 [?].</text>
+<text x="40" y="860" font-size="7.5" class="t">- SQ1, SQ2 drawn NO, S12, S13, S14 drawn NC, as printed; common terminal 1 of each sensor on 1X8 (+24V); no 0 V wire to the sensors is drawn on the print.</text>
+<text x="40" y="870" font-size="7.5" class="t">- Zone borders follow the columns of each zone's devices; columns 14-15 (Q2 7-8 loop) carry no zone title in the reading.</text>
+<text x="40" y="880" font-size="7.5" class="t">- Timing diagram: the print has two dashed START lines (at 0 and about 0.04 of the stroke). Under it the print draws the knife raised over the stack at START, an arrow down, the knife through the stack at the bottom (middle line), an arrow up and the knife back at the top (end line), the stack cut; drawn here simplified: filled blade, sheet lines, open</text>
+<text x="52" y="890" font-size="7.5" class="t">block arrows.</text>
+<text x="40" y="900" font-size="7.5" class="ink">- ink: red notes on the annotated copy (20261113_194606), not print: &quot;?+24 (не взим.)&quot; (last word read [?]) in the BMR1 box above terminals 3-5; &quot;26 „0“&quot; at BMR1 1, &quot;+26&quot; at BMR1 4 and 6; triangles above 37X10, 41X10, 40X10 (outlined) and 38X10 (filled), none above 39X10; dotted triangles on the BMR1 4 line above KM6 61 and on the BMR1 14 line; red</text>
+<text x="52" y="910" font-size="7.5" class="ink">&quot;Норм „ON“&quot; (normally ON) by SQ1 (20261113_194843). What the triangles mean is not written (on-site list).</text>
+<text x="40" y="920" font-size="7.5" class="t">- The +24V-bus arrows stand in the printed order: UZ1 K14 (from 34X10), TABLO (from the 33X10 line), 32X10, BMR1, PLC, 5UG50.</text>
+<rect x="34" y="806" width="1612" height="124" class="r"/>
+<text x="38" y="952" font-size="8.5" class="d">Devices on this sheet (from control_devices.csv; [?] = unclear, estimated = with likely error)</text>
+<text x="40" y="964" font-size="7" class="t">UG50 [sure] rectified and AC control supplies +27V +24V +33V ~24V ~48V (PLOŠNÝ SPOJ SE ZDROJI UG50); terminals 1-32; place: cabinet; device row: sheet 3, column 03-04</text>
+<text x="40" y="974.8" font-size="7" class="t">X10 [sure] terminal strip in the cabinet (1-6 to M1) (SVORKOVNICE V ROZVADĚČI); 45 terminals + 3 PE (photo); place: cabinet; device row: sheet 2, column 04-09</text>
+<text x="40" y="985.6" font-size="7" class="t">BMR1 [sure] cut-control module: two-hand start, knife lock, clutch contactors, cut-done signal (MODUL ŘÍZENÍ ŘEZU (PŘIPOJENÍ MODULU ŘÍZENÍ ŘEZU BMR1); RU релейный модуль управления</text>
+<text x="50" y="994.9" font-size="7" class="t">реза); one relay board, plate &quot;BMR2&quot; (photo 143021), maker not printed or seen; terminals 1-29, 0V (-), +24V (+); OM list 10.2 &quot;BMR..&quot; 900 010 0714; place: cabinet; device row: sheet</text>
+<text x="50" y="1004.2" font-size="7" class="t">6-7, column 01-18; 01-13</text>
+<text x="40" y="1015" font-size="7" class="t">Q2 [sure] M1 run switch; contacts 1-2..7-8 closed in 0, 9-10 closed in 1; photo: 16 A 660 V AC, IEC 947-3; place: cabinet; device row: sheet 4-6, column 08; 17; 16; 09; 14-15</text>
+<text x="40" y="1025.8" font-size="7" class="t">KM6 [sure] cut clutch contactor (STYKAČE SPOJKY ŘEZU KM6, KM7); coil 50 Hz; place: cabinet; device row: sheet 4, column 17</text>
+<text x="40" y="1036.6" font-size="7" class="t">KM7 [sure] cut clutch contactor (STYKAČE SPOJKY ŘEZU KM6, KM7); coil 50 Hz; place: cabinet; device row: sheet 4, column 19</text>
+<text x="40" y="1047.4" font-size="7" class="t">S19 [sure] cut clutch switch (for knife change) (SPÍNAČ SPOJKY ŘEZU (PRO VÝMĚNU NOŽE); red ink on sheet 1 &quot;у маховика&quot;); NO 13-14 (5:09), NC 21-22 (6:18); diamond actuator symbol;</text>
+<text x="50" y="1056.7" font-size="7" class="t">place: machine; device row: sheet 5-6, column 09; 18</text>
+<text x="40" y="1067.5" font-size="7" class="t">S30 [sure] clamp position sensor (top position) (SNÍMAČ POLOHY LISOVADLA (HORNÍ POLOHA); sheet 6: SPÍNAČ POLOHY LISOVADLA); NO 13-14 (5:13), NC 21-22 (6:16); roller lever; place:</text>
+<text x="50" y="1076.8" font-size="7" class="t">machine; device row: sheet 5-6, column 13; 16</text>
+<text x="40" y="1087.6" font-size="7" class="t">XC2 [?] table-cabinet interconnection (PROPOJENÍ STŮL–ROZVADĚČ); pins 1-9 used; place: cabinet; device row: sheet 5-6, column 11; 01-08</text>
+<text x="40" y="1098.4" font-size="7" class="t">PLC [sure] COMPACT PLC: inputs and outputs of sheet 8 (COMPACT PLC); B&amp;R COMPACT P.L.C., 16 inputs / 14 outputs 24 V DC (photo 144328); place: cabinet; device row: sheet 8, column 01-05</text>
+<text x="40" y="1109.2" font-size="7" class="t">K2 [sure] feed-cut interlock (BLOKOVÁNÍ POSUV-ŘEZ) (POMOCNÁ RELÉ K2 – BLOKOVÁNÍ POSUV-ŘEZ); photo: F. Lütze relay as K1, changeover 11-12-14; coil voltage not read (24 V DC from the</text>
+<text x="50" y="1118.5" font-size="7" class="t">PLC, estimated); OM list 10.2: RE6-0011; place: cabinet; device row: sheet 5-6, column 16; 17</text>
+<text x="858" y="964" font-size="7" class="t">X11 [sure] terminal strip in the cabinet (SVORKOVNICE V ROZVADĚČI); 6 terminals (1-6) (photo); place: cabinet; device row: sheet 3, column 01</text>
+<text x="858" y="974.8" font-size="7" class="t">S10 [sure] cut start button (two-hand, left) (TLAČÍTKA SPOUŠTĚNÍ ŘEZU S10, S11; RU кнопки пуска реза); NC 1A-2A, NO 3A-4A; OM list 10.1: BACO head V22AH20, adapter 233E, block 23E10;</text>
+<text x="868" y="984.1" font-size="7" class="t">place: machine; device row: sheet 6, column 01-03</text>
+<text x="858" y="994.9" font-size="7" class="t">S11 [sure] cut start button (two-hand, right) (TLAČÍTKA SPOUŠTĚNÍ ŘEZU S10, S11); NC 1A-2A, NO 3A-4A; place: machine; device row: sheet 6, column 06-08</text>
+<text x="858" y="1005.7" font-size="7" class="t">X8 [?] terminal strip of sensors S12, SQ1, SQ2 (S13, S14 too on sheet 6) (SVORKOVNICE SNÍMAČŮ S12, SQ1, SQ2); terminals 1-6 used; place: machine; device row: sheet 6, column 09-13</text>
+<text x="858" y="1016.5" font-size="7" class="t">SQ1 [sure] knife lock sensor (SNÍMAČE ZAJIŠTĚNÍ NOŽE SQ1, SQ2 (SNÍMAČ POLOHY ZAJIŠTĚNÍ NOŽE); red ink on sheet 1 &quot;(на оси стопора)&quot;); contact 4-1 drawn NO; place: machine; device row:</text>
+<text x="868" y="1025.8" font-size="7" class="t">sheet 6, column 09</text>
+<text x="858" y="1036.6" font-size="7" class="t">SQ2 [sure] knife lock sensor (SNÍMAČE ZAJIŠTĚNÍ NOŽE SQ1, SQ2); contact 4-1 drawn NO; place: machine; device row: sheet 6, column 10</text>
+<text x="858" y="1047.4" font-size="7" class="t">S12 [sure] knife position sensor on the cam of the cutting mechanism (SNÍMAČE NA VAČCE ŘEZOVÉHO ÚSTROJÍ (SNÍMAČ POLOHY NOŽE)); contact 2-1 drawn NC; cam (&quot;G&quot;) actuator; place: machine;</text>
+<text x="868" y="1056.7" font-size="7" class="t">device row: sheet 6, column 11</text>
+<text x="858" y="1067.5" font-size="7" class="t">S13 [sure] knife position sensor on the cam of the cutting mechanism (SNÍMAČE NA VAČCE ŘEZOVÉHO ÚSTROJÍ); contact 2-1 drawn NC; place: machine; device row: sheet 6, column 12</text>
+<text x="858" y="1078.3" font-size="7" class="t">S14 [sure] knife position sensor on the cam of the cutting mechanism (SNÍMAČE NA VAČCE ŘEZOVÉHO ÚSTROJÍ); contact 2-1 drawn NC; place: machine; device row: sheet 6, column 13</text>
+<text x="858" y="1089.1" font-size="7" class="t">TABLO [sure] console control panel (B&amp;R operator terminal) (TABLO); +24V from 33X10 (6:15); place: console; device row: sheet 8, column 03-05</text>
+<text x="858" y="1099.9" font-size="7" class="t">UZ1 [sure] M2 feed drive; Lenze, relay terminals K12 K14; place: cabinet; device row: sheet 2, column 17-26</text>
+<rect x="34" y="940" width="1612" height="193.3" class="r"/>
+<text x="38" y="1155.3" font-size="8.5" class="d">Title block (redrawn, not a copy)</text>
+<text x="40" y="1167.3" font-size="7.5" class="t">- Adast Maxima MS 115 PS (serial 578.0009, 1998), control circuits: inputs 1-18 of the cut-control module BMR1: two-hand start, contactor feedback, knife sensors, interlocks.</text>
+<text x="40" y="1177.3" font-size="7.5" class="t">- Redrawn from the wiring set 568-70.9001 SCHEMA ZAPOJENÍ (MS 80 PS,DS MS 115 PS,DS), sheet 6; columns and zones as printed.</text>
+<text x="40" y="1187.3" font-size="7.5" class="t">- Sheet photo: preparatory_data_analysis/maxima_documents/adast_guillotine_wiring_and_plc_diagrams/20261114_014325.jpg</text>
+<text x="40" y="1197.3" font-size="7.5" class="t">- Data: stage_2_electronics/netlist/control_devices.csv and control_wires.csv, drawn by stage_2_electronics/schemes_2d/control_draw.py.</text>
+<text x="40" y="1207.3" font-size="7.5" class="t">- Marks: dashed line or [?] = unclear (on-site check list, spec/control.md); contacts in the off state as printed; end names 1/2 of lamps, RC parts and diodes are this redraw's names (1 = feed end, 2 = return end).</text>
+<rect x="34" y="1143.3" width="1612" height="74" class="r"/>
+</svg>

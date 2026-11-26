@@ -1,0 +1,636 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1629" viewBox="0 0 1680 1629">
+<style>.w,.e{fill:none;stroke:#000;stroke-width:1.2}.e{stroke-width:0.9}.wq{fill:none;stroke:#000;stroke-width:1.2;stroke-dasharray:5 3}.b{fill:#fff;stroke:#000;stroke-width:1.2}.bd{fill:none;stroke:#000;stroke-width:1;stroke-dasharray:4 3}.z{fill:#f3f3f3;stroke:#000;stroke-width:0.8}.r{fill:none;stroke:#000;stroke-width:0.8}.ink2{fill:none;stroke:#666;stroke-width:0.9}.tc{fill:#fff;stroke:#000;stroke-width:1}.dot{fill:#000}text{font-family:Consolas,"DejaVu Sans Mono","Courier New",monospace;fill:#000}.d{font-weight:bold}.n{fill:#333}.q{fill:#b00000}.ink{fill:#666;font-style:italic}.wl{fill:#0b4a8f}</style>
+<rect x="0" y="0" width="1680" height="1629" fill="#fff"/>
+<rect x="8" y="8" width="1664" height="1613" class="r"/>
+<text x="30" y="24" font-size="11" class="d">Wiring set 568-70.9001, sheet 8: PLC (programmable logic controller), console terminal TABLO, inverter UZ1 control side, encoder BR40</text>
+<rect x="30" y="38" width="162" height="16" class="r"/>
+<text x="112.05" y="50" font-size="8" text-anchor="middle" class="d">01</text>
+<rect x="192" y="38" width="132.23" height="16" class="r"/>
+<text x="271.95" y="50" font-size="8" text-anchor="middle" class="d">02</text>
+<rect x="324.23" y="38" width="251.02" height="16" class="r"/>
+<text x="376.5" y="50" font-size="8" text-anchor="middle" class="d">03</text>
+<rect x="575.25" y="38" width="268.2" height="16" class="r"/>
+<text x="774" y="50" font-size="8" text-anchor="middle" class="d">04</text>
+<rect x="843.45" y="38" width="146.55" height="16" class="r"/>
+<text x="912.9" y="50" font-size="8" text-anchor="middle" class="d">05</text>
+<rect x="1004" y="38" width="646" height="16" class="r"/>
+<text x="1327" y="50" font-size="7" text-anchor="middle" class="n">table (40): no columns on the paper</text>
+<rect x="31" y="62" width="958" height="36" class="z"/>
+<text x="510" y="75" font-size="7" text-anchor="middle" class="t">(39) ZAPOJENÍ ŘÍDÍCÍHO AUTOMATU - PLC (wiring of the control automaton, PLC)</text>
+<rect x="1005" y="62" width="644" height="36" class="z"/>
+<text x="1327" y="75" font-size="7" text-anchor="middle" class="t">(40) TABULKA PŘIPOJENÍ ŘÍDÍCÍHO AUTOMATU - PLC A OVLÁDACÍHO TABLA (connection table of the PLC and the control panel)</text>
+<rect x="81.1" y="131.1" width="463.1" height="284.6" class="r"/>
+<polygon points="140,142.1 337.9,142.1 388.4,192.6 388.4,356.8 337.9,407.3 140,407.3 89.5,356.8 89.5,192.6" class="e"/>
+<polygon points="347.49,136.69 385.41,172.91 375.51,182.81 337.59,146.59" class="b"/>
+<circle cx="348.9" cy="148" r="2.6" class="tc"/>
+<text x="333" y="165" font-size="9" text-anchor="middle" class="d">⏚</text>
+<circle cx="360.6" cy="158.9" r="2.6" class="tc"/>
+<text x="357.5" y="180" font-size="8" text-anchor="middle" class="d">−</text>
+<circle cx="374.1" cy="171.5" r="2.6" class="tc"/>
+<text x="371" y="189" font-size="8" text-anchor="middle" class="d">+</text>
+<rect x="380" y="196.7" width="10" height="46.3" class="b"/>
+<rect x="380" y="255.5" width="10" height="46.5" class="b"/>
+<rect x="380" y="310" width="10" height="38" class="b"/>
+<text x="376" y="282" font-size="8" text-anchor="end" class="d">XC70 <tspan class="q">[?]</tspan></text>
+<polygon points="393,270 420,270 420,260 443,277 420,294 420,284 393,284" class="b"/>
+<text x="447" y="281" font-size="8" class="d">PLC</text>
+<text x="128" y="360" font-size="7.5" class="t">POHLED ZE ZADNÍ STRANY (view from the rear side)</text>
+<text x="81.1" y="432" font-size="8" class="d">TABLO = OVLÁDACÍ TABLO (control panel in the console), drawn from its rear</text>
+<circle cx="771.5" cy="167.2" r="2.8" class="tc"/>
+<polyline points="769.1,169.6 773.9,164.8" class="e"/>
+<circle cx="771.5" cy="139.4" r="2.8" class="tc"/>
+<polyline points="769.1,141.8 773.9,137" class="e"/>
+<circle cx="771.5" cy="114.2" r="2.8" class="tc"/>
+<polyline points="769.1,116.6 773.9,111.8" class="e"/>
+<polygon points="805,134.4 815,139.4 805,144.4" class="b"/>
+<text x="820" y="142.4" font-size="8" class="d">X5 (2:02)</text>
+<rect x="70" y="573" width="918.5" height="301.5" class="b"/>
+<polyline points="70,621 988.5,621" class="e"/>
+<polyline points="70,823 988.5,823" class="e"/>
+<rect x="94.65" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="104" cy="595" r="4" class="tc"/>
+<polyline points="101.2,597.8 106.8,592.2" class="e"/>
+<rect x="113.35" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="122.7" cy="595" r="4" class="tc"/>
+<polyline points="119.9,597.8 125.5,592.2" class="e"/>
+<rect x="132.05" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="141.4" cy="595" r="4" class="tc"/>
+<polyline points="138.6,597.8 144.2,592.2" class="e"/>
+<rect x="150.75" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="160.1" cy="595" r="4" class="tc"/>
+<polyline points="157.3,597.8 162.9,592.2" class="e"/>
+<rect x="169.45" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="178.8" cy="595" r="4" class="tc"/>
+<polyline points="176,597.8 181.6,592.2" class="e"/>
+<rect x="188.15" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="197.5" cy="595" r="4" class="tc"/>
+<polyline points="194.7,597.8 200.3,592.2" class="e"/>
+<rect x="206.85" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="216.2" cy="595" r="4" class="tc"/>
+<polyline points="213.4,597.8 219,592.2" class="e"/>
+<rect x="225.55" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="234.9" cy="595" r="4" class="tc"/>
+<polyline points="232.1,597.8 237.7,592.2" class="e"/>
+<rect x="244.25" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="253.6" cy="595" r="4" class="tc"/>
+<polyline points="250.8,597.8 256.4,592.2" class="e"/>
+<rect x="262.95" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="272.3" cy="595" r="4" class="tc"/>
+<polyline points="269.5,597.8 275.1,592.2" class="e"/>
+<rect x="281.65" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="291" cy="595" r="4" class="tc"/>
+<polyline points="288.2,597.8 293.8,592.2" class="e"/>
+<rect x="300.35" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="309.7" cy="595" r="4" class="tc"/>
+<polyline points="306.9,597.8 312.5,592.2" class="e"/>
+<rect x="319.05" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="328.4" cy="595" r="4" class="tc"/>
+<polyline points="325.6,597.8 331.2,592.2" class="e"/>
+<rect x="337.75" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="347.1" cy="595" r="4" class="tc"/>
+<polyline points="344.3,597.8 349.9,592.2" class="e"/>
+<rect x="356.45" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="365.8" cy="595" r="4" class="tc"/>
+<polyline points="363,597.8 368.6,592.2" class="e"/>
+<rect x="375.15" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="384.5" cy="595" r="4" class="tc"/>
+<polyline points="381.7,597.8 387.3,592.2" class="e"/>
+<rect x="393.85" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="403.2" cy="595" r="4" class="tc"/>
+<polyline points="400.4,597.8 406,592.2" class="e"/>
+<rect x="412.55" y="580.5" width="18.7" height="40.5" class="r"/>
+<circle cx="421.9" cy="595" r="4" class="tc"/>
+<polyline points="419.1,597.8 424.7,592.2" class="e"/>
+<text x="104" y="646" font-size="8" text-anchor="middle" class="t">0</text>
+<text x="122.7" y="646" font-size="8" text-anchor="middle" class="t">1</text>
+<text x="141.4" y="646" font-size="8" text-anchor="middle" class="t">2</text>
+<text x="160.1" y="646" font-size="8" text-anchor="middle" class="t">3</text>
+<text x="178.8" y="646" font-size="8" text-anchor="middle" class="t">4</text>
+<text x="197.5" y="646" font-size="8" text-anchor="middle" class="t">5</text>
+<text x="216.2" y="646" font-size="8" text-anchor="middle" class="t">6</text>
+<text x="234.9" y="646" font-size="8" text-anchor="middle" class="t">7</text>
+<text x="253.6" y="646" font-size="8" text-anchor="middle" class="t">8</text>
+<text x="272.3" y="646" font-size="8" text-anchor="middle" class="t">9</text>
+<text x="291" y="646" font-size="8" text-anchor="middle" class="t">A</text>
+<text x="309.7" y="646" font-size="8" text-anchor="middle" class="t">B</text>
+<text x="328.4" y="646" font-size="8" text-anchor="middle" class="t">C</text>
+<text x="347.1" y="646" font-size="8" text-anchor="middle" class="t">D</text>
+<rect x="89.65" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="99" cy="858" r="4" class="tc"/>
+<polyline points="96.2,860.8 101.8,855.2" class="e"/>
+<rect x="108.35" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="117.7" cy="858" r="4" class="tc"/>
+<polyline points="114.9,860.8 120.5,855.2" class="e"/>
+<rect x="127.05" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="136.4" cy="858" r="4" class="tc"/>
+<polyline points="133.6,860.8 139.2,855.2" class="e"/>
+<rect x="145.75" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="155.1" cy="858" r="4" class="tc"/>
+<polyline points="152.3,860.8 157.9,855.2" class="e"/>
+<rect x="164.45" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="173.8" cy="858" r="4" class="tc"/>
+<polyline points="171,860.8 176.6,855.2" class="e"/>
+<rect x="183.15" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="192.5" cy="858" r="4" class="tc"/>
+<polyline points="189.7,860.8 195.3,855.2" class="e"/>
+<rect x="201.85" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="211.2" cy="858" r="4" class="tc"/>
+<polyline points="208.4,860.8 214,855.2" class="e"/>
+<rect x="220.55" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="229.9" cy="858" r="4" class="tc"/>
+<polyline points="227.1,860.8 232.7,855.2" class="e"/>
+<rect x="239.25" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="248.6" cy="858" r="4" class="tc"/>
+<polyline points="245.8,860.8 251.4,855.2" class="e"/>
+<rect x="257.95" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="267.3" cy="858" r="4" class="tc"/>
+<polyline points="264.5,860.8 270.1,855.2" class="e"/>
+<rect x="276.65" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="286" cy="858" r="4" class="tc"/>
+<polyline points="283.2,860.8 288.8,855.2" class="e"/>
+<rect x="295.35" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="304.7" cy="858" r="4" class="tc"/>
+<polyline points="301.9,860.8 307.5,855.2" class="e"/>
+<rect x="314.05" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="323.4" cy="858" r="4" class="tc"/>
+<polyline points="320.6,860.8 326.2,855.2" class="e"/>
+<rect x="332.75" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="342.1" cy="858" r="4" class="tc"/>
+<polyline points="339.3,860.8 344.9,855.2" class="e"/>
+<rect x="351.45" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="360.8" cy="858" r="4" class="tc"/>
+<polyline points="358,860.8 363.6,855.2" class="e"/>
+<rect x="370.15" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="379.5" cy="858" r="4" class="tc"/>
+<polyline points="376.7,860.8 382.3,855.2" class="e"/>
+<rect x="388.85" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="398.2" cy="858" r="4" class="tc"/>
+<polyline points="395.4,860.8 401,855.2" class="e"/>
+<rect x="407.55" y="832.5" width="18.7" height="36" class="r"/>
+<circle cx="416.9" cy="858" r="4" class="tc"/>
+<polyline points="414.1,860.8 419.7,855.2" class="e"/>
+<text x="99" y="808" font-size="8" text-anchor="middle" class="t">0</text>
+<text x="117.7" y="808" font-size="8" text-anchor="middle" class="t">1</text>
+<text x="136.4" y="808" font-size="8" text-anchor="middle" class="t">2</text>
+<text x="155.1" y="808" font-size="8" text-anchor="middle" class="t">3</text>
+<text x="173.8" y="808" font-size="8" text-anchor="middle" class="t">4</text>
+<text x="192.5" y="808" font-size="8" text-anchor="middle" class="t">5</text>
+<text x="211.2" y="808" font-size="8" text-anchor="middle" class="t">6</text>
+<text x="229.9" y="808" font-size="8" text-anchor="middle" class="t">7</text>
+<text x="248.6" y="808" font-size="8" text-anchor="middle" class="t">8</text>
+<text x="267.3" y="808" font-size="8" text-anchor="middle" class="t">9</text>
+<text x="286" y="808" font-size="8" text-anchor="middle" class="t">A</text>
+<text x="304.7" y="808" font-size="8" text-anchor="middle" class="t">B</text>
+<text x="323.4" y="808" font-size="8" text-anchor="middle" class="t">C</text>
+<text x="342.1" y="808" font-size="8" text-anchor="middle" class="t">D</text>
+<text x="360.8" y="808" font-size="8" text-anchor="middle" class="t">E</text>
+<text x="379.5" y="808" font-size="8" text-anchor="middle" class="t">F</text>
+<text x="98" y="668" font-size="8" class="t">OUT</text>
+<polyline points="359.8,632 362.8,636 373.15,636 375.15,640 377.15,636 387.5,636 390.5,632" class="e"/>
+<polyline points="397.2,632 400.2,636 410.55,636 412.55,640 414.55,636 424.9,636 427.9,632" class="e"/>
+<text x="375.15" y="665" font-size="8" text-anchor="middle" class="t">+24V</text>
+<text x="412.55" y="665" font-size="8" text-anchor="middle" class="t">GND</text>
+<text x="93" y="789" font-size="8" class="t">IN</text>
+<text x="407.55" y="789" font-size="8" text-anchor="middle" class="t">GND</text>
+<polyline points="392.2,803 395.2,799 405.55,799 407.55,795 409.55,799 419.9,799 422.9,803" class="e"/>
+<text x="595" y="730" font-size="13" text-anchor="middle" class="d">COMPACT PLC</text>
+<rect x="455.6" y="578.7" width="110" height="40" class="r"/>
+<circle cx="465.6" cy="598.7" r="3.2" class="dot"/>
+<circle cx="555.6" cy="598.7" r="3.2" class="dot"/>
+<polygon points="480.6,587.7 540.6,587.7 547.6,609.7 473.6,609.7" class="b"/>
+<circle cx="495.6" cy="593.7" r="1.8" class="tc"/>
+<circle cx="505.6" cy="593.7" r="1.8" class="tc"/>
+<circle cx="515.6" cy="593.7" r="1.8" class="tc"/>
+<circle cx="525.6" cy="593.7" r="1.8" class="tc"/>
+<circle cx="490.6" cy="603.7" r="1.8" class="tc"/>
+<circle cx="500.6" cy="603.7" r="1.8" class="tc"/>
+<circle cx="510.6" cy="603.7" r="1.8" class="tc"/>
+<circle cx="520.6" cy="603.7" r="1.8" class="tc"/>
+<circle cx="530.6" cy="603.7" r="1.8" class="tc"/>
+<rect x="590" y="578.7" width="110" height="40" class="r"/>
+<circle cx="600" cy="598.7" r="3.2" class="dot"/>
+<circle cx="690" cy="598.7" r="3.2" class="dot"/>
+<polygon points="615,587.7 675,587.7 682,609.7 608,609.7" class="b"/>
+<circle cx="630" cy="593.7" r="1.8" class="tc"/>
+<circle cx="640" cy="593.7" r="1.8" class="tc"/>
+<circle cx="650" cy="593.7" r="1.8" class="tc"/>
+<circle cx="660" cy="593.7" r="1.8" class="tc"/>
+<circle cx="625" cy="603.7" r="1.8" class="tc"/>
+<circle cx="635" cy="603.7" r="1.8" class="tc"/>
+<circle cx="645" cy="603.7" r="1.8" class="tc"/>
+<circle cx="655" cy="603.7" r="1.8" class="tc"/>
+<circle cx="665" cy="603.7" r="1.8" class="tc"/>
+<rect x="724" y="578.7" width="110" height="40" class="r"/>
+<circle cx="734" cy="598.7" r="3.2" class="dot"/>
+<circle cx="824" cy="598.7" r="3.2" class="dot"/>
+<polygon points="749,587.7 809,587.7 816,609.7 742,609.7" class="b"/>
+<circle cx="764" cy="593.7" r="1.8" class="tc"/>
+<circle cx="774" cy="593.7" r="1.8" class="tc"/>
+<circle cx="784" cy="593.7" r="1.8" class="tc"/>
+<circle cx="794" cy="593.7" r="1.8" class="tc"/>
+<circle cx="759" cy="603.7" r="1.8" class="tc"/>
+<circle cx="769" cy="603.7" r="1.8" class="tc"/>
+<circle cx="779" cy="603.7" r="1.8" class="tc"/>
+<circle cx="789" cy="603.7" r="1.8" class="tc"/>
+<circle cx="799" cy="603.7" r="1.8" class="tc"/>
+<rect x="852.7" y="578.7" width="110" height="40" class="r"/>
+<circle cx="862.7" cy="598.7" r="3.2" class="dot"/>
+<circle cx="952.7" cy="598.7" r="3.2" class="dot"/>
+<polygon points="877.7,587.7 937.7,587.7 944.7,609.7 870.7,609.7" class="b"/>
+<circle cx="892.7" cy="593.7" r="1.8" class="tc"/>
+<circle cx="902.7" cy="593.7" r="1.8" class="tc"/>
+<circle cx="912.7" cy="593.7" r="1.8" class="tc"/>
+<circle cx="922.7" cy="593.7" r="1.8" class="tc"/>
+<circle cx="887.7" cy="603.7" r="1.8" class="tc"/>
+<circle cx="897.7" cy="603.7" r="1.8" class="tc"/>
+<circle cx="907.7" cy="603.7" r="1.8" class="tc"/>
+<circle cx="917.7" cy="603.7" r="1.8" class="tc"/>
+<circle cx="927.7" cy="603.7" r="1.8" class="tc"/>
+<rect x="492.4" y="830" width="110" height="40" class="r"/>
+<circle cx="502.4" cy="850" r="3.2" class="dot"/>
+<circle cx="592.4" cy="850" r="3.2" class="dot"/>
+<polygon points="517.4,839 577.4,839 584.4,861 510.4,861" class="b"/>
+<circle cx="532.4" cy="845" r="1.8" class="tc"/>
+<circle cx="542.4" cy="845" r="1.8" class="tc"/>
+<circle cx="552.4" cy="845" r="1.8" class="tc"/>
+<circle cx="562.4" cy="845" r="1.8" class="tc"/>
+<circle cx="527.4" cy="855" r="1.8" class="tc"/>
+<circle cx="537.4" cy="855" r="1.8" class="tc"/>
+<circle cx="547.4" cy="855" r="1.8" class="tc"/>
+<circle cx="557.4" cy="855" r="1.8" class="tc"/>
+<circle cx="567.4" cy="855" r="1.8" class="tc"/>
+<rect x="624.7" y="830" width="110" height="40" class="r"/>
+<circle cx="634.7" cy="850" r="3.2" class="dot"/>
+<circle cx="724.7" cy="850" r="3.2" class="dot"/>
+<polygon points="649.7,839 709.7,839 716.7,861 642.7,861" class="b"/>
+<circle cx="664.7" cy="845" r="1.8" class="tc"/>
+<circle cx="674.7" cy="845" r="1.8" class="tc"/>
+<circle cx="684.7" cy="845" r="1.8" class="tc"/>
+<circle cx="694.7" cy="845" r="1.8" class="tc"/>
+<circle cx="659.7" cy="855" r="1.8" class="tc"/>
+<circle cx="669.7" cy="855" r="1.8" class="tc"/>
+<circle cx="679.7" cy="855" r="1.8" class="tc"/>
+<circle cx="689.7" cy="855" r="1.8" class="tc"/>
+<circle cx="699.7" cy="855" r="1.8" class="tc"/>
+<rect x="848.9" y="830" width="110" height="40" class="r"/>
+<circle cx="858.9" cy="850" r="3.2" class="dot"/>
+<circle cx="948.9" cy="850" r="3.2" class="dot"/>
+<polygon points="873.9,839 933.9,839 940.9,861 866.9,861" class="b"/>
+<circle cx="888.9" cy="845" r="1.8" class="tc"/>
+<circle cx="898.9" cy="845" r="1.8" class="tc"/>
+<circle cx="908.9" cy="845" r="1.8" class="tc"/>
+<circle cx="918.9" cy="845" r="1.8" class="tc"/>
+<circle cx="883.9" cy="855" r="1.8" class="tc"/>
+<circle cx="893.9" cy="855" r="1.8" class="tc"/>
+<circle cx="903.9" cy="855" r="1.8" class="tc"/>
+<circle cx="913.9" cy="855" r="1.8" class="tc"/>
+<circle cx="923.9" cy="855" r="1.8" class="tc"/>
+<text x="779" y="643" font-size="8" text-anchor="middle" class="d">XC60 <tspan class="q">[?]</tspan></text>
+<text x="907.7" y="643" font-size="8" text-anchor="middle" class="d">XC50 <tspan class="q">[?]</tspan></text>
+<polygon points="772,547 772,524.4 765,524.4 779,506.4 793,524.4 786,524.4 786,547" class="b"/>
+<polygon points="900.7,547 900.7,524.4 893.7,524.4 907.7,506.4 921.7,524.4 914.7,524.4 914.7,547" class="b"/>
+<text x="779" y="497" font-size="8" text-anchor="middle" class="d">TABLO</text>
+<text x="907.7" y="497" font-size="8" text-anchor="middle" class="d">UZ1</text>
+<text x="797.8" y="570" font-size="7" transform="rotate(-90 797.8 570)" class="n">2</text>
+<text x="807.8" y="570" font-size="7" transform="rotate(-90 807.8 570)" class="n">3</text>
+<text x="817.8" y="570" font-size="7" transform="rotate(-90 817.8 570)" class="n">5</text>
+<text x="827.8" y="570" font-size="7" transform="rotate(-90 827.8 570)" class="n">shell</text>
+<text x="942" y="570" font-size="7" transform="rotate(-90 942 570)" class="n">4</text>
+<text x="967" y="570" font-size="7" transform="rotate(-90 967 570)" class="n">6+9</text>
+<rect x="524" y="968" width="16" height="52" class="b"/>
+<text x="532" y="978.5" font-size="7" text-anchor="middle" class="n">4</text>
+<text x="532" y="987.5" font-size="7" text-anchor="middle" class="n">3</text>
+<text x="532" y="996.5" font-size="7" text-anchor="middle" class="n">2</text>
+<text x="532" y="1005.5" font-size="7" text-anchor="middle" class="n">1</text>
+<text x="532" y="1014.5" font-size="7" text-anchor="middle" class="n">5</text>
+<text x="532" y="1030" font-size="8" text-anchor="middle" class="d">XC4 <tspan class="q">[?]</tspan></text>
+<ellipse cx="460" cy="994" rx="9" ry="25" class="bd"/>
+<ellipse cx="605" cy="994" rx="9" ry="25" class="bd"/>
+<polyline points="460,958 605,958 605,969" class="w"/>
+<rect x="665.4" y="1032.8" width="100.5" height="65.7" class="b"/>
+<text x="678.5" y="1045.8" font-size="8" text-anchor="middle" class="t">A</text>
+<text x="698.9" y="1045.8" font-size="8" text-anchor="middle" class="t">B</text>
+<text x="717.8" y="1045.8" font-size="8" text-anchor="middle" class="t">I</text>
+<text x="736.5" y="1045.8" font-size="8" text-anchor="middle" class="t">+</text>
+<text x="755.1" y="1045.8" font-size="8" text-anchor="middle" class="t">−</text>
+<text x="715.65" y="1077.8" font-size="9" text-anchor="middle" class="d">BR40 <tspan class="q">[?]</tspan></text>
+<circle cx="490" cy="292" r="2.6" class="tc"/>
+<text x="484.5" y="294.5" font-size="7" text-anchor="end" class="n">3</text>
+<circle cx="490" cy="282" r="2.6" class="tc"/>
+<text x="484.5" y="284.5" font-size="7" text-anchor="end" class="n">2</text>
+<circle cx="490" cy="272" r="2.6" class="tc"/>
+<text x="484.5" y="274.5" font-size="7" text-anchor="end" class="n">5</text>
+<circle cx="490" cy="262" r="2.6" class="tc"/>
+<text x="484.5" y="264.5" font-size="7" text-anchor="end" class="n">shell</text>
+<polyline points="771.5,167.2 378.4,167.2 374.1,171.5" class="w"/>
+<text x="771.5" y="178.2" font-size="7.5" text-anchor="middle" class="wl">33X10</text>
+<text x="771.5" y="187.2" font-size="7" text-anchor="middle" class="t">(6:15)</text>
+<polyline points="771.5,139.4 380.1,139.4 360.6,158.9" class="w"/>
+<text x="771.5" y="150.4" font-size="7.5" text-anchor="middle" class="wl">45X10</text>
+<polyline points="805,139.4 771.5,139.4" class="w"/>
+<polyline points="771.5,114.2 382.7,114.2 348.9,148" class="w"/>
+<text x="777.5" y="117.2" font-size="7.5" class="wl">⏚X10</text>
+<polyline points="800,578.7 800,292 490,292" class="w"/>
+<text x="560" y="289.5" font-size="7" class="wl">3XC70</text>
+<polyline points="810,578.7 810,282 490,282" class="w"/>
+<text x="620" y="279.5" font-size="7" class="wl">2XC70</text>
+<polyline points="820,578.7 820,272 490,272" class="w"/>
+<text x="680" y="269.5" font-size="7" class="wl">5XC70</text>
+<polyline points="830,578.7 830,262 490,262" class="wq"/>
+<text x="740" y="259.5" font-size="7" class="q">[?]</text>
+<text x="758" y="259.5" font-size="6.5" class="n">shield (which end is bonded: not printed)</text>
+<polyline points="99,937.5 99,868.5" class="w"/>
+<text x="96.5" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 96.5 878.5)" class="wl">24BMR (7:06)</text>
+<polyline points="117.7,937.5 117.7,868.5" class="w"/>
+<text x="115.2" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 115.2 878.5)" class="wl">30X10 (5:14)</text>
+<polyline points="136.4,937.5 136.4,868.5" class="w"/>
+<text x="133.9" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 133.9 878.5)" class="wl">29X10 (5:13)</text>
+<polyline points="248.6,942 248.6,868.5" class="w"/>
+<text x="246.1" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 246.1 878.5)" class="wl">K12UZ1 (2:25)</text>
+<polyline points="267.3,933 267.3,868.5" class="w"/>
+<text x="264.8" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 264.8 878.5)" class="wl">3XC2 (5:12)</text>
+<polyline points="286,933 286,868.5" class="w"/>
+<text x="283.5" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 283.5 878.5)" class="wl">2XC2 (5:11)</text>
+<polyline points="524,1003 342.1,1003 342.1,868.5" class="w"/>
+<text x="339.6" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 339.6 878.5)" class="wl">1XC4</text>
+<polyline points="524,994 360.8,994 360.8,868.5" class="w"/>
+<text x="358.3" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 358.3 878.5)" class="wl">2XC4</text>
+<polyline points="524,985 379.5,985 379.5,868.5" class="w"/>
+<text x="377" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 377 878.5)" class="wl">3XC4</text>
+<polyline points="398.2,868.5 398.2,976 524,976" class="w"/>
+<text x="395.7" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 395.7 878.5)" class="wl">4XC4</text>
+<polyline points="416.9,868.5 416.9,958 460,958 460,969" class="w"/>
+<text x="414.4" y="878.5" font-size="7.5" text-anchor="end" transform="rotate(-90 414.4 878.5)" class="wl">7XC4</text>
+<polyline points="384.5,580.5 384.5,463.1 40.5,463.1 40.5,1012 524,1012" class="w"/>
+<text x="382" y="569.5" font-size="7.5" transform="rotate(-90 382 569.5)" class="wl">5XC4</text>
+<polyline points="717.8,1032.8 717.8,1003 540,1003" class="w"/>
+<polyline points="698.9,1032.8 698.9,994 540,994" class="w"/>
+<polyline points="678.5,1032.8 678.5,985 540,985" class="w"/>
+<polyline points="540,976 755.1,976 755.1,1032.8" class="w"/>
+<polyline points="540,1012 736.5,1012 736.5,1032.8" class="w"/>
+<polyline points="104,580.5 104,515" class="w"/>
+<text x="101.5" y="569.5" font-size="7.5" transform="rotate(-90 101.5 569.5)" class="wl">A1K2 (5:16)</text>
+<polyline points="272.3,580.5 272.3,493.9" class="wq"/>
+<text x="269.8" y="569.5" font-size="7.5" transform="rotate(-90 269.8 569.5)" class="wl">13KM8 (5:15)</text>
+<text x="269.8" y="511.5" font-size="7" transform="rotate(-90 269.8 511.5)" class="q">[?]</text>
+<polyline points="309.7,580.5 309.7,493.9" class="wq"/>
+<text x="307.2" y="569.5" font-size="7.5" transform="rotate(-90 307.2 569.5)" class="wl">E3UZ1 (2:22)</text>
+<text x="307.2" y="511.5" font-size="7" transform="rotate(-90 307.2 511.5)" class="q">[?]</text>
+<polyline points="328.4,580.5 328.4,493.9" class="wq"/>
+<text x="325.9" y="569.5" font-size="7.5" transform="rotate(-90 325.9 569.5)" class="wl">E4UZ1 (2:23)</text>
+<text x="325.9" y="511.5" font-size="7" transform="rotate(-90 325.9 511.5)" class="q">[?]</text>
+<polyline points="347.1,580.5 347.1,493.9" class="wq"/>
+<text x="344.6" y="569.5" font-size="7.5" transform="rotate(-90 344.6 569.5)" class="wl">28UZ1 (2:24)</text>
+<text x="344.6" y="511.5" font-size="7" transform="rotate(-90 344.6 511.5)" class="q">[?]</text>
+<polyline points="365.8,463.1 365.8,580.5" class="w"/>
+<text x="363.3" y="569.5" font-size="7.5" transform="rotate(-90 363.3 569.5)" class="wl">35X10 (6:17)</text>
+<polyline points="403.2,510.5 403.2,580.5" class="w"/>
+<text x="400.7" y="569.5" font-size="7.5" transform="rotate(-90 400.7 569.5)" class="wl">39UZ1 (2:21)</text>
+<polyline points="421.9,524 421.9,580.5" class="w"/>
+<text x="419.4" y="569.5" font-size="7.5" transform="rotate(-90 419.4 569.5)" class="wl">X5 (2:02)</text>
+<polyline points="960,515 960,578.7" class="w"/>
+<text x="957.5" y="569.5" font-size="7.5" transform="rotate(-90 957.5 569.5)" class="wl">7UZ1 (2:25)</text>
+<polyline points="935,515 935,578.7" class="w"/>
+<text x="932.5" y="569.5" font-size="7.5" transform="rotate(-90 932.5 569.5)" class="wl">8UZ1 (2:26)</text>
+<circle cx="365.8" cy="463.1" r="2.3" class="dot"/>
+<circle cx="460" cy="958" r="2.3" class="dot"/>
+<rect x="1010" y="148" width="580" height="410" class="r"/>
+<text x="1013" y="160" font-size="6.5" class="d">PLC</text>
+<text x="1075" y="160" font-size="6.5" class="d">SMĚR</text>
+<text x="1131" y="160" font-size="6.5" class="d">LINIE</text>
+<text x="1195" y="160" font-size="6.5" class="d">PŘIPOJENÍ - FUNKCE</text>
+<text x="1321" y="160" font-size="6.5" class="d">signal (English, from plc_drive_wires.csv)</text>
+<polyline points="1072,148 1072,558" class="r"/>
+<polyline points="1128,148 1128,558" class="r"/>
+<polyline points="1192,148 1192,558" class="r"/>
+<polyline points="1318,148 1318,558" class="r"/>
+<polyline points="1010,166 1590,166" class="r"/>
+<text x="1013" y="176" font-size="6.5" class="t">IN-0</text>
+<text x="1075" y="176" font-size="6.5" class="wl">24BMR</text>
+<text x="1131" y="176" font-size="6.5" class="t">7:06</text>
+<text x="1195" y="176" font-size="6.5" class="t">SIGNÁL PROVEDENÍ ŘEZU</text>
+<text x="1321" y="176" font-size="6.5" class="t">cut-done signal</text>
+<polyline points="1010,180 1590,180" class="r"/>
+<text x="1013" y="190" font-size="6.5" class="t">IN-1</text>
+<text x="1075" y="190" font-size="6.5" class="wl">30X10</text>
+<text x="1131" y="190" font-size="6.5" class="t">5:14</text>
+<text x="1195" y="190" font-size="6.5" class="t">S28 - PLECH LISOVADLA</text>
+<text x="1321" y="190" font-size="6.5" class="t">S28 clamp plate</text>
+<polyline points="1010,194 1590,194" class="r"/>
+<text x="1013" y="204" font-size="6.5" class="t">IN-2</text>
+<text x="1075" y="204" font-size="6.5" class="wl">29X10</text>
+<text x="1131" y="204" font-size="6.5" class="t">5:13</text>
+<text x="1195" y="204" font-size="6.5" class="t">S30 - POLOHA LISOVADLA</text>
+<text x="1321" y="204" font-size="6.5" class="t">S30 clamp position (top per sheet 1)</text>
+<polyline points="1010,208 1590,208" class="r"/>
+<text x="1013" y="218" font-size="6.5" class="t">IN-8</text>
+<text x="1075" y="218" font-size="6.5" class="wl">K12UZ1</text>
+<text x="1131" y="218" font-size="6.5" class="t">2:25</text>
+<text x="1195" y="218" font-size="6.5" class="t">SIGNÁL FUNKCE POHONU</text>
+<text x="1321" y="218" font-size="6.5" class="t">drive (inverter UZ1) function signal (SIGNÁL FUNKCE POHONU)</text>
+<polyline points="1010,222 1590,222" class="r"/>
+<text x="1013" y="232" font-size="6.5" class="t">IN-9</text>
+<text x="1075" y="232" font-size="6.5" class="wl">3XC2</text>
+<text x="1131" y="232" font-size="6.5" class="t">5:12</text>
+<text x="1195" y="232" font-size="6.5" class="t">S27 - ZADNÍ POLOHA SEDLA</text>
+<text x="1321" y="232" font-size="6.5" class="t">S27 backgauge rear position</text>
+<polyline points="1010,236 1590,236" class="r"/>
+<text x="1013" y="246" font-size="6.5" class="t">IN-A</text>
+<text x="1075" y="246" font-size="6.5" class="wl">2XC2</text>
+<text x="1131" y="246" font-size="6.5" class="t">5:11</text>
+<text x="1195" y="246" font-size="6.5" class="t">S24 - PŘEDNÍ POLOHA SEDLA</text>
+<text x="1321" y="246" font-size="6.5" class="t">S24 backgauge front position</text>
+<polyline points="1010,250 1590,250" class="r"/>
+<text x="1013" y="260" font-size="6.5" class="t">IN-D</text>
+<text x="1075" y="260" font-size="6.5" class="wl">1XC4</text>
+<text x="1131" y="260" font-size="6.5" class="t">8:04</text>
+<text x="1195" y="260" font-size="6.5" class="t">BR40 - INDEX (I)</text>
+<text x="1321" y="260" font-size="6.5" class="t">encoder index pulse (BR40 - INDEX (I))</text>
+<polyline points="1010,264 1590,264" class="r"/>
+<text x="1013" y="274" font-size="6.5" class="t">IN-E</text>
+<text x="1075" y="274" font-size="6.5" class="wl">2XC4</text>
+<text x="1131" y="274" font-size="6.5" class="t">8:04</text>
+<text x="1195" y="274" font-size="6.5" class="t">BR40 - KANÁL &quot;B&quot;</text>
+<text x="1321" y="274" font-size="6.5" class="t">encoder channel B (BR40 - KANÁL B)</text>
+<polyline points="1010,278 1590,278" class="r"/>
+<text x="1013" y="288" font-size="6.5" class="t">IN-F</text>
+<text x="1075" y="288" font-size="6.5" class="wl">3XC4</text>
+<text x="1131" y="288" font-size="6.5" class="t">8:04</text>
+<text x="1195" y="288" font-size="6.5" class="t">BR40 - KANÁL &quot;A&quot;</text>
+<text x="1321" y="288" font-size="6.5" class="t">encoder channel A (BR40 - KANÁL A)</text>
+<polyline points="1010,292 1590,292" class="r"/>
+<text x="1013" y="302" font-size="6.5" class="t">IN-GND</text>
+<text x="1075" y="302" font-size="6.5" class="wl">4XC4</text>
+<text x="1131" y="302" font-size="6.5" class="t">8:04</text>
+<text x="1195" y="302" font-size="6.5" class="t">BR40 - GND</text>
+<text x="1321" y="302" font-size="6.5" class="t">encoder 0V (BR40 - GND)</text>
+<polyline points="1010,306 1590,306" class="r"/>
+<text x="1013" y="316" font-size="6.5" class="t">IN-GND</text>
+<text x="1075" y="316" font-size="6.5" class="wl">7XC4</text>
+<text x="1131" y="316" font-size="6.5" class="t">8:03</text>
+<text x="1195" y="316" font-size="6.5" class="t">BR40 - STÍNĚNÍ</text>
+<text x="1321" y="316" font-size="6.5" class="t">encoder cable shield (BR40 - STÍNĚNÍ)</text>
+<polyline points="1010,320 1590,320" class="r"/>
+<text x="1013" y="330" font-size="6.5" class="t">OUT-0</text>
+<text x="1075" y="330" font-size="6.5" class="wl">A1K2</text>
+<text x="1131" y="330" font-size="6.5" class="t">5:16</text>
+<text x="1195" y="330" font-size="6.5" class="t">BLOKOVÁNÍ POSUV - ŘEZ</text>
+<text x="1321" y="330" font-size="6.5" class="t">feed-cut interlock</text>
+<polyline points="1010,334 1590,334" class="r"/>
+<text x="1013" y="344" font-size="6.5" class="t">OUT-9</text>
+<text x="1075" y="344" font-size="6.5" class="wl">13KM8</text>
+<text x="1131" y="344" font-size="6.5" class="t">5:15</text>
+<text x="1195" y="344" font-size="6.5" class="t">OVLÁDÁNÍ Y3</text>
+<text x="1321" y="344" font-size="6.5" class="t">control of Y3</text>
+<polyline points="1010,348 1590,348" class="r"/>
+<text x="1013" y="358" font-size="6.5" class="t">OUT-B</text>
+<text x="1075" y="358" font-size="6.5" class="wl">E3UZ1</text>
+<text x="1131" y="358" font-size="6.5" class="t">2:22</text>
+<text x="1195" y="358" font-size="6.5" class="t">POSUV VPŘED</text>
+<text x="1321" y="358" font-size="6.5" class="t">backgauge feed forward (POSUV VPŘED)</text>
+<polyline points="1010,362 1590,362" class="r"/>
+<text x="1013" y="372" font-size="6.5" class="t">OUT-C</text>
+<text x="1075" y="372" font-size="6.5" class="wl">E4UZ1</text>
+<text x="1131" y="372" font-size="6.5" class="t">2:23</text>
+<text x="1195" y="372" font-size="6.5" class="t">POSUV VZAD</text>
+<text x="1321" y="372" font-size="6.5" class="t">backgauge feed backward (POSUV VZAD)</text>
+<polyline points="1010,376 1590,376" class="r"/>
+<text x="1013" y="386" font-size="6.5" class="t">OUT-D</text>
+<text x="1075" y="386" font-size="6.5" class="wl">28UZ1</text>
+<text x="1131" y="386" font-size="6.5" class="t">2:24</text>
+<text x="1195" y="386" font-size="6.5" class="t">BLOKOVÁNÍ UZ1</text>
+<text x="1321" y="386" font-size="6.5" class="t">inverter UZ1 blocking (enable input 28) (BLOKOVÁNÍ UZ1)</text>
+<polyline points="1010,390 1590,390" class="r"/>
+<text x="1013" y="400" font-size="6.5" class="t">OUT +24V</text>
+<text x="1075" y="400" font-size="6.5" class="wl">5XC4</text>
+<text x="1131" y="400" font-size="6.5" class="t">8:04</text>
+<text x="1195" y="400" font-size="6.5" class="t">BR40 - +24V</text>
+<text x="1321" y="400" font-size="6.5" class="t">encoder supply +24V (BR40 - +24V)</text>
+<polyline points="1010,404 1590,404" class="r"/>
+<text x="1013" y="414" font-size="6.5" class="t">OUT-GND</text>
+<text x="1075" y="414" font-size="6.5" class="wl">39UZ1</text>
+<text x="1131" y="414" font-size="6.5" class="t">2:21</text>
+<text x="1195" y="414" font-size="6.5" class="t">UZ1 - GND</text>
+<text x="1321" y="414" font-size="6.5" class="t">inverter digital ground (UZ1 - GND)</text>
+<polyline points="1010,418 1590,418" class="r"/>
+<polyline points="1010,432 1590,432" class="r"/>
+<text x="1013" y="442" font-size="6.5" class="t">+24V PLC</text>
+<text x="1075" y="442" font-size="6.5" class="wl">35X10</text>
+<text x="1131" y="442" font-size="6.5" class="t">6:17</text>
+<text x="1195" y="442" font-size="6.5" class="t">NAPÁJENÍ PLC</text>
+<text x="1321" y="442" font-size="6.5" class="t">PLC supply +24V</text>
+<polyline points="1010,446 1590,446" class="r"/>
+<text x="1013" y="456" font-size="6.5" class="t">GND PLC</text>
+<text x="1075" y="456" font-size="6.5" class="wl">X5</text>
+<text x="1131" y="456" font-size="6.5" class="t">2:01</text>
+<text x="1195" y="456" font-size="6.5" class="t">NAPÁJENÍ PLC</text>
+<text x="1321" y="456" font-size="6.5" class="t">0V</text>
+<text x="1149.6" y="456" font-size="6.5" class="q">[?]</text>
+<polyline points="1010,460 1590,460" class="r"/>
+<polyline points="1010,474 1590,474" class="r"/>
+<text x="1013" y="484" font-size="6.5" class="t">6+9 XC50</text>
+<text x="1075" y="484" font-size="6.5" class="wl">7UZ1</text>
+<text x="1131" y="484" font-size="6.5" class="t">2:25</text>
+<text x="1195" y="484" font-size="6.5" class="t">ŘÍZENÍ RYCHLOSTI SEDLA</text>
+<text x="1321" y="484" font-size="6.5" class="t">backgauge speed control (ŘÍZENÍ RYCHLOSTI SEDLA)</text>
+<polyline points="1010,488 1590,488" class="r"/>
+<text x="1013" y="498" font-size="6.5" class="t">4 XC50</text>
+<text x="1075" y="498" font-size="6.5" class="wl">8UZ1</text>
+<text x="1131" y="498" font-size="6.5" class="t">2:26</text>
+<text x="1195" y="498" font-size="6.5" class="t">ŘÍZENÍ RYCHLOSTI SEDLA</text>
+<text x="1321" y="498" font-size="6.5" class="t">backgauge speed control (ŘÍZENÍ RYCHLOSTI SEDLA)</text>
+<polyline points="1010,502 1590,502" class="r"/>
+<polyline points="1010,516 1590,516" class="r"/>
+<text x="1013" y="526" font-size="6.5" class="t">2 XC60</text>
+<text x="1075" y="526" font-size="6.5" class="wl">3XC70</text>
+<text x="1131" y="526" font-size="6.5" class="t">8:03 / 8:04</text>
+<text x="1195" y="526" font-size="6.5" class="t">PROPOJENÍ PLC-TABLO</text>
+<text x="1321" y="526" font-size="6.5" class="t">PLC-TABLO link (PROPOJENÍ PLC-TABLO)</text>
+<polyline points="1010,530 1590,530" class="r"/>
+<text x="1013" y="540" font-size="6.5" class="t">3 XC60</text>
+<text x="1075" y="540" font-size="6.5" class="wl">2XC70</text>
+<text x="1131" y="540" font-size="6.5" class="t">8:03 / 8:04</text>
+<text x="1195" y="540" font-size="6.5" class="t">(STÍNĚNÍ PŘIPOJENO</text>
+<text x="1321" y="540" font-size="6.5" class="t">PLC-TABLO link (PROPOJENÍ PLC-TABLO); (shield connected to the</text>
+<polyline points="1010,544 1590,544" class="r"/>
+<text x="1013" y="554" font-size="6.5" class="t">5 XC60</text>
+<text x="1075" y="554" font-size="6.5" class="wl">5XC70</text>
+<text x="1131" y="554" font-size="6.5" class="t">8:03 / 8:04</text>
+<text x="1195" y="554" font-size="6.5" class="t">NA KOVOVÝ PLÁŠŤ KONEKTORU)</text>
+<text x="1321" y="554" font-size="6.5" class="t">PLC-TABLO link (PROPOJENÍ PLC-TABLO); metal shell of the connector)</text>
+<polyline points="1010,558 1590,558" class="r"/>
+<text x="1010" y="132" font-size="9" class="ink">blue ink: OMRON 1000P E6B2-CW26C</text>
+<text x="560" y="232" font-size="8" class="ink">red ink: IN-8.-д. в конце хода пресса со вст.</text>
+<text x="1595" y="172" font-size="7" class="ink">red ink</text>
+<text x="1595" y="181" font-size="7" class="ink">by rows</text>
+<text x="1595" y="190" font-size="7" class="ink">IN-0..2:</text>
+<text x="1595" y="199" font-size="7" class="ink">короткий</text>
+<text x="1595" y="208" font-size="7" class="ink">сто[п] –</text>
+<text x="1595" y="217" font-size="7" class="ink">верх. пол.</text>
+<text x="1595" y="226" font-size="7" class="ink">пр[есса]</text>
+<text x="1015" y="640" font-size="7.5" class="ink">blue ink by the title block (a later hand):</text>
+<text x="1062" y="658" font-size="8.5" class="ink">EUCHNER PA50/Welle 06/Imp. 1000</text>
+<text x="1062" y="672" font-size="8.5" class="ink">Ident.Nr. 075043 Volt 5-30 Ver. 24</text>
+<text x="1062" y="686" font-size="8.5" class="ink">Seriennummer: 9813 12 344</text>
+<text x="1018" y="674" font-size="9" class="ink">BR40</text>
+<text x="1062" y="708" font-size="8.5" class="ink">PA50-06-1000-24</text>
+<polyline points="1056,648 1050,648 1050,690 1056,690" class="ink2"/>
+<text x="38" y="1142" font-size="8.5" class="d">Notes on reading this sheet</text>
+<text x="40" y="1154" font-size="7.5" class="t">- Sheet 8 has two parts: (39) the PLC wiring drawing over columns 01-05 and (40) the connection table of the PLC and the control panel, which has no columns. Clean copies 20261114_015721 (top) and 20261114_015117 (bottom); the table and the later ink from 20261113_191800.</text>
+<text x="40" y="1164" font-size="7.5" class="t">- Ruler: the paper marks 01-05 by ticks at irregular places, each over the current path it names; each number stands here at its tick, the boxes end halfway between ticks.</text>
+<text x="40" y="1174" font-size="7.5" class="t">- PLC terminals as printed: OUT 0-D, +24V twice, GND (ground) twice (top strip); IN 0-F, GND twice (bottom strip). The two +24V are one node (the +24V line joins them with a junction dot); so are the two GND of each strip (a bracket on the paper). The netlist names the input-strip GND &quot;IN-GND&quot;, as table (40) does.</text>
+<text x="40" y="1184" font-size="7.5" class="t">- PLC terminals with no lead on the paper, not used: inputs IN-3 to IN-7, IN-B, IN-C; outputs OUT-1 to OUT-8, OUT-A. Table (40) does not list them. Photo 144328 agrees for the inputs; on the output row it shows a wire on 9 or 8 <tspan class="q">[?]</tspan> and none on A, so outputs 9, B, C and D are drawn dashed.</text>
+<text x="40" y="1194" font-size="7.5" class="t">- TABLO terminals are printed ⏚, − and +; the netlist names them PE (protective earth), - and +24V (+24V is the key of the same conductor in control_wires.csv, where sheet 6 prints &quot;TABLO +24V (8:03)&quot;). The drawing shows the printed signs.</text>
+<text x="40" y="1204" font-size="7.5" class="t">- A lead that ends free with &quot;wire (sheet:column)&quot; continues on that sheet; the reference comes from the same conductor's row in power_wires.csv or control_wires.csv. &quot;(6:15)&quot; under 33X10 is kept as printed (control_wires.csv: 6:14-15).</text>
+<text x="40" y="1214" font-size="7.5" class="t">- Drawn here, not as lines on the paper: the four conductors of the PLC-TABLO link between XC60 and XC70 (the paper shows the arrows &quot;XC70 ⇒ PLC&quot; and &quot;TABLO&quot; over XC60 and lists the contacts in table (40); here they end at the contacts of XC70, circles right of the arrow &quot;XC70 ⇒ PLC&quot;); the two conductors from XC50 to UZ1 7 and 8 (paper: arrow &quot;UZ1&quot;,</text>
+<text x="52" y="1224" font-size="7.5" class="t">table rows 6+9 XC50, 4 XC50); the harness to XC4 and BR40, printed as one bus line with slanted entries, is drawn as five parallel conductors (a crossing without a dot is no connection). XC4 is drawn as a box with its contact numbers.</text>
+<text x="40" y="1234" font-size="7.5" class="t">- Dashed ellipses: the cable shields at both halves of XC4, bonded by 7XC4 as printed.</text>
+<text x="40" y="1244" font-size="7.5" class="t">- Dashed line and red <tspan class="q">[?]</tspan> = unclear, on the on-site check list of spec/plc_drive.md: outputs 9, B, C and D (the markers of the output row are not readable in photo 144328), the link shield (the paper does not say which end is bonded). A red <tspan class="q">[?]</tspan> after a device name: that row of plc_drive_devices.csv is unclear (BR40: type; XC4, XC50, XC60, XC70: plug</text>
+<text x="52" y="1254" font-size="7.5" class="t">type and place, see the device block).</text>
+<text x="40" y="1264" font-size="7.5" class="t">- Table (40): each row is filled from plc_drive_wires.csv (PLC = plc_address or contact, SMĚR (direction) = wire, LINIE (line) = sheet:column of the far end from the same conductor's row of the other thread, else of this sheet); PŘIPOJENÍ - FUNKCE (connection - function) is the printed Czech text, the last column the netlist's English signal. Rows 3</text>
+<text x="52" y="1274" font-size="7.5" class="t">and 5 XC60 also carry the English of the printed remark split over them, &quot;(STÍNĚNÍ PŘIPOJENO NA KOVOVÝ PLÁŠŤ KONEKTORU)&quot; (shield connected to the metal shell of the connector), which belongs to the link shield (the shell row of plc_drive_wires.csv). &quot;GND PLC X5 2:01&quot; is kept as printed: the terminal label says (2:02) and column 01 of sheet 2 is PE,</text>
+<text x="52" y="1284" font-size="7.5" class="t">so it is marked <tspan class="q">[?]</tspan>.</text>
+<text x="40" y="1294" font-size="7.5" class="t">- Contact functions read off the PLC port legends (estimated, see spec/plc_drive.md): XC60 = the 9-pin D-sub (D-subminiature connector) of port IF1 (interface 1), an RS232 (Recommended Standard 232) serial port: 5 GND, 3 TxD (transmit data), 2 RxD (receive data); XC50 = the ANALOG OUTPUTS port: pin 4 = I1 (current output 1), 6 and 9 = GND.</text>
+<text x="40" y="1304" font-size="7.5" class="ink">- Grey italic = later handwriting, quoted, never print. Blue: &quot;OMRON 1000P E6B2-CW26C&quot; (1000P = 1000 pulses per turn); &quot;EUCHNER PA50/Welle 06/Imp. 1000, Ident.Nr. 075043, Volt 5-30, Ver. 24, Seriennummer: 9813 12 344&quot; (Welle = shaft, Imp. = pulses per turn, Ident.Nr. = identification number, Ver. = version <tspan class="q">[?]</tspan>, Seriennummer = serial number) bracketed</text>
+<text x="52" y="1314" font-size="7.5" class="ink">&quot;BR40&quot;, and &quot;PA50-06-1000-24&quot; (encoder type candidates). Red, left of the table: &quot;IN-8.-д. в конце хода пресса со вст.&quot; (IN-8 - д. = датчик, sensor, at the end of the clamp stroke; &quot;со вст.&quot; not resolved <tspan class="q">[?]</tspan>) against the printed IN-8 = K12UZ1 drive signal. Red, right of table rows IN-0 to IN-2: &quot;короткий сто[п] – верх. пол. пр[есса]&quot; (short st[op] -</text>
+<text x="52" y="1324" font-size="7.5" class="ink">top position of the clamp <tspan class="q">[?]</tspan>).</text>
+<rect x="34" y="1130" width="1612" height="204" class="r"/>
+<text x="38" y="1356" font-size="8.5" class="d">Devices on this sheet (from plc_drive_devices.csv; <tspan class="q">[?]</tspan> = unclear, estimated = with likely error)</text>
+<text x="40" y="1368" font-size="7" class="t">PLC [sure] programmable logic controller of the cut cycle and the backgauge: clamp and cut-done inputs, encoder BR40 count, backgauge drive commands to UZ1, feed-cut interlock K2,</text>
+<text x="50" y="1377.3" font-size="7" class="t">air-cushion control, serial link to the console terminal TABLO (COMPACT PLC (ZAPOJENÍ ŘÍDÍCÍHO AUTOMATU - PLC = wiring of the control automaton); OM (operating manual MS 80/115 PS, DS)</text>
+<text x="50" y="1386.6" font-size="7" class="t">p.49 &quot;BR COMP 1-0&quot;); B&amp;R (Bernecker + Rainer) COMPACT P.L.C.: 16 inputs 24 VDC (volts direct current), 14 outputs 24 VDC 1 A per terminal, max. 7 A per P.L.C., fuse 1.25 AT (amperes,</text>
+<text x="50" y="1395.9" font-size="7" class="t">time-lag) (photo 144328); W (web source, weaker evidence): BRCOMP1.0; place: cabinet; device row: sheet 8, column 01-05</text>
+<text x="40" y="1406.7" font-size="7" class="t">TABLO [sure] console operator terminal: keys and display for cut programs and backgauge positions; serial link to the PLC (OVLÁDACÍ TABLO (TABLO; POHLED ZE ZADNÍ STRANY = view from the</text>
+<text x="50" y="1416" font-size="7" class="t">rear)); B&amp;R panel: 4E0040.01-590, a keypad module (estimated, by the 4E family, OM p.46), display module 4D1084.00-590, board 22511030/2 (photos); +24 V DC (direct current) (sheet 6:</text>
+<text x="50" y="1425.3" font-size="7" class="t">&quot;TABLO +24V (8:03)&quot;; sheet 8 prints only &quot;+&quot;); place: console; device row: sheet 8, column 01-03</text>
+<text x="40" y="1436.1" font-size="7" class="t">BR40 <tspan class="q">[?]</tspan> backgauge position encoder: channels A, B and index I counted by the PLC on IN-F, IN-E, IN-D (SNÍMAČ BR40 (KONEKTOR SNÍMAČE BR40 = connector of sensor BR40); RU (Russian)</text>
+<text x="50" y="1445.4" font-size="7" class="t">абсолютный ротационный датчик (absolute rotary sensor, OM p.41)); sheet 8: pins A, B, I, +, − (incremental A/B/index), +24V supply; type not printed: OM p.46 EUCHNER</text>
+<text x="50" y="1454.7" font-size="7" class="t">P39SSPPBI1000-123-24; ink on sheet 8: EUCHNER PA50/Welle 06/Imp. 1000, Ident.Nr. 075043, Volt 5-30, Ver. 24, Seriennummer 9813 12 344, PA50-06-1000-24; later ink OMRON 1000P E6B2-CW26C;</text>
+<text x="50" y="1464" font-size="7" class="t">place: machine; device row: sheet 8, column 04</text>
+<text x="40" y="1474.8" font-size="7" class="t">XC4 <tspan class="q">[?]</tspan> connector of sensor BR40 (encoder) (KONEKTOR SNÍMAČE BR40); plug and socket, contacts 1-5 and shell (sheet 8); place: cabinet; device row: sheet 8, column 03-04</text>
+<text x="40" y="1485.6" font-size="7" class="t">XC50 <tspan class="q">[?]</tspan> control-system connector (PLC analog outputs to UZ1 7, 8) (KONEKTORY ŘÍDÍCÍHO SYSTÉMU (ŘÍZENÍ RYCHLOSTI SEDLA = backgauge speed control)); 9-pin D-sub (sheet 8); pins 4 and 6+9</text>
+<text x="50" y="1494.9" font-size="7" class="t">used; place: cabinet; device row: sheet 8, column 05</text>
+<text x="40" y="1505.7" font-size="7" class="t">XC60 <tspan class="q">[?]</tspan> control-system connector (PLC side of the TABLO link) (KONEKTORY ŘÍDÍCÍHO SYSTÉMU (PROPOJENÍ PLC-TABLO = PLC-TABLO link)); 9-pin D-sub (sheet 8); pins 2, 3, 5 and shell used;</text>
+<text x="50" y="1515" font-size="7" class="t">place: cabinet; device row: sheet 8, column 04</text>
+<text x="858" y="1368" font-size="7" class="t">XC70 <tspan class="q">[?]</tspan> control-system connector (TABLO side) (KONEKTORY ŘÍDÍCÍHO SYSTÉMU (XC70 ⇒ PLC)); pins 2, 3, 5 and shell used (sheet 8); place: console; device row: sheet 8, column 03</text>
+<text x="858" y="1378.8" font-size="7" class="t">X10 [sure] terminal strip in the cabinet (1-6 to M1) (SVORKOVNICE V ROZVADĚČI); 45 terminals + 3 PE (photo); place: cabinet; device row: sheet 2, column 04-09</text>
+<text x="858" y="1389.6" font-size="7" class="t">X5 [sure] working-earth strip: 0 V of all control supplies, bonded to PE (SVORKOVNICE PRAC. (PRACOVNÍ = working) ZEMĚ); 17 terminals drawn; photo about 13; place: cabinet; device row:</text>
+<text x="868" y="1398.9" font-size="7" class="t">sheet 2, column 02</text>
+<text x="858" y="1409.7" font-size="7" class="t">UZ1 [sure] M2 feed drive (MĚNIČ); Lenze EVF8202-E-V002; in 1/N/PE (one phase, neutral and protective earth) AC (alternating current) 230 V 9.0 A; out 3/AC 0-230 V 4.0 A 0.75 kW; place:</text>
+<text x="868" y="1419" font-size="7" class="t">cabinet; device row: sheet 2, column 17-26</text>
+<text x="858" y="1429.8" font-size="7" class="t">BMR1 [sure] cut-control module: two-hand start, knife lock, clutch contactors, cut-done signal (MODUL ŘÍZENÍ ŘEZU (PŘIPOJENÍ MODULU ŘÍZENÍ ŘEZU BMR1); RU релейный модуль управления</text>
+<text x="868" y="1439.1" font-size="7" class="t">реза); one relay board, plate &quot;BMR2&quot; (photo 143021), maker not printed or seen; terminals 1-29, 0V (-), +24V (+); OM list 10.2 &quot;BMR..&quot; 900 010 0714; place: cabinet; device row: sheet</text>
+<text x="868" y="1448.4" font-size="7" class="t">6-7, column 01-18; 01-13</text>
+<text x="858" y="1459.2" font-size="7" class="t">K2 [sure] feed-cut interlock (BLOKOVÁNÍ POSUV-ŘEZ) (POMOCNÁ RELÉ K2 – BLOKOVÁNÍ POSUV-ŘEZ); photo: F. (Friedrich) Lütze relay as K1, changeover 11-12-14; coil voltage not read (24 V DC</text>
+<text x="868" y="1468.5" font-size="7" class="t">from the PLC, estimated); OM list 10.2: RE6-0011; place: cabinet; device row: sheet 5-6, column 16; 17</text>
+<text x="858" y="1479.3" font-size="7" class="t">KM8 [sure] blower (air cushion) motor contactor (STYKAČ MOTORU DMYCHADLA KM8); coil 50 Hz; place: cabinet; device row: sheet 4, column 12</text>
+<text x="858" y="1490.1" font-size="7" class="t">XC2 <tspan class="q">[?]</tspan> table-cabinet interconnection (PROPOJENÍ STŮL–ROZVADĚČ); pins 1-9 used; place: cabinet; device row: sheet 5-6, column 11; 01-08</text>
+<rect x="34" y="1344" width="1612" height="185.8" class="r"/>
+<text x="38" y="1551.8" font-size="8.5" class="d">Title block (redrawn, not a copy)</text>
+<text x="40" y="1563.8" font-size="7.5" class="t">- Adast Maxima MS 115 PS (serial 578.0009, 1998), PLC and drive control: PLC, console terminal TABLO, inverter UZ1 control side, encoder BR40, backgauge positioning signals.</text>
+<text x="40" y="1573.8" font-size="7.5" class="t">- Redrawn from the wiring set 568-70.9001 SCHÉMA ZAPOJENÍ (MS 80 PS.DS MS 115 PS.DS), sheet 8; columns as printed; title block of the paper: MS 80 PS.DS, MS 115 PS.DS, SCHÉMA ZAPOJENÍ, 568-70.9001, sheet 8.</text>
+<text x="40" y="1583.8" font-size="7.5" class="t">- Sheet photos: preparatory_data_analysis/maxima_documents/adast_guillotine_wiring_and_plc_diagrams/20261114_015721.jpg (top), 20261114_015117.jpg (bottom), 20261113_191800.jpg (table, ink).</text>
+<text x="40" y="1593.8" font-size="7.5" class="t">- Data: stage_2_electronics/netlist/plc_drive_devices.csv and plc_drive_wires.csv; references from power_wires.csv, control_wires.csv and power_devices.csv; drawn by stage_2_electronics/schemes_2d/plc_draw.py.</text>
+<text x="40" y="1603.8" font-size="7.5" class="t">- Marks: dashed line or <tspan class="q">[?]</tspan> = unclear (on-site check list, spec/plc_drive.md); grey italic = later ink, quoted.</text>
+<rect x="34" y="1539.8" width="1612" height="74" class="r"/>
+</svg>

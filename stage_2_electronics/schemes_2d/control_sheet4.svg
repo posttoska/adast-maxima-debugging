@@ -1,0 +1,697 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1281" viewBox="0 0 1680 1281">
+<style>.w,.e{fill:none;stroke:#000;stroke-width:1.2}.wq{fill:none;stroke:#000;stroke-width:1.2;stroke-dasharray:5 3}.b{fill:#fff;stroke:#000;stroke-width:1.2}.bd{fill:none;stroke:#000;stroke-width:1;stroke-dasharray:4 3}.z{fill:#f3f3f3;stroke:#000;stroke-width:0.8}.r{fill:none;stroke:#000;stroke-width:0.8}.act{fill:none;stroke:#000;stroke-width:0.9;stroke-dasharray:3 2}.tc{fill:#fff;stroke:#000;stroke-width:1}.dot{fill:#000}text{font-family:Consolas,"DejaVu Sans Mono","Courier New",monospace;fill:#000}.d{font-weight:bold}.n{fill:#333}.q{fill:#b00000}.ink{fill:#666;font-style:italic}.wl{fill:#0b4a8f}</style>
+<rect x="0" y="0" width="1680" height="1281" fill="#fff"/>
+<rect x="8" y="8" width="1664" height="1265" class="r"/>
+<text x="30" y="24" font-size="11" class="d">568-70.9001 sheet 4 (redrawn): lighting, main contactors, motor and cut-clutch contactors, time relays</text>
+<rect x="30" y="38" width="77.1" height="16" class="r"/>
+<text x="68.6" y="50" font-size="8" text-anchor="middle" class="d">01</text>
+<text x="34" y="50" font-size="8" class="d">4:</text>
+<rect x="107.1" y="38" width="77.1" height="16" class="r"/>
+<text x="145.7" y="50" font-size="8" text-anchor="middle" class="d">02</text>
+<rect x="184.3" y="38" width="77.1" height="16" class="r"/>
+<text x="222.9" y="50" font-size="8" text-anchor="middle" class="d">03</text>
+<rect x="261.4" y="38" width="77.1" height="16" class="r"/>
+<text x="300" y="50" font-size="8" text-anchor="middle" class="d">04</text>
+<rect x="338.6" y="38" width="77.1" height="16" class="r"/>
+<text x="377.1" y="50" font-size="8" text-anchor="middle" class="d">05</text>
+<rect x="415.7" y="38" width="77.1" height="16" class="r"/>
+<text x="454.3" y="50" font-size="8" text-anchor="middle" class="d">06</text>
+<rect x="492.9" y="38" width="77.1" height="16" class="r"/>
+<text x="531.4" y="50" font-size="8" text-anchor="middle" class="d">07</text>
+<rect x="570" y="38" width="77.1" height="16" class="r"/>
+<text x="608.6" y="50" font-size="8" text-anchor="middle" class="d">08</text>
+<rect x="647.1" y="38" width="77.1" height="16" class="r"/>
+<text x="685.7" y="50" font-size="8" text-anchor="middle" class="d">09</text>
+<rect x="724.3" y="38" width="77.1" height="16" class="r"/>
+<text x="762.9" y="50" font-size="8" text-anchor="middle" class="d">10</text>
+<rect x="801.4" y="38" width="77.1" height="16" class="r"/>
+<text x="840" y="50" font-size="8" text-anchor="middle" class="d">11</text>
+<rect x="878.6" y="38" width="77.1" height="16" class="r"/>
+<text x="917.1" y="50" font-size="8" text-anchor="middle" class="d">12</text>
+<rect x="955.7" y="38" width="77.1" height="16" class="r"/>
+<text x="994.3" y="50" font-size="8" text-anchor="middle" class="d">13</text>
+<rect x="1032.9" y="38" width="77.1" height="16" class="r"/>
+<text x="1071.4" y="50" font-size="8" text-anchor="middle" class="d">14</text>
+<rect x="1110" y="38" width="77.1" height="16" class="r"/>
+<text x="1148.6" y="50" font-size="8" text-anchor="middle" class="d">15</text>
+<rect x="1187.1" y="38" width="77.1" height="16" class="r"/>
+<text x="1225.7" y="50" font-size="8" text-anchor="middle" class="d">16</text>
+<rect x="1264.3" y="38" width="77.1" height="16" class="r"/>
+<text x="1302.9" y="50" font-size="8" text-anchor="middle" class="d">17</text>
+<rect x="1341.4" y="38" width="77.1" height="16" class="r"/>
+<text x="1380" y="50" font-size="8" text-anchor="middle" class="d">18</text>
+<rect x="1418.6" y="38" width="77.1" height="16" class="r"/>
+<text x="1457.1" y="50" font-size="8" text-anchor="middle" class="d">19</text>
+<rect x="1495.7" y="38" width="77.1" height="16" class="r"/>
+<text x="1534.3" y="50" font-size="8" text-anchor="middle" class="d">20</text>
+<rect x="1572.9" y="38" width="77.1" height="16" class="r"/>
+<text x="1611.4" y="50" font-size="8" text-anchor="middle" class="d">21</text>
+<rect x="31" y="62" width="152.3" height="74" class="z"/>
+<text x="107.1" y="71" font-size="7" text-anchor="middle" class="t">(9) work-surface lighting E1, E2</text>
+<text x="107.1" y="79.5" font-size="7" text-anchor="middle" class="t">(OSVĚTLENÍ PRACOVNÍ PLOCHY E1,E2)</text>
+<rect x="185.3" y="62" width="229.4" height="74" class="z"/>
+<text x="300" y="71" font-size="7" text-anchor="middle" class="t">(10) cut-line indication E3, E4 (NÁZNAK ŘEZU E3,E4)</text>
+<rect x="571" y="62" width="306.6" height="74" class="z"/>
+<text x="724.3" y="71" font-size="7" text-anchor="middle" class="t">(11) main contactors KM1A, KM1B (HLAVNÍ STYKAČE KM1A,KM1B)</text>
+<rect x="879.6" y="62" width="75.1" height="74" class="z"/>
+<text x="917.1" y="71" font-size="7" text-anchor="middle" class="t">(12) blower</text>
+<text x="917.1" y="79.5" font-size="7" text-anchor="middle" class="t">motor contactor</text>
+<text x="917.1" y="88" font-size="7" text-anchor="middle" class="t">KM8 (STYKAČ</text>
+<text x="917.1" y="96.5" font-size="7" text-anchor="middle" class="t">MOTORU DMYCHADLA</text>
+<text x="917.1" y="105" font-size="7" text-anchor="middle" class="t">KM8)</text>
+<rect x="956.7" y="62" width="306.6" height="74" class="z"/>
+<text x="1110" y="71" font-size="7" text-anchor="middle" class="t">(13) contactors of the knife and hydraulics drive motor KM2, KM3, KM4</text>
+<text x="1110" y="79.5" font-size="7" text-anchor="middle" class="t">(STYKAČE MOTORU PRO POHON NOŽE A HYDRAULIKY KM2,KM3,KM4)</text>
+<rect x="1265.3" y="62" width="190.9" height="74" class="z"/>
+<text x="1360.7" y="71" font-size="7" text-anchor="middle" class="t">(14) cut clutch contactors KM6, KM7 (STYKAČE</text>
+<text x="1360.7" y="79.5" font-size="7" text-anchor="middle" class="t">SPOJKY ŘEZU KM6,KM7)</text>
+<rect x="1458.1" y="62" width="190.9" height="74" class="z"/>
+<text x="1553.6" y="71" font-size="7" text-anchor="middle" class="t">(15) time relay: cut delay after clamping</text>
+<text x="1553.6" y="79.5" font-size="7" text-anchor="middle" class="t">KT2 (ČASOVÉ RELÉ ZPOŽDĚNÍ ŘEZU ZA LISOVÁNÍM</text>
+<text x="1553.6" y="88" font-size="7" text-anchor="middle" class="t">KT2)</text>
+<polygon points="72.6,190 80.6,186 80.6,194" class="b"/>
+<text x="69.6" y="189" font-size="7.5" text-anchor="end" class="d">12UG50</text>
+<text x="69.6" y="198" font-size="7" text-anchor="end" class="t">(3:04)</text>
+<text x="84.6" y="187" font-size="7" class="t">~24V</text>
+<polyline points="145.7,210 145.7,224" class="w"/>
+<polyline points="145.7,240 145.7,254" class="w"/>
+<polyline points="145.7,240 136.7,226" class="e"/>
+<polyline points="140.7,232 130.7,232" class="act"/>
+<polyline points="126.7,228 130.7,228 130.7,236" class="e"/>
+<text x="149.7" y="219" font-size="7" class="n">3A</text>
+<text x="149.7" y="251" font-size="7" class="n">4A</text>
+<text x="123.7" y="230" font-size="8" text-anchor="end" class="d">S2</text>
+<polyline points="300,210 300,224" class="w"/>
+<polyline points="300,240 300,254" class="w"/>
+<polyline points="300,240 291,226" class="e"/>
+<polyline points="295,232 285,232" class="act"/>
+<polyline points="281,228 285,228 285,236" class="e"/>
+<text x="304" y="219" font-size="7" class="n">4B</text>
+<text x="304" y="251" font-size="7" class="n">3B</text>
+<text x="278" y="230" font-size="8" text-anchor="end" class="d">S2</text>
+<circle cx="68.6" cy="300" r="2.8" class="tc"/>
+<text x="73.6" y="297" font-size="7" class="n">7X10</text>
+<circle cx="145.7" cy="300" r="2.8" class="tc"/>
+<text x="150.7" y="297" font-size="7" class="n">8X10</text>
+<circle cx="300" cy="300" r="2.8" class="tc"/>
+<text x="305" y="297" font-size="7" class="n">9X10</text>
+<circle cx="377.1" cy="300" r="2.8" class="tc"/>
+<text x="382.1" y="297" font-size="7" class="n">10X10</text>
+<polyline points="68.6,340 68.6,353" class="w"/>
+<polyline points="68.6,371 68.6,384" class="w"/>
+<circle cx="68.6" cy="362" r="9" class="b"/>
+<polyline points="62.2,355.6 75,368.4" class="e"/>
+<polyline points="62.2,368.4 75,355.6" class="e"/>
+<text x="72.6" y="348" font-size="6.5" class="n">1</text>
+<text x="72.6" y="382" font-size="6.5" class="n">2</text>
+<text x="56.6" y="365" font-size="8" text-anchor="end" class="d">E1</text>
+<polyline points="145.7,340 145.7,353" class="w"/>
+<polyline points="145.7,371 145.7,384" class="w"/>
+<circle cx="145.7" cy="362" r="9" class="b"/>
+<polyline points="139.3,355.6 152.1,368.4" class="e"/>
+<polyline points="139.3,368.4 152.1,355.6" class="e"/>
+<text x="149.7" y="348" font-size="6.5" class="n">1</text>
+<text x="149.7" y="382" font-size="6.5" class="n">2</text>
+<text x="133.7" y="365" font-size="8" text-anchor="end" class="d">E2</text>
+<polyline points="300,340 300,353" class="w"/>
+<polyline points="300,371 300,384" class="w"/>
+<circle cx="300" cy="362" r="9" class="b"/>
+<polyline points="293.6,355.6 306.4,368.4" class="e"/>
+<polyline points="293.6,368.4 306.4,355.6" class="e"/>
+<text x="304" y="348" font-size="6.5" class="n">1</text>
+<text x="304" y="382" font-size="6.5" class="n">2</text>
+<text x="288" y="365" font-size="8" text-anchor="end" class="d">E3</text>
+<polyline points="377.1,340 377.1,353" class="w"/>
+<polyline points="377.1,371 377.1,384" class="w"/>
+<circle cx="377.1" cy="362" r="9" class="b"/>
+<polyline points="370.7,355.6 383.5,368.4" class="e"/>
+<polyline points="370.7,368.4 383.5,355.6" class="e"/>
+<text x="381.1" y="348" font-size="6.5" class="n">1</text>
+<text x="381.1" y="382" font-size="6.5" class="n">2</text>
+<text x="365.1" y="365" font-size="8" text-anchor="end" class="d">E4</text>
+<circle cx="145.7" cy="440" r="2.8" class="tc"/>
+<text x="150.7" y="452" font-size="7" class="n">11X10</text>
+<circle cx="222.9" cy="440" r="2.8" class="tc"/>
+<text x="227.9" y="452" font-size="7" class="n">12X10</text>
+<circle cx="300" cy="440" r="2.8" class="tc"/>
+<text x="305" y="452" font-size="7" class="n">13X10</text>
+<polygon points="72.6,160 80.6,156 80.6,164" class="b"/>
+<text x="69.6" y="159" font-size="7.5" text-anchor="end" class="d">13UG50</text>
+<text x="69.6" y="168" font-size="7" text-anchor="end" class="t">(3:04)</text>
+<text x="84.6" y="157" font-size="7" class="t">~24V</text>
+<polyline points="762.9,200 762.9,214" class="w"/>
+<polyline points="762.9,230 762.9,244" class="w"/>
+<polyline points="762.9,230 753.9,216" class="e"/>
+<polyline points="756.9,222 747.9,222" class="act"/>
+<polyline points="747.9,218 743.9,222 747.9,226" class="e"/>
+<text x="766.9" y="209" font-size="7" class="n">43</text>
+<text x="766.9" y="241" font-size="7" class="n">44</text>
+<text x="740.9" y="220" font-size="8" text-anchor="end" class="d">QF1</text>
+<text x="740.9" y="229" font-size="7" text-anchor="end" class="t">(2:10)</text>
+<polyline points="762.9,270 762.9,284" class="w"/>
+<polyline points="762.9,296 762.9,310" class="w"/>
+<polyline points="762.9,296 753.9,286" class="e"/>
+<text x="766.9" y="279" font-size="7" class="n">19</text>
+<text x="766.9" y="307" font-size="7" class="n">20</text>
+<text x="749.9" y="288" font-size="8" text-anchor="end" class="d">BMR1</text>
+<text x="749.9" y="297" font-size="7" text-anchor="end" class="t">(7:01)</text>
+<circle cx="762.9" cy="340" r="2.8" class="tc"/>
+<text x="767.9" y="337" font-size="7" class="n">14X10</text>
+<polyline points="762.9,360 762.9,374" class="w"/>
+<polyline points="762.9,390 762.9,404" class="w"/>
+<polyline points="762.9,374 771.9,374" class="e"/>
+<polyline points="762.9,390 773.9,371" class="e"/>
+<polyline points="756.9,382 747.9,382" class="act"/>
+<polyline points="747.9,378 743.9,382 747.9,386" class="e"/>
+<text x="766.9" y="369" font-size="7" class="n">21</text>
+<text x="766.9" y="401" font-size="7" class="n">22</text>
+<text x="740.9" y="380" font-size="8" text-anchor="end" class="d">S5</text>
+<circle cx="762.9" cy="425" r="2.8" class="tc"/>
+<text x="767.9" y="422" font-size="7" class="n">15X10</text>
+<polyline points="762.9,445 762.9,459" class="w"/>
+<polyline points="762.9,475 762.9,489" class="w"/>
+<polyline points="762.9,459 771.9,459" class="e"/>
+<polyline points="762.9,475 773.9,456" class="e"/>
+<polyline points="757.9,467 746.9,467" class="e"/>
+<path d="M 746.9 461 A 6 6 0 0 0 746.9 473 Z" class="e"/>
+<text x="766.9" y="454" font-size="7" class="n">21</text>
+<text x="766.9" y="486" font-size="7" class="n">22</text>
+<text x="734.9" y="465" font-size="8" text-anchor="end" class="d">S1</text>
+<text x="734.9" y="474" font-size="6.5" text-anchor="end" class="n">POUZE MS115</text>
+<circle cx="762.9" cy="510" r="2.8" class="tc"/>
+<text x="767.9" y="507" font-size="7" class="n">16X10</text>
+<circle cx="762.9" cy="530" r="2.8" class="tc"/>
+<text x="767.9" y="527" font-size="7" class="n">17X10</text>
+<polyline points="762.9,550 762.9,564" class="w"/>
+<polyline points="762.9,580 762.9,594" class="w"/>
+<polyline points="762.9,580 753.9,566" class="e"/>
+<text x="766.9" y="559" font-size="7" class="n">13</text>
+<text x="766.9" y="591" font-size="7" class="n">14</text>
+<text x="776.9" y="570" font-size="8" class="d">KM1A</text>
+<text x="776.9" y="579" font-size="7" class="t">(4:09)</text>
+<polyline points="762.9,610 762.9,624" class="w"/>
+<polyline points="762.9,640 762.9,654" class="w"/>
+<polyline points="762.9,640 753.9,626" class="e"/>
+<text x="766.9" y="619" font-size="7" class="n">14</text>
+<text x="766.9" y="651" font-size="7" class="n">13</text>
+<text x="776.9" y="630" font-size="8" class="d">KM1B</text>
+<text x="776.9" y="639" font-size="7" class="t">(4:11)</text>
+<polyline points="608.6,580 608.6,594" class="w"/>
+<polyline points="608.6,610 608.6,624" class="w"/>
+<polyline points="608.6,610 599.6,596" class="e"/>
+<polyline points="603.6,602 593.6,602" class="act"/>
+<polyline points="589.6,598 593.6,598 593.6,606" class="e"/>
+<text x="612.6" y="589" font-size="7" class="n">1</text>
+<text x="612.6" y="621" font-size="7" class="n">2</text>
+<text x="586.6" y="600" font-size="8" text-anchor="end" class="d">Q2</text>
+<polyline points="685.7,700 685.7,710" class="w"/>
+<polyline points="685.7,730 685.7,740" class="w"/>
+<rect x="665.7" y="710" width="40" height="20" class="b"/>
+<text x="685.7" y="723" font-size="8" text-anchor="middle" class="d">KM1A</text>
+<text x="681.7" y="708" font-size="6.5" text-anchor="end" class="n">A1</text>
+<text x="681.7" y="739" font-size="6.5" text-anchor="end" class="n">A2</text>
+<polyline points="840,700 840,710" class="w"/>
+<polyline points="840,730 840,740" class="w"/>
+<rect x="820" y="710" width="40" height="20" class="b"/>
+<text x="840" y="723" font-size="8" text-anchor="middle" class="d">KM1B</text>
+<text x="836" y="708" font-size="6.5" text-anchor="end" class="n">A1</text>
+<text x="836" y="739" font-size="6.5" text-anchor="end" class="n">A2</text>
+<polyline points="917.1,700 917.1,710" class="w"/>
+<polyline points="917.1,730 917.1,740" class="w"/>
+<rect x="897.1" y="710" width="40" height="20" class="b"/>
+<text x="917.1" y="723" font-size="8" text-anchor="middle" class="d">KM8</text>
+<text x="913.1" y="708" font-size="6.5" text-anchor="end" class="n">A1</text>
+<text x="913.1" y="739" font-size="6.5" text-anchor="end" class="n">A2</text>
+<polyline points="994.3,700 994.3,710" class="w"/>
+<polyline points="994.3,730 994.3,740" class="w"/>
+<rect x="974.3" y="710" width="40" height="20" class="b"/>
+<text x="994.3" y="723" font-size="8" text-anchor="middle" class="d">KM2</text>
+<text x="990.3" y="708" font-size="6.5" text-anchor="end" class="n">A1</text>
+<text x="990.3" y="739" font-size="6.5" text-anchor="end" class="n">A2</text>
+<polyline points="1071.4,700 1071.4,710" class="w"/>
+<polyline points="1071.4,730 1071.4,740" class="w"/>
+<rect x="1051.4" y="710" width="40" height="20" class="b"/>
+<text x="1071.4" y="723" font-size="8" text-anchor="middle" class="d">KM3</text>
+<text x="1067.4" y="708" font-size="6.5" text-anchor="end" class="n">A1</text>
+<text x="1067.4" y="739" font-size="6.5" text-anchor="end" class="n">A2</text>
+<polyline points="1148.6,700 1148.6,710" class="w"/>
+<polyline points="1148.6,730 1148.6,740" class="w"/>
+<rect x="1128.6" y="710" width="40" height="20" class="b"/>
+<text x="1148.6" y="723" font-size="8" text-anchor="middle" class="d">KM4</text>
+<text x="1144.6" y="708" font-size="6.5" text-anchor="end" class="n">A1</text>
+<text x="1144.6" y="739" font-size="6.5" text-anchor="end" class="n">A2</text>
+<polyline points="1302.9,700 1302.9,710" class="w"/>
+<polyline points="1302.9,730 1302.9,740" class="w"/>
+<rect x="1282.9" y="710" width="40" height="20" class="b"/>
+<text x="1302.9" y="723" font-size="8" text-anchor="middle" class="d">KM6</text>
+<text x="1298.9" y="708" font-size="6.5" text-anchor="end" class="n">A1</text>
+<text x="1298.9" y="739" font-size="6.5" text-anchor="end" class="n">A2</text>
+<polyline points="1457.1,700 1457.1,710" class="w"/>
+<polyline points="1457.1,730 1457.1,740" class="w"/>
+<rect x="1437.1" y="710" width="40" height="20" class="b"/>
+<text x="1457.1" y="723" font-size="8" text-anchor="middle" class="d">KM7</text>
+<text x="1453.1" y="708" font-size="6.5" text-anchor="end" class="n">A1</text>
+<text x="1453.1" y="739" font-size="6.5" text-anchor="end" class="n">A2</text>
+<polyline points="715.7,700 715.7,706" class="w"/>
+<rect x="711.7" y="706" width="8" height="12" class="b"/>
+<polyline points="715.7,718 715.7,724" class="w"/>
+<polyline points="708.7,724 722.7,724" class="e"/>
+<polyline points="708.7,728 722.7,728" class="e"/>
+<polyline points="715.7,728 715.7,740" class="w"/>
+<text x="724.7" y="723" font-size="7.5" class="d">RC1</text>
+<polyline points="947.1,700 947.1,706" class="w"/>
+<rect x="943.1" y="706" width="8" height="12" class="b"/>
+<polyline points="947.1,718 947.1,724" class="w"/>
+<polyline points="940.1,724 954.1,724" class="e"/>
+<polyline points="940.1,728 954.1,728" class="e"/>
+<polyline points="947.1,728 947.1,740" class="w"/>
+<text x="956.1" y="723" font-size="7.5" class="d">RC8</text>
+<text x="956.1" y="732" font-size="6.5" class="q">[?]</text>
+<polyline points="1024.3,700 1024.3,706" class="w"/>
+<rect x="1020.3" y="706" width="8" height="12" class="b"/>
+<polyline points="1024.3,718 1024.3,724" class="w"/>
+<polyline points="1017.3,724 1031.3,724" class="e"/>
+<polyline points="1017.3,728 1031.3,728" class="e"/>
+<polyline points="1024.3,728 1024.3,740" class="w"/>
+<text x="1033.3" y="723" font-size="7.5" class="d">RC2</text>
+<polyline points="1101.4,700 1101.4,706" class="w"/>
+<rect x="1097.4" y="706" width="8" height="12" class="b"/>
+<polyline points="1101.4,718 1101.4,724" class="w"/>
+<polyline points="1094.4,724 1108.4,724" class="e"/>
+<polyline points="1094.4,728 1108.4,728" class="e"/>
+<polyline points="1101.4,728 1101.4,740" class="w"/>
+<text x="1110.4" y="723" font-size="7.5" class="d">RC3</text>
+<polyline points="1178.6,700 1178.6,706" class="w"/>
+<rect x="1174.6" y="706" width="8" height="12" class="b"/>
+<polyline points="1178.6,718 1178.6,724" class="w"/>
+<polyline points="1171.6,724 1185.6,724" class="e"/>
+<polyline points="1171.6,728 1185.6,728" class="e"/>
+<polyline points="1178.6,728 1178.6,740" class="w"/>
+<text x="1187.6" y="723" font-size="7.5" class="d">RC4</text>
+<polyline points="1332.9,700 1332.9,706" class="w"/>
+<rect x="1328.9" y="706" width="8" height="12" class="b"/>
+<polyline points="1332.9,718 1332.9,724" class="w"/>
+<polyline points="1325.9,724 1339.9,724" class="e"/>
+<polyline points="1325.9,728 1339.9,728" class="e"/>
+<polyline points="1332.9,728 1332.9,740" class="w"/>
+<text x="1341.9" y="723" font-size="7.5" class="d">RC6</text>
+<polyline points="1487.1,700 1487.1,706" class="w"/>
+<rect x="1483.1" y="706" width="8" height="12" class="b"/>
+<polyline points="1487.1,718 1487.1,724" class="w"/>
+<polyline points="1480.1,724 1494.1,724" class="e"/>
+<polyline points="1480.1,728 1494.1,728" class="e"/>
+<polyline points="1487.1,728 1487.1,740" class="w"/>
+<text x="1496.1" y="723" font-size="7.5" class="d">RC7</text>
+<polyline points="917.1,270 917.1,284" class="w"/>
+<polyline points="917.1,300 917.1,314" class="w"/>
+<polyline points="917.1,300 908.1,286" class="e"/>
+<polyline points="912.1,292 902.1,292" class="act"/>
+<polyline points="898.1,288 902.1,288 902.1,296" class="e"/>
+<text x="921.1" y="279" font-size="7" class="n">3</text>
+<text x="921.1" y="311" font-size="7" class="n">4</text>
+<text x="895.1" y="290" font-size="8" text-anchor="end" class="d">S4</text>
+<polyline points="1225.7,270 1225.7,284" class="w"/>
+<polyline points="1225.7,300 1225.7,314" class="w"/>
+<polyline points="1225.7,300 1216.7,286" class="e"/>
+<polyline points="1220.7,292 1210.7,292" class="act"/>
+<polyline points="1206.7,288 1210.7,288 1210.7,296" class="e"/>
+<text x="1229.7" y="279" font-size="7" class="n">9</text>
+<text x="1229.7" y="311" font-size="7" class="n">10</text>
+<text x="1203.7" y="290" font-size="8" text-anchor="end" class="d">Q2</text>
+<polyline points="1148.6,360 1148.6,374" class="w"/>
+<polyline points="1148.6,390 1148.6,404" class="w"/>
+<polyline points="1148.6,390 1139.6,376" class="e"/>
+<polyline points="1142.6,382 1135.6,382" class="e"/>
+<path d="M 1135.6 377 A 5 5 0 0 0 1135.6 387" class="e"/>
+<text x="1152.6" y="369" font-size="7" class="n">4</text>
+<text x="1152.6" y="401" font-size="7" class="n">5</text>
+<text x="1126.6" y="380" font-size="8" text-anchor="end" class="d">KT1</text>
+<text x="1126.6" y="389" font-size="7" text-anchor="end" class="t">(4:16)</text>
+<text x="1126.6" y="398" font-size="6.5" text-anchor="end" class="q">15-18</text>
+<polyline points="994.3,440 994.3,454" class="w"/>
+<polyline points="994.3,470 994.3,484" class="w"/>
+<polyline points="994.3,470 985.3,456" class="e"/>
+<text x="998.3" y="449" font-size="7" class="n">14</text>
+<text x="998.3" y="481" font-size="7" class="n">13</text>
+<text x="981.3" y="460" font-size="8" text-anchor="end" class="d">KM2</text>
+<text x="981.3" y="469" font-size="7" text-anchor="end" class="t">(4:13)</text>
+<polyline points="1032.3,440 1032.3,454" class="w"/>
+<polyline points="1032.3,470 1032.3,484" class="w"/>
+<polyline points="1032.3,470 1023.3,456" class="e"/>
+<text x="1036.3" y="449" font-size="7" class="n">5</text>
+<text x="1036.3" y="481" font-size="7" class="n">6</text>
+<text x="1046.3" y="460" font-size="8" class="d">KM4</text>
+<text x="1046.3" y="469" font-size="7" class="t">(4:15)</text>
+<polyline points="1071.4,520 1071.4,534" class="w"/>
+<polyline points="1071.4,550 1071.4,564" class="w"/>
+<polyline points="1071.4,534 1080.4,534" class="e"/>
+<polyline points="1071.4,550 1082.4,531" class="e"/>
+<polyline points="1065.4,542 1058.4,542" class="e"/>
+<path d="M 1058.4 537 A 5 5 0 0 0 1058.4 547" class="e"/>
+<text x="1075.4" y="529" font-size="7" class="n">12</text>
+<text x="1075.4" y="561" font-size="7" class="n">14</text>
+<text x="1085.4" y="540" font-size="8" class="d">KT1</text>
+<text x="1085.4" y="549" font-size="7" class="t">(4:16)</text>
+<text x="1085.4" y="558" font-size="6.5" class="q">25-26</text>
+<polyline points="1071.4,580 1071.4,594" class="w"/>
+<polyline points="1071.4,610 1071.4,624" class="w"/>
+<polyline points="1071.4,594 1080.4,594" class="e"/>
+<polyline points="1071.4,610 1082.4,591" class="e"/>
+<text x="1075.4" y="589" font-size="7" class="n">21</text>
+<text x="1075.4" y="621" font-size="7" class="n">22</text>
+<text x="1058.4" y="600" font-size="8" text-anchor="end" class="d">KM4</text>
+<text x="1058.4" y="609" font-size="7" text-anchor="end" class="t">(4:15)</text>
+<polyline points="1148.6,580 1148.6,594" class="w"/>
+<polyline points="1148.6,610 1148.6,624" class="w"/>
+<polyline points="1148.6,594 1157.6,594" class="e"/>
+<polyline points="1148.6,610 1159.6,591" class="e"/>
+<text x="1152.6" y="589" font-size="7" class="n">62</text>
+<text x="1152.6" y="621" font-size="7" class="n">61</text>
+<text x="1135.6" y="600" font-size="8" text-anchor="end" class="d">KM3</text>
+<text x="1135.6" y="609" font-size="7" text-anchor="end" class="t">(4:14)</text>
+<polyline points="1225.7,700 1225.7,710" class="w"/>
+<polyline points="1225.7,730 1225.7,740" class="w"/>
+<rect x="1205.7" y="710" width="40" height="20" class="b"/>
+<polyline points="1211.7,710 1211.7,730" class="e"/>
+<polyline points="1205.7,710 1211.7,730" class="e"/>
+<polyline points="1205.7,730 1211.7,710" class="e"/>
+<text x="1228.7" y="723" font-size="8" text-anchor="middle" class="d">KT1</text>
+<text x="1221.7" y="708" font-size="6.5" text-anchor="end" class="n">1</text>
+<text x="1221.7" y="739" font-size="6.5" text-anchor="end" class="n">2</text>
+<text x="1248.7" y="707" font-size="6.5" class="n">9</text>
+<text x="1248.7" y="738" font-size="6.5" class="n">10</text>
+<polyline points="1263.7,620 1263.7,634" class="w"/>
+<polyline points="1263.7,650 1263.7,664" class="w"/>
+<polyline points="1263.7,634 1272.7,634" class="e"/>
+<polyline points="1263.7,650 1274.7,631" class="e"/>
+<text x="1267.7" y="629" font-size="7" class="n">62</text>
+<text x="1267.7" y="661" font-size="7" class="n">61</text>
+<text x="1250.7" y="640" font-size="8" text-anchor="end" class="d">KM2</text>
+<text x="1250.7" y="649" font-size="7" text-anchor="end" class="t">(4:13)</text>
+<polygon points="1298.9,164 1306.9,164 1302.9,172" class="b"/>
+<text x="1302.9" y="161" font-size="7" text-anchor="middle" class="t">(7:11)</text>
+<text x="1302.9" y="152" font-size="7.5" text-anchor="middle" class="d">BMR1 29</text>
+<polygon points="1453.1,164 1461.1,164 1457.1,172" class="b"/>
+<text x="1457.1" y="161" font-size="7" text-anchor="middle" class="t">(7:10)</text>
+<text x="1457.1" y="152" font-size="7.5" text-anchor="middle" class="d">BMR1 28</text>
+<polygon points="1530.3,164 1538.3,164 1534.3,172" class="b"/>
+<text x="1534.3" y="161" font-size="7" text-anchor="middle" class="t">+24V</text>
+<text x="1534.3" y="152" font-size="7" text-anchor="middle" class="t">(3:04)</text>
+<text x="1534.3" y="143" font-size="7.5" text-anchor="middle" class="d">6UG50</text>
+<polyline points="1302.9,400 1302.9,414" class="w"/>
+<polyline points="1302.9,430 1302.9,444" class="w"/>
+<polyline points="1302.9,430 1293.9,416" class="e"/>
+<polyline points="1297.9,422 1287.9,422" class="act"/>
+<polyline points="1283.9,418 1287.9,418 1287.9,426" class="e"/>
+<text x="1306.9" y="409" font-size="7" class="n">3</text>
+<text x="1306.9" y="441" font-size="7" class="n">4</text>
+<text x="1280.9" y="420" font-size="8" text-anchor="end" class="d">Q2</text>
+<polyline points="1380,400 1380,414" class="w"/>
+<polyline points="1380,430 1380,444" class="w"/>
+<polyline points="1380,430 1371,416" class="e"/>
+<text x="1384" y="409" font-size="7" class="n">13</text>
+<text x="1384" y="441" font-size="7" class="n">14</text>
+<text x="1367" y="420" font-size="8" text-anchor="end" class="d">KM3</text>
+<text x="1367" y="429" font-size="7" text-anchor="end" class="t">(4:14)</text>
+<polyline points="1457.1,400 1457.1,414" class="w"/>
+<polyline points="1457.1,430 1457.1,444" class="w"/>
+<polyline points="1457.1,430 1448.1,416" class="e"/>
+<text x="1461.1" y="409" font-size="7" class="n">53</text>
+<text x="1461.1" y="441" font-size="7" class="n">54</text>
+<text x="1444.1" y="420" font-size="8" text-anchor="end" class="d">KM3</text>
+<text x="1444.1" y="429" font-size="7" text-anchor="end" class="t">(4:14)</text>
+<polyline points="1457.1,580 1457.1,594" class="w"/>
+<polyline points="1457.1,610 1457.1,624" class="w"/>
+<polyline points="1457.1,610 1448.1,596" class="e"/>
+<polyline points="1451.1,602 1444.1,602" class="e"/>
+<path d="M 1444.1 597 A 5 5 0 0 0 1444.1 607" class="e"/>
+<text x="1461.1" y="589" font-size="7" class="n">4</text>
+<text x="1461.1" y="621" font-size="7" class="n">5</text>
+<text x="1435.1" y="600" font-size="8" text-anchor="end" class="d">KT2</text>
+<text x="1435.1" y="609" font-size="7" text-anchor="end" class="t">(4:20)</text>
+<polyline points="1534.3,580 1534.3,594" class="w"/>
+<polyline points="1534.3,610 1534.3,624" class="w"/>
+<polyline points="1534.3,610 1525.3,596" class="e"/>
+<text x="1538.3" y="589" font-size="7" class="n">1</text>
+<text x="1538.3" y="621" font-size="7" class="n">2</text>
+<text x="1521.3" y="600" font-size="8" text-anchor="end" class="d">KM6</text>
+<text x="1521.3" y="609" font-size="7" text-anchor="end" class="t">(4:17)</text>
+<polyline points="1534.3,700 1534.3,710" class="w"/>
+<polyline points="1534.3,730 1534.3,740" class="w"/>
+<rect x="1514.3" y="710" width="40" height="20" class="b"/>
+<polyline points="1520.3,710 1520.3,730" class="e"/>
+<polyline points="1514.3,710 1520.3,730" class="e"/>
+<polyline points="1514.3,730 1520.3,710" class="e"/>
+<text x="1537.3" y="723" font-size="8" text-anchor="middle" class="d">KT2</text>
+<text x="1530.3" y="708" font-size="6.5" text-anchor="end" class="n">1</text>
+<text x="1530.3" y="739" font-size="6.5" text-anchor="end" class="n">2</text>
+<polyline points="1564.3,700 1564.3,714" class="w"/>
+<polyline points="1564.3,726 1564.3,740" class="w"/>
+<polygon points="1558.3,726 1570.3,726 1564.3,714" class="b"/>
+<polyline points="1558.3,714 1570.3,714" class="e"/>
+<text x="1573.3" y="723" font-size="7.5" class="d">V20</text>
+<polygon points="88.6,740 96.6,736 96.6,744" class="b"/>
+<text x="85.6" y="743" font-size="7.5" text-anchor="end" class="d">X5</text>
+<text x="73.6" y="743" font-size="7" text-anchor="end" class="t">(2:02)</text>
+<polygon points="551.4,740 559.4,736 559.4,744" class="b"/>
+<text x="548.4" y="743" font-size="7.5" text-anchor="end" class="d">X5</text>
+<text x="536.4" y="743" font-size="7" text-anchor="end" class="t">(2:02)</text>
+<polyline points="80.6,190 145.7,190 145.7,210" class="w"/>
+<polyline points="145.7,210 300,210" class="w"/>
+<polyline points="145.7,254 145.7,300" class="w"/>
+<polyline points="145.7,300 68.6,300" class="w"/>
+<polyline points="68.6,300 68.6,340" class="w"/>
+<polyline points="145.7,300 145.7,340" class="w"/>
+<polyline points="68.6,384 68.6,440 145.7,440" class="w"/>
+<polyline points="145.7,384 145.7,440" class="w"/>
+<polyline points="300,254 300,300" class="w"/>
+<polyline points="300,300 377.1,300" class="w"/>
+<polyline points="300,300 300,340" class="w"/>
+<polyline points="377.1,300 377.1,340" class="w"/>
+<polyline points="300,384 300,440" class="w"/>
+<polyline points="377.1,384 377.1,440 300,440" class="w"/>
+<polyline points="145.7,440 222.9,440" class="w"/>
+<polyline points="300,440 222.9,440" class="w"/>
+<polyline points="222.9,440 222.9,740 96.6,740" class="w"/>
+<polyline points="80.6,160 762.9,160 762.9,200" class="w"/>
+<polyline points="762.9,244 762.9,270" class="w"/>
+<polyline points="762.9,244 762.9,257 917.1,257 917.1,270" class="w"/>
+<polyline points="917.1,270 1225.7,270" class="w"/>
+<polyline points="762.9,310 762.9,340" class="w"/>
+<polyline points="762.9,340 762.9,360" class="w"/>
+<polyline points="762.9,404 762.9,425" class="w"/>
+<polyline points="762.9,425 762.9,445" class="w"/>
+<polyline points="762.9,489 762.9,510" class="w"/>
+<polyline points="762.9,510 762.9,530" class="w"/>
+<polyline points="762.9,530 762.9,550" class="w"/>
+<polyline points="762.9,550 608.6,550 608.6,580" class="w"/>
+<polyline points="762.9,594 762.9,610" class="w"/>
+<polyline points="762.9,654 762.9,677 685.7,677 685.7,700" class="w"/>
+<polyline points="762.9,654 762.9,677 840,677 840,700" class="w"/>
+<polyline points="608.6,624 608.6,654 762.9,654" class="w"/>
+<polyline points="685.7,700 715.7,700" class="w"/>
+<polyline points="715.7,740 685.7,740" class="w"/>
+<polyline points="685.7,740 559.4,740" class="w"/>
+<polyline points="840,740 685.7,740" class="w"/>
+<polyline points="917.1,314 917.1,700" class="w"/>
+<polyline points="917.1,700 947.1,700" class="wq"/>
+<polyline points="947.1,740 917.1,740" class="wq"/>
+<polyline points="917.1,740 840,740" class="w"/>
+<polyline points="1225.7,314 1225.7,700" class="w"/>
+<polyline points="1225.7,314 1225.7,337 1148.6,337 1148.6,360" class="w"/>
+<polyline points="1148.6,360 1032.3,360 1032.3,440" class="w"/>
+<polyline points="1032.3,440 994.3,440" class="w"/>
+<polyline points="994.3,484 1032.3,484" class="w"/>
+<polyline points="994.3,484 994.3,502 1071.4,502 1071.4,520" class="w"/>
+<polyline points="1071.4,520 1071.4,502 994.3,502 994.3,700" class="w"/>
+<polyline points="994.3,700 1024.3,700" class="w"/>
+<polyline points="1024.3,740 994.3,740" class="w"/>
+<polyline points="994.3,740 917.1,740" class="w"/>
+<polyline points="1071.4,564 1071.4,580" class="w"/>
+<polyline points="1071.4,624 1071.4,700" class="w"/>
+<polyline points="1071.4,700 1101.4,700" class="w"/>
+<polyline points="1101.4,740 1071.4,740" class="w"/>
+<polyline points="1071.4,740 994.3,740" class="w"/>
+<polyline points="1148.6,404 1148.6,580" class="w"/>
+<polyline points="1148.6,624 1148.6,700" class="w"/>
+<polyline points="1148.6,700 1178.6,700" class="w"/>
+<polyline points="1178.6,740 1148.6,740" class="w"/>
+<polyline points="1148.6,740 1071.4,740" class="w"/>
+<polyline points="1263.7,664 1263.7,710 1245.7,710" class="w"/>
+<polyline points="1263.7,620 1263.7,605 1277.7,605 1277.7,730 1245.7,730" class="w"/>
+<polyline points="1225.7,740 1148.6,740" class="w"/>
+<polyline points="1302.9,172 1302.9,380 1380,380 1380,400" class="w"/>
+<polyline points="1380,400 1380,380 1302.9,380 1302.9,400" class="w"/>
+<polyline points="1302.9,444 1302.9,464 1380,464 1380,444" class="w"/>
+<polyline points="1457.1,444 1457.1,464 1302.9,464 1302.9,700" class="w"/>
+<polyline points="1380,444 1380,464 1457.1,464 1457.1,580" class="w"/>
+<polyline points="1302.9,700 1332.9,700" class="w"/>
+<polyline points="1332.9,740 1302.9,740" class="w"/>
+<polyline points="1302.9,740 1225.7,740" class="w"/>
+<polyline points="1457.1,172 1457.1,400" class="w"/>
+<polyline points="1457.1,444 1457.1,580" class="w"/>
+<polyline points="1457.1,624 1457.1,700" class="w"/>
+<polyline points="1457.1,700 1487.1,700" class="w"/>
+<polyline points="1487.1,740 1457.1,740" class="w"/>
+<polyline points="1457.1,740 1302.9,740" class="w"/>
+<polyline points="1534.3,172 1534.3,580" class="w"/>
+<polyline points="1534.3,624 1534.3,700" class="w"/>
+<polyline points="1534.3,700 1564.3,700" class="w"/>
+<polyline points="1564.3,740 1534.3,740" class="w"/>
+<polyline points="1534.3,740 1457.1,740" class="w"/>
+<text x="759.9" y="260" font-size="7" text-anchor="end" class="wl">44QF1</text>
+<text x="932.1" y="697" font-size="7" text-anchor="middle" class="q">[?]</text>
+<text x="932.1" y="737" font-size="7" text-anchor="middle" class="q">[?]</text>
+<text x="1305.9" y="279" font-size="7" class="wl">13KM3</text>
+<text x="1460.1" y="289" font-size="7" class="wl">53KM3</text>
+<circle cx="145.7" cy="210" r="2.3" class="dot"/>
+<circle cx="685.7" cy="700" r="2.3" class="dot"/>
+<circle cx="685.7" cy="740" r="2.3" class="dot"/>
+<circle cx="715.7" cy="740" r="2.3" class="dot"/>
+<circle cx="762.9" cy="257" r="2.3" class="dot"/>
+<circle cx="762.9" cy="550" r="2.3" class="dot"/>
+<circle cx="762.9" cy="654" r="2.3" class="dot"/>
+<circle cx="762.9" cy="677" r="2.3" class="dot"/>
+<circle cx="840" cy="740" r="2.3" class="dot"/>
+<circle cx="917.1" cy="270" r="2.3" class="dot"/>
+<circle cx="917.1" cy="700" r="2.3" class="dot"/>
+<circle cx="917.1" cy="740" r="2.3" class="dot"/>
+<circle cx="947.1" cy="740" r="2.3" class="dot"/>
+<circle cx="994.3" cy="484" r="2.3" class="dot"/>
+<circle cx="994.3" cy="502" r="2.3" class="dot"/>
+<circle cx="994.3" cy="700" r="2.3" class="dot"/>
+<circle cx="994.3" cy="740" r="2.3" class="dot"/>
+<circle cx="1024.3" cy="740" r="2.3" class="dot"/>
+<circle cx="1032.3" cy="440" r="2.3" class="dot"/>
+<circle cx="1071.4" cy="700" r="2.3" class="dot"/>
+<circle cx="1071.4" cy="740" r="2.3" class="dot"/>
+<circle cx="1101.4" cy="740" r="2.3" class="dot"/>
+<circle cx="1148.6" cy="360" r="2.3" class="dot"/>
+<circle cx="1148.6" cy="700" r="2.3" class="dot"/>
+<circle cx="1148.6" cy="740" r="2.3" class="dot"/>
+<circle cx="1178.6" cy="740" r="2.3" class="dot"/>
+<circle cx="1225.7" cy="337" r="2.3" class="dot"/>
+<circle cx="1225.7" cy="740" r="2.3" class="dot"/>
+<circle cx="1302.9" cy="380" r="2.3" class="dot"/>
+<circle cx="1302.9" cy="464" r="2.3" class="dot"/>
+<circle cx="1302.9" cy="700" r="2.3" class="dot"/>
+<circle cx="1302.9" cy="740" r="2.3" class="dot"/>
+<circle cx="1332.9" cy="740" r="2.3" class="dot"/>
+<circle cx="1380" cy="464" r="2.3" class="dot"/>
+<circle cx="1457.1" cy="464" r="2.3" class="dot"/>
+<circle cx="1457.1" cy="700" r="2.3" class="dot"/>
+<circle cx="1457.1" cy="740" r="2.3" class="dot"/>
+<circle cx="1487.1" cy="740" r="2.3" class="dot"/>
+<circle cx="1534.3" cy="700" r="2.3" class="dot"/>
+<circle cx="1534.3" cy="740" r="2.3" class="dot"/>
+<text x="685.7" y="760" font-size="6.5" text-anchor="middle" class="t">2:04</text>
+<text x="685.7" y="768" font-size="6.5" text-anchor="middle" class="t">2:04</text>
+<text x="685.7" y="776" font-size="6.5" text-anchor="middle" class="t">2:04</text>
+<text x="685.7" y="784" font-size="6.5" text-anchor="middle" class="t">4:10</text>
+<text x="840" y="760" font-size="6.5" text-anchor="middle" class="t">2:06</text>
+<text x="840" y="768" font-size="6.5" text-anchor="middle" class="t">2:06</text>
+<text x="840" y="776" font-size="6.5" text-anchor="middle" class="t">2:06</text>
+<text x="840" y="784" font-size="6.5" text-anchor="middle" class="t">4:10</text>
+<text x="917.1" y="760" font-size="6.5" text-anchor="middle" class="t">2:27</text>
+<text x="917.1" y="768" font-size="6.5" text-anchor="middle" class="t">2:28</text>
+<text x="917.1" y="776" font-size="6.5" text-anchor="middle" class="t">2:29</text>
+<text x="917.1" y="784" font-size="6.5" text-anchor="middle" class="t">5:15</text>
+<polyline points="994.3,753 994.3,794" class="r"/>
+<text x="980.3" y="760" font-size="6" text-anchor="middle" class="n">NO</text>
+<text x="980.3" y="768" font-size="6.5" text-anchor="middle" class="t">2:04</text>
+<text x="980.3" y="776" font-size="6.5" text-anchor="middle" class="t">2:05</text>
+<text x="980.3" y="784" font-size="6.5" text-anchor="middle" class="t">2:06</text>
+<text x="980.3" y="792" font-size="6.5" text-anchor="middle" class="t">4:13</text>
+<text x="1008.3" y="760" font-size="6" text-anchor="middle" class="n">NC</text>
+<text x="1008.3" y="768" font-size="6.5" text-anchor="middle" class="t">4:16</text>
+<polyline points="1071.4,753 1071.4,802" class="r"/>
+<text x="1057.4" y="760" font-size="6" text-anchor="middle" class="n">NO</text>
+<text x="1057.4" y="768" font-size="6.5" text-anchor="middle" class="t">2:07</text>
+<text x="1057.4" y="776" font-size="6.5" text-anchor="middle" class="t">2:08</text>
+<text x="1057.4" y="784" font-size="6.5" text-anchor="middle" class="t">2:09</text>
+<text x="1057.4" y="792" font-size="6.5" text-anchor="middle" class="t">4:18</text>
+<text x="1057.4" y="800" font-size="6.5" text-anchor="middle" class="t">4:19</text>
+<text x="1085.4" y="760" font-size="6" text-anchor="middle" class="n">NC</text>
+<text x="1085.4" y="768" font-size="6.5" text-anchor="middle" class="t">4:15</text>
+<polyline points="1148.6,753 1148.6,786" class="r"/>
+<text x="1134.6" y="760" font-size="6" text-anchor="middle" class="n">NO</text>
+<text x="1134.6" y="768" font-size="6.5" text-anchor="middle" class="t">2:11</text>
+<text x="1134.6" y="776" font-size="6.5" text-anchor="middle" class="t">2:12</text>
+<text x="1134.6" y="784" font-size="6.5" text-anchor="middle" class="t">4:14</text>
+<text x="1162.6" y="760" font-size="6" text-anchor="middle" class="n">NC</text>
+<text x="1162.6" y="768" font-size="6.5" text-anchor="middle" class="t">4:14</text>
+<polyline points="1225.7,753 1225.7,762" class="r"/>
+<text x="1211.7" y="760" font-size="6.5" text-anchor="middle" class="t">4:15</text>
+<text x="1239.7" y="760" font-size="6.5" text-anchor="middle" class="t">4:14</text>
+<polyline points="1302.9,753 1302.9,786" class="r"/>
+<text x="1288.9" y="760" font-size="6" text-anchor="middle" class="n">NO</text>
+<text x="1288.9" y="768" font-size="6.5" text-anchor="middle" class="t">4:20</text>
+<text x="1288.9" y="776" font-size="6.5" text-anchor="middle" class="t">5:07</text>
+<text x="1288.9" y="784" font-size="6.5" text-anchor="middle" class="t">5:10</text>
+<text x="1316.9" y="760" font-size="6" text-anchor="middle" class="n">NC</text>
+<text x="1316.9" y="768" font-size="6.5" text-anchor="middle" class="t">6:04</text>
+<polyline points="1457.1,753 1457.1,770" class="r"/>
+<text x="1443.1" y="760" font-size="6" text-anchor="middle" class="n">NO</text>
+<text x="1443.1" y="768" font-size="6.5" text-anchor="middle" class="t">5:10</text>
+<text x="1471.1" y="760" font-size="6" text-anchor="middle" class="n">NC</text>
+<text x="1471.1" y="768" font-size="6.5" text-anchor="middle" class="t">6:04</text>
+<text x="1534.3" y="760" font-size="6.5" text-anchor="middle" class="t">4:19</text>
+<text x="38" y="850" font-size="8.5" class="d">Notes on reading this sheet</text>
+<text x="40" y="862" font-size="7.5" class="t">- KT1 contacts: NO or NC is not readable on the print; by the face legend of the maker (photo 20261102_144259, IEC numbering 15-16-18, 25-26-28) 4-5 = 15-18 is NO (star KM4) and 12-14 = 25-26 is NC (delta KM3); KT1 9-10 (B1-B2) is bridged by KM2 62-61 (NC). Dial setting not read (on-site).</text>
+<text x="40" y="872" font-size="7.5" class="t">- RC8 across the KM8 coil: label read as RC8 or RC6 [?].</text>
+<text x="40" y="882" font-size="7.5" class="t">- BMR1 19-20 (an output of the cut-control module, sheet 7) opens the main-contactor chain; drawn as printed: a NO contact with the reference (7:01).</text>
+<text x="40" y="892" font-size="7.5" class="t">- Q2 contacts are drawn open as printed (1-2, 3-4 closed in position 0; 9-10 closed in position 1).</text>
+<text x="40" y="902" font-size="7.5" class="ink">- ink: pencil &quot;ZN&quot; (KT1) and &quot;ZR&quot; (KT2) at the contact lists of the clean copy of this sheet (20261113_233009): handwriting, not print.</text>
+<text x="40" y="912" font-size="7.5" class="t">- Which wire lands first on a shared terminal is not printed; lines follow the netlist rows.</text>
+<text x="40" y="922" font-size="7.5" class="t">- Under each coil, below the coil-return bus to X5: its contact list as printed, the (sheet:column) of each of its contacts; NO left and NC right where the print splits them.</text>
+<rect x="34" y="838" width="1612" height="94" class="r"/>
+<text x="38" y="954" font-size="8.5" class="d">Devices on this sheet (from control_devices.csv; [?] = unclear, estimated = with likely error)</text>
+<text x="40" y="966" font-size="7" class="t">UG50 [sure] rectified and AC control supplies +27V +24V +33V ~24V ~48V (PLOŠNÝ SPOJ SE ZDROJI UG50); terminals 1-32; place: cabinet; device row: sheet 3, column 03-04</text>
+<text x="40" y="976.8" font-size="7" class="t">QF1 [sure] M1 protection; aux 43-44 in the control chain; aux contact 43-44 NO used at 4:10; place: cabinet; device row: sheet 2, column 07-10</text>
+<text x="40" y="987.6" font-size="7" class="t">X10 [sure] terminal strip in the cabinet (1-6 to M1) (SVORKOVNICE V ROZVADĚČI); 45 terminals + 3 PE (photo); place: cabinet; device row: sheet 2, column 04-09</text>
+<text x="40" y="998.4" font-size="7" class="t">X5 [sure] working-earth strip: 0 V of all control supplies, bonded to PE (SVORKOVNICE PRAC. ZEMĚ); terminal numbers not printed; place: cabinet; device row: sheet 2, column 02</text>
+<text x="40" y="1009.2" font-size="7" class="t">S2 [sure] work lighting / cut-line indication selector (PŘEPÍNAČ OSVĚTLENÍ – NÁZNAK ŘEZU; RU выключатель освещения и назначения реза); contacts 3A-4A (work light), 4B-3B (cut line); OM</text>
+<text x="50" y="1018.5" font-size="7" class="t">list 10.1: BACO head V22MA03, adapter 233E, block 23E10; place: cabinet; device row: sheet 4, column 02-05</text>
+<text x="40" y="1029.3" font-size="7" class="t">E1 [sure] work-surface lighting lamp (OSVĚTLENÍ PRACOVNÍ PLOCHY E1, E2); ~24 V AC; place: machine; device row: sheet 4, column 01</text>
+<text x="40" y="1040.1" font-size="7" class="t">E2 [sure] work-surface lighting lamp (OSVĚTLENÍ PRACOVNÍ PLOCHY E1, E2); ~24 V AC; place: machine; device row: sheet 4, column 02</text>
+<text x="40" y="1050.9" font-size="7" class="t">E3 [sure] cut-line indication lamp (NÁZNAK ŘEZU E3, E4); ~24 V AC; place: machine; device row: sheet 4, column 03-05</text>
+<text x="40" y="1061.7" font-size="7" class="t">E4 [sure] cut-line indication lamp (NÁZNAK ŘEZU E3, E4); ~24 V AC; place: machine; device row: sheet 4, column 03-05</text>
+<text x="40" y="1072.5" font-size="7" class="t">BMR1 [sure] cut-control module: two-hand start, knife lock, clutch contactors, cut-done signal (MODUL ŘÍZENÍ ŘEZU (PŘIPOJENÍ MODULU ŘÍZENÍ ŘEZU BMR1); RU релейный модуль управления</text>
+<text x="50" y="1081.8" font-size="7" class="t">реза); one relay board, plate &quot;BMR2&quot; (photo 143021), maker not printed or seen; terminals 1-29, 0V (-), +24V (+); OM list 10.2 &quot;BMR..&quot; 900 010 0714; place: cabinet; device row: sheet</text>
+<text x="50" y="1091.1" font-size="7" class="t">6-7, column 01-18; 01-13</text>
+<text x="40" y="1101.9" font-size="7" class="t">S5 [sure] belt-pulley cover interlock (KONCOVÝ SPÍNAČ – BLOKOVÁNÍ KRYTU ŘEMENICE; red ink on sheet 1 &quot;у маховика&quot; (at the flywheel)); NC 21-22 (4:10), NO 13-14 (5:09); place: machine;</text>
+<text x="50" y="1111.2" font-size="7" class="t">device row: sheet 4-5, column 10; 09</text>
+<text x="40" y="1122" font-size="7" class="t">S1 [sure] emergency stop switch (only MS 115 PS, DS) (SPÍNAČ NOUZOVÉHO ZASTAVENÍ; &quot;POUZE MS115&quot; printed at 4:10); NC 21-22; OM list 10.1: BACO V22E01 + 231E + 23E01; place: console;</text>
+<text x="50" y="1131.3" font-size="7" class="t">device row: sheet 4, column 10</text>
+<text x="40" y="1142.1" font-size="7" class="t">KM1A [sure] main contactor (in series with KM1B) (HLAVNÍ STYKAČE KM1A, KM1B); coil 24 V AC 50 Hz; place: cabinet; device row: sheet 4, column 09</text>
+<text x="40" y="1152.9" font-size="7" class="t">KM1B [sure] main contactor (in series with KM1A) (HLAVNÍ STYKAČE KM1A, KM1B); coil 24 V AC 50 Hz; place: cabinet; device row: sheet 4, column 11</text>
+<text x="40" y="1163.7" font-size="7" class="t">Q2 [sure] M1 run switch; contacts 1-2..7-8 closed in 0, 9-10 closed in 1; photo: 16 A 660 V AC, IEC 947-3; place: cabinet; device row: sheet 4-6, column 08; 17; 16; 09; 14-15</text>
+<text x="858" y="966" font-size="7" class="t">RC1 [sure] coil suppressor across KM1A and KM1B; 2µ2 + 220R (sheet-box 4); place: cabinet; device row: sheet 4, column 10</text>
+<text x="858" y="976.8" font-size="7" class="t">S4 [sure] air-cushion blower motor switch (energises KM8) (SPÍNAČ MOTORU VZDUCHOVÉHO POLŠTÁŘE); contact 3-4 (latching symbol); OM list 10.1: BACO head V22KA03, adapter 231E, block</text>
+<text x="868" y="986.1" font-size="7" class="t">23E10; place: cabinet; device row: sheet 4, column 12</text>
+<text x="858" y="996.9" font-size="7" class="t">KM8 [sure] blower (air cushion) motor contactor (STYKAČ MOTORU DMYCHADLA KM8); coil 50 Hz; place: cabinet; device row: sheet 4, column 12</text>
+<text x="858" y="1007.7" font-size="7" class="t">RC8 [?] coil suppressor across KM8; 2µ2 + 220R (sheet-box 4); place: cabinet; device row: sheet 4, column 12</text>
+<text x="858" y="1018.5" font-size="7" class="t">KM2 [sure] M1 line contactor (U2 V2 W2) (STYKAČE MOTORU PRO POHON NOŽE A HYDRAULIKY KM2, KM3, KM4); coil 50 Hz; place: cabinet; device row: sheet 4, column 13</text>
+<text x="858" y="1029.3" font-size="7" class="t">RC2 [sure] coil suppressor across KM2; 2µ2 + 220R (sheet-box 4); place: cabinet; device row: sheet 4, column 13</text>
+<text x="858" y="1040.1" font-size="7" class="t">KM3 [sure] M1 delta contactor (V1 W1 U1) (STYKAČE MOTORU PRO POHON NOŽE A HYDRAULIKY KM2, KM3, KM4); coil 50 Hz; place: cabinet; device row: sheet 4, column 14</text>
+<text x="858" y="1050.9" font-size="7" class="t">RC3 [sure] coil suppressor across KM3; 2µ2 + 220R (sheet-box 4); place: cabinet; device row: sheet 4, column 14</text>
+<text x="858" y="1061.7" font-size="7" class="t">KM4 [sure] M1 star contactor (shorts X10 4-5-6) (STYKAČE MOTORU PRO POHON NOŽE A HYDRAULIKY KM2, KM3, KM4); coil 50 Hz; place: cabinet; device row: sheet 4, column 15</text>
+<text x="858" y="1072.5" font-size="7" class="t">RC4 [sure] coil suppressor across KM4; 2µ2 + 220R (sheet-box 4); place: cabinet; device row: sheet 4, column 15</text>
+<text x="858" y="1083.3" font-size="7" class="t">KT1 [sure] M1 star-delta timer (run-up of M1) (no own zone title (zone 13); RU временное реле разгона двигателя M1); OM list 10.2: TX 320 ZN, 24 V DC, 1-10 s (p.49); photo: letters ZN,</text>
+<text x="868" y="1092.6" font-size="7" class="t">dial 4-10, range x, s/min, setting not read; terminal face 4(15) 6(16) 5(18), 12(25) 14(26) 13(28), 1(A1) 2(A2) 3(A3), 10(B1) 9(B2); place: cabinet; device row: sheet 4, column 16</text>
+<text x="858" y="1103.4" font-size="7" class="t">KM6 [sure] cut clutch contactor (STYKAČE SPOJKY ŘEZU KM6, KM7); coil 50 Hz; place: cabinet; device row: sheet 4, column 17</text>
+<text x="858" y="1114.2" font-size="7" class="t">RC6 [sure] coil suppressor across KM6; 2µ2 + 220R (sheet-box 4); place: cabinet; device row: sheet 4, column 17</text>
+<text x="858" y="1125" font-size="7" class="t">KM7 [sure] cut clutch contactor (STYKAČE SPOJKY ŘEZU KM6, KM7); coil 50 Hz; place: cabinet; device row: sheet 4, column 19</text>
+<text x="858" y="1135.8" font-size="7" class="t">RC7 [sure] coil suppressor across KM7; 2µ2 + 220R (sheet-box 4); place: cabinet; device row: sheet 4, column 19</text>
+<text x="858" y="1146.6" font-size="7" class="t">KT2 [sure] cut delay after clamping (delays KM7) (ČASOVÉ RELÉ ZPOŽDĚNÍ ŘEZU ZA LISOVÁNÍM KT2; RU временное реле опоздания реза за прижимом); OM list 10.2: TX 320 ZR, 24 V DC, 0-2,5 s</text>
+<text x="868" y="1155.9" font-size="7" class="t">(p.49); OM p.7 and p.9: 0-3 s (conflict); photo: letters ZR, LED U, dial 4-10, s/min, setting not read; place: cabinet; device row: sheet 4, column 20</text>
+<text x="858" y="1166.7" font-size="7" class="t">V20 [sure] free-wheel diode across the KT2 coil; 1N 4002 (sheet-box 4); place: cabinet; device row: sheet 4, column 20</text>
+<rect x="34" y="942" width="1612" height="239.5" class="r"/>
+<text x="38" y="1203.5" font-size="8.5" class="d">Title block (redrawn, not a copy)</text>
+<text x="40" y="1215.5" font-size="7.5" class="t">- Adast Maxima MS 115 PS (serial 578.0009, 1998), control circuits: lighting, main contactors KM1A/KM1B, blower KM8, M1 star-delta KM2-KM4 with KT1, clutch contactors KM6/KM7, KT2.</text>
+<text x="40" y="1225.5" font-size="7.5" class="t">- Redrawn from the wiring set 568-70.9001 SCHEMA ZAPOJENÍ (MS 80 PS,DS MS 115 PS,DS), sheet 4; columns and zones as printed.</text>
+<text x="40" y="1235.5" font-size="7.5" class="t">- Sheet photo: preparatory_data_analysis/maxima_documents/adast_guillotine_wiring_and_plc_diagrams/20261113_232719.jpg</text>
+<text x="40" y="1245.5" font-size="7.5" class="t">- Data: stage_2_electronics/netlist/control_devices.csv and control_wires.csv, drawn by stage_2_electronics/schemes_2d/control_draw.py.</text>
+<text x="40" y="1255.5" font-size="7.5" class="t">- Marks: dashed line or [?] = unclear (on-site check list, spec/control.md); contacts in the off state as printed; end names 1/2 of lamps, RC parts and diodes are this redraw's names (1 = feed end, 2 = return end).</text>
+<rect x="34" y="1191.5" width="1612" height="74" class="r"/>
+</svg>

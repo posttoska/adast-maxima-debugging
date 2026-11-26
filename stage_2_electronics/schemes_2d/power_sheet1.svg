@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="980" viewBox="0 0 1800 980" font-family="Consolas,'DejaVu Sans Mono',monospace" fill="#111">
+<title>568-70.9001 sheet 1: tables, descriptions (redrawn 2026, not an original document)</title>
+<rect x="0" y="0" width="1800" height="980" fill="#fff"/>
+<rect x="20" y="20" width="1760" height="940" rx="0" fill="none" stroke="#111" stroke-width="1.4"/>
+<rect x="40" y="100" width="860" height="256" rx="0" fill="none" stroke="#111" stroke-width="1"/>
+<line x1="40" y1="116" x2="900" y2="116" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="132" x2="900" y2="132" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="148" x2="900" y2="148" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="164" x2="900" y2="164" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="180" x2="900" y2="180" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="196" x2="900" y2="196" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="212" x2="900" y2="212" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="228" x2="900" y2="228" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="244" x2="900" y2="244" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="260" x2="900" y2="260" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="276" x2="900" y2="276" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="292" x2="900" y2="292" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="308" x2="900" y2="308" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="324" x2="900" y2="324" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="340" x2="900" y2="340" stroke="#111" stroke-width="0.5"/>
+<line x1="150" y1="100" x2="150" y2="356" stroke="#111" stroke-width="0.5"/>
+<line x1="520" y1="100" x2="520" y2="356" stroke="#111" stroke-width="0.5"/>
+<rect x="40" y="400" width="860" height="208" rx="0" fill="none" stroke="#111" stroke-width="1"/>
+<line x1="40" y1="416" x2="900" y2="416" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="432" x2="900" y2="432" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="448" x2="900" y2="448" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="464" x2="900" y2="464" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="480" x2="900" y2="480" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="496" x2="900" y2="496" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="512" x2="900" y2="512" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="528" x2="900" y2="528" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="544" x2="900" y2="544" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="560" x2="900" y2="560" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="576" x2="900" y2="576" stroke="#111" stroke-width="0.5"/>
+<line x1="40" y1="592" x2="900" y2="592" stroke="#111" stroke-width="0.5"/>
+<line x1="170" y1="400" x2="170" y2="608" stroke="#111" stroke-width="0.5"/>
+<line x1="600" y1="400" x2="600" y2="608" stroke="#111" stroke-width="0.5"/>
+<line x1="100" y1="416" x2="100" y2="424" stroke="#111" stroke-width="1"/>
+<line x1="92" y1="424" x2="108" y2="424" stroke="#111" stroke-width="1.1"/>
+<line x1="95" y1="427" x2="105" y2="427" stroke="#111" stroke-width="1.1"/>
+<line x1="98" y1="430" x2="102" y2="430" stroke="#111" stroke-width="1.1"/>
+<rect x="40" y="760" width="560" height="140" rx="0" fill="none" stroke="#111" stroke-width="1.2"/>
+<line x1="48" y1="860" x2="403.5" y2="860" stroke="#111" stroke-width="1.1"/>
+<rect x="940" y="100" width="760" height="288" rx="0" fill="none" stroke="#111" stroke-width="1"/>
+<line x1="940" y1="116" x2="1700" y2="116" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="132" x2="1700" y2="132" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="148" x2="1700" y2="148" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="164" x2="1700" y2="164" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="180" x2="1700" y2="180" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="196" x2="1700" y2="196" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="212" x2="1700" y2="212" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="228" x2="1700" y2="228" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="244" x2="1700" y2="244" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="260" x2="1700" y2="260" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="276" x2="1700" y2="276" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="292" x2="1700" y2="292" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="308" x2="1700" y2="308" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="324" x2="1700" y2="324" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="340" x2="1700" y2="340" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="356" x2="1700" y2="356" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="372" x2="1700" y2="372" stroke="#111" stroke-width="0.5"/>
+<line x1="990" y1="100" x2="990" y2="388" stroke="#111" stroke-width="0.5"/>
+<line x1="1110" y1="100" x2="1110" y2="388" stroke="#111" stroke-width="0.5"/>
+<line x1="1240" y1="100" x2="1240" y2="388" stroke="#111" stroke-width="0.5"/>
+<rect x="940" y="430" width="710" height="224" rx="0" fill="none" stroke="#111" stroke-width="1"/>
+<line x1="940" y1="446" x2="1650" y2="446" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="462" x2="1650" y2="462" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="478" x2="1650" y2="478" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="494" x2="1650" y2="494" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="510" x2="1650" y2="510" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="526" x2="1650" y2="526" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="542" x2="1650" y2="542" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="558" x2="1650" y2="558" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="574" x2="1650" y2="574" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="590" x2="1650" y2="590" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="606" x2="1650" y2="606" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="622" x2="1650" y2="622" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="638" x2="1650" y2="638" stroke="#111" stroke-width="0.5"/>
+<line x1="1150" y1="430" x2="1150" y2="654" stroke="#111" stroke-width="0.5"/>
+<line x1="1250" y1="430" x2="1250" y2="654" stroke="#111" stroke-width="0.5"/>
+<line x1="1350" y1="430" x2="1350" y2="654" stroke="#111" stroke-width="0.5"/>
+<line x1="1450" y1="430" x2="1450" y2="654" stroke="#111" stroke-width="0.5"/>
+<line x1="1550" y1="430" x2="1550" y2="654" stroke="#111" stroke-width="0.5"/>
+<rect x="940" y="700" width="680" height="128" rx="0" fill="none" stroke="#111" stroke-width="1"/>
+<line x1="940" y1="716" x2="1620" y2="716" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="732" x2="1620" y2="732" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="748" x2="1620" y2="748" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="764" x2="1620" y2="764" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="780" x2="1620" y2="780" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="796" x2="1620" y2="796" stroke="#111" stroke-width="0.5"/>
+<line x1="940" y1="812" x2="1620" y2="812" stroke="#111" stroke-width="0.5"/>
+<line x1="990" y1="700" x2="990" y2="828" stroke="#111" stroke-width="0.5"/>
+<line x1="1290" y1="700" x2="1290" y2="828" stroke="#111" stroke-width="0.5"/>
+<text x="40" y="951" font-size="8.5">Wiring diagram (SCHEMA ZAPOJENÍ) 568-70.9001 · MS80PS,DS MS115PS,DS · sheet 1 of 8: tables, descriptions (TABULKY, POPISY) · redrawn 2026 from photos (20261113_213049.jpg), not an original document · drawn by schemes_2d/power_draw.py from netlist/power_*.csv</text>
+<text x="40" y="52" font-size="12" font-weight="bold">568-70.9001 sheet 1 of 8: tables, descriptions (TABULKY, POPISY)</text>
+<text x="40" y="70" font-size="8.5">Redrawn 2026 from photos (20261113_213049.jpg), not an original document. Names and functions: netlist/power_devices.csv; [?] = unclear, see spec/power.md.</text>
+<text x="40" y="94" font-size="9" font-weight="bold">1. Table of switches and controls (1. TABULKA SPÍNAČŮ A OVLADAČŮ)</text>
+<text x="44" y="111.5" font-size="8.5" font-weight="bold">designation</text>
+<text x="154" y="111.5" font-size="8.5" font-weight="bold">function (English)</text>
+<text x="524" y="111.5" font-size="8.5" font-weight="bold">function as printed (Czech)</text>
+<text x="44" y="127.5" font-size="8.5" font-weight="bold">S30</text>
+<text x="154" y="127.5" font-size="8.5">clamp position sensor (top position)</text>
+<text x="524" y="127.5" font-size="8.5">SNÍMAČ POLOHY LISOVADLA (HORNÍ POLOHA)</text>
+<text x="44" y="143.5" font-size="8.5" font-weight="bold">S28</text>
+<text x="154" y="143.5" font-size="8.5">clamp plate sensor</text>
+<text x="524" y="143.5" font-size="8.5">SNÍMAČ PLECHU LISOVADLA; red ink (RU) "– Д. пресса с пластиной"</text>
+<text x="44" y="159.5" font-size="8.5" font-weight="bold">S27</text>
+<text x="154" y="159.5" font-size="8.5">saddle position reference switch, rear position</text>
+<text x="524" y="159.5" font-size="8.5">REFERENČNÍ SPÍNAČ POLOHY SEDLA – ZADNÍ POLOHA</text>
+<text x="44" y="175.5" font-size="8.5" font-weight="bold">S24</text>
+<text x="154" y="175.5" font-size="8.5">saddle position limit switch, front position</text>
+<text x="524" y="175.5" font-size="8.5">KONCOVÝ SPÍNAČ POLOHY SEDLA – PŘEDNÍ POLOHA</text>
+<text x="44" y="223.5" font-size="8.5" font-weight="bold">S19</text>
+<text x="154" y="223.5" font-size="8.5">cut clutch switch (for knife change)</text>
+<text x="524" y="223.5" font-size="8.5">SPÍNAČ SPOJKY ŘEZU (PRO VÝMĚNU NOŽE); red ink (RU) "(у маховика)"</text>
+<text x="44" y="239.5" font-size="8.5" font-weight="bold">S12, S13, S14</text>
+<text x="154" y="239.5" font-size="8.5">knife position sensor on the cam of the cutting mechanism</text>
+<text x="524" y="239.5" font-size="8.5">SNÍMAČE NA VAČCE ŘEZOVÉHO ÚSTROJÍ (POLOHA NOŽE)</text>
+<text x="44" y="255.5" font-size="8.5" font-weight="bold">S10, S11</text>
+<text x="154" y="255.5" font-size="8.5">cut start button</text>
+<text x="524" y="255.5" font-size="8.5">TLAČÍTKA SPOUŠTĚNÍ ŘEZU</text>
+<text x="44" y="271.5" font-size="8.5" font-weight="bold">SQ1, SQ2</text>
+<text x="154" y="271.5" font-size="8.5">knife lock sensor</text>
+<text x="524" y="271.5" font-size="8.5">SNÍMAČE ZAJIŠTĚNÍ NOŽE; red ink (RU) "(на оси стопора)"</text>
+<text x="44" y="303.5" font-size="8.5" font-weight="bold">S5</text>
+<text x="154" y="303.5" font-size="8.5">belt-pulley cover interlock</text>
+<text x="524" y="303.5" font-size="8.5">KONCOVÝ SPÍNAČ – BLOKOVÁNÍ KRYTU ŘEMENICE; red ink (RU) "(у маховика)"</text>
+<text x="44" y="319.5" font-size="8.5" font-weight="bold">S4</text>
+<text x="154" y="319.5" font-size="8.5">air-cushion blower motor switch (energises KM8)</text>
+<text x="524" y="319.5" font-size="8.5">SPÍNAČ MOTORU VZDUCHOVÉHO POLŠTÁŘE</text>
+<text x="44" y="335.5" font-size="8.5" font-weight="bold">S2</text>
+<text x="154" y="335.5" font-size="8.5">work lighting / cut-line indication selector</text>
+<text x="524" y="335.5" font-size="8.5">PŘEPÍNAČ OSVĚTLENÍ – NÁZNAK ŘEZU</text>
+<text x="44" y="351.5" font-size="8.5" font-weight="bold">S1</text>
+<text x="154" y="351.5" font-size="8.5">emergency stop switch (only MS 115 PS, DS)</text>
+<text x="524" y="351.5" font-size="8.5">SPÍNAČ NOUZOVÉHO ZASTAVENÍ (POUZE MS 115 PS, DS)</text>
+<text x="40" y="394" font-size="9" font-weight="bold">2. Table of terminal strips and connectors (2. TABULKA SVORKOVNIC A KONEKTORŮ)</text>
+<text x="44" y="411.5" font-size="8.5" font-weight="bold">designation</text>
+<text x="174" y="411.5" font-size="8.5" font-weight="bold">function (English)</text>
+<text x="604" y="411.5" font-size="8.5" font-weight="bold">function as printed (Czech)</text>
+<text x="44" y="427.5" font-size="8.5" font-weight="bold">PE</text>
+<text x="174" y="427.5" font-size="8.5">earthing (protective earth) strip: XC3 T1 X10 X11 XC7 UZ1</text>
+<text x="604" y="427.5" font-size="8.5">UZEMŇOVACÍ SVORKOVNICE</text>
+<text x="44" y="443.5" font-size="8.5" font-weight="bold">X11</text>
+<text x="174" y="443.5" font-size="8.5">terminal strip in the cabinet: T1 tap links, FF1 feed</text>
+<text x="604" y="443.5" font-size="8.5">SVORKOVNICE V ROZVADĚČI</text>
+<text x="44" y="459.5" font-size="8.5" font-weight="bold">X10</text>
+<text x="174" y="459.5" font-size="8.5">terminal strip in the cabinet (1-6 to M1)</text>
+<text x="604" y="459.5" font-size="8.5">SVORKOVNICE V ROZVADĚČI</text>
+<text x="44" y="475.5" font-size="8.5" font-weight="bold" data-rows="D:X8">X8 [?]</text>
+<text x="174" y="475.5" font-size="8.5">terminal strip of sensors S12, SQ1, SQ2</text>
+<text x="604" y="475.5" font-size="8.5">SVORKOVNICE SNÍMAČŮ S12,SQ1,SQ2</text>
+<text x="44" y="491.5" font-size="8.5" font-weight="bold">X5</text>
+<text x="174" y="491.5" font-size="8.5">working-earth strip: 0 V of all control supplies, bonded to PE</text>
+<text x="604" y="491.5" font-size="8.5">SVORKOVNICE PRAC. ZEMĚ</text>
+<text x="44" y="507.5" font-size="8.5" font-weight="bold">XC7</text>
+<text x="174" y="507.5" font-size="8.5">service socket 230 V (110 V), live with Q1 off</text>
+<text x="604" y="507.5" font-size="8.5">ZÁSUVKA 230V (110V)</text>
+<text x="44" y="523.5" font-size="8.5" font-weight="bold" data-rows="D:XC4">XC4 [?]</text>
+<text x="174" y="523.5" font-size="8.5">connector of sensor BR40 (encoder)</text>
+<text x="604" y="523.5" font-size="8.5">KONEKTOR SNÍMAČE BR40</text>
+<text x="44" y="539.5" font-size="8.5" font-weight="bold">XC3</text>
+<text x="174" y="539.5" font-size="8.5">blower motor connector (M3; pins 5-6 Y3)</text>
+<text x="604" y="539.5" font-size="8.5">KONEKTOR MOTORU DMYCHADLA</text>
+<text x="44" y="555.5" font-size="8.5" font-weight="bold" data-rows="D:XC2">XC2 [?]</text>
+<text x="174" y="555.5" font-size="8.5">table-cabinet interconnection</text>
+<text x="604" y="555.5" font-size="8.5">PROPOJENÍ STŮL–ROZVADĚČ</text>
+<text x="44" y="571.5" font-size="8.5" font-weight="bold">XC1</text>
+<text x="174" y="571.5" font-size="8.5">feed (saddle) motor connector (M2), shielded</text>
+<text x="604" y="571.5" font-size="8.5">KONEKTOR MOTORU POSUVU</text>
+<text x="44" y="587.5" font-size="8.5" font-weight="bold">XP</text>
+<text x="174" y="587.5" font-size="8.5">mains connection terminal strip</text>
+<text x="604" y="587.5" font-size="8.5">SVORKOVNICE PŘIPOJENÍ SÍTĚ</text>
+<text x="44" y="603.5" font-size="7.3" font-weight="bold" data-rows="D:XC50|D:XC60|D:XC70">XC50 [?], XC60 [?], XC70 [?]</text>
+<text x="174" y="603.5" font-size="8.5">control-system connector (PLC analog outputs to UZ1 7, 8)</text>
+<text x="604" y="603.5" font-size="8.5">KONEKTORY ŘÍDÍCÍHO SYSTÉMU</text>
+<text x="40" y="646" font-size="9" font-weight="bold">Notes as printed (3, 2, 1):</text>
+<text x="40" y="662" font-size="8">During knife movement contactors KM1A, KM1B, KM2, KM3, KM6, KM7 are closed.</text>
+<text x="40" y="674" font-size="8">(3. BĚHEM POHYBU NOŽE JSOU SEPNUTY STYKAČE KM1A, KM1B, KM2, KM3, KM6, KM7)</text>
+<text x="40" y="688" font-size="8">With the knife in its top position contactors KM1A, KM1B, KM2, KM3 are closed.</text>
+<text x="40" y="700" font-size="8">(2. V HORNÍ POLOZE NOŽE JSOU SEPNUTY STYKAČE KM1A, KM1B, KM2, KM3)</text>
+<text x="40" y="714" font-size="8">Scheme drawn with the cutter switched off; limit switches and controls in their starting positions at the start of the working cycle.</text>
+<text x="40" y="726" font-size="8">(1. SCHEMA KRESLENO VE VYPNUTÉM STAVU ŘEZAČKY, KONCOVÉ SPÍNAČE A OVLADAČE VE VÝCHOZÍCH POLOHÁCH NA POČÁTKU PRACOVNÍHO CYKLU)</text>
+<text x="50" y="778" font-size="10" font-weight="bold">Wiring diagram (SCHEMA ZAPOJENÍ)</text>
+<text x="50" y="795" font-size="9">Drawing no. (Č. SNÍMKU) 568-70.9001</text>
+<text x="50" y="812" font-size="9">Type (TYP) MS80PS,DS MS115PS,DS</text>
+<text x="50" y="829" font-size="9">Drawn by (VYPRACOVAL) Ing. Fotr</text>
+<text x="50" y="846" font-size="9">Approved (DATUM SCHV.) 27.11.1996</text>
+<text x="50" y="863" font-size="9">1. General tolerances ISO 2768-mK (1. Všeobecné tolerance ISO 2768-mK.), struck through on the print</text>
+<text x="50" y="880" font-size="9">Redrawn 2026 from photos of the paper set; not an original document.</text>
+<text x="940" y="94" font-size="9" font-weight="bold">Table of used components, by sheet (TABULKA POUŽITÝCH SOUČÁSTEK)</text>
+<text x="944" y="111.5" font-size="8.5" font-weight="bold">sheet</text>
+<text x="994" y="111.5" font-size="8.5" font-weight="bold">designation</text>
+<text x="1114" y="111.5" font-size="8.5" font-weight="bold">value</text>
+<text x="1244" y="111.5" font-size="8.5" font-weight="bold">function (English)</text>
+<text x="944" y="127.5" font-size="8.5" font-weight="bold">2</text>
+<text x="994" y="127.5" font-size="8.5" data-rows="D:C3">C3 [?]</text>
+<text x="1114" y="127.5" font-size="8.5">2µ2/230V</text>
+<text x="1244" y="127.5" font-size="8.5">suppression capacitor across Y3 (XC3 pins 5-6)</text>
+<text x="944" y="143.5" font-size="8.5" font-weight="bold">4</text>
+<text x="994" y="143.5" font-size="8.5">RC...</text>
+<text x="1114" y="143.5" font-size="8.5">2µ2 + 220R</text>
+<text x="1244" y="143.5" font-size="8.5">coil suppressors of sheet 4 (RC1-RC8)</text>
+<text x="944" y="159.5" font-size="8.5" font-weight="bold">4</text>
+<text x="994" y="159.5" font-size="8.5">V20</text>
+<text x="1114" y="159.5" font-size="8.5">1N 4002</text>
+<text x="1244" y="159.5" font-size="8.5">free-wheel diode across the KT2 coil</text>
+<text x="944" y="175.5" font-size="8.5" font-weight="bold">5</text>
+<text x="994" y="175.5" font-size="8.5" data-rows="D:V01">V01 [?], V14</text>
+<text x="1114" y="175.5" font-size="8.5">1N 4002</text>
+<text x="1244" y="175.5" font-size="8.5">diodes of sheet 5 (V01; V14, not the board part UG50/V14)</text>
+<text x="944" y="191.5" font-size="8.5" font-weight="bold">5</text>
+<text x="994" y="191.5" font-size="8.5">V10</text>
+<text x="1114" y="191.5" font-size="8.5">2x KZ 751</text>
+<text x="1244" y="191.5" font-size="8.5">Zener diode pair of sheet 5 (across Y10)</text>
+<text x="944" y="207.5" font-size="8.5" font-weight="bold">5</text>
+<text x="994" y="207.5" font-size="8.5">R10</text>
+<text x="1114" y="207.5" font-size="8.5">100R/6W</text>
+<text x="1244" y="207.5" font-size="8.5">resistor of sheet 5 (across Y10)</text>
+<text x="944" y="223.5" font-size="8.5" font-weight="bold">5</text>
+<text x="994" y="223.5" font-size="8.5">RC11</text>
+<text x="1114" y="223.5" font-size="8.5">2µ2 + 220R</text>
+<text x="1244" y="223.5" font-size="8.5">RC suppressor of sheet 5 (across Y11)</text>
+<text x="944" y="239.5" font-size="8.5" font-weight="bold">7</text>
+<text x="994" y="239.5" font-size="8.5">R14</text>
+<text x="1114" y="239.5" font-size="8.5">11R/25W</text>
+<text x="1244" y="239.5" font-size="7.1">series resistor of sheet 7 (Y14 supply; the R14 printed on board UG50, sheet 3, is another part: UG50/R14)</text>
+<text x="944" y="255.5" font-size="8.5" font-weight="bold">3</text>
+<text x="994" y="255.5" font-size="8.5">V1, V2</text>
+<text x="1114" y="255.5" font-size="8.5">PBU 802</text>
+<text x="1244" y="255.5" font-size="8.5">UG50 rectifiers (V1: +27 V, V2: +24 V)</text>
+<text x="944" y="271.5" font-size="8.5" font-weight="bold">3</text>
+<text x="994" y="271.5" font-size="8.5" data-rows="D:V4">V4 [?]</text>
+<text x="1114" y="271.5" font-size="8.5">CM2506</text>
+<text x="1244" y="271.5" font-size="8.5">UG50 +33 V rectifier</text>
+<text x="944" y="287.5" font-size="8.5" font-weight="bold">3</text>
+<text x="994" y="287.5" font-size="8.5">V11-V17</text>
+<text x="1114" y="287.5" font-size="8.5">1N 4002</text>
+<text x="1244" y="287.5" font-size="8.5">fuse-output indicator diodes, UG50 (V11-V17)</text>
+<text x="944" y="303.5" font-size="8.5" font-weight="bold">3</text>
+<text x="994" y="303.5" font-size="8.5">V21-V27</text>
+<text x="1114" y="303.5" font-size="8.5">TLUG 2400</text>
+<text x="1244" y="303.5" font-size="8.5">fuse-output indicator LEDs, UG50 (V21-V27)</text>
+<text x="944" y="319.5" font-size="8.5" font-weight="bold">3</text>
+<text x="994" y="319.5" font-size="8.5">C1, C2</text>
+<text x="1114" y="319.5" font-size="8.5">2200µF/50V</text>
+<text x="1244" y="319.5" font-size="8.5">UG50 filter capacitors (C1: +27 V, C2: +24 V)</text>
+<text x="944" y="335.5" font-size="8.5" font-weight="bold">3</text>
+<text x="994" y="335.5" font-size="8.5" data-rows="D:C4">C4 [?]</text>
+<text x="1114" y="335.5" font-size="8.5">1000µF/63V</text>
+<text x="1244" y="335.5" font-size="8.5">+33 V filter, UG50</text>
+<text x="944" y="351.5" font-size="8.5" font-weight="bold">3</text>
+<text x="994" y="351.5" font-size="8.5">R11, R12</text>
+<text x="1114" y="351.5" font-size="8.5">1k5/0.6W</text>
+<text x="1244" y="351.5" font-size="8.5">indicator resistors, UG50 (R11: V11/V21; R12: V12/V22)</text>
+<text x="944" y="367.5" font-size="8.5" font-weight="bold">3</text>
+<text x="994" y="367.5" font-size="8.5">R14, R15</text>
+<text x="1114" y="367.5" font-size="8.5">1k2/0.6W</text>
+<text x="1244" y="367.5" font-size="8.5">indicator resistors, UG50 (R14 = UG50/R14: UG50/V14/V24; R15: V15/V25)</text>
+<text x="944" y="383.5" font-size="8.5" font-weight="bold">3</text>
+<text x="994" y="383.5" font-size="8.5" data-rows="D:R16|D:R17">R16 [?], R17 [?]</text>
+<text x="1114" y="383.5" font-size="8.5">3k3/W</text>
+<text x="1244" y="383.5" font-size="8.5">indicator resistors, UG50 (R16: V16/V26; R17: V17/V27)</text>
+<text x="940" y="424" font-size="9" font-weight="bold">3. Table of variant designs 115/80 (3. TABULKA VARIANTNÍCH PROVEDENÍ 115/80)</text>
+<text x="1154" y="441.5" font-size="8.5" font-weight="bold">380V 50Hz</text>
+<text x="1254" y="441.5" font-size="8.5" font-weight="bold">415V 50Hz</text>
+<text x="1354" y="441.5" font-size="8.5" font-weight="bold">220V 50Hz</text>
+<text x="1454" y="441.5" font-size="8.5" font-weight="bold">220V 60Hz</text>
+<text x="1554" y="441.5" font-size="8.5" font-weight="bold">200V 50Hz</text>
+<text x="944" y="457.5" font-size="8.5" font-weight="bold">P [kW]</text>
+<text x="1154" y="457.5" font-size="8.5">5.5/4.5</text>
+<text x="1254" y="457.5" font-size="8.5">5.5/4.5</text>
+<text x="1354" y="457.5" font-size="8.5">5.5/4.5</text>
+<text x="1454" y="457.5" font-size="8.5">5.5/4.5</text>
+<text x="1554" y="457.5" font-size="8.5">5.5/4.5</text>
+<text x="944" y="473.5" font-size="8.5" font-weight="bold">I [A]</text>
+<text x="1154" y="473.5" font-size="8.5">12/10</text>
+<text x="1254" y="473.5" font-size="8.5">12/10</text>
+<text x="1354" y="473.5" font-size="8.5">20/17</text>
+<text x="1454" y="473.5" font-size="8.5">20/17</text>
+<text x="1554" y="473.5" font-size="8.5">20/17</text>
+<text x="944" y="489.5" font-size="8.5" font-weight="bold">M1</text>
+<text x="1154" y="489.5" font-size="8.5">3x380V</text>
+<text x="1254" y="489.5" font-size="8.5">3x415V</text>
+<text x="1354" y="489.5" font-size="8.5">3x220V</text>
+<text x="1454" y="489.5" font-size="8.5">3x220V</text>
+<text x="1554" y="489.5" font-size="8.5">3x200V</text>
+<text x="944" y="505.5" font-size="8.5" font-weight="bold">M2</text>
+<text x="1154" y="505.5" font-size="8.5">3x380V</text>
+<text x="1254" y="505.5" font-size="8.5">3x415V</text>
+<text x="1354" y="505.5" font-size="8.5">3x220V</text>
+<text x="1454" y="505.5" font-size="8.5">3x220V</text>
+<text x="1554" y="505.5" font-size="8.5">3x200V</text>
+<text x="944" y="521.5" font-size="8.5" font-weight="bold">M3</text>
+<text x="1154" y="521.5" font-size="8.5">3x380V</text>
+<text x="1254" y="521.5" font-size="8.5">3x415V</text>
+<text x="1354" y="521.5" font-size="8.5">3x220V</text>
+<text x="1454" y="521.5" font-size="8.5">3x220V</text>
+<text x="1554" y="521.5" font-size="8.5">3x200V</text>
+<text x="944" y="537.5" font-size="8.5" font-weight="bold">QF1</text>
+<text x="1154" y="537.5" font-size="8.5">10-16A</text>
+<text x="1254" y="537.5" font-size="8.5">10-16A</text>
+<text x="1354" y="537.5" font-size="8.5">10-16A</text>
+<text x="1454" y="537.5" font-size="8.5">10-16A</text>
+<text x="1554" y="537.5" font-size="8.5">10-16A</text>
+<text x="944" y="553.5" font-size="8.5" font-weight="bold">QF2</text>
+<text x="1154" y="553.5" font-size="8.5">1.6-2.5A</text>
+<text x="1254" y="553.5" font-size="8.5">1.6-2.5A</text>
+<text x="1354" y="553.5" font-size="8.5">1.6-2.5A</text>
+<text x="1454" y="553.5" font-size="8.5">1.6-2.5A</text>
+<text x="1554" y="553.5" font-size="8.5">1.6-2.5A</text>
+<text x="944" y="569.5" font-size="8.5" font-weight="bold">FA1, FA2</text>
+<text x="1154" y="569.5" font-size="8.5">12A</text>
+<text x="1254" y="569.5" font-size="8.5">12A</text>
+<text x="1354" y="569.5" font-size="8.5">12A</text>
+<text x="1454" y="569.5" font-size="8.5">12A</text>
+<text x="1554" y="569.5" font-size="8.5">12A</text>
+<text x="944" y="585.5" font-size="8.5" font-weight="bold">FA3</text>
+<text x="1154" y="585.5" font-size="8.5">12A</text>
+<text x="1254" y="585.5" font-size="8.5">12A</text>
+<text x="1354" y="585.5" font-size="8.5">12A</text>
+<text x="1454" y="585.5" font-size="8.5">12A</text>
+<text x="1554" y="585.5" font-size="8.5">12A</text>
+<text x="944" y="601.5" font-size="8.5" font-weight="bold">FA4</text>
+<text x="1154" y="601.5" font-size="8.5">6A</text>
+<text x="1254" y="601.5" font-size="8.5">6A</text>
+<text x="1354" y="601.5" font-size="8.5">6A</text>
+<text x="1454" y="601.5" font-size="8.5">6A</text>
+<text x="1554" y="601.5" font-size="8.5">6A</text>
+<text x="944" y="617.5" font-size="8.5" font-weight="bold">KM1A,B (KM1A, KM1B)</text>
+<text x="1154" y="617.5" font-size="8.5">50Hz</text>
+<text x="1254" y="617.5" font-size="8.5">50Hz</text>
+<text x="1354" y="617.5" font-size="8.5">50Hz</text>
+<text x="1454" y="617.5" font-size="8.5">60Hz</text>
+<text x="1554" y="617.5" font-size="8.5">50Hz</text>
+<text x="944" y="633.5" font-size="8.5" font-weight="bold">KM6-8 (KM6, KM7, KM8)</text>
+<text x="1154" y="633.5" font-size="8.5">50Hz</text>
+<text x="1254" y="633.5" font-size="8.5">50Hz</text>
+<text x="1354" y="633.5" font-size="8.5">50Hz</text>
+<text x="1454" y="633.5" font-size="8.5">60Hz</text>
+<text x="1554" y="633.5" font-size="8.5">50Hz</text>
+<text x="944" y="649.5" font-size="8.5" font-weight="bold">KM2-4 (KM2, KM3, KM4)</text>
+<text x="1154" y="649.5" font-size="8.5">50Hz</text>
+<text x="1254" y="649.5" font-size="8.5">50Hz</text>
+<text x="1354" y="649.5" font-size="8.5">50Hz</text>
+<text x="1454" y="649.5" font-size="8.5">60Hz</text>
+<text x="1554" y="649.5" font-size="8.5">60Hz [?]</text>
+<text x="940" y="694" font-size="9" font-weight="bold">Sheet list as printed</text>
+<text x="944" y="711.5" font-size="8.5" font-weight="bold">sheet</text>
+<text x="994" y="711.5" font-size="8.5" font-weight="bold">English</text>
+<text x="1294" y="711.5" font-size="8.5" font-weight="bold">as printed (Czech)</text>
+<text x="944" y="727.5" font-size="8.5" font-weight="bold">4</text>
+<text x="994" y="727.5" font-size="8.5">lighting, control circuits</text>
+<text x="1294" y="727.5" font-size="8.5">OSVĚTLENÍ, OVLÁDACÍ OBVODY</text>
+<text x="944" y="743.5" font-size="8.5" font-weight="bold">3</text>
+<text x="994" y="743.5" font-size="8.5">supply circuits</text>
+<text x="1294" y="743.5" font-size="8.5">NAPÁJECÍ OBVODY</text>
+<text x="944" y="759.5" font-size="8.5" font-weight="bold">2</text>
+<text x="994" y="759.5" font-size="8.5">power circuits</text>
+<text x="1294" y="759.5" font-size="8.5">SILOVÉ OBVODY</text>
+<text x="944" y="775.5" font-size="8.5" font-weight="bold">1</text>
+<text x="994" y="775.5" font-size="8.5">tables, descriptions</text>
+<text x="1294" y="775.5" font-size="8.5">TABULKY, POPISY</text>
+<text x="944" y="791.5" font-size="8.5" font-weight="bold">8</text>
+<text x="994" y="791.5" font-size="8.5">PLC wiring</text>
+<text x="1294" y="791.5" font-size="8.5">ZAPOJENÍ PLC</text>
+<text x="944" y="807.5" font-size="8.5" font-weight="bold">7, 6</text>
+<text x="994" y="807.5" font-size="8.5">cut control circuits</text>
+<text x="1294" y="807.5" font-size="8.5">OBVODY OVLÁDÁNÍ ŘEZU</text>
+<text x="944" y="823.5" font-size="8.5" font-weight="bold">5</text>
+<text x="994" y="823.5" font-size="8.5">cut clutch, electromagnets, signals for PLC</text>
+<text x="1294" y="823.5" font-size="8.5">SPOJKA ŘEZU, EL. MAGNETY, SIGNÁLY PRO PLC</text>
+</svg>

@@ -4,6 +4,7 @@
 /*
 !/.gitignore
 !/stage_1_mechanics/
+!/stage_2_electronics/
 
 # Never commit photos or documents
 *.jpg
@@ -26,6 +27,7 @@
 # PNG only for the model renders made by the part scripts
 *.png
 !/stage_1_mechanics/parts/*/renders/*.png
+!/stage_2_electronics/scheme_3d/renders/*.png
 
 # Generated test copies, caches and logs (the scripts make them again)
 /stage_1_mechanics/parts/*/mutants/
