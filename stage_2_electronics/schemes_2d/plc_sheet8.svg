@@ -608,8 +608,8 @@
 <text x="50" y="1454.7" font-size="7" class="t">P39SSPPBI1000-123-24; ink on sheet 8: EUCHNER PA50/Welle 06/Imp. 1000, Ident.Nr. 075043, Volt 5-30, Ver. 24, Seriennummer 9813 12 344, PA50-06-1000-24; later ink OMRON 1000P E6B2-CW26C;</text>
 <text x="50" y="1464" font-size="7" class="t">place: machine; device row: sheet 8, column 04</text>
 <text x="40" y="1474.8" font-size="7" class="t">XC4 <tspan class="q">[?]</tspan> connector of sensor BR40 (encoder) (KONEKTOR SNÍMAČE BR40); plug and socket, contacts 1-5 and shell (sheet 8); place: cabinet; device row: sheet 8, column 03-04</text>
-<text x="40" y="1485.6" font-size="7" class="t">XC50 <tspan class="q">[?]</tspan> control-system connector (PLC analog outputs to UZ1 7, 8) (KONEKTORY ŘÍDÍCÍHO SYSTÉMU (ŘÍZENÍ RYCHLOSTI SEDLA = backgauge speed control)); 9-pin D-sub (sheet 8); pins 4 and 6+9</text>
-<text x="50" y="1494.9" font-size="7" class="t">used; place: cabinet; device row: sheet 8, column 05</text>
+<text x="40" y="1485.6" font-size="7" class="t">XC50 <tspan class="q">[?]</tspan> control-system connector (PLC to UZ1 7, 8, the speed setpoint; on the ANALOG OUTPUTS port: estimated, on-site item 3) (KONEKTORY ŘÍDÍCÍHO SYSTÉMU (ŘÍZENÍ RYCHLOSTI SEDLA =</text>
+<text x="50" y="1494.9" font-size="7" class="t">backgauge speed control)); 9-pin D-sub (sheet 8); pins 4 and 6+9 used; place: cabinet; device row: sheet 8, column 05</text>
 <text x="40" y="1505.7" font-size="7" class="t">XC60 <tspan class="q">[?]</tspan> control-system connector (PLC side of the TABLO link) (KONEKTORY ŘÍDÍCÍHO SYSTÉMU (PROPOJENÍ PLC-TABLO = PLC-TABLO link)); 9-pin D-sub (sheet 8); pins 2, 3, 5 and shell used;</text>
 <text x="50" y="1515" font-size="7" class="t">place: cabinet; device row: sheet 8, column 04</text>
 <text x="858" y="1368" font-size="7" class="t">XC70 <tspan class="q">[?]</tspan> control-system connector (TABLO side) (KONEKTORY ŘÍDÍCÍHO SYSTÉMU (XC70 ⇒ PLC)); pins 2, 3, 5 and shell used (sheet 8); place: console; device row: sheet 8, column 03</text>

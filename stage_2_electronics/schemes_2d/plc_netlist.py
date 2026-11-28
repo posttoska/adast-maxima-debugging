@@ -24,7 +24,10 @@ Checks (exit 1 on a failure):
   their owners' rows; every [?] or estimated row keyed in the on-site list of ../spec/plc_drive.md
   (skipped while absent); every clause of a note, type, signal or function that reads a port or pin
   function (PORT_WORDS, PIN_CLAIM; quoted print left out) carries its own mark, a pin claim also a
-  manual page instead.
+  manual page instead; the same rule over the prose of ../spec/plc_drive.md sections 1-10
+  (spec_ports); every figure named in a row field (all but source_path) or a spec line outside
+  fenced code, found in any spelling (FIG_WORD, VIEW_P), names the page that shows it too
+  (FIG_PAGES); a figure that FIG_PAGES does not hold fails until its page is viewed and added.
 """
 import csv
 import re
@@ -57,7 +60,7 @@ PLC | programmable logic controller | programmable logic controller of the cut c
 TABLO | control panel | console operator terminal: keys and display for cut programs and backgauge positions; serial link to the PLC | OVLÁDACÍ TABLO (TABLO; POHLED ZE ZADNÍ STRANY = view from the rear) | B&R panel: 4E0040.01-590, a keypad module (estimated, by the 4E family, OM p.46), display module 4D1084.00-590, board 22511030/2 (photos); +24 V DC (sheet 6: "TABLO +24V (8:03)"; sheet 8 prints only "+") | console | 8 | 01-03 | sure | d:20261114_015721 d:20261113_191800 d:20261114_014325 p:151912 p:151951 p:151959 p:152038 p:152107 om:20261115_023023 pm:20261103_233320 | sheet 8 draws its rear: terminal block ⏚, −, + and three sockets on the right edge, the middle one XC70 "⇒ PLC"; terminal "+" is written "+24V" here, the key of the same conductor in control_wires.csv (sheet 6 prints "TABLO +24V (8:03)"), "−" is "-", ⏚ is "PE"; OM p.46 names panel controller 4C 2000.01-510 and keypads 4E 0041/0011/0021.01-590 against 4E0040.01-590 in the photo (on-site list); key legend in Latvian (control panel manual 233320)
 BR40 | rotary encoder | backgauge position encoder: channels A, B and index I counted by the PLC on IN-F, IN-E, IN-D | SNÍMAČ BR40 (KONEKTOR SNÍMAČE BR40 = connector of sensor BR40); RU абсолютный ротационный датчик (absolute rotary sensor, OM p.41) | sheet 8: pins A, B, I, +, − (incremental A/B/index), +24V supply; type not printed: OM p.46 EUCHNER P39SSPPBI1000-123-24; ink on sheet 8: EUCHNER PA50/Welle 06/Imp. 1000, Ident.Nr. 075043, Volt 5-30, Ver. 24, Seriennummer 9813 12 344, PA50-06-1000-24; later ink OMRON 1000P E6B2-CW26C | machine | 8 | 04 | [?] | d:20261114_015117 d:20261113_191800 om:20261115_023023 om:20261115_022638 w:omron/rs_9200d9fd.pdf | [?] = its type: three candidates (on-site list); W: Omron E6B2-CWZ6C is NPN open collector with a cable of at most 2 m, the B&R inputs are "sink" (W); OM p.41 calls it absolute, sheet 8 wires incremental A, B, I
 XC4 | connector | connector of sensor BR40 (encoder) | KONEKTOR SNÍMAČE BR40 | plug and socket, contacts 1-5 and shell (sheet 8) | cabinet | 8 | 03-04 | [?] | d:20261114_015117 d:20261113_191800 d:20261113_213530 om:20261115_011308 om:20261115_023118 om:20261115_023222 p:144555 t:17_cable_routes.csv t:18_manual_device_list.csv | [?]: photo 144555 shows a round connector beside a yellow wall label read "XC4" [?] (17_cable_routes.csv line 13); OM p.48 (023222) Fig. 10.2 view P puts XC4 second (round) on the connector plate; OM p.47 (023118), the parts list of that figure, gives its order numbers and type (18_manual_device_list.csv line 72, whose source column names p.47 only); the label reading stays unsure (t1 on-site item XC4); pins to BR40 from the sheet-8 table: 1 I, 2 B, 3 A, 4 −, 5 +; 7XC4 bonds the shells of both halves; OM p.20 writes XC40 (011308): XC4 as printed
-XC50 | connector | control-system connector (PLC analog outputs to UZ1 7, 8) | KONEKTORY ŘÍDÍCÍHO SYSTÉMU (ŘÍZENÍ RYCHLOSTI SEDLA = backgauge speed control) | 9-pin D-sub (sheet 8); pins 4 and 6+9 used | cabinet | 8 | 05 | [?] | d:20261114_015117 d:20261113_191800 p:144328 p:142944 | on the PLC, arrow "UZ1" above it; photo: a plug on ANALOG OUTPUTS (legend GND * * GND over U1 I1 * U2 I2), no XC label: XC50 [?]; counted as the other PLC port legends read (4-pin row on top, wide row 5-4-3-2-1 from the left: the count that makes IF2's full legend an RS232 port and gives IF1 3 TxD, 5 GND): U1 5, I1 4, U2 2, I2 1, GND 9 and 6 (estimated); so pins 6 and 9 are the two GND and pin 4 = I1, a current output (estimated; on-site list: which pin is wired, the jumper at UZ1 terminal 8, C034)
+XC50 | connector | control-system connector (PLC to UZ1 7, 8, the speed setpoint; on the ANALOG OUTPUTS port: estimated, on-site item 3) | KONEKTORY ŘÍDÍCÍHO SYSTÉMU (ŘÍZENÍ RYCHLOSTI SEDLA = backgauge speed control) | 9-pin D-sub (sheet 8); pins 4 and 6+9 used | cabinet | 8 | 05 | [?] | d:20261114_015117 d:20261113_191800 p:144328 p:142944 | on the PLC, arrow "UZ1" above it; photo: a plug on ANALOG OUTPUTS (legend GND * * GND over U1 I1 * U2 I2), no XC label: XC50 [?]; counted as the other PLC port legends read (4-pin row on top, wide row 5-4-3-2-1 from the left: the count that makes IF2's full legend an RS232 port and gives IF1 3 TxD, 5 GND): U1 5, I1 4, U2 2, I2 1, GND 9 and 6 (estimated); so pins 6 and 9 are the two GND and pin 4 = I1, a current output (estimated; on-site list: which pin is wired, the jumper at UZ1 terminal 8, C034)
 XC60 | connector | control-system connector (PLC side of the TABLO link) | KONEKTORY ŘÍDÍCÍHO SYSTÉMU (PROPOJENÍ PLC-TABLO = PLC-TABLO link) | 9-pin D-sub (sheet 8); pins 2, 3, 5 and shell used | cabinet | 8 | 04 | [?] | d:20261114_015117 d:20261113_191800 p:144328 p:142944 | on the PLC, arrow "TABLO" above it; photo: the grey cable's plug on IF1 RS232 (legend partly hidden by the cable: GND, +5V, TxD, DSR, RTS readable), no XC label: XC60 [?]; counted as the PLC port legends read (4-pin row on top, wide row 5-4-3-2-1 from the left, the count that makes IF2's full legend an RS232 port): pin 5 GND, 4 +5V, 3 TxD, 2 RxD (hidden by the cable) (estimated)
 XC70 | connector | control-system connector (TABLO side) | KONEKTORY ŘÍDÍCÍHO SYSTÉMU (XC70 ⇒ PLC) | pins 2, 3, 5 and shell used (sheet 8) | console | 8 | 03 | [?] | d:20261114_015721 d:20261113_191800 p:151959 t:22_web_b_br_connectors.csv | middle one of three sockets on the TABLO's rear edge; column 03: the table's LINIE "8:03 / 8:04" for the link puts XC70 in 03 and XC60 in 04, and the socket stands under the ruler tick 03 (the sheet-8 paths table reads 02); console photo 151959: a board with three D-sub and a power plug, no XC label seen (on-site list); W: panel controller 4C2000.01-510 IF1 RS232 has 2 RxD, 3 TxD, 5 GND (PANELWARE manual p.99, saved as 22_web_b_br_connectors.csv lines 11-15); 4C2000.01-510 is the OM's controller, not seen fitted (on-site item 16)
 X10 | terminal strip | terminal strip in the cabinet (1-6 to M1) | SVORKOVNICE V ROZVADĚČI | 45 terminals + 3 PE (photo) | cabinet | 2 | 04-09 | sure | d:20261113_213049 d:20261113_213530 d:20261113_231128 p:144309 p:144314 | device of thread power; on sheet 8: 33 (TABLO +24V), 35 (PLC +24V), 45 (TABLO 0V, on to X5), PE (TABLO earth), 29 and 30 (IN-2, IN-1); photo 144309: inside markers 35X10 and 45X10, field sleeves 33 and 45, a bridge over 31-36
@@ -191,7 +194,9 @@ def wkey(r):
 
 # A note clause that names a port or pin function reads it from a legend or a standard, never from the print:
 # it must carry its own mark. Clauses split at '; ' outside brackets; quoted print or photo text is left out.
-PORT_WORDS = re.compile(r'TxD|RxD|RS232|null-modem|ANALOG|\bI1\b|\bIF1\b')
+# The PLC's analog ports in any case, plural as printed on the PLC; the singular is left out because UZ1's own
+# terminal 62 is an "analog output" of the inverter (Lenze), a manual fact, not a reading of a PLC port.
+PORT_WORDS = re.compile(r'TxD|RxD|RS232|null-modem|ANALOG|(?i:analog (?:in|out)puts)|\bI1\b|\bIF1\b')
 MARKED = re.compile(r'estimated|\[\?\]|\bW:|\(W\b|\bW\)')
 PIN_CLAIM = re.compile(r'\b(pins?\s+\d+(\s*(and|,|\+)\s*\d+)*|\d+)\s+(is|are)\b[^;]*'
                        r'(\bGND|\bTxD|\bRxD|\bI1|\bU1|\bI2|\bU2|\+5V|\bcurrent output|\bvoltage output)')
@@ -252,6 +257,78 @@ def spec_abbr(text):
                     fails.append('spec abbreviation %s: first use not followed by "(%s": ...%s' % (a, e, line[m.start():m.end() + 30]))
                 break
     return met, fails
+
+
+def spec_lines(text):
+    """The lines of the spec with fenced code blanked, so that line numbers stay those of the file."""
+    return re.sub(r'```.*?```', lambda m: '\n' * m.group(0).count('\n'), text, flags=re.S).split('\n')
+
+
+# The spec's own prose follows the row rule above: in sections 1-10, outside fenced code, a clause that
+# reads a port or a pin (a table row split into its cells first) carries its own mark. Section 11 (the
+# on-site list: open questions) and section 12 (the sources: what each source shows) are left out.
+def spec_ports(text):
+    """Failures: unmarked port or pin readings in spec sections 1-10."""
+    fails, skip = [], False
+    for i, line in enumerate(spec_lines(text), 1):
+        if line.startswith('## '):
+            skip = bool(re.match(r'## \d+\. (On-site list|Sources)\b', line))
+        if skip:
+            continue
+        for cell in line.split(' | '):
+            for c in clauses(cell):
+                if MARKED.search(c):
+                    continue
+                if PORT_WORDS.search(c) or (PIN_CLAIM.search(c) and not MANUAL.search(c)):
+                    fails.append('spec line %d: a port or pin reading without its own mark: %s'
+                                 % (i, c.strip()[:90]))
+    return fails
+
+
+# Each figure that this thread cites, with the page that shows it (each page viewed: p.48 = 20261115_023222,
+# p.41 = 20261115_022638); the parts list of Fig. 10.2 is on p.47 (20261115_023118), its drawing is not.
+# A row field (a written column, not source_path) or a spec line outside fenced code (spec_lines) that
+# names a figure names its page too. A figure is found in any spelling:
+# Fig., Figs., figure, figures; Russian рис., рисунок; Czech obr., obrázek; German Abb., Abbildung; any
+# case, with or without a dot or a space before its number; after a plural word every further number of a
+# list ("Figs. 8.1 and 10.2") counts too. View P of Fig. 10.2 also as Russian вид, Czech pohled, German
+# Ansicht, with a Latin or Cyrillic P. A figure number missing here fails: view its page, then add it.
+FIG_PAGES = {'10.2': 'p.48', '8.1': 'p.41', 'view P': 'p.48'}
+FIG_WORD = re.compile(r'(?i)(?<![\w.])(figures|figure|figs|fig|рисунки|рисунок|рис|obrázky|obrázek|obr|'
+                      r'abbildungen|abbildung|abb)\.?\s*(?=\d)')
+FIG_PLURAL = {'figures', 'figs', 'рисунки', 'obrázky', 'abbildungen'}
+FIG_NUM = re.compile(r'\d+(?:\.\d+)*')
+FIG_MORE = re.compile(r'(?i)\s*(?:,|and\b|und\b|и\b|a\b)\s*(\d+(?:\.\d+)*)')
+VIEW_P = re.compile(r'(?<![\w.])(?i:view|вид|pohled|ansicht)\s+[PР](?!\w)')
+
+
+def figures(text):
+    """The figures that a text names: their numbers, and 'view P'."""
+    out = []
+    for m in FIG_WORD.finditer(text):
+        n = FIG_NUM.match(text, m.end())
+        out.append(n.group(0))
+        pos = n.end()
+        while m.group(1).lower() in FIG_PLURAL:
+            k = FIG_MORE.match(text, pos)
+            if not k:
+                break
+            out.append(k.group(1))
+            pos = k.end()
+    out.extend('view P' for _ in VIEW_P.finditer(text))
+    return out
+
+
+def fig_pages(where, text):
+    fails = []
+    for fig in dict.fromkeys(figures(text)):
+        page = FIG_PAGES.get(fig)
+        name = fig if fig == 'view P' else 'figure ' + fig
+        if page is None:
+            fails.append('%s names %s, which FIG_PAGES does not hold: view its page, then add it' % (where, name))
+        elif not re.search(re.escape(page) + r'(?!\d)', text):
+            fails.append('%s names %s without %s, the page that shows it' % (where, name, page))
+    return fails
 
 
 def main():
@@ -420,6 +497,9 @@ def main():
         bad.extend(abad)
         info.append('INFO abbreviations in spec/plc_drive.md: %d of %d in the list used, %d without their full name '
                     'at the first use' % (len(met), len(SPEC_ABBR), len(abad)))
+        bad.extend(spec_ports(text))
+        for i, ln in enumerate(spec_lines(text), 1):
+            bad.extend(fig_pages('spec/plc_drive.md line %d' % i, ln))
     else:
         info.append('INFO on-site keys not checked: spec/plc_drive.md absent')
     for r in devs + wires:
@@ -431,6 +511,9 @@ def main():
         for st in sorted(cited):
             if st + '.jpg' not in have:
                 bad.append('row %s: its note cites photo %s, its source_path does not' % (r.get('designation') or wkey(r), st))
+        for fld in (DEV_HDR if 'designation' in r else WIRE_HDR):
+            if fld != 'source_path':
+                bad.extend(fig_pages('row %s %s' % (r.get('designation') or wkey(r), fld), r.get(fld) or ''))
         for fld in ('note', 'type_rating', 'signal', 'function_en'):
             for c in clauses(r.get(fld) or ''):
                 if MARKED.search(c):

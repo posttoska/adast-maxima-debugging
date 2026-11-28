@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1800" height="1007" viewBox="0 0 1800 1007">
+<title>568-70.9001 overview: the whole machine on one page (thread t5, redrawn 2026, not an original document)</title>
+<style>text{font-family:Consolas,'DejaVu Sans Mono','Courier New',monospace;fill:#111}.b{font-weight:bold}.fn{fill:#333}.sh{fill:#7a7a7a}.i{font-style:italic;fill:#444}.s{fill:#000}.q{fill:#b00000}.e{fill:#1f5fbf}.w{fill:#8a5a00}.o{fill:#a34f00}.rt{fill:#5a3a00}.fr{fill:none;stroke:#111;stroke-width:1.4}.bl{fill:#fbfbfb;stroke:#444;stroke-width:1}.hd{fill:#e9e9e9;stroke:#444;stroke-width:1}.sub{fill:#fff;stroke:#999;stroke-width:0.8}.ex{fill:#fff7e8;stroke:#b86a00;stroke-width:1}.gp{fill:#fbfbfb;stroke:#666;stroke-width:0.9}.cb{stroke:#e07800;stroke-width:2.4;fill:none}.cd{fill:#e07800}.ls{stroke:#000;stroke-width:1.1}.lq{stroke:#b00000;stroke-width:1.1;stroke-dasharray:6 3}.le{stroke:#1f5fbf;stroke-width:1.1;stroke-dasharray:2 2}.lw{stroke:#8a5a00;stroke-width:1.1;stroke-dasharray:8 2 2 2}.il{stroke:#777;stroke-width:0.9}.rb{fill:#fff}.dt{fill:#000}</style>
+<rect x="0" y="0" width="1800" height="1007" fill="#fff"/>
+<rect x="8" y="8" width="1784" height="991" class="fr"/>
+<rect x="20" y="84" width="1040" height="841" class="bl"/>
+<rect x="1180" y="227" width="600" height="698" class="bl"/>
+<text x="22" y="36" font-size="17" class="b">Adast Maxima MS 115 PS (serial 578.0009, 1998), wiring set 568-70.9001 [SCHÉMA ZAPOJENÍ]: overview of the whole machine</text>
+<text x="22" y="56" font-size="10.5" class="fn">Redrawn 2026 by thread t5 from netlist/merged_devices.csv and merged_cores.csv (not an original document). Each device is drawn once, in the block of the sheet that shows its circuit;</text>
+<text x="22" y="71" font-size="10.5" class="fn">the grey numbers after a name are all the 568 sheets that show it (sheet 1 = device list). Wiring detail: the sheet pages; cores between cabinet, console and machine: connections.svg.</text>
+<rect x="1180" y="84" width="600" height="129" class="bl"/>
+<text x="1188" y="101" font-size="13" class="b">CONSOLE, operator side, above the knife opening</text>
+<rect x="1188" y="110" width="584" height="95" class="gp"/>
+<text x="1196" y="125" font-size="11.5" class="i">devices of the console</text>
+<text x="1194" y="143" font-size="11.5" class="b dev s">S1</text>
+<text x="1250" y="143" font-size="10" class="fn">emergency stop</text>
+<text x="1474" y="143" font-size="9" text-anchor="end" class="sh">1, 4</text>
+<text x="1486" y="143" font-size="11.5" class="b dev s">TABLO</text>
+<text x="1542" y="143" font-size="10" class="fn">operator control panel</text>
+<text x="1766" y="143" font-size="9" text-anchor="end" class="sh">8</text>
+<text x="1194" y="160" font-size="11.5" class="b dev q">XC70</text>
+<text x="1250" y="160" font-size="10" class="fn">connector from the cabinet</text>
+<text x="1474" y="160" font-size="9" text-anchor="end" class="sh">1, 8</text>
+<text x="1188" y="244" font-size="13" class="b">MACHINE: field devices on the machine body</text>
+<rect x="1188" y="253" width="584" height="63" class="gp"/>
+<text x="1196" y="268" font-size="11.5" class="b">Lamps on the console front</text>
+<text x="1194" y="286" font-size="11.5" class="b dev s">E1</text>
+<text x="1250" y="286" font-size="10" class="fn">work-surface lighting lamp</text>
+<text x="1474" y="286" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="1486" y="286" font-size="11.5" class="b dev s">E2</text>
+<text x="1542" y="286" font-size="10" class="fn">work-surface lighting lamp</text>
+<text x="1766" y="286" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="1194" y="303" font-size="11.5" class="b dev s">E3</text>
+<text x="1250" y="303" font-size="10" class="fn">cut-line indication lamp</text>
+<text x="1474" y="303" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="1486" y="303" font-size="11.5" class="b dev s">E4</text>
+<text x="1542" y="303" font-size="10" class="fn">cut-line indication lamp</text>
+<text x="1766" y="303" font-size="9" text-anchor="end" class="sh">4</text>
+<rect x="1188" y="324" width="584" height="63" class="gp"/>
+<text x="1196" y="339" font-size="11.5" class="b">Clamp beam: brake and position sensors</text>
+<text x="1194" y="357" font-size="11.5" class="b dev s">S28</text>
+<text x="1250" y="357" font-size="10" class="fn">clamp plate sensor</text>
+<text x="1474" y="357" font-size="9" text-anchor="end" class="sh">1, 5</text>
+<text x="1486" y="357" font-size="11.5" class="b dev s">S30</text>
+<text x="1542" y="357" font-size="10" class="fn">clamp top position sensor</text>
+<text x="1766" y="357" font-size="9" text-anchor="end" class="sh">1, 5-6</text>
+<text x="1194" y="374" font-size="11.5" class="b dev s">Y14</text>
+<text x="1250" y="374" font-size="10" class="fn">clamp brake magnet</text>
+<text x="1474" y="374" font-size="9" text-anchor="end" class="sh">5</text>
+<text x="1486" y="374" font-size="11.5" class="b dev s">V14</text>
+<text x="1542" y="374" font-size="10" class="fn">diode across the clamp brake</text>
+<text x="1766" y="374" font-size="9" text-anchor="end" class="sh">1, 5</text>
+<rect x="1188" y="395" width="584" height="179" class="gp"/>
+<text x="1196" y="410" font-size="11.5" class="b">Main drive, knife and hydraulics</text>
+<text x="1196" y="426" font-size="9.5" class="i">plus 8 cores on the machine from the knife sensors' terminal strip to the sensors (leg B4-K)</text>
+<text x="1194" y="442" font-size="11.5" class="b dev s">M1</text>
+<text x="1250" y="442" font-size="10" class="fn">knife and hydraulics motor</text>
+<text x="1474" y="442" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="1486" y="442" font-size="11.5" class="b dev s">Y10</text>
+<text x="1542" y="442" font-size="10" class="fn">cut clutch (with brake)</text>
+<text x="1766" y="442" font-size="9" text-anchor="end" class="sh">5</text>
+<text x="1194" y="459" font-size="11.5" class="b dev s">V10</text>
+<text x="1250" y="459" font-size="10" class="fn">Zener diode pair, clutch</text>
+<text x="1474" y="459" font-size="9" text-anchor="end" class="sh">1, 5</text>
+<text x="1486" y="459" font-size="11.5" class="b dev s">R10</text>
+<text x="1542" y="459" font-size="10" class="fn">resistor across the clutch</text>
+<text x="1766" y="459" font-size="9" text-anchor="end" class="sh">1, 5</text>
+<text x="1194" y="476" font-size="11.5" class="b dev s">S5</text>
+<text x="1250" y="476" font-size="10" class="fn">belt-pulley cover interlock</text>
+<text x="1474" y="476" font-size="9" text-anchor="end" class="sh">1, 4-5</text>
+<text x="1486" y="476" font-size="11.5" class="b dev s">S19</text>
+<text x="1542" y="476" font-size="10" class="fn">clutch switch, knife change</text>
+<text x="1766" y="476" font-size="9" text-anchor="end" class="sh">1, 5-6</text>
+<text x="1194" y="493" font-size="11.5" class="b dev s">Y11</text>
+<text x="1250" y="493" font-size="10" class="fn">hydraulics magnet (clamping)</text>
+<text x="1474" y="493" font-size="9" text-anchor="end" class="sh">5</text>
+<text x="1486" y="493" font-size="11.5" class="b dev s">RC11</text>
+<text x="1542" y="493" font-size="10" class="fn">suppressor, hydraulics</text>
+<text x="1766" y="493" font-size="9" text-anchor="end" class="sh">1, 5</text>
+<text x="1194" y="510" font-size="11.5" class="b dev q">X8</text>
+<text x="1250" y="510" font-size="10" class="fn">knife sensors terminal strip</text>
+<text x="1474" y="510" font-size="9" text-anchor="end" class="sh">1, 6</text>
+<text x="1486" y="510" font-size="11.5" class="b dev s">S12</text>
+<text x="1542" y="510" font-size="10" class="fn">knife position sensor (cam)</text>
+<text x="1766" y="510" font-size="9" text-anchor="end" class="sh">1, 6</text>
+<text x="1194" y="527" font-size="11.5" class="b dev s">S13</text>
+<text x="1250" y="527" font-size="10" class="fn">knife position sensor (cam)</text>
+<text x="1474" y="527" font-size="9" text-anchor="end" class="sh">1, 6</text>
+<text x="1486" y="527" font-size="11.5" class="b dev s">S14</text>
+<text x="1542" y="527" font-size="10" class="fn">knife position sensor (cam)</text>
+<text x="1766" y="527" font-size="9" text-anchor="end" class="sh">1, 6</text>
+<text x="1194" y="544" font-size="11.5" class="b dev s">SQ1</text>
+<text x="1250" y="544" font-size="10" class="fn">knife lock sensor</text>
+<text x="1474" y="544" font-size="9" text-anchor="end" class="sh">1, 6</text>
+<text x="1486" y="544" font-size="11.5" class="b dev s">SQ2</text>
+<text x="1542" y="544" font-size="10" class="fn">knife lock sensor</text>
+<text x="1766" y="544" font-size="9" text-anchor="end" class="sh">1, 6</text>
+<text x="1194" y="561" font-size="11.5" class="b dev s">Y01</text>
+<text x="1250" y="561" font-size="10" class="fn">knife-lock magnet</text>
+<text x="1474" y="561" font-size="9" text-anchor="end" class="sh">5</text>
+<text x="1486" y="561" font-size="11.5" class="b dev q">V01</text>
+<text x="1542" y="561" font-size="10" class="fn">diode across the lock magnet</text>
+<text x="1766" y="561" font-size="9" text-anchor="end" class="sh">1, 5</text>
+<rect x="1188" y="582" width="584" height="95" class="gp"/>
+<text x="1196" y="597" font-size="11.5" class="b">Front table and backgauge</text>
+<text x="1194" y="615" font-size="11.5" class="b dev s">S10</text>
+<text x="1250" y="615" font-size="10" class="fn">cut start button</text>
+<text x="1474" y="615" font-size="9" text-anchor="end" class="sh">1, 6</text>
+<text x="1486" y="615" font-size="11.5" class="b dev s">S11</text>
+<text x="1542" y="615" font-size="10" class="fn">cut start button</text>
+<text x="1766" y="615" font-size="9" text-anchor="end" class="sh">1, 6</text>
+<text x="1194" y="632" font-size="11.5" class="b dev s">S24</text>
+<text x="1250" y="632" font-size="10" class="fn">saddle front limit switch</text>
+<text x="1474" y="632" font-size="9" text-anchor="end" class="sh">1, 5</text>
+<text x="1486" y="632" font-size="11.5" class="b dev s">S27</text>
+<text x="1542" y="632" font-size="10" class="fn">saddle rear reference switch</text>
+<text x="1766" y="632" font-size="9" text-anchor="end" class="sh">1, 5</text>
+<text x="1194" y="649" font-size="11.5" class="b dev q">BR40</text>
+<text x="1250" y="649" font-size="10" class="fn">backgauge position encoder</text>
+<text x="1474" y="649" font-size="9" text-anchor="end" class="sh">8</text>
+<rect x="1188" y="685" width="584" height="95" class="gp"/>
+<text x="1196" y="700" font-size="11.5" class="b">Backgauge feed motor and air cushion</text>
+<text x="1194" y="718" font-size="11.5" class="b dev s">M2</text>
+<text x="1250" y="718" font-size="10" class="fn">backgauge feed motor</text>
+<text x="1474" y="718" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="1486" y="718" font-size="11.5" class="b dev s">M3</text>
+<text x="1542" y="718" font-size="10" class="fn">air-cushion blower motor</text>
+<text x="1766" y="718" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="1194" y="735" font-size="11.5" class="b dev s">Y3</text>
+<text x="1250" y="735" font-size="10" class="fn">air-cushion magnet (valve)</text>
+<text x="1474" y="735" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="1486" y="735" font-size="11.5" class="b dev q">C3</text>
+<text x="1542" y="735" font-size="10" class="fn">suppression capacitor</text>
+<text x="1766" y="735" font-size="9" text-anchor="end" class="sh">2</text>
+<rect x="1188" y="788" width="584" height="60" class="gp"/>
+<text x="1196" y="803" font-size="11.5" class="b">Not fitted on this machine</text>
+<text x="1196" y="819" font-size="9.5" class="i">certificate entry — (dash); no box in the 3D (three-dimensional) scheme</text>
+<text x="1194" y="835" font-size="11.5" class="b dev q">FF1</text>
+<text x="1250" y="835" font-size="10" class="fn">light curtain (option)</text>
+<text x="1474" y="835" font-size="9" text-anchor="end" class="sh">3</text>
+<rect x="32" y="114" width="798" height="261" class="bl"/>
+<rect x="32" y="114" width="798" height="22" class="hd"/>
+<text x="40" y="130" font-size="12" class="b">Mains feed, main switch and power part</text>
+<text x="822" y="130" font-size="11.5" text-anchor="end" class="b">568 sheet 2</text>
+<text x="40" y="152" font-size="10" class="i">mains feed and service socket</text>
+<text x="38" y="168" font-size="11.5" class="b dev s">XP</text>
+<text x="94" y="168" font-size="10" class="fn">mains connection terminals</text>
+<text x="292" y="168" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="304" y="168" font-size="11.5" class="b dev s">ZF1</text>
+<text x="360" y="168" font-size="10" class="fn">mains interference filter</text>
+<text x="558" y="168" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="570" y="168" font-size="11.5" class="b dev s">FA4</text>
+<text x="626" y="168" font-size="10" class="fn">service socket breaker</text>
+<text x="824" y="168" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="38" y="185" font-size="11.5" class="b dev s">XC7</text>
+<text x="94" y="185" font-size="10" class="fn">service socket 230 V (110 V)</text>
+<text x="292" y="185" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="40" y="201" font-size="10" class="i">main switch</text>
+<text x="38" y="217" font-size="11.5" class="b dev s">Q1</text>
+<text x="94" y="217" font-size="10" class="fn">main switch [HLAVNÍ VYPÍNAČ]</text>
+<text x="292" y="217" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="40" y="233" font-size="10" class="i">earthing</text>
+<text x="38" y="249" font-size="11.5" class="b dev s">PE</text>
+<text x="94" y="249" font-size="10" class="fn">protective earth strip</text>
+<text x="292" y="249" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="304" y="249" font-size="11.5" class="b dev s">X5</text>
+<text x="360" y="249" font-size="10" class="fn">working earth strip, 0 V</text>
+<text x="558" y="249" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="40" y="265" font-size="10" class="i">motor breakers and contactors</text>
+<text x="38" y="281" font-size="11.5" class="b dev s">QF1</text>
+<text x="94" y="281" font-size="10" class="fn">motor breaker, knife drive</text>
+<text x="292" y="281" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="304" y="281" font-size="11.5" class="b dev s">QF2</text>
+<text x="360" y="281" font-size="10" class="fn">motor breaker, blower</text>
+<text x="558" y="281" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="570" y="281" font-size="11.5" class="b dev s">KM1A</text>
+<text x="626" y="281" font-size="10" class="fn">main contactor</text>
+<text x="824" y="281" font-size="9" text-anchor="end" class="sh">2, 4</text>
+<text x="38" y="298" font-size="11.5" class="b dev s">KM1B</text>
+<text x="94" y="298" font-size="10" class="fn">main contactor</text>
+<text x="292" y="298" font-size="9" text-anchor="end" class="sh">2, 4</text>
+<text x="304" y="298" font-size="11.5" class="b dev s">KM2</text>
+<text x="360" y="298" font-size="10" class="fn">knife motor line contactor</text>
+<text x="558" y="298" font-size="9" text-anchor="end" class="sh">2, 4</text>
+<text x="570" y="298" font-size="11.5" class="b dev s">KM3</text>
+<text x="626" y="298" font-size="10" class="fn">knife motor delta contactor</text>
+<text x="824" y="298" font-size="9" text-anchor="end" class="sh">2, 4</text>
+<text x="38" y="315" font-size="11.5" class="b dev s">KM4</text>
+<text x="94" y="315" font-size="10" class="fn">knife motor star contactor</text>
+<text x="292" y="315" font-size="9" text-anchor="end" class="sh">2, 4</text>
+<text x="304" y="315" font-size="11.5" class="b dev s">KM8</text>
+<text x="360" y="315" font-size="10" class="fn">blower motor contactor</text>
+<text x="558" y="315" font-size="9" text-anchor="end" class="sh">2, 4</text>
+<text x="40" y="331" font-size="10" class="i">frequency inverter of the backgauge feed</text>
+<text x="38" y="347" font-size="11.5" class="b dev s">FA3</text>
+<text x="94" y="347" font-size="10" class="fn">inverter supply breaker</text>
+<text x="292" y="347" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="304" y="347" font-size="11.5" class="b dev s">X2</text>
+<text x="360" y="347" font-size="10" class="fn">inverter feed terminals</text>
+<text x="558" y="347" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="570" y="347" font-size="11.5" class="b dev s">ZF2</text>
+<text x="626" y="347" font-size="10" class="fn">inverter input filter</text>
+<text x="824" y="347" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="38" y="364" font-size="11.5" class="b dev s">UZ1</text>
+<text x="94" y="364" font-size="10" class="fn">frequency inverter [MĚNIČ]</text>
+<text x="292" y="364" font-size="9" text-anchor="end" class="sh">2</text>
+<rect x="32" y="387" width="798" height="234" class="bl"/>
+<rect x="32" y="387" width="798" height="22" class="hd"/>
+<text x="40" y="403" font-size="12" class="b">Control transformer and control voltages</text>
+<text x="822" y="403" font-size="11.5" text-anchor="end" class="b">568 sheet 3</text>
+<text x="40" y="425" font-size="10" class="i">transformer, its breakers and taps</text>
+<text x="38" y="441" font-size="11.5" class="b dev s">FA1</text>
+<text x="94" y="441" font-size="10" class="fn">transformer primary breaker</text>
+<text x="292" y="441" font-size="9" text-anchor="end" class="sh">3</text>
+<text x="304" y="441" font-size="11.5" class="b dev s">FA2</text>
+<text x="360" y="441" font-size="10" class="fn">transformer primary breaker</text>
+<text x="558" y="441" font-size="9" text-anchor="end" class="sh">3</text>
+<text x="570" y="441" font-size="11.5" class="b dev s">T1</text>
+<text x="626" y="441" font-size="10" class="fn">control transformer</text>
+<text x="824" y="441" font-size="9" text-anchor="end" class="sh">3</text>
+<text x="38" y="458" font-size="11.5" class="b dev s">X11</text>
+<text x="94" y="458" font-size="10" class="fn">transformer tap terminals</text>
+<text x="292" y="458" font-size="9" text-anchor="end" class="sh">3</text>
+<text x="40" y="474" font-size="10" class="i">power-supply board: +27 V, +24 V, +33 V rectified; ~24 V, ~48 V alternating</text>
+<text x="38" y="490" font-size="11.5" class="b dev s">UG50</text>
+<text x="94" y="490" font-size="10" class="fn">power-supply board</text>
+<text x="292" y="490" font-size="9" text-anchor="end" class="sh">3</text>
+<rect x="46" y="497" width="770" height="118" class="sub"/>
+<text x="54" y="510" font-size="10" class="i">parts on the power-supply board, all on sheet 3:</text>
+<text x="54" y="527" font-size="10" class="fn">rectifiers</text>
+<text x="346" y="527" font-size="11" class="b dev s">V1</text>
+<text x="370.1" y="527" font-size="11" class="b dev s">V2</text>
+<text x="394.2" y="527" font-size="11" class="b dev q">V4</text>
+<text x="54" y="543" font-size="10" class="fn">filter capacitors</text>
+<text x="346" y="543" font-size="11" class="b dev s">C1</text>
+<text x="370.1" y="543" font-size="11" class="b dev s">C2</text>
+<text x="394.2" y="543" font-size="11" class="b dev q">C4</text>
+<text x="54" y="559" font-size="10" class="fn">fuses of the windings</text>
+<text x="346" y="559" font-size="11" class="b dev s">FU21</text>
+<text x="382.2" y="559" font-size="11" class="b dev s">FU22</text>
+<text x="418.4" y="559" font-size="11" class="b dev s">FU24</text>
+<text x="454.6" y="559" font-size="11" class="b dev s">FU25</text>
+<text x="490.8" y="559" font-size="11" class="b dev s">FU26</text>
+<text x="527" y="559" font-size="11" class="b dev s">FU27</text>
+<text x="54" y="575" font-size="10" class="fn">indicator diodes</text>
+<text x="346" y="575" font-size="11" class="b dev s">V11</text>
+<text x="376.1" y="575" font-size="11" class="b dev s">V12</text>
+<text x="406.3" y="575" font-size="11" class="b dev s">V13</text>
+<text x="436.4" y="575" font-size="11" class="b dev s">UG50/V14</text>
+<text x="496.8" y="575" font-size="11" class="b dev s">V15</text>
+<text x="527" y="575" font-size="11" class="b dev s">V16</text>
+<text x="557.1" y="575" font-size="11" class="b dev s">V17</text>
+<text x="54" y="591" font-size="10" class="fn">indicator LEDs (light-emitting diodes)</text>
+<text x="346" y="591" font-size="11" class="b dev s">V21</text>
+<text x="376.1" y="591" font-size="11" class="b dev s">V22</text>
+<text x="406.3" y="591" font-size="11" class="b dev s">V23</text>
+<text x="436.4" y="591" font-size="11" class="b dev s">V24</text>
+<text x="466.6" y="591" font-size="11" class="b dev s">V25</text>
+<text x="496.7" y="591" font-size="11" class="b dev s">V26</text>
+<text x="526.9" y="591" font-size="11" class="b dev s">V27</text>
+<text x="54" y="607" font-size="10" class="fn">indicator resistors</text>
+<text x="346" y="607" font-size="11" class="b dev s">R11</text>
+<text x="376.1" y="607" font-size="11" class="b dev s">R12</text>
+<text x="406.3" y="607" font-size="11" class="b dev s">UG50/R14</text>
+<text x="466.7" y="607" font-size="11" class="b dev s">R15</text>
+<text x="496.8" y="607" font-size="11" class="b dev q">R16</text>
+<text x="527" y="607" font-size="11" class="b dev q">R17</text>
+<rect x="32" y="633" width="798" height="214" class="bl"/>
+<rect x="32" y="633" width="798" height="22" class="hd"/>
+<text x="40" y="649" font-size="12" class="b">Control relays, cut cycle, magnets and safety</text>
+<text x="822" y="649" font-size="11.5" text-anchor="end" class="b">568 sheets 4-7</text>
+<text x="40" y="671" font-size="10" class="i">switches on the cabinet</text>
+<text x="38" y="687" font-size="11.5" class="b dev s">Q2</text>
+<text x="94" y="687" font-size="10" class="fn">knife motor run switch (cam)</text>
+<text x="292" y="687" font-size="9" text-anchor="end" class="sh">2, 4-6</text>
+<text x="304" y="687" font-size="11.5" class="b dev s">S2</text>
+<text x="360" y="687" font-size="10" class="fn">lighting / cut-line selector</text>
+<text x="558" y="687" font-size="9" text-anchor="end" class="sh">1, 4</text>
+<text x="570" y="687" font-size="11.5" class="b dev s">S4</text>
+<text x="626" y="687" font-size="10" class="fn">blower motor switch</text>
+<text x="824" y="687" font-size="9" text-anchor="end" class="sh">1, 4</text>
+<text x="40" y="703" font-size="10" class="i">contactors, timers, relays and the cut-control module</text>
+<text x="38" y="719" font-size="11.5" class="b dev s">KM6</text>
+<text x="94" y="719" font-size="10" class="fn">cut clutch contactor</text>
+<text x="292" y="719" font-size="9" text-anchor="end" class="sh">1, 4</text>
+<text x="304" y="719" font-size="11.5" class="b dev s">KM7</text>
+<text x="360" y="719" font-size="10" class="fn">cut clutch contactor</text>
+<text x="558" y="719" font-size="9" text-anchor="end" class="sh">1, 4</text>
+<text x="570" y="719" font-size="11.5" class="b dev s">KT1</text>
+<text x="626" y="719" font-size="10" class="fn">star-delta timer</text>
+<text x="824" y="719" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="38" y="736" font-size="11.5" class="b dev s">KT2</text>
+<text x="94" y="736" font-size="10" class="fn">cut delay timer</text>
+<text x="292" y="736" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="304" y="736" font-size="11.5" class="b dev s">K1</text>
+<text x="360" y="736" font-size="10" class="fn">relay, air-cushion magnet</text>
+<text x="558" y="736" font-size="9" text-anchor="end" class="sh">2, 5</text>
+<text x="570" y="736" font-size="11.5" class="b dev s">K2</text>
+<text x="626" y="736" font-size="10" class="fn">feed-cut interlock relay</text>
+<text x="824" y="736" font-size="9" text-anchor="end" class="sh">5-6</text>
+<text x="38" y="753" font-size="11.5" class="b dev s">BMR1</text>
+<text x="94" y="753" font-size="10" class="fn">cut-control module</text>
+<text x="292" y="753" font-size="9" text-anchor="end" class="sh">6-7</text>
+<text x="40" y="769" font-size="10" class="i">RC (resistor-capacitor) coil suppressors, free-wheel diode, series resistor</text>
+<text x="38" y="785" font-size="11.5" class="b dev s">RC...</text>
+<text x="94" y="785" font-size="10" class="fn">group name, sheet 1 list</text>
+<text x="292" y="785" font-size="9" text-anchor="end" class="sh">1</text>
+<text x="304" y="785" font-size="11.5" class="b dev s">RC1</text>
+<text x="360" y="785" font-size="10" class="fn">coil suppressor</text>
+<text x="558" y="785" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="570" y="785" font-size="11.5" class="b dev s">RC2</text>
+<text x="626" y="785" font-size="10" class="fn">coil suppressor</text>
+<text x="824" y="785" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="38" y="802" font-size="11.5" class="b dev s">RC3</text>
+<text x="94" y="802" font-size="10" class="fn">coil suppressor</text>
+<text x="292" y="802" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="304" y="802" font-size="11.5" class="b dev s">RC4</text>
+<text x="360" y="802" font-size="10" class="fn">coil suppressor</text>
+<text x="558" y="802" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="570" y="802" font-size="11.5" class="b dev s">RC6</text>
+<text x="626" y="802" font-size="10" class="fn">coil suppressor</text>
+<text x="824" y="802" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="38" y="819" font-size="11.5" class="b dev s">RC7</text>
+<text x="94" y="819" font-size="10" class="fn">coil suppressor</text>
+<text x="292" y="819" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="304" y="819" font-size="11.5" class="b dev q">RC8</text>
+<text x="360" y="819" font-size="10" class="fn">coil suppressor</text>
+<text x="558" y="819" font-size="9" text-anchor="end" class="sh">4</text>
+<text x="570" y="819" font-size="11.5" class="b dev s">V20</text>
+<text x="626" y="819" font-size="10" class="fn">free-wheel diode, timer coil</text>
+<text x="824" y="819" font-size="9" text-anchor="end" class="sh">1, 4</text>
+<text x="38" y="836" font-size="11.5" class="b dev s">R14</text>
+<text x="94" y="836" font-size="10" class="fn">series resistor, clamp brake</text>
+<text x="292" y="836" font-size="9" text-anchor="end" class="sh">1, 7</text>
+<rect x="32" y="859" width="798" height="50" class="bl"/>
+<rect x="32" y="859" width="798" height="22" class="hd"/>
+<text x="40" y="875" font-size="12" class="b">Controller and backgauge drive control</text>
+<text x="822" y="875" font-size="11.5" text-anchor="end" class="b">568 sheet 8</text>
+<text x="38" y="898" font-size="11.5" class="b dev s">PLC</text>
+<text x="94" y="898" font-size="10" class="fn">(programmable logic controller), type COMPACT</text>
+<text x="425" y="898" font-size="9" text-anchor="end" class="sh">8</text>
+<text x="437" y="898" font-size="11.5" class="b dev q">XC50</text>
+<text x="493" y="898" font-size="10" class="fn">control-system connector, inverter speed setpoint</text>
+<text x="824" y="898" font-size="9" text-anchor="end" class="sh">2, 8</text>
+<rect x="842" y="124" width="210" height="30" class="ex"/>
+<text x="848" y="136" font-size="11.5" class="b dev q">XC60</text>
+<text x="1046" y="136" font-size="9" text-anchor="end" class="sh">1, 8</text>
+<text x="848" y="149" font-size="9.5" class="fn">connector, link to the console</text>
+<rect x="842" y="162" width="210" height="291" class="ex"/>
+<text x="848" y="174" font-size="11.5" class="b dev s">X10</text>
+<text x="1046" y="174" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="848" y="187" font-size="9.5" class="fn">terminal strip in the cabinet</text>
+<rect x="842" y="596" width="210" height="30" class="ex"/>
+<text x="848" y="608" font-size="11.5" class="b dev q">XC2</text>
+<text x="1046" y="608" font-size="9" text-anchor="end" class="sh">1, 5-6</text>
+<text x="848" y="621" font-size="9.5" class="fn">table-cabinet connector</text>
+<rect x="842" y="634" width="210" height="30" class="ex"/>
+<text x="848" y="646" font-size="11.5" class="b dev q">XC4</text>
+<text x="1046" y="646" font-size="9" text-anchor="end" class="sh">1, 8</text>
+<text x="848" y="659" font-size="9.5" class="fn">encoder connector</text>
+<rect x="842" y="699" width="210" height="30" class="ex"/>
+<text x="848" y="711" font-size="11.5" class="b dev s">XC1</text>
+<text x="1046" y="711" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="848" y="724" font-size="9.5" class="fn">feed motor connector</text>
+<rect x="842" y="737" width="210" height="30" class="ex"/>
+<text x="848" y="749" font-size="11.5" class="b dev s">XC3</text>
+<text x="1046" y="749" font-size="9" text-anchor="end" class="sh">2</text>
+<text x="848" y="762" font-size="9.5" class="fn">blower motor connector</text>
+<text x="947" y="106" font-size="10" text-anchor="middle" class="i">exits to the field</text>
+<text x="1120" y="106" font-size="9.5" text-anchor="middle" class="i">cable bundles</text>
+<line x1="1052" y1="139" x2="1188" y2="139" class="cb"/>
+<circle cx="1052" cy="139" r="3.2" class="cd"/>
+<circle cx="1188" cy="139" r="3.2" class="cd"/>
+<text x="1120" y="134" font-size="9.5" text-anchor="middle" class="o">B1, 4 cores</text>
+<line x1="1052" y1="177" x2="1188" y2="177" class="cb"/>
+<circle cx="1052" cy="177" r="3.2" class="cd"/>
+<circle cx="1188" cy="177" r="3.2" class="cd"/>
+<text x="1120" y="172" font-size="9.5" text-anchor="middle" class="o">B1, 5 cores</text>
+<line x1="1052" y1="282" x2="1188" y2="282" class="cb"/>
+<circle cx="1052" cy="282" r="3.2" class="cd"/>
+<circle cx="1188" cy="282" r="3.2" class="cd"/>
+<text x="1120" y="277" font-size="9.5" text-anchor="middle" class="o">B1, 8 cores</text>
+<line x1="1052" y1="353" x2="1188" y2="353" class="cb"/>
+<circle cx="1052" cy="353" r="3.2" class="cd"/>
+<circle cx="1188" cy="353" r="3.2" class="cd"/>
+<text x="1120" y="348" font-size="9.5" text-anchor="middle" class="o">B1 &gt; B5, 8 cores</text>
+<line x1="1052" y1="438" x2="1188" y2="438" class="cb"/>
+<circle cx="1052" cy="438" r="3.2" class="cd"/>
+<circle cx="1188" cy="438" r="3.2" class="cd"/>
+<text x="1120" y="433" font-size="9.5" text-anchor="middle" class="o">B4, 29 cores</text>
+<line x1="1052" y1="611" x2="1188" y2="611" class="cb"/>
+<circle cx="1052" cy="611" r="3.2" class="cd"/>
+<circle cx="1188" cy="611" r="3.2" class="cd"/>
+<text x="1120" y="606" font-size="9.5" text-anchor="middle" class="o">B2, 10 cores</text>
+<line x1="1052" y1="649" x2="1188" y2="649" class="cb"/>
+<circle cx="1052" cy="649" r="3.2" class="cd"/>
+<circle cx="1188" cy="649" r="3.2" class="cd"/>
+<text x="1120" y="644" font-size="9.5" text-anchor="middle" class="o">B2, 5 cores</text>
+<line x1="1052" y1="714" x2="1188" y2="714" class="cb"/>
+<circle cx="1052" cy="714" r="3.2" class="cd"/>
+<circle cx="1188" cy="714" r="3.2" class="cd"/>
+<text x="1120" y="709" font-size="9.5" text-anchor="middle" class="o">B3, 4 cores</text>
+<line x1="1052" y1="752" x2="1188" y2="752" class="cb"/>
+<circle cx="1052" cy="752" r="3.2" class="cd"/>
+<circle cx="1188" cy="752" r="3.2" class="cd"/>
+<text x="1120" y="747" font-size="9.5" text-anchor="middle" class="o">B3, 9 cores</text>
+<text x="32" y="106" font-size="13" class="b">CABINET [ROZVADĚČ] at the left end of the machine</text>
+<text x="22" y="949" font-size="10.5" class="b">Names:</text>
+<text x="62.4" y="949" font-size="10.5" class="b s">black</text>
+<text x="97.1" y="949" font-size="10.5" class="fn">= sure (568 print or cabinet photo);</text>
+<text x="316.5" y="949" font-size="10.5" class="b q">red</text>
+<text x="339.6" y="949" font-size="10.5" class="fn">= [?] unclear, on the on-site list measure_list.md;</text>
+<text x="645.7" y="949" font-size="10.5" class="b e">blue</text>
+<text x="674.6" y="949" font-size="10.5" class="fn">= estimated ±error;</text>
+<text x="795.9" y="949" font-size="10.5" class="b w">brown</text>
+<text x="830.5" y="949" font-size="10.5" class="fn">= W (web source, weaker evidence).</text>
+<line x1="22" y1="963" x2="62" y2="963" class="cb"/>
+<circle cx="22" cy="963" r="3.2" class="cd"/>
+<circle cx="62" cy="963" r="3.2" class="cd"/>
+<text x="70" y="967" font-size="10.5" class="fn">cable bundle with the number of cores it carries (netlist/merged_cores.csv); routes estimated, unseen legs ±200 mm (millimetres); the 3D routes are in viewer/index.html.</text>
+<text x="22" y="985" font-size="10.5" class="fn">Cabinet and console devices are boxes at their photographed places in the 3D scheme; field devices sit on the anchors of the stage-1 mechanical model.</text>
+</svg>

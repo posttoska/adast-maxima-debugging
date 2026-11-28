@@ -1,0 +1,115 @@
+Copy run of the rebuild and check commands (thread t5, integration).
+Written by stage_2_electronics/checks/copy_run.py; rerun it, do not edit. Paths relative to the repository root; no time stamps, no temporary paths.
+
+commands, word for word from COMMANDS of stage_2_electronics/schemes_2d/integration_draw.py (as index.html and sources.md print them), run in each copy in this order, working folder = the copy:
+  1. python -B stage_2_electronics/schemes_2d/integration_merge.py
+  2. python -B stage_2_electronics/schemes_2d/integration_draw.py
+  3. python -B stage_2_electronics/schemes_2d/integration_lists.py
+  4. python -B stage_2_electronics/viewer/build_combined.py
+  5. python -B stage_2_electronics/checks/run_checks.py
+compared with: the repository's files of stage_2_electronics (61 without this report) and its checks/checks.txt
+
+copy A: stage_2_electronics (without __pycache__), stage_1_mechanics as on disk, .gitignore
+  files copied (without .git) 921; of them under stage_2_electronics 62, under stage_1_mechanics 858
+  command 1: python -B stage_2_electronics/schemes_2d/integration_merge.py: exit 0; result: PASS
+  command 2: python -B stage_2_electronics/schemes_2d/integration_draw.py: exit 0; result: PASS
+  command 3: python -B stage_2_electronics/schemes_2d/integration_lists.py: exit 0; result: PASS
+    INFO: 88 source paths not checked: their folder preparatory_data_analysis is not on this computer (local only, never committed)
+    INFO: 11 source paths not checked: their folder static_dynamic_memory is not on this computer (local only, never committed)
+  command 4: python -B stage_2_electronics/viewer/build_combined.py: exit 0; result: PASS
+  command 5: python -B stage_2_electronics/checks/run_checks.py: exit 0; result: PASS
+  files the commands wrote with new bytes 1 (stage_2_electronics/checks/checks.txt); new files 0; files gone 0
+  files of stage_2_electronics that differ from the repository's 1 (checks/checks.txt)
+  checks.txt: checks equal to the repository's line for line 5 (3, 7, 8, 9, 11); differing 7
+  check 1 devices: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: the reference table 11_568_devices.csv of the local memory block is not on this computer
+    repository only (not computed in the copy): checks.txt lines 5-8 (4 lines)
+  check 2 sheets: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: column numbers: SKIP, the paths tables of the local memory block are not on this computer
+    repository only (not computed in the copy): checks.txt lines 11-17 (7 lines)
+  check 4 PLC (programmable logic controller) addresses: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: an address on more than one wire number, signal text or conductor: SKIP, the limit of each address is its row count in 12_568_plc_io.csv of the local memory block, not on this computer (addresses above 1, not judged: IN-GND)
+    copy only: address to device: SKIP, the table 12_568_plc_io.csv of the local memory block is not on this computer
+    repository only (not computed in the copy): checks.txt lines 22-38 (17 lines)
+  check 5 evidence: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: source existence: SKIP for 4242 source references in folders that are not on this computer (photos, documents or the local memory block): preparatory_data_analysis (4048), static_dynamic_memory (194)
+  check 6 anchors: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: anchors_index.csv of the local memory block is not on this computer
+    repository only (not computed in the copy): checks.txt lines 44-49 (6 lines)
+  check 10 stage 1 untouched: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: git part: SKIP, no .git folder in this copy
+    repository only (not computed in the copy): checks.txt line 62 (1 line)
+  check 12 git and committed files: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: files equal to a photo, document, download or memory-block file 0 (compared with 0 of the 2 local folders; SKIP for the others: not on this computer)
+    copy only: git part: SKIP, no .git folder in this copy
+    repository only (not computed in the copy): checks.txt lines 70, 72-73 (3 lines)
+  copy's checks.txt: summary: PASS 5, FAIL 0, SKIP 7
+  copy's checks.txt: result: PASS
+  copy A: as expected
+
+copy B: copy A with static_dynamic_memory/blocks/generation_002/artifacts/tables and static_dynamic_memory/blocks/generation_002/artifacts/anchors_index.csv of the local memory block
+  files copied (without .git) 956; of them under stage_2_electronics 62, under stage_1_mechanics 858
+  command 1: python -B stage_2_electronics/schemes_2d/integration_merge.py: exit 0; result: PASS
+  command 2: python -B stage_2_electronics/schemes_2d/integration_draw.py: exit 0; result: PASS
+  command 3: python -B stage_2_electronics/schemes_2d/integration_lists.py: exit 0; result: PASS
+    INFO: 88 source paths not checked: their folder preparatory_data_analysis is not on this computer (local only, never committed)
+    INFO: 4 source paths not checked: their folder static_dynamic_memory/blocks/generation_002/artifacts/web is not on this computer (local only, never committed)
+    INFO: 1 source paths not checked: their folder static_dynamic_memory/blocks/generation_002/sections is not on this computer (local only, never committed)
+  command 4: python -B stage_2_electronics/viewer/build_combined.py: exit 0; result: PASS
+  command 5: python -B stage_2_electronics/checks/run_checks.py: exit 0; result: PASS
+  files the commands wrote with new bytes 1 (stage_2_electronics/checks/checks.txt); new files 0; files gone 0
+  files of stage_2_electronics that differ from the repository's 1 (checks/checks.txt)
+  checks.txt: checks equal to the repository's line for line 9 (1, 2, 3, 4, 6, 7, 8, 9, 11); differing 3
+  check 5 evidence: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: source existence: SKIP for 4102 source references in folders that are not on this computer (photos, documents or the local memory block): preparatory_data_analysis (4048), static_dynamic_memory/blocks/generation_002/artifacts/web (6), static_dynamic_memory/blocks/generation_002/sections (48)
+  check 10 stage 1 untouched: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: git part: SKIP, no .git folder in this copy
+    repository only (not computed in the copy): checks.txt line 62 (1 line)
+  check 12 git and committed files: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: files equal to a photo, document, download or memory-block file 0 (compared with 1 of the 2 local folders; SKIP for the others: not on this computer)
+    copy only: git part: SKIP, no .git folder in this copy
+    repository only (not computed in the copy): checks.txt lines 70, 72-73 (3 lines)
+  copy's checks.txt: summary: PASS 9, FAIL 0, SKIP 3
+  copy's checks.txt: result: PASS
+  copy B: as expected
+
+copy C: a clone's files: the files of stage_2_electronics that git would stage, the stage_1_mechanics files of commit f52cc8e, .gitignore, .git
+  files copied (without .git) 147; of them under stage_2_electronics 62, under stage_1_mechanics 84
+  command 1: python -B stage_2_electronics/schemes_2d/integration_merge.py: exit 0; result: PASS
+  command 2: python -B stage_2_electronics/schemes_2d/integration_draw.py: exit 0; result: PASS
+  command 3: python -B stage_2_electronics/schemes_2d/integration_lists.py: exit 0; result: PASS
+    INFO: 88 source paths not checked: their folder preparatory_data_analysis is not on this computer (local only, never committed)
+    INFO: 11 source paths not checked: their folder static_dynamic_memory is not on this computer (local only, never committed)
+  command 4: python -B stage_2_electronics/viewer/build_combined.py: exit 0; result: PASS
+  command 5: python -B stage_2_electronics/checks/run_checks.py: exit 0; result: PASS
+  files the commands wrote with new bytes 1 (stage_2_electronics/checks/checks.txt); new files 0; files gone 0
+  files of stage_2_electronics that differ from the repository's 1 (checks/checks.txt)
+  checks.txt: checks equal to the repository's line for line 5 (3, 7, 8, 9, 11); differing 7
+  check 1 devices: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: the reference table 11_568_devices.csv of the local memory block is not on this computer
+    repository only (not computed in the copy): checks.txt lines 5-8 (4 lines)
+  check 2 sheets: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: column numbers: SKIP, the paths tables of the local memory block are not on this computer
+    repository only (not computed in the copy): checks.txt lines 11-17 (7 lines)
+  check 4 PLC (programmable logic controller) addresses: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: an address on more than one wire number, signal text or conductor: SKIP, the limit of each address is its row count in 12_568_plc_io.csv of the local memory block, not on this computer (addresses above 1, not judged: IN-GND)
+    copy only: address to device: SKIP, the table 12_568_plc_io.csv of the local memory block is not on this computer
+    repository only (not computed in the copy): checks.txt lines 22-38 (17 lines)
+  check 5 evidence: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: source existence: SKIP for 4242 source references in folders that are not on this computer (photos, documents or the local memory block): preparatory_data_analysis (4048), static_dynamic_memory (194)
+  check 6 anchors: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: anchors_index.csv of the local memory block is not on this computer
+    repository only (not computed in the copy): checks.txt lines 44-49 (6 lines)
+  check 10 stage 1 untouched: repository PASS, copy PASS: PASS, the lines that differ say INFO
+    copy only: manifest files 858 (md5 with CRLF read as LF); on disk 84; changed 0; extra 0; missing 0; missing __pycache__ files of episode 1 (ignored by git, INFO) 21; missing files that git never tracked: all 753 of them, as in a clone of f52cc8e (test copies, logs, crops; INFO; some of them missing would be FAIL)
+    repository only (not computed in the copy): checks.txt line 63 (1 line)
+  check 12 git and committed files: repository PASS, copy SKIP: SKIP with the reason the copy names
+    copy only: files equal to a photo, document, download or memory-block file 0 (compared with 0 of the 2 local folders; SKIP for the others: not on this computer)
+    repository only (not computed in the copy): checks.txt line 70 (1 line)
+  copy's checks.txt: summary: PASS 6, FAIL 0, SKIP 6
+  copy's checks.txt: result: PASS
+  copy C: as expected
+
+files of the repository changed by this run (stage_2_electronics apart from this report, stage_1_mechanics, .gitignore): 0
+summary: copies 3, as expected 3; faults 0
+result: PASS

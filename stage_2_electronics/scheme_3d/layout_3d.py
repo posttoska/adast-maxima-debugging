@@ -1,15 +1,17 @@
 """Thread t4 of episode 2: the 3D (three-dimensional) electrical layer on episode 1's read-only model.
 
 Run:   python -B stage_2_electronics/scheme_3d/layout_3d.py
-Writes electrical.glb, placements.csv, bundles.csv next to this file. Reads stage_1_mechanics/out only (anchors
-*_anchors.json, geometry assembly.glb); needs no static_dynamic_memory file. Check: contact_check.py next to it.
+Writes electrical.glb, placements.csv, bundles.csv next to this file. Reads two inputs: stage_1_mechanics/out
+(anchors *_anchors.json, geometry assembly.glb) and the netlists of threads t1-t3, stage_2_electronics/netlist/
+*_wires.csv (merged_* skipped), from which it builds the contents of every cable leg; without such a netlist it
+stops with a message naming that folder. Needs no static_dynamic_memory file. Check: contact_check.py next to it.
 Units mm, machine coordinates (X along the knife, + to the operator's right; Y + from the cutting line to the rear;
 Z up, Z 0 = floor), never rescaled. Cabinet option B as built in stage 1 (X -1420..-1250).
 Node names: electrical.<class>.<id>; classes dev (cabinet and console devices), mark (field-device markers),
 conn (connectors XC1-XC4), mount (plate, rails, ducts), pass (glands, holes), clip, bundle (one node per segment).
 Every number is listed with its source in spec/layout_3d.md; the evidence column says how sure it is.
 """
-import csv, json, math
+import csv, json, math, re
 from pathlib import Path
 import numpy as np, trimesh, manifold3d as mf
 import contact_check as cc
@@ -17,8 +19,21 @@ import contact_check as cc
 HERE = Path(__file__).resolve().parent
 S1OUT = cc.ROOT / "stage_1_mechanics" / "out"
 TB = "static_dynamic_memory/blocks/generation_002/artifacts/tables/"
-OMF = "preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_023222.jpg"
+WEB = "static_dynamic_memory/blocks/generation_002/artifacts/web/"   # local copies of web datasheets (W)
+W_SRC = {"XC7": WEB + "oez/oez_3243-Z01-06_ZS20.pdf",              # OEZ ZS 20 sheet: 45 x 90, depth 60 mm
+         "UZ1": WEB + "lenze/all4sps_EMZ8201BB.pdf"}              # web copy of the Lenze 8200 manual: secondary only
+# the user's own Lenze 8200 manual, page 4-3 (photo rotated): row 8202-V002 a 64, b 210, e 158 mm (plain 8202: e 198);
+# the web copy's text extraction shifts the row labels by one, so the page photo is the source of the UZ1 size
+LENZE_P43 = ("preparatory_data_analysis/maxima_documents/operating_instructions_global_drive_frequency_inverters_8200_series/"
+             "20261112_221036.jpg")
+OMF ="preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_023222.jpg"
 SEC22 = "17_cable_routes.csv"                       # src() adds TB to a bare .csv name
+# "section 22" of the memory block: the exploring agents' route plan B1-B5 (from T/17, the photos, the stage-1 anchors)
+ROUTES = "static_dynamic_memory/blocks/generation_002/sections/22_cables_terminals_routes.md"
+MAN = "18_manual_device_list.csv"                   # OM 10.1, 10.2 device lists: order numbers, types
+DEV568 = "11_568_devices.csv"                       # set 568-70.9001 sheet-1 tables + devices drawn on sheets 2-4
+OM46, OM47, OM49 = (f"preparatory_data_analysis/maxima_documents/adast_guillotine_operating_manual/20261115_{s}.jpg"
+                    for s in ("023023", "023118", "023314"))   # OM pages 46, 47, 49: the device lists with types
 
 
 def src(*a):
@@ -121,7 +136,7 @@ DUCTX = (-1314.5, PLATE[0])
 CAB_ROWS = "16_cabinet_devices.csv"
 add("mount.plate", bx((PLATE[0], -100, 240), (PLATE[1], 290, 1515)), "", "mounting plate", "cabinet",
     "estimated ±25 % (width), ±60 (height)", src("143021", "144309", CAB_ROWS, OMF),
-    "plate about 38 cm wide (photo scale ±25 %), on the back wall's inner face", fastened="housing.cabinet")
+    "plate about 380 mm wide (photo scale ±25 %), on the back wall's inner face", fastened="housing.cabinet")
 for nm, y0, y1, z0, z1 in (("VL", 265, 290, 300, 1336), ("VR", -100, -75, 300, 1336), ("D12", -100, 290, 1336, 1376),
                            ("D23", -75, 265, 1145, 1185), ("D34", -75, 265, 996, 1036), ("D45", -75, 265, 813, 853),
                            ("D56", -75, 265, 649, 689), ("D67", -75, 265, 373, 413)):
@@ -129,29 +144,39 @@ for nm, y0, y1, z0, z1 in (("VL", 265, 290, 300, 1336), ("VR", -100, -75, 300, 1
         "estimated ±30", src("143210", "144251", "144309"), "grey duct between rows and on both sides (photos)",
         fastened="mount.plate")
 
-# rows top-down: (row, Z centre, rail?, first Y, [(designation, width Y, height Z, depth X, photo stem, note)])
+# rows top-down: (row, Z centre, rail?, first Y, [(designation, width Y, height Z, depth X, photo stems, note,
+#                                                  *more sources)])
 ROWDEF = [
-    ("1", 1453, False, 255.0, [("BMR1", 290, 110, 30, "143021", "plate reads BMR2, markers 1BMR1-28BMR1: one board")]),
+    ("1", 1453, False, 255.0, [("BMR1", 290, 110, 30, "143021", "plate reads BMR2, markers 1BMR1-28BMR1: one board; BMR1 against plate BMR2 (check)")]),
     ("2", 1260, False, 263.0, [("PLC", 250, 110, 90, "144328", "B&R (Bernecker + Rainer) COMPACT P.L.C.")]),
-    ("3", 1096, True, 264.5, [("PE", 15, 55, 50, "144309", "3 PE (protective earth) terminals, end label X10"),
+    ("3", 1096, True, 264.5, [("PE", 15, 55, 50, "143210 144309", "3 PE (protective earth) terminals, end label X10"),
                               ("X10", 225, 55, 50, "144309", "terminals 1-45"), ("PE", 15, 55, 50, "144309", "3 PE terminals"),
                               ("X11", 30, 55, 50, "144309", "terminals 1-6")]),
     ("4", 921, True, 264.5, [("KT1", 36, 80, 70, "143210", "OM Fig.10.2 also draws KT1, KT2 at row 4 right (check)"),
-                             ("KT2", 36, 80, 70, "143210", ""), ("", 10, 80, 60, "143210", "grey box, no designation seen"),
+                             ("KT2", 36, 80, 70, "143210", ""),
+                             ("", 10, 80, 60, "143210", "grey box, no designation seen; not in set 568-70.9001 sheets "
+                              "1-4 or the OM list (check)", DEV568, MAN),
                              ("QF1", 40, 85, 70, "144304", ""), ("QF2", 38, 85, 70, "144304", ""),
-                             ("KM1A", 40, 80, 80, "144304", "OM lists KM1 = KM1A + KM1B: two boxes"),
+                             ("KM1A", 40, 80, 80, "144304 144247", "OM lists KM1 = KM1A + KM1B: two boxes; family "
+                              "EP1C093 [?] assumed from the side label read on KM6 (photo 144247); OM p.47 lists "
+                              "KM1A, KM1B EP1-C123 B (check)", MAN, OM47),
                              ("KM1B", 38, 80, 80, "144304", ""), ("FA1", 18, 85, 70, "144304", ""),
                              ("FA2", 18, 85, 70, "144304", ""),
                              ("FA3", 18, 85, 70, "144304", "inverter breaker (568 2:18; OM p.41 says FA1: check)"),
-                             ("", 18, 85, 70, "144304", "NOARK breaker, no designation (no FA5/FA6 invented)"),
-                             ("", 18, 85, 70, "144304", "NOARK breaker, no designation (no FA5/FA6 invented)")]),
+                             *[("", 18, 85, 70, "144304", "NOARK breaker, no designation (no FA5/FA6 invented); not "
+                                "in set 568-70.9001 sheets 1-4 or the OM list, added later [likely] (check)",
+                                DEV568, MAN)] * 2]),
     ("5", 750, True, 264.5, [("KM2", 40, 75, 110, "144251", "front auxiliary block"),
                              ("KM3", 40, 75, 110, "144251", "front auxiliary block"), ("KM4", 40, 75, 80, "144251", ""),
-                             ("KM8", 40, 75, 80, "144251", ""), ("KM6", 40, 75, 110, "144251", "front auxiliary block"),
+                             ("KM8", 40, 75, 80, "144251", ""),
+                             ("KM6", 40, 75, 110, "144251 144247", "front auxiliary block; side label EP1C093 on this "
+                              "unit (photo 144247); OM p.47 lists KM6 EP1-C099 B (EP1-C093 B is KM8 there) (check)",
+                              MAN, OM47),
                              ("KM7", 40, 75, 80, "144251", "")]),
     ("7", 323, True, 264.5, [("ZF1", 50, 60, 60, "144214", "filter, no plate"), ("XP", 70, 50, 50, "144214", "main terminals"),
                              ("PE", 36, 50, 50, "144214", "6 PE terminals"), ("X5", 68, 50, 50, "144214", "0 V working earth"),
-                             ("XC7", 45, 90, 60, "144214", "service socket, size W (web datasheet)"),
+                             ("XC7", 45, 90, 60, "144214",
+                              "service socket, plate ZS 20 (photo); size W: OEZ ZS 20 sheet 45 x 90 x 60 mm"),
                              ("FA4", 18, 85, 70, "144214", "")]),
 ]
 SIZE_EV = {"BMR1": "10 %", "PLC": "15 %"}
@@ -161,14 +186,15 @@ for row, zc, rail, y, devs in ROWDEF:
         add(f"mount.rail.R{row}", bx((RAIL[0], -75, zc - 17.5), (RAIL[1], 265, zc + 17.5)), "", "DIN rail 35 mm",
             "cabinet", "estimated ±60 (row height from OM Fig.10.2 scaled)", src(OMF, "143210"), f"row {row}",
             fastened="mount.plate")
-    for des, w, h, d, stem, note in devs:
+    for des, w, h, d, stem, note, *xs in devs:
         x1 = RAIL[0] if rail else PLATE[0]
         if des == "PE":
             pe_n += 1; item = f"dev.PE{pe_n}"
         else:
             item = "dev." + (des or f"undesignated_R{row}_{len([r for r in ROWS if r['item'].startswith('dev.undes')]) + 1}")
         add(item, bx((x1 - d, y - w, zc - h / 2), (x1, y, zc + h / 2)), des, "cabinet device", "cabinet",
-            f"estimated ±{SIZE_EV.get(des, '20 %')} size, ±60 height, order sure (photo)", src(stem, CAB_ROWS, OMF), note,
+            f"estimated ±{SIZE_EV.get(des, '20 %')} size, ±60 height, order sure (photo)" + ("; W size" if des in W_SRC else ""),
+            src(*stem.split(), CAB_ROWS, OMF, *xs, *([W_SRC[des]] if des in W_SRC else [])), note,
             fastened=f"mount.rail.R{row}" if rail else "mount.plate", row=row)
         y -= w + 0.9
 # row 1: R14 resistor tube on a bolt; row 2: K1, K2 on a short rail; row 6 plate devices (photo 143806)
@@ -178,14 +204,19 @@ add("mount.rail.R2", bx((RAIL[0], -45, 1242.5), (RAIL[1], 0, 1277.5)), "", "DIN 
     "estimated ±30", src("144324"), "short rail right of the PLC", fastened="mount.plate")
 for i, des in enumerate(("K1", "K2")):
     add(f"dev.{des}", bx((RAIL[0] - 70, -1 - 13 * i - 12, 1220), (RAIL[0], -1 - 13 * i, 1300)), des, "cabinet device",
-        "cabinet", "estimated ±20 %", src("144324", CAB_ROWS), "plate reads F. Lütze; OM lists RE6-0011 (check)",
+        "cabinet", "estimated ±20 %", src("144324", CAB_ROWS, MAN, OM49), "plate reads F. Lütze; OM lists RE6-0011 (check)",
         fastened="mount.rail.R2", row="2")
-for des, lo, hi, note in (("UG50", (-50, 115, 475.5), (0, 255, 570.5), "power supply, 14 x 9.5 cm ±15 %"),
-                          ("X2", (-40, 40, 560), (0, 80, 590), "terminal strip X2 (N, L), plate mount [?]"),
-                          ("ZF2", (-35, 32.5, 452.5), (0, 87.5, 507.5), "round filter about 5.5 cm ±25 %"),
-                          ("UZ1", (-140, -72, 418), (0, -8, 628), "Lenze inverter; W 64 x 210 mm front")):
+for des, lo, hi, note in (("UG50", (-50, 115, 475.5), (0, 255, 570.5), "power supply, 140 x 95 mm ±15 %"),
+                          ("X2", (-40, 40, 560), (0, 80, 590), "terminal strip X2 with N (neutral) and L (line), plate mount [?]"),
+                          ("ZF2", (-35, 32.5, 452.5), (0, 87.5, 507.5), "round filter about 55 mm ±25 %"),
+                          ("UZ1", (-158, -72, 418), (0, -8, 628),
+                           "Lenze inverter, plate EVF8202-E-V002 (photo 144201) -> Lenze manual page 4-3 row 8202-V002: "
+                           "a 64 x b 210 x e 158 mm (plain 8202: e 198); web copy of the manual secondary")):
+    uz = des == "UZ1"
     add(f"dev.{des}", bx((PLATE[0] + lo[0], lo[1], lo[2]), (PLATE[0] + hi[0], hi[1], hi[2])), des, "cabinet device",
-        "cabinet", "estimated ±20 %" + ("; W size" if des == "UZ1" else ""), src("143806", CAB_ROWS), note,
+        "cabinet", ("estimated ±60 height (row 6, order sure, photo 143806); size sure (plate EVF8202-E-V002, "
+                    "Lenze manual page 4-3)") if uz else "estimated ±20 %",
+        src("143806", CAB_ROWS, *(("144201", LENZE_P43, W_SRC[des]) if uz else ())), note,
         fastened="mount.plate", row="6")
 add("dev.T1", bx((-1390, -170, 2), (-1280, -20, 132)), "T1", "cabinet device", "cabinet", "estimated ±30 %",
     src("144220", CAB_ROWS, OMF), "transformer bolted to the floor, right through the door (OM Fig.10.2 centre: check)",
@@ -211,27 +242,28 @@ for des, xs, zs, w, h, d, rs in (("Q1", -1324.8, 1387, 64, 64, 70, 5), ("Q2", -1
 # ---------------------------------------------------------------- console (inner faces: cover Y -452, floor Z 1192)
 CY = -452.0
 for item, des, lo, hi, ev, stems, note, anc, db in (
-        ("dev.TABLO", "TABLO", (103, CY, 1279), (373, CY + 45, 1429), "estimated ±30", ("151912", "151951"),
-         "B&R terminal 4E0040.01-590 / 4D1084.00-590 clamped to the cover, 27 x 15 cm ±3 cm", "display.T", ""),
-        ("dev.toggle", "", (-210, CY, 1351), (-180, CY + 40, 1381), "estimated ±30", ("151739",),
-         "toggle switch, no designation in 568 or OM", "ref.console_toggle", ""),
+        ("dev.TABLO", "TABLO", (103, CY, 1279), (373, CY + 45, 1429), "estimated ±30", ("151912", "151951", MAN, OM46),
+         "B&R terminal 4E0040.01-590 / 4D1084.00-590 clamped to the cover, 270 x 150 mm ±30 mm; OM p.46 lists the panel "
+         "controller as 4C 2000.01-510 (check)", "display.T", ""),
+        ("dev.toggle", "", (-210, CY, 1351), (-180, CY + 40, 1381), "estimated ±30", ("151739", DEV568, MAN),
+         "toggle switch, no designation in 568 or OM (check)", "ref.console_toggle", ""),
         ("dev.S1", "S1", (753, CY, 1277), (793, CY + 45, 1317), "estimated ±20", ("151739",),
          "E-stop contact block behind the cover; the mushroom head is the stage-1 body in front, reached by "
          "pass.shaft_S1", "", ""),
-        ("dev.white_box", "", (-740, -428, 1192), (-640, -398, 1232), "[likely] retrofit, estimated ±50", ("151755",),
-         "white box, not in 568 or OM", "", ""),
-        ("dev.terminal_block_1", "", (-600, -428, 1192), (-570, -408, 1232), "[likely] retrofit, estimated ±50",
-         ("151755", "152007"), "terminal block on the console floor, not in 568 or OM", "", ""),
-        ("dev.terminal_block_2", "", (-560, -428, 1192), (-530, -408, 1232), "[likely] retrofit, estimated ±50",
-         ("151755", "152007"), "terminal block on the console floor, not in 568 or OM", "", "")):
+        ("dev.white_box", "", (-740, -428, 1192), (-640, -398, 1232), "estimated ±50",
+         ("151755", DEV568, MAN), "white box, [likely] retrofit: not in 568 or OM (check)", "", ""),
+        ("dev.terminal_block_1", "", (-600, -428, 1192), (-570, -408, 1232), "estimated ±50",
+         ("151755", "152007", DEV568, MAN), "terminal block on the console floor, [likely] retrofit: not in 568 or OM (check)", "", ""),
+        ("dev.terminal_block_2", "", (-560, -428, 1192), (-530, -408, 1232), "estimated ±50",
+         ("151755", "152007", DEV568, MAN), "terminal block on the console floor, [likely] retrofit: not in 568 or OM (check)", "", "")):
     add(item, bx(lo, hi), des, "console device", "console", ev, src(*stems), note, anchor=anc, dev_body=db,
         fastened="housing.console")
 add("pass.shaft_S1", cyl((773, CY, 1297), (773, CY - 2, 1297), 11), "S1", "switch stem", "console wall",
     "estimated ±20 (stem Ø22 assumed: 22 mm panel hole)", src("151739"),
     "E-stop stem through the cover (2 mm, estimated) from the contact block to the stage-1 mushroom head",
     anchor="body.S1", dev_body="safety_sensors.S1", fastened="housing.console")
-for des, x, note in (("E1", -400, "LED bar seen instead of lamp E1 (fitted? [?])"),
-                     ("E2", 377, "LED bar seen instead of lamp E2 (fitted? [?])")):
+for des, x, note in (("E1", -400, "LED bar seen where lamp E1 is drawn, [likely] retrofit (not factory); lamp E1 fitted? [?]"),
+                     ("E2", 377, "LED bar seen where lamp E2 is drawn, [likely] retrofit (not factory); lamp E2 fitted? [?]")):
     add(f"dev.{des}", bx((x - 100, -434, 1175), (x + 100, -414, 1190)), des, "lamp (LED bar)", "console outside",
         "[?] estimated ±100", src("151822", "151755"), note, anchor=f"lamp.{des}", fastened="housing.console")
 add("dev.E3", bx((-776, -470, 1459), (-760, -454, 1475)), "E3", "lamp", "console outside", "[?] estimated ±100",
@@ -308,8 +340,9 @@ for des, anc, db, opts, stems, note, mv in (
         ("M3", "body.M3", SS + "M3", [(SS + "M3", ["-y", "-x"])], (), "anchor at the body centre", ""),
         ("Y3", "body.Y3", SS + "Y3", [(SS + "Y3", ["-x", "-y"])], (), "anchor at the body centre", ""),
         ("M1", "motor.M1", "knife.m1_motor", [("knife.m1_motor", ["-y", "+z"])], (), "anchor inside the motor", ""),
-        ("Y10", "clutch.Y10", "knife.clutch_y10", [("knife.slip_rings", ["-z", "+y"])], (),
-         "exception: marker at the slip rings, Y10's electrical feed point (section 22); anchor inside the clutch", ""),
+        ("Y10", "clutch.Y10", "knife.clutch_y10", [("knife.slip_rings", ["-z", "+y"])], (ROUTES,),
+         "exception: marker at the slip rings, Y10's electrical feed point in the route plan "
+         "(sections/22_cables_terminals_routes.md); anchor inside the clutch", ""),
         ("Y01", "magnet.Y01", "knife.y01_magnet", [("knife.y01_magnet", ["+z", "-x"]), ("knife.lock_cover", ["+z"])], (),
          "anchor inside the magnet", ""),
         ("Y14", "brake.Y14", "clamp.brake_y14", [("clamp.brake_y14", ["+z"])], (), "anchor inside the brake", ""),
@@ -322,7 +355,9 @@ for des, anc, db, opts, stems, note, mv in (
         ("M2", "motor.M2", "backgauge.M2", [("backgauge.M2", ["-y", "-x"])], (), "anchor inside the motor", "")):
     marker(des, anc, db, opts, "sure (stage-1 anchor), cable entry estimated ±20", stems, note, mv)
 ROWS.append(dict(zip(PCOLS, ("", "FF1", "light curtain", "machine", "sensor.FF1", "", *map(f1, A["sensor.FF1"]),
-                             "", "", "", "", "", "", "", "", "", "", "sure", src("18_manual_device_list.csv"),
+                             "", "", "", "", "", "", "", "", "", "", "sure",
+                             src("18_manual_device_list.csv", "preparatory_data_analysis/maxima_documents/"
+                                 "adast_guillotine_wiring_and_plc_diagrams/20261113_195028.jpg"),
                              "not fitted (certificate —): no box, no leg"))))
 
 # ---------------------------------------------------------------- passages (holes, grommets, glands)
@@ -345,7 +380,7 @@ for nm, p0, p1, r, ev, stems, note in (
         ("H11", (990, 252.5, 836), (990, 252.5, 848), 7, "[?] estimated ±100", (), "implied hole, knife lock cover bottom: Y01")):
     pm = cyl(p0, p1, r)
     walls = "; ".join(sorted(n.replace("electrical.", "") for n in hits(pm)))   # the walls it pierces (finding F)
-    add(f"pass.{nm}", pm, nm, "passage", "cabinet wall" if nm[0] == "G" else "machine", ev, src(*stems, SEC22),
+    add(f"pass.{nm}", pm, nm, "passage", "cabinet wall" if nm[0] == "G" else "machine", ev, src(*stems, SEC22, ROUTES),
         note, fastened=walls, moves="clamp" if nm == "H6" else "")
 
 
@@ -438,56 +473,102 @@ def leg(name, pts, r, frm, to, contents, ev, stems, note="", passes="", moves=""
     length = sum(float(np.linalg.norm(b - a)) for a, b in zip(pts[:-1], pts[1:]))
     LEGS.append(dict(zip(BCOLS, (name, name.split("-")[0], frm, to, f1(2 * r), f1(length),
                                  "; ".join(" ".join(f1(c) for c in p) for p in pts), "; ".join(clips), contents,
-                                 moves, passes, ev, src(*stems, SEC22), note))))
+                                 moves, passes, ev, src(*stems, SEC22, ROUTES), note))))
 
 
-B1C = "XC60-XC70 panel data link; supply 33X10, 45X10, PE; E-stop S1 15-16X10; lamps E1-E4 7-13X10"
+# X10 terminals of each field device, read from the netlists (testers' finding 8.1): contents cannot drift from them
+X10 = {}
+NETDIR = cc.ROOT / "stage_2_electronics" / "netlist"
+WIRES = [fn for fn in sorted(NETDIR.glob("*_wires.csv")) if not fn.name.startswith("merged")]   # threads t1-t3
+assert WIRES, (f"no thread netlist {NETDIR.relative_to(cc.ROOT).as_posix()}/*_wires.csv in this copy: "
+               f"the contents of the cable legs are built from it (copy the whole stage_2_electronics)")
+for fn in WIRES:
+    for w in csv.DictReader(open(fn, encoding="utf-8")):
+        for a, b in (("from", "to"), ("to", "from")):
+            if w[a + "_device"] == "X10" and w[b + "_device"] not in ("X10", "X5", "PE"):
+                X10.setdefault(w[b + "_device"], set()).add(w[a + "_terminal"])
+
+
+def x10(*devs):
+    out = []
+    for d in devs:
+        assert d in X10, f"{d}: no X10 terminal in the netlists"
+        runs = []
+        for n in sorted(int(t) for t in X10[d] if t.isdigit()):
+            if runs and n == runs[-1][1] + 1:
+                runs[-1][1] = n
+            else:
+                runs.append([n, n])
+        out.append(f"{d} " + ", ".join(f"{a}-{b}" if b > a else f"{a}" for a, b in runs) + "X10"
+                   + (" + PE" if "PE" in X10[d] else ""))
+    return "; ".join(out)
+
+
+def x10set(contents):
+    """X10 terminal numbers named in a contents text"""
+    got = set()
+    for m in re.finditer(r"((?:\d+(?:-\d+)?, )*\d+(?:-\d+)?)X10", contents):
+        for part in m.group(1).split(", "):
+            a, _, b = part.partition("-")
+            got.update(range(int(a), int(b or a) + 1))
+    return got
+
+
+B1C = (f"XC60-XC70 panel data link; panel supply {x10('TABLO')}; E-stop {x10('S1')}; "
+       f"lamps {x10('E1', 'E2', 'E3', 'E4')}; from X10 to the B5 junction also B5's {x10('Y14', 'S30', 'S28')}")
 leg("B1", [(-1287, 200, 1123.5), (-1287, 200, 1165), (-1240, 200, 1165), (-1240, 200, 1270), (-1240, -354, 1270),
            (-770, -354, 1270), (-770, -442, 1270), (-740, -442, 1270), (-740, -442, 1202), (773, -442, 1202),
            (773, -442, 1277)], 10, "dev.X10", "dev.S1", B1C, "estimated ±100 (console end seen, rest ±200)",
     ("151739", "151736"), "X10 -> duct D23 -> gland G1 -> up the cabinet's machine-side face inside frame.cavity.column_left "
-    "-> along the column front wall -> console opening H1 -> console floor -> S1", "mount.duct.D23; mount.plate")
+    "-> along the column front wall -> console opening H1 -> console floor -> S1",
+    "mount.duct.D23; mount.plate; pass.G1; pass.H1")
 leg("B1-PLC", [(-1287, 200, 1205), (-1287, 200, 1165)], 8, "dev.PLC", "junction on B1", "XC60 serial link to the panel",
     "estimated ±100", ("142944",), "PLC socket down into duct D23", "mount.duct.D23")
-leg("B1-T", [(238, -442, 1202), (238, -442, 1279)], 8, "junction on B1", "dev.TABLO", "XC70 panel data, panel supply",
+leg("B1-T", [(238, -442, 1202), (238, -442, 1279)], 8, "junction on B1", "dev.TABLO", f"XC70 panel data; panel supply {x10('TABLO')}",
     "estimated ±100", ("151739",), "up the cover's inner face to the B&R terminal")
 leg("B1-E1", [(-400, -442, 1202), (-400, -424, 1202), (-400, -424, 1190)], 5, "junction on B1", "dev.E1",
-    "lamp E1 7-13X10 (which terminals feed the LED bars? [?])", "[?] estimated ±100", ("151822",), "through hole H3a")
+    f"lamp {x10('E1')} (does it feed the LED bar? [?])", "[?] estimated ±100", ("151822",), "through hole H3a",
+    "pass.H3a")
 leg("B1-E2", [(377, -442, 1202), (377, -424, 1202), (377, -424, 1190)], 5, "junction on B1", "dev.E2",
-    "lamp E2 7-13X10 (which terminals feed the LED bars? [?])", "[?] estimated ±100", ("151822",), "through hole H3b")
+    f"lamp {x10('E2')} (does it feed the LED bar? [?])", "[?] estimated ±100", ("151822",), "through hole H3b",
+    "pass.H3b")
 leg("B1-E3", [(-770, -442, 1270), (-770, -442, 1467), (-770, -454, 1467)], 5, "junction on B1", "dev.E3",
-    "lamp E3 7-13X10 [?]", "[?] estimated ±100", (), "up inside the console, through hole H4")
+    f"lamp {x10('E3')} [?]", "[?] estimated ±100", (), "up inside the console, through hole H4", "pass.H4")
 leg("B1-E4", [(740, -442, 1202), (740, -401, 1202), (740, -401, 1474), (895, -401, 1474)], 5, "junction on B1",
-    "dev.E4", "lamp E4 7-13X10 [?]", "[?] estimated ±100", (), "up the console back wall, through hole H5")
-B5C = "brake Y14 20-21X10; S30 29X10; S28 30X10"
+    "dev.E4", f"lamp {x10('E4')} [?]", "[?] estimated ±100", (), "up the console back wall, through hole H5", "pass.H5")
+B5C = f"brake {x10('Y14')}; {x10('S30', 'S28')}"
 leg("B5", [(-1240, 200, 1200), (-1242, 200, 1200), (-1242, 228, 1200), (-1242, 228, 1497), (-1242, 158, 1497), (-768, 158, 1497),
            (-768, 158, 1424), (-620, 158, 1424), (-620, 158, 1496), (280, 158, 1496), (280, 158, 1281)], 8,
     "junction on B1", "mark.S30", B5C, "estimated ±200 (no photo)", (),
-    "up the cabinet face in the column, under its top, hole H2 in the inner wall, crossbar rear face over Y14 to S30")
-leg("B5-Y14", [(0, 158, 1496), (0, 200, 1496), (0, 200, 1476)], 6, "junction on B5", "mark.Y14", "brake Y14 20-21X10",
+    "up the cabinet face in the column, under its top, hole H2 in the inner wall, crossbar rear face over Y14 to S30",
+    "pass.H2")
+leg("B5-Y14", [(0, 158, 1496), (0, 200, 1496), (0, 200, 1476)], 6, "junction on B5", "mark.Y14", f"brake {x10('Y14')}",
     "estimated ±200", (), "drop onto the brake")
 # S28 lead (critic finding H): fixed part to a strain-relief clip at mid-height of the bar's stroke, a free (unclipped)
 # slack loop behind the bar, then the part clipped to the bar that rides with the clamp (lift 130 mm, stage-1
 # spec/clamp.md line 51; clamp.guide_left is fixed, spec/clamp.md line 94)
-leg("B5-S28", [(-706, 158, 1424), (-706, 156, 1424), (-706, 156, 1190)], 6, "junction on B5", "", "S28 30X10",
+leg("B5-S28", [(-706, 158, 1424), (-706, 156, 1424), (-706, 156, 1190)], 6, "junction on B5", "", x10("S28"),
     "estimated ±200", (), "fixed part: leaves B5 just after hole H2, down the crossbar's and clamp.guide_left's rear "
     "faces to its strain-relief clip at Z 1190, mid-height of the bar's 130 mm stroke", endclip=True)
-leg("B5-S28s", [(-706, 156, 1190), (-706, 180, 1190), (-706, 180, 1150), (-640, 180, 1150), (-640, 180, 1235),
-                (-640, 156, 1235)], 6, "junction on B5-S28", "junction on B5-S28r", "S28 30X10", "estimated ±200", (),
-    "free slack loop, no clips: hangs behind the clamp bar (14 mm clear of its rear face) from the fixed clip to the "
+S28S = [(-706, 156, 1190), (-706, 180, 1190), (-706, 180, 1150), (-640, 180, 1150), (-640, 180, 1235), (-640, 156, 1235)]
+CLR = min(p[1] for p in S28S[1:-1]) - 6 - S1["clamp.bar"][2][1]   # main run's surface to clamp.bar's rear face
+leg("B5-S28s", S28S, 6, "junction on B5-S28", "junction on B5-S28r", x10("S28"), "estimated ±200", (),
+    f"free slack loop, no clips: hangs behind the clamp bar ({CLR:.0f} mm clear of its rear face along the main run) "
+    "from the fixed clip to the "
     "first clip on the bar; drawn at rest (clamp up); stays with the fixed parts in the viewer", free=True)
 leg("B5-S28r", [(-640, 156, 1235), (-458, 156, 1235), (-458, 156, 1261), (-458, 13, 1261), (-482, 13, 1261)], 6,
-    "junction on B5-S28s", "mark.S28", "S28 30X10", "estimated ±200", (),
+    "junction on B5-S28s", "mark.S28", x10("S28"), "estimated ±200", (),
     "rides with the clamp (0..130 mm down): clipped along the bar's rear face, then over the bar top to the marker",
     moves="clamp")
-leg("B5-S28p", [(-490, 13, 1255), (-490, 13, 1101)], 3, "mark.S28", "stage-1 safety_sensors.S28", "S28 30X10",
-    "[?] estimated ±20", (), "down the pocket H6 to the switch body (moves with the clamp)", moves="clamp")
+leg("B5-S28p", [(-490, 13, 1255), (-490, 13, 1101)], 3, "mark.S28", "stage-1 safety_sensors.S28", x10("S28"),
+    "[?] estimated ±20", (), "down the pocket H6 to the switch body (moves with the clamp)", "pass.H6", moves="clamp")
 
 # B2: XC2 (+ XC4) -> gap -> down support_left's outer face -> floor in front of it -> base_front -> BR40, S10, S11;
 # rear branch (S24, S27) under the clamp levers and up the support's inner wall behind their space (critic finding G)
 B2C = "XC2 1-3 S24, S27; XC2 4-9 S10, S11; XC4 1-7 encoder BR40 (I, B, A, 0 V, +24 V, shield)"
 UNSEEN = "estimated ±200 (no photo of the leg)"
-NOT_SEC22 = ("; section 22's way through the support_left cavity and the clamp tie's window is taken by the clamp's "
+NOT_SEC22 = ("; the route plan's way (sections/22_cables_terminals_routes.md) through the support_left cavity and "
+             "the clamp tie's window is taken by the clamp's "
              "moving parts (stage-1 envelope.clamp.*, joint.passage.clamp_tie.support_left)")
 leg("B2", [(-1140, 50, 686), (-1100, 50, 686), (-1029.5, 50, 686), (-1029.5, 50, 12), (-1029.5, -226, 12),
            (-550.5, -226, 12), (-550.5, -226, 773), (-550.5, -390.5, 773), (-61, -390.5, 773), (-61, -390.5, 725),
@@ -517,23 +598,31 @@ leg("B3", [(-1200, 80, 508), (-1200, 110, 508), (-1240, 110, 508), (-1240, 110, 
            (-111, 1680, 775), (-111, 1680, 530), (-80, 1680, 530), (-80, 1555, 530), (-8.5, 1555, 530)], 10,
     "conn.XC1", "mark.M2", B3C, UNSEEN, ("144539",),
     "down the cabinet face beside the connectors, floor behind frame.support_left, up its inner wall, table underside "
-    "at X -330 to the rear (the rear table is narrower, about X -355..355, from Y 1340; P-clips under the rear "
-    "table seen, photo 144539), across under the rear table to X -111, down beside frame.keepout.backgauge_drive "
-    "(X -100..100, Z 635..785, kept free) and along M2's -x and -y faces to the marker")
+    "at X -330 to the rear (P-clips under the rear table seen, photo 144539) as far as about Y 1580, where the rear "
+    "table's taper (full width at Y 1334 to X -92.5..92.5 at Y 1806, stage-1 frame spec) leaves the leg; from there "
+    "round the corner at Y 1680 to about X -228 it runs free, up to 67 mm from the table, then across under the rear "
+    "table to X -111, down beside frame.keepout.backgauge_drive "
+    "(X -100..100, Z 635..785, kept free) and along M2's -x and -y faces to the marker; of the route plan's way "
+    "via frame.rear_stand only the blower branch B3-M3 is kept, and it rises free in front of the stand (no clip on "
+    "it); the trunk reaches the P-clips seen under the rear table along the "
+    "table underside, and whether it rises at frame.support_left or at the rear stand is not seen (check)")
 leg("B3-XC3", [(-1200, 80, 396), (-1200, 110, 396), (-1240, 110, 396)], 8, "conn.XC3", "junction on B3",
     "XC3 M3, Y3", "[?] estimated ±200 (XC3 label [?])", ("144555",), "joins B3 on the cabinet face")
-leg("B3-M3", [(-600, 246, 10), (-600, 246, 6), (-600, 380, 6), (235, 380, 6), (235, 1119, 6), (235, 1119, 241.5)],
+leg("B3-M3", [(-600, 246, 10), (-600, 246, 6), (-600, 380, 6), (76, 380, 6), (76, 1047.5, 6), (76, 1047.5, 160),
+              (88.5, 1047.5, 160), (88.5, 1119, 160), (235, 1119, 160), (235, 1119, 241.5)],
     6, "junction on B3", "mark.M3", "XC3 1-3 + PE blower M3", UNSEEN, ("144524",),
-    "along the floor behind the clamp pedal link's space (envelope.clamp.pedal_link ends at Y 370) to the loose "
-    "blower, up its front face")
+    "along the floor behind the clamp pedal link's space (envelope.clamp.pedal_link ends at Y 370) to the front of "
+    "frame.rear_stand, then up free, 28 to 89 mm in front of the stand (near the leg it has only two inclined struts, "
+    "no face to clip to), held by the floor clips and the blower's clips alone; past the stand's +x side and along "
+    "the loose blower's front face to the marker; where the real cable rises is not seen (check)")
 leg("B3-Y3", [(-330, 900, 775), (-330, 900, 779), (-266, 900, 779), (-266, 900, 762), (-234, 900, 762),
               (-234, 900, 779), (-111, 900, 779), (-111, 900, 589), (-41.5, 900, 589)], 6, "junction on B3",
     "mark.Y3", "XC3 5-6 air valve Y3", "[?] estimated ±400 (Y3 place ±400)", (),
     "table underside (dips under leg B2-R at X -250), down beside frame.keepout.backgauge_drive (X -100..100, kept "
     "free) to Y3, which stage 1 placed below the keepout")
 # B4: X10 -> gland G2 -> column_left -> support_left cavity -> window -> table underside -> right drive, knife sensors
-B4C = ("M1 1-6X10; Y01 18-19X10; Y11 22-23X10; Y10 and S19, S5 14-15, 24-28X10; knife sensors SQ1, SQ2, S12-S14 "
-       "via X8 1-6 (X8 place [?])")
+B4C = (f"{x10('M1', 'Y01', 'Y11', 'S5', 'S19', 'Y10')}; knife sensors SQ1, SQ2, S12-S14 via X8 1-6, X8 fed by "
+       f"{x10('X8')[3:]} (X8 place [?])")
 leg("B4", [(-1287, 149, 1123.5), (-1287, 149, 1165), (-1238, 149, 1165), (-1238, 149, 900), (-1238, -100, 900),
            (-1238, -100, 12), (-1238, -256, 12), (-524, -256, 12), (-524, -172, 12), (-524, -172, 773),
            (-524, 26, 773), (627.5, 26, 773), (627.5, 26, 12), (627.5, 248, 12), (1205, 248, 12), (1205, 330, 12),
@@ -541,21 +630,23 @@ leg("B4", [(-1287, 149, 1123.5), (-1287, 149, 1165), (-1238, 149, 1165), (-1238,
     UNSEEN, ("144309",), "X10 -> duct D23 -> gland G2 (seen) -> along the cabinet wall inside frame.column_left -> "
     "down the cabinet face to the floor -> floor in front of frame.support_left -> under frame.base_front (open "
     "below) -> up its rear face -> table underside at Y 26 (clear of the clamp levers' and pull rods' spaces, Y "
-    "40..160) -> down frame.support_right's inner wall -> floor behind it -> up the motor's front face to M1"
-    + NOT_SEC22, "mount.duct.D23; mount.plate")
+    "40..160) -> down frame.support_right's inner wall -> floor behind it -> up free in front of M1 to its marker "
+    "(the motor is round, axis along X: the rise stands 81 mm from it at its foot and closes on it only at the marker)"
+    + NOT_SEC22, "mount.duct.D23; mount.plate; pass.G2")
 leg("B4-Y11", [(321, 26, 773), (321, 26, 779), (321, 320, 779), (321, 320, 526.5)], 6, "junction on B4", "mark.Y11",
-    "Y11 22-23X10", UNSEEN, (), "table underside, drop to the clamp valve")
+    x10("Y11"), UNSEEN, (), "table underside, drop to the clamp valve")
 leg("B4-R", [(1205, 248, 12), (1205, 248, 8), (1542, 248, 8), (1542, 200, 8), (1542, 200, 286)], 8,
-    "junction on B4", "mark.S5", "S5, S19, Y10 14-15, 24-28X10", UNSEEN, (),
+    "junction on B4", "mark.S5", x10("S5", "S19", "Y10"), UNSEEN, (),
     "floor to the drive corner, hole H8 in the belt cover's bottom, up its inner face to S5", "pass.H8")
 leg("B4-Y10", [(1542, 200, 100), (1544, 200, 100), (1544, 40, 100), (1544, 40, 561), (1516.5, 40, 561)], 6,
-    "junction on B4-R", "mark.Y10", "clutch Y10 via the slip rings", UNSEEN, (),
+    "junction on B4-R", "mark.Y10", f"clutch {x10('Y10')} via the slip rings", UNSEEN, (),
     "inside the belt cover along its inner face to the slip rings")
 leg("B4-S19", [(1230.5, 248, 8), (1230.5, 248, 6), (1230.5, 200, 6), (1230.5, 200, 475.5), (1375, 200, 475.5)], 6,
-    "junction on B4-R", "mark.S19", "S19", UNSEEN, (), "up frame.support_right's outer face, across to the switch")
+    "junction on B4-R", "mark.S19", x10("S19"), UNSEEN, (), "up frame.support_right's outer face, across to the switch")
 leg("B4-K", [(970, 248, 12), (970, 244, 12), (970, 244, 832), (970, 158, 832), (970, 158, 819.5)], 8,
-    "junction on B4", "mark.S12", "X8 knife sensors S12, S13, S14, SQ1, SQ2; magnet Y01", "[?] " + UNSEEN, (),
-    "up frame.support_right's rear face into frame.column_right (open below), under the knife lock cover to S12")
+    "junction on B4", "mark.S12", f"knife sensors S12, S13, S14, SQ1, SQ2 via X8, X8 fed by {x10('X8')[3:]}; magnet {x10('Y01')}", "[?] " + UNSEEN, (),
+    "up frame.support_right's rear face into frame.column_right (open below), under the knife lock cover to S12; "
+    "the knife-sensor terminal strip X8 (set 568-70.9001 sheet 1) is not seen in the cabinet: X8 place [?]")
 leg("B4-S13", [(970, 200, 832), (1052, 200, 832), (1052, 158, 832), (1052, 158, 803.3)], 5, "junction on B4-K",
     "mark.S13", "S13 via X8", "[?] " + UNSEEN, (), "under the lock cover to S13")
 leg("B4-S14", [(970, 188, 832), (895, 188, 832), (895, 188, 856.5)], 5, "junction on B4-K", "mark.S14", "S14 via X8",
@@ -565,7 +656,7 @@ leg("B4-SQ1", [(970, 244, 832), (970, 348.5, 832), (913, 348.5, 832), (913, 348.
 leg("B4-SQ2", [(930, 348.5, 832), (930, 356.5, 832), (930, 356.5, 932), (905.5, 356.5, 932)], 5,
     "junction on B4-SQ1", "mark.SQ2", "SQ2 via X8", "[?] " + UNSEEN, (), "hole H10, beside SQ1", "pass.H10")
 leg("B4-Y01", [(970, 244, 832), (990, 244, 832), (990, 252.5, 832), (990, 252.5, 960), (943.5, 252.5, 960)], 5,
-    "junction on B4-K", "mark.Y01", "Y01 18-19X10", "[?] " + UNSEEN, (), "hole H11 in the lock cover's bottom",
+    "junction on B4-K", "mark.Y01", f"magnet {x10('Y01')}", "[?] " + UNSEEN, (), "hole H11 in the lock cover's bottom",
     "pass.H11")
 
 # ---------------------------------------------------------------- every source path must exist (finding A)
@@ -574,13 +665,23 @@ skipped = set()
 for r in ROWS + LEGS:
     assert r["source_path"], f"empty source path: {r.get('item') or r.get('leg')}"
     for sp in r["source_path"].split("; "):
-        if (cc.ROOT / sp).exists():
+        p = cc.ROOT / sp
+        if p.exists():
             continue
-        top = sp.split("/")[0] + "/"
-        assert top in LOCAL and not (cc.ROOT / top).exists(), f"missing source path {sp} ({r.get('item') or r.get('leg')})"
-        skipped.add(top)
+        # a local-only file may be missing only together with its own folder (a partial copy); a missing file in a
+        # present folder (a typo, a renamed file) stops the build
+        assert sp.startswith(LOCAL) and not p.parent.exists(), f"missing source path {sp} ({r.get('item') or r.get('leg')})"
+        while not p.parent.exists():
+            p = p.parent
+        skipped.add(p.relative_to(cc.ROOT).as_posix() + "/")
 for t in sorted(skipped):
-    print(f"INFO {t} not in this copy: its source paths were not checked")
+    print(f"INFO {t} not in this copy: the cited files in it were not checked")
+# a branch's X10 terminals are all in its trunk's contents (critic finding: the trunk is the union of its branches)
+LG = {g["leg"]: g for g in LEGS}
+for g in LEGS:
+    if g["from_item"].startswith("junction on "):
+        miss = x10set(g["contents"]) - x10set(LG[g["from_item"][len("junction on "):]]["contents"])
+        assert not miss, f"{g['leg']}: X10 terminals {sorted(miss)} missing in its trunk {g['from_item']}"
 
 # ---------------------------------------------------------------- write
 sc = trimesh.Scene()

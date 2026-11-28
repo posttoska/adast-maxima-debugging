@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1680" height="1128" viewBox="0 0 1680 1128">
+<title>568-70.9001 connections between cabinet, console and machine (thread t5, redrawn 2026, not an original document)</title>
+<style>text{font-family:Consolas,'DejaVu Sans Mono','Courier New',monospace;fill:#111}.b{font-weight:bold}.fn{fill:#333}.sh{fill:#7a7a7a}.i{font-style:italic;fill:#444}.s{fill:#000}.q{fill:#b00000}.e{fill:#1f5fbf}.w{fill:#8a5a00}.o{fill:#a34f00}.rt{fill:#5a3a00}.fr{fill:none;stroke:#111;stroke-width:1.4}.bl{fill:#fbfbfb;stroke:#444;stroke-width:1}.hd{fill:#e9e9e9;stroke:#444;stroke-width:1}.sub{fill:#fff;stroke:#999;stroke-width:0.8}.ex{fill:#fff7e8;stroke:#b86a00;stroke-width:1}.gp{fill:#fbfbfb;stroke:#666;stroke-width:0.9}.cb{stroke:#e07800;stroke-width:2.4;fill:none}.cd{fill:#e07800}.ls{stroke:#000;stroke-width:1.1}.lq{stroke:#b00000;stroke-width:1.1;stroke-dasharray:6 3}.le{stroke:#1f5fbf;stroke-width:1.1;stroke-dasharray:2 2}.lw{stroke:#8a5a00;stroke-width:1.1;stroke-dasharray:8 2 2 2}.il{stroke:#777;stroke-width:0.9}.rb{fill:#fff}.dt{fill:#000}</style>
+<rect x="0" y="0" width="1680" height="1128" fill="#fff"/>
+<rect x="8" y="8" width="1664" height="1112" class="fr"/>
+<text x="22" y="36" font-size="16" class="b">Adast Maxima MS 115 PS, wiring set 568-70.9001: connections between the cabinet, the console and the machine</text>
+<text x="22" y="56" font-size="10.5" class="fn">Redrawn 2026 by thread t5 from netlist/merged_cores.csv and merged_wires.csv (not an original document): one line per core that leaves the cabinet, grouped by cable bundle.</text>
+<text x="22" y="71" font-size="10.5" class="fn">Abbreviations: PE (protective earth); PLC (programmable logic controller) with its inputs IN-x and outputs OUT-x; Ø (diameter); mm (millimetres). Wire numbers as printed; ⏚ = earth.</text>
+<text x="22" y="96" font-size="9" class="i">wire</text>
+<text x="198" y="96" font-size="9" text-anchor="end" class="i">cabinet side</text>
+<text x="217" y="96" font-size="9" class="i">leaves at</text>
+<text x="456" y="96" font-size="9" text-anchor="middle" class="i">bundle legs (route, estimated)</text>
+<text x="626" y="96" font-size="9" class="i">far end</text>
+<text x="704" y="96" font-size="9" class="i">device</text>
+<text x="22" y="122" font-size="11.5" class="b">B1 (cable bundle 1): 25 cores, cabinet to the console, the lamps on the console front and, over branch B5, the clamp beam</text>
+<text x="22" y="136" font-size="9.5" class="fn">legs used: B1, B1-E1, B1-E2, B1-E3, B1-E4, B5, B5-Y14, B5-S28, B5-S28s, B5-S28r, B5-S28p, B1-T, B1-PLC</text>
+<text x="22" y="149" font-size="9.5" class="fn">trunk B1: Ø 20 mm, 2991.5 mm long, estimated ±100 mm; B5: Ø 16 mm, 2279 mm long, estimated ±200 mm</text>
+<text x="22" y="167" font-size="9" class="sh">3XC70</text>
+<text x="217" y="167" font-size="10.5" class="b">XC60 2</text>
+<line x1="292" y1="163.5" x2="620" y2="163.5" class="ls"/>
+<circle cx="292" cy="163.5" r="2.4" class="dt"/>
+<circle cx="620" cy="163.5" r="2.4" class="dt"/>
+<rect x="410.9" y="156.5" width="90.2" height="11" class="rb"/>
+<text x="456" y="165.5" font-size="8.5" text-anchor="middle" class="rt">B1-PLC &gt; B1 &gt; B1-T</text>
+<text x="626" y="167" font-size="10.5" class="b s">XC70 3</text>
+<text x="704" y="167" font-size="8" class="fn">connector from the cabinet</text>
+<text x="22" y="181" font-size="9" class="sh">2XC70</text>
+<text x="217" y="181" font-size="10.5" class="b">XC60 3</text>
+<line x1="292" y1="177.5" x2="620" y2="177.5" class="ls"/>
+<circle cx="292" cy="177.5" r="2.4" class="dt"/>
+<circle cx="620" cy="177.5" r="2.4" class="dt"/>
+<rect x="410.9" y="170.5" width="90.2" height="11" class="rb"/>
+<text x="456" y="179.5" font-size="8.5" text-anchor="middle" class="rt">B1-PLC &gt; B1 &gt; B1-T</text>
+<text x="626" y="181" font-size="10.5" class="b s">XC70 2</text>
+<text x="704" y="181" font-size="8" class="fn">connector from the cabinet</text>
+<text x="22" y="195" font-size="9" class="sh">5XC70</text>
+<text x="217" y="195" font-size="10.5" class="b">XC60 5</text>
+<line x1="292" y1="191.5" x2="620" y2="191.5" class="ls"/>
+<circle cx="292" cy="191.5" r="2.4" class="dt"/>
+<circle cx="620" cy="191.5" r="2.4" class="dt"/>
+<rect x="410.9" y="184.5" width="90.2" height="11" class="rb"/>
+<text x="456" y="193.5" font-size="8.5" text-anchor="middle" class="rt">B1-PLC &gt; B1 &gt; B1-T</text>
+<text x="626" y="195" font-size="10.5" class="b s">XC70 5</text>
+<text x="704" y="195" font-size="8" class="fn">connector from the cabinet</text>
+<text x="22" y="209" font-size="9" class="sh"></text>
+<text x="217" y="209" font-size="10.5" class="b">XC60 shell</text>
+<line x1="292" y1="205.5" x2="620" y2="205.5" class="lq"/>
+<circle cx="292" cy="205.5" r="2.4" class="dt"/>
+<circle cx="620" cy="205.5" r="2.4" class="dt"/>
+<rect x="410.9" y="198.5" width="90.2" height="11" class="rb"/>
+<text x="456" y="207.5" font-size="8.5" text-anchor="middle" class="rt">B1-PLC &gt; B1 &gt; B1-T</text>
+<text x="626" y="209" font-size="10.5" class="b q">XC70 shell</text>
+<text x="704" y="209" font-size="8" class="fn">connector from the cabinet</text>
+<text x="22" y="223" font-size="9" class="sh">7X10</text>
+<text x="217" y="223" font-size="10.5" class="b">X10 7</text>
+<line x1="292" y1="219.5" x2="620" y2="219.5" class="ls"/>
+<circle cx="292" cy="219.5" r="2.4" class="dt"/>
+<circle cx="620" cy="219.5" r="2.4" class="dt"/>
+<rect x="429.6" y="212.5" width="52.8" height="11" class="rb"/>
+<text x="456" y="221.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-E1</text>
+<text x="626" y="223" font-size="10.5" class="b s">E1 1</text>
+<text x="704" y="223" font-size="8" class="fn">work-surface lighting lamp</text>
+<text x="22" y="237" font-size="9" class="sh">8X10</text>
+<text x="217" y="237" font-size="10.5" class="b">X10 8</text>
+<line x1="292" y1="233.5" x2="620" y2="233.5" class="ls"/>
+<circle cx="292" cy="233.5" r="2.4" class="dt"/>
+<circle cx="620" cy="233.5" r="2.4" class="dt"/>
+<rect x="429.6" y="226.5" width="52.8" height="11" class="rb"/>
+<text x="456" y="235.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-E2</text>
+<text x="626" y="237" font-size="10.5" class="b s">E2 1</text>
+<text x="704" y="237" font-size="8" class="fn">work-surface lighting lamp</text>
+<text x="22" y="251" font-size="9" class="sh">9X10</text>
+<text x="217" y="251" font-size="10.5" class="b">X10 9</text>
+<line x1="292" y1="247.5" x2="620" y2="247.5" class="ls"/>
+<circle cx="292" cy="247.5" r="2.4" class="dt"/>
+<circle cx="620" cy="247.5" r="2.4" class="dt"/>
+<rect x="429.6" y="240.5" width="52.8" height="11" class="rb"/>
+<text x="456" y="249.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-E3</text>
+<text x="626" y="251" font-size="10.5" class="b s">E3 1</text>
+<text x="704" y="251" font-size="8" class="fn">cut-line indication lamp</text>
+<text x="22" y="265" font-size="9" class="sh">10X10</text>
+<text x="217" y="265" font-size="10.5" class="b">X10 10</text>
+<line x1="292" y1="261.5" x2="620" y2="261.5" class="ls"/>
+<circle cx="292" cy="261.5" r="2.4" class="dt"/>
+<circle cx="620" cy="261.5" r="2.4" class="dt"/>
+<rect x="429.6" y="254.5" width="52.8" height="11" class="rb"/>
+<text x="456" y="263.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-E4</text>
+<text x="626" y="265" font-size="10.5" class="b s">E4 1</text>
+<text x="704" y="265" font-size="8" class="fn">cut-line indication lamp</text>
+<text x="22" y="279" font-size="9" class="sh">11X10</text>
+<text x="217" y="279" font-size="10.5" class="b">X10 11</text>
+<line x1="292" y1="275.5" x2="620" y2="275.5" class="ls"/>
+<circle cx="292" cy="275.5" r="2.4" class="dt"/>
+<circle cx="620" cy="275.5" r="2.4" class="dt"/>
+<rect x="429.6" y="268.5" width="52.8" height="11" class="rb"/>
+<text x="456" y="277.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-E1</text>
+<text x="626" y="279" font-size="10.5" class="b s">E1 2</text>
+<text x="704" y="279" font-size="8" class="fn">work-surface lighting lamp</text>
+<text x="22" y="293" font-size="9" class="sh">11X10</text>
+<text x="217" y="293" font-size="10.5" class="b">X10 11</text>
+<line x1="292" y1="289.5" x2="620" y2="289.5" class="ls"/>
+<circle cx="292" cy="289.5" r="2.4" class="dt"/>
+<circle cx="620" cy="289.5" r="2.4" class="dt"/>
+<rect x="429.6" y="282.5" width="52.8" height="11" class="rb"/>
+<text x="456" y="291.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-E2</text>
+<text x="626" y="293" font-size="10.5" class="b s">E2 2</text>
+<text x="704" y="293" font-size="8" class="fn">work-surface lighting lamp</text>
+<text x="22" y="307" font-size="9" class="sh">13X10</text>
+<text x="217" y="307" font-size="10.5" class="b">X10 13</text>
+<line x1="292" y1="303.5" x2="620" y2="303.5" class="ls"/>
+<circle cx="292" cy="303.5" r="2.4" class="dt"/>
+<circle cx="620" cy="303.5" r="2.4" class="dt"/>
+<rect x="429.6" y="296.5" width="52.8" height="11" class="rb"/>
+<text x="456" y="305.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-E3</text>
+<text x="626" y="307" font-size="10.5" class="b s">E3 2</text>
+<text x="704" y="307" font-size="8" class="fn">cut-line indication lamp</text>
+<text x="22" y="321" font-size="9" class="sh">13X10</text>
+<text x="217" y="321" font-size="10.5" class="b">X10 13</text>
+<line x1="292" y1="317.5" x2="620" y2="317.5" class="ls"/>
+<circle cx="292" cy="317.5" r="2.4" class="dt"/>
+<circle cx="620" cy="317.5" r="2.4" class="dt"/>
+<rect x="429.6" y="310.5" width="52.8" height="11" class="rb"/>
+<text x="456" y="319.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-E4</text>
+<text x="626" y="321" font-size="10.5" class="b s">E4 2</text>
+<text x="704" y="321" font-size="8" class="fn">cut-line indication lamp</text>
+<text x="22" y="335" font-size="9" class="sh">15X10</text>
+<text x="217" y="335" font-size="10.5" class="b">X10 15</text>
+<line x1="292" y1="331.5" x2="620" y2="331.5" class="ls"/>
+<circle cx="292" cy="331.5" r="2.4" class="dt"/>
+<circle cx="620" cy="331.5" r="2.4" class="dt"/>
+<rect x="448.3" y="324.5" width="15.4" height="11" class="rb"/>
+<text x="456" y="333.5" font-size="8.5" text-anchor="middle" class="rt">B1</text>
+<text x="626" y="335" font-size="10.5" class="b s">S1 21</text>
+<text x="704" y="335" font-size="8" class="fn">emergency stop</text>
+<text x="22" y="349" font-size="9" class="sh">16X10</text>
+<text x="217" y="349" font-size="10.5" class="b">X10 16</text>
+<line x1="292" y1="345.5" x2="620" y2="345.5" class="ls"/>
+<circle cx="292" cy="345.5" r="2.4" class="dt"/>
+<circle cx="620" cy="345.5" r="2.4" class="dt"/>
+<rect x="448.3" y="338.5" width="15.4" height="11" class="rb"/>
+<text x="456" y="347.5" font-size="8.5" text-anchor="middle" class="rt">B1</text>
+<text x="626" y="349" font-size="10.5" class="b s">S1 22</text>
+<text x="704" y="349" font-size="8" class="fn">emergency stop</text>
+<text x="22" y="363" font-size="9" class="sh">20X10</text>
+<text x="217" y="363" font-size="10.5" class="b">X10 20</text>
+<line x1="292" y1="359.5" x2="620" y2="359.5" class="ls"/>
+<circle cx="292" cy="359.5" r="2.4" class="dt"/>
+<circle cx="620" cy="359.5" r="2.4" class="dt"/>
+<rect x="415.6" y="352.5" width="80.8" height="11" class="rb"/>
+<text x="456" y="361.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B5 &gt; B5-Y14</text>
+<text x="626" y="363" font-size="10.5" class="b s">Y14 +</text>
+<text x="704" y="363" font-size="8" class="fn">clamp brake magnet</text>
+<text x="22" y="377" font-size="9" class="sh">21X10</text>
+<text x="217" y="377" font-size="10.5" class="b">X10 21</text>
+<line x1="292" y1="373.5" x2="620" y2="373.5" class="ls"/>
+<circle cx="292" cy="373.5" r="2.4" class="dt"/>
+<circle cx="620" cy="373.5" r="2.4" class="dt"/>
+<rect x="415.6" y="366.5" width="80.8" height="11" class="rb"/>
+<text x="456" y="375.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B5 &gt; B5-Y14</text>
+<text x="626" y="377" font-size="10.5" class="b s">Y14 -</text>
+<text x="704" y="377" font-size="8" class="fn">clamp brake magnet</text>
+<text x="22" y="391" font-size="9" class="sh">29X10</text>
+<text x="217" y="391" font-size="10.5" class="b">X10 29</text>
+<line x1="292" y1="387.5" x2="620" y2="387.5" class="ls"/>
+<circle cx="292" cy="387.5" r="2.4" class="dt"/>
+<circle cx="620" cy="387.5" r="2.4" class="dt"/>
+<rect x="436.6" y="380.5" width="38.7" height="11" class="rb"/>
+<text x="456" y="389.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B5</text>
+<text x="626" y="391" font-size="10.5" class="b s">S30 14</text>
+<text x="704" y="391" font-size="8" class="fn">clamp top position sensor</text>
+<text x="22" y="405" font-size="9" class="sh">30X10</text>
+<text x="217" y="405" font-size="10.5" class="b">X10 30</text>
+<line x1="292" y1="401.5" x2="620" y2="401.5" class="ls"/>
+<circle cx="292" cy="401.5" r="2.4" class="dt"/>
+<circle cx="620" cy="401.5" r="2.4" class="dt"/>
+<rect x="345.5" y="394.5" width="221.1" height="11" class="rb"/>
+<text x="456" y="403.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B5 &gt; B5-S28 &gt; B5-S28s &gt; B5-S28r &gt; B5-S28p</text>
+<text x="626" y="405" font-size="10.5" class="b s">S28 14</text>
+<text x="704" y="405" font-size="8" class="fn">clamp plate sensor</text>
+<text x="22" y="419" font-size="9" class="sh">31X10</text>
+<text x="217" y="419" font-size="10.5" class="b">X10 31</text>
+<line x1="292" y1="415.5" x2="620" y2="415.5" class="ls"/>
+<circle cx="292" cy="415.5" r="2.4" class="dt"/>
+<circle cx="620" cy="415.5" r="2.4" class="dt"/>
+<rect x="436.6" y="408.5" width="38.7" height="11" class="rb"/>
+<text x="456" y="417.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B5</text>
+<text x="626" y="419" font-size="10.5" class="b s">S30 13</text>
+<text x="704" y="419" font-size="8" class="fn">clamp top position sensor</text>
+<text x="22" y="433" font-size="9" class="sh">32X10</text>
+<text x="217" y="433" font-size="10.5" class="b">X10 32</text>
+<line x1="292" y1="429.5" x2="620" y2="429.5" class="ls"/>
+<circle cx="292" cy="429.5" r="2.4" class="dt"/>
+<circle cx="620" cy="429.5" r="2.4" class="dt"/>
+<rect x="345.5" y="422.5" width="221.1" height="11" class="rb"/>
+<text x="456" y="431.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B5 &gt; B5-S28 &gt; B5-S28s &gt; B5-S28r &gt; B5-S28p</text>
+<text x="626" y="433" font-size="10.5" class="b s">S28 13</text>
+<text x="704" y="433" font-size="8" class="fn">clamp plate sensor</text>
+<text x="22" y="447" font-size="9" class="sh">33X10</text>
+<text x="217" y="447" font-size="10.5" class="b">X10 33</text>
+<line x1="292" y1="443.5" x2="620" y2="443.5" class="ls"/>
+<circle cx="292" cy="443.5" r="2.4" class="dt"/>
+<circle cx="620" cy="443.5" r="2.4" class="dt"/>
+<rect x="432" y="436.5" width="48.1" height="11" class="rb"/>
+<text x="456" y="445.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-T</text>
+<text x="626" y="447" font-size="10.5" class="b s">TABLO +24V</text>
+<text x="704" y="447" font-size="8" class="fn">operator control panel</text>
+<text x="22" y="461" font-size="9" class="sh">34X10</text>
+<text x="217" y="461" font-size="10.5" class="b">X10 34</text>
+<line x1="292" y1="457.5" x2="620" y2="457.5" class="ls"/>
+<circle cx="292" cy="457.5" r="2.4" class="dt"/>
+<circle cx="620" cy="457.5" r="2.4" class="dt"/>
+<rect x="436.6" y="450.5" width="38.7" height="11" class="rb"/>
+<text x="456" y="459.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B5</text>
+<text x="626" y="461" font-size="10.5" class="b s">S30 22</text>
+<text x="704" y="461" font-size="8" class="fn">clamp top position sensor</text>
+<text x="22" y="475" font-size="9" class="sh">43X10</text>
+<text x="217" y="475" font-size="10.5" class="b">X10 43</text>
+<line x1="292" y1="471.5" x2="620" y2="471.5" class="ls"/>
+<circle cx="292" cy="471.5" r="2.4" class="dt"/>
+<circle cx="620" cy="471.5" r="2.4" class="dt"/>
+<rect x="436.6" y="464.5" width="38.7" height="11" class="rb"/>
+<text x="456" y="473.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B5</text>
+<text x="626" y="475" font-size="10.5" class="b s">S30 21</text>
+<text x="704" y="475" font-size="8" class="fn">clamp top position sensor</text>
+<text x="22" y="489" font-size="9" class="sh">45X10</text>
+<text x="217" y="489" font-size="10.5" class="b">X10 45</text>
+<line x1="292" y1="485.5" x2="620" y2="485.5" class="ls"/>
+<circle cx="292" cy="485.5" r="2.4" class="dt"/>
+<circle cx="620" cy="485.5" r="2.4" class="dt"/>
+<rect x="432" y="478.5" width="48.1" height="11" class="rb"/>
+<text x="456" y="487.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-T</text>
+<text x="626" y="489" font-size="10.5" class="b s">TABLO -</text>
+<text x="704" y="489" font-size="8" class="fn">operator control panel</text>
+<text x="22" y="503" font-size="9" class="sh">⏚X10</text>
+<text x="217" y="503" font-size="10.5" class="b">X10 PE</text>
+<line x1="292" y1="499.5" x2="620" y2="499.5" class="ls"/>
+<circle cx="292" cy="499.5" r="2.4" class="dt"/>
+<circle cx="620" cy="499.5" r="2.4" class="dt"/>
+<rect x="432" y="492.5" width="48.1" height="11" class="rb"/>
+<text x="456" y="501.5" font-size="8.5" text-anchor="middle" class="rt">B1 &gt; B1-T</text>
+<text x="626" y="503" font-size="10.5" class="b s">TABLO PE</text>
+<text x="704" y="503" font-size="8" class="fn">operator control panel</text>
+<text x="22" y="529" font-size="11.5" class="b">B3 (cable bundle 3): 13 cores, feed motor and blower connectors to the backgauge feed motor and the air cushion</text>
+<text x="22" y="543" font-size="9.5" class="fn">legs used: B3, B3-XC3, B3-M3, B3-Y3</text>
+<text x="22" y="556" font-size="9.5" class="fn">trunk B3: Ø 20 mm, 4548.5 mm long, estimated ±200 mm</text>
+<text x="22" y="574" font-size="9" class="sh"></text>
+<text x="198" y="574" font-size="9.5" text-anchor="end" class="fn">UZ1 U</text>
+<line x1="201" y1="570.5" x2="214" y2="570.5" class="il"/>
+<text x="217" y="574" font-size="10.5" class="b">XC1 1</text>
+<line x1="292" y1="570.5" x2="620" y2="570.5" class="ls"/>
+<circle cx="292" cy="570.5" r="2.4" class="dt"/>
+<circle cx="620" cy="570.5" r="2.4" class="dt"/>
+<rect x="448.3" y="563.5" width="15.4" height="11" class="rb"/>
+<text x="456" y="572.5" font-size="8.5" text-anchor="middle" class="rt">B3</text>
+<text x="626" y="574" font-size="10.5" class="b s">M2 U1</text>
+<text x="704" y="574" font-size="8" class="fn">backgauge feed motor</text>
+<text x="22" y="588" font-size="9" class="sh"></text>
+<text x="198" y="588" font-size="9.5" text-anchor="end" class="fn">UZ1 V</text>
+<line x1="201" y1="584.5" x2="214" y2="584.5" class="il"/>
+<text x="217" y="588" font-size="10.5" class="b">XC1 2</text>
+<line x1="292" y1="584.5" x2="620" y2="584.5" class="ls"/>
+<circle cx="292" cy="584.5" r="2.4" class="dt"/>
+<circle cx="620" cy="584.5" r="2.4" class="dt"/>
+<rect x="448.3" y="577.5" width="15.4" height="11" class="rb"/>
+<text x="456" y="586.5" font-size="8.5" text-anchor="middle" class="rt">B3</text>
+<text x="626" y="588" font-size="10.5" class="b s">M2 V1</text>
+<text x="704" y="588" font-size="8" class="fn">backgauge feed motor</text>
+<text x="22" y="602" font-size="9" class="sh"></text>
+<text x="198" y="602" font-size="9.5" text-anchor="end" class="fn">UZ1 W</text>
+<line x1="201" y1="598.5" x2="214" y2="598.5" class="il"/>
+<text x="217" y="602" font-size="10.5" class="b">XC1 3</text>
+<line x1="292" y1="598.5" x2="620" y2="598.5" class="ls"/>
+<circle cx="292" cy="598.5" r="2.4" class="dt"/>
+<circle cx="620" cy="598.5" r="2.4" class="dt"/>
+<rect x="448.3" y="591.5" width="15.4" height="11" class="rb"/>
+<text x="456" y="600.5" font-size="8.5" text-anchor="middle" class="rt">B3</text>
+<text x="626" y="602" font-size="10.5" class="b s">M2 W1</text>
+<text x="704" y="602" font-size="8" class="fn">backgauge feed motor</text>
+<text x="22" y="616" font-size="9" class="sh"></text>
+<text x="198" y="616" font-size="9.5" text-anchor="end" class="fn">UZ1 PE</text>
+<line x1="201" y1="612.5" x2="214" y2="612.5" class="il"/>
+<text x="217" y="616" font-size="10.5" class="b">XC1 PE</text>
+<line x1="292" y1="612.5" x2="620" y2="612.5" class="ls"/>
+<circle cx="292" cy="612.5" r="2.4" class="dt"/>
+<circle cx="620" cy="612.5" r="2.4" class="dt"/>
+<rect x="448.3" y="605.5" width="15.4" height="11" class="rb"/>
+<text x="456" y="614.5" font-size="8.5" text-anchor="middle" class="rt">B3</text>
+<text x="626" y="616" font-size="10.5" class="b s">M2 PE</text>
+<text x="704" y="616" font-size="8" class="fn">backgauge feed motor</text>
+<text x="22" y="630" font-size="9" class="sh"></text>
+<text x="198" y="630" font-size="9.5" text-anchor="end" class="fn">KM8 2</text>
+<line x1="201" y1="626.5" x2="214" y2="626.5" class="il"/>
+<text x="217" y="630" font-size="10.5" class="b">XC3 1</text>
+<line x1="292" y1="626.5" x2="620" y2="626.5" class="ls"/>
+<circle cx="292" cy="626.5" r="2.4" class="dt"/>
+<circle cx="620" cy="626.5" r="2.4" class="dt"/>
+<rect x="408.6" y="619.5" width="94.8" height="11" class="rb"/>
+<text x="456" y="628.5" font-size="8.5" text-anchor="middle" class="rt">B3-XC3 &gt; B3 &gt; B3-M3</text>
+<text x="626" y="630" font-size="10.5" class="b s">M3 U1</text>
+<text x="704" y="630" font-size="8" class="fn">air-cushion blower motor</text>
+<text x="22" y="644" font-size="9" class="sh"></text>
+<text x="198" y="644" font-size="9.5" text-anchor="end" class="fn">KM8 4</text>
+<line x1="201" y1="640.5" x2="214" y2="640.5" class="il"/>
+<text x="217" y="644" font-size="10.5" class="b">XC3 2</text>
+<line x1="292" y1="640.5" x2="620" y2="640.5" class="ls"/>
+<circle cx="292" cy="640.5" r="2.4" class="dt"/>
+<circle cx="620" cy="640.5" r="2.4" class="dt"/>
+<rect x="408.6" y="633.5" width="94.8" height="11" class="rb"/>
+<text x="456" y="642.5" font-size="8.5" text-anchor="middle" class="rt">B3-XC3 &gt; B3 &gt; B3-M3</text>
+<text x="626" y="644" font-size="10.5" class="b s">M3 V1</text>
+<text x="704" y="644" font-size="8" class="fn">air-cushion blower motor</text>
+<text x="22" y="658" font-size="9" class="sh"></text>
+<text x="198" y="658" font-size="9.5" text-anchor="end" class="fn">KM8 6</text>
+<line x1="201" y1="654.5" x2="214" y2="654.5" class="il"/>
+<text x="217" y="658" font-size="10.5" class="b">XC3 3</text>
+<line x1="292" y1="654.5" x2="620" y2="654.5" class="ls"/>
+<circle cx="292" cy="654.5" r="2.4" class="dt"/>
+<circle cx="620" cy="654.5" r="2.4" class="dt"/>
+<rect x="408.6" y="647.5" width="94.8" height="11" class="rb"/>
+<text x="456" y="656.5" font-size="8.5" text-anchor="middle" class="rt">B3-XC3 &gt; B3 &gt; B3-M3</text>
+<text x="626" y="658" font-size="10.5" class="b s">M3 W1</text>
+<text x="704" y="658" font-size="8" class="fn">air-cushion blower motor</text>
+<text x="22" y="672" font-size="9" class="sh"></text>
+<text x="198" y="672" font-size="9.5" text-anchor="end" class="fn">K1 14</text>
+<line x1="201" y1="668.5" x2="214" y2="668.5" class="il"/>
+<text x="217" y="672" font-size="10.5" class="b">XC3 5</text>
+<line x1="292" y1="668.5" x2="620" y2="668.5" class="ls"/>
+<circle cx="292" cy="668.5" r="2.4" class="dt"/>
+<circle cx="620" cy="668.5" r="2.4" class="dt"/>
+<rect x="408.6" y="661.5" width="94.8" height="11" class="rb"/>
+<text x="456" y="670.5" font-size="8.5" text-anchor="middle" class="rt">B3-XC3 &gt; B3 &gt; B3-Y3</text>
+<text x="626" y="672" font-size="10.5" class="b s">Y3 1</text>
+<text x="704" y="672" font-size="8" class="fn">air-cushion magnet (valve)</text>
+<text x="22" y="686" font-size="9" class="sh"></text>
+<text x="198" y="686" font-size="9.5" text-anchor="end" class="fn">K1 14</text>
+<line x1="201" y1="682.5" x2="214" y2="682.5" class="il"/>
+<text x="217" y="686" font-size="10.5" class="b">XC3 5</text>
+<line x1="292" y1="682.5" x2="620" y2="682.5" class="lq"/>
+<circle cx="292" cy="682.5" r="2.4" class="dt"/>
+<circle cx="620" cy="682.5" r="2.4" class="dt"/>
+<rect x="408.6" y="675.5" width="94.8" height="11" class="rb"/>
+<text x="456" y="684.5" font-size="8.5" text-anchor="middle" class="rt">B3-XC3 &gt; B3 &gt; B3-Y3</text>
+<text x="626" y="686" font-size="10.5" class="b q">C3 1</text>
+<text x="704" y="686" font-size="8" class="fn">suppression capacitor</text>
+<text x="22" y="700" font-size="9" class="sh"></text>
+<text x="198" y="700" font-size="9.5" text-anchor="end" class="fn">X5</text>
+<line x1="201" y1="696.5" x2="214" y2="696.5" class="il"/>
+<text x="217" y="700" font-size="10.5" class="b">XC3 6</text>
+<line x1="292" y1="696.5" x2="620" y2="696.5" class="ls"/>
+<circle cx="292" cy="696.5" r="2.4" class="dt"/>
+<circle cx="620" cy="696.5" r="2.4" class="dt"/>
+<rect x="408.6" y="689.5" width="94.8" height="11" class="rb"/>
+<text x="456" y="698.5" font-size="8.5" text-anchor="middle" class="rt">B3-XC3 &gt; B3 &gt; B3-Y3</text>
+<text x="626" y="700" font-size="10.5" class="b s">Y3 2</text>
+<text x="704" y="700" font-size="8" class="fn">air-cushion magnet (valve)</text>
+<text x="22" y="714" font-size="9" class="sh"></text>
+<text x="198" y="714" font-size="9.5" text-anchor="end" class="fn">X5</text>
+<line x1="201" y1="710.5" x2="214" y2="710.5" class="il"/>
+<text x="217" y="714" font-size="10.5" class="b">XC3 6</text>
+<line x1="292" y1="710.5" x2="620" y2="710.5" class="lq"/>
+<circle cx="292" cy="710.5" r="2.4" class="dt"/>
+<circle cx="620" cy="710.5" r="2.4" class="dt"/>
+<rect x="408.6" y="703.5" width="94.8" height="11" class="rb"/>
+<text x="456" y="712.5" font-size="8.5" text-anchor="middle" class="rt">B3-XC3 &gt; B3 &gt; B3-Y3</text>
+<text x="626" y="714" font-size="10.5" class="b q">C3 2</text>
+<text x="704" y="714" font-size="8" class="fn">suppression capacitor</text>
+<text x="22" y="728" font-size="9" class="sh"></text>
+<text x="198" y="728" font-size="9.5" text-anchor="end" class="fn">PE</text>
+<line x1="201" y1="724.5" x2="214" y2="724.5" class="il"/>
+<text x="217" y="728" font-size="10.5" class="b">XC3 PE</text>
+<line x1="292" y1="724.5" x2="620" y2="724.5" class="ls"/>
+<circle cx="292" cy="724.5" r="2.4" class="dt"/>
+<circle cx="620" cy="724.5" r="2.4" class="dt"/>
+<rect x="408.6" y="717.5" width="94.8" height="11" class="rb"/>
+<text x="456" y="726.5" font-size="8.5" text-anchor="middle" class="rt">B3-XC3 &gt; B3 &gt; B3-M3</text>
+<text x="626" y="728" font-size="10.5" class="b s">M3 PE</text>
+<text x="704" y="728" font-size="8" class="fn">air-cushion blower motor</text>
+<text x="22" y="742" font-size="9" class="sh"></text>
+<text x="198" y="742" font-size="9.5" text-anchor="end" class="fn">PE</text>
+<line x1="201" y1="738.5" x2="214" y2="738.5" class="il"/>
+<text x="217" y="742" font-size="10.5" class="b">XC3 PE</text>
+<line x1="292" y1="738.5" x2="620" y2="738.5" class="ls"/>
+<circle cx="292" cy="738.5" r="2.4" class="dt"/>
+<circle cx="620" cy="738.5" r="2.4" class="dt"/>
+<rect x="408.6" y="731.5" width="94.8" height="11" class="rb"/>
+<text x="456" y="740.5" font-size="8.5" text-anchor="middle" class="rt">B3-XC3 &gt; B3 &gt; B3-Y3</text>
+<text x="626" y="742" font-size="10.5" class="b s">Y3 PE</text>
+<text x="704" y="742" font-size="8" class="fn">air-cushion magnet (valve)</text>
+<text x="22" y="768" font-size="11.5" class="b">Inside the cabinet: connector pins that no cable leaves through</text>
+<text x="22" y="781" font-size="9.5" class="fn">cabinet wiring of the connectors service socket XC7, inverter speed setpoint XC50 and the encoder connector's shell</text>
+<text x="22" y="797" font-size="9" class="sh">7XC4</text>
+<text x="198" y="797" font-size="9.5" text-anchor="end" class="fn">PLC IN-GND</text>
+<line x1="201" y1="793.5" x2="214" y2="793.5" class="il"/>
+<text x="217" y="797" font-size="10.5" class="b s">XC4 shell</text>
+<text x="292" y="797" font-size="9" class="fn">encoder connector; plc_drive: sure</text>
+<text x="22" y="811" font-size="9" class="sh">8UZ1</text>
+<text x="198" y="811" font-size="9.5" text-anchor="end" class="fn">UZ1 8</text>
+<line x1="201" y1="807.5" x2="214" y2="807.5" class="il"/>
+<text x="217" y="811" font-size="10.5" class="b s">XC50 4</text>
+<text x="292" y="811" font-size="9" class="fn">control-system connector, inverter speed setpoint; plc_drive: sure; power: estimated ±1 column</text>
+<text x="22" y="825" font-size="9" class="sh">7UZ1</text>
+<text x="198" y="825" font-size="9.5" text-anchor="end" class="fn">UZ1 7</text>
+<line x1="201" y1="821.5" x2="214" y2="821.5" class="il"/>
+<text x="217" y="825" font-size="10.5" class="b s">XC50 6+9</text>
+<text x="292" y="825" font-size="9" class="fn">control-system connector, inverter speed setpoint; plc_drive: sure; power: estimated ±1 column</text>
+<text x="22" y="839" font-size="9" class="sh"></text>
+<text x="198" y="839" font-size="9.5" text-anchor="end" class="fn">FA4 2</text>
+<line x1="201" y1="835.5" x2="214" y2="835.5" class="il"/>
+<text x="217" y="839" font-size="10.5" class="b s">XC7 L</text>
+<text x="292" y="839" font-size="9" class="fn">service socket 230 V (110 V); power: sure</text>
+<text x="22" y="853" font-size="9" class="sh"></text>
+<text x="198" y="853" font-size="9.5" text-anchor="end" class="fn">XP N</text>
+<line x1="201" y1="849.5" x2="214" y2="849.5" class="il"/>
+<text x="217" y="853" font-size="10.5" class="b s">XC7 N</text>
+<text x="292" y="853" font-size="9" class="fn">service socket 230 V (110 V); power: sure</text>
+<text x="22" y="867" font-size="9" class="sh"></text>
+<text x="198" y="867" font-size="9.5" text-anchor="end" class="fn">PE </text>
+<line x1="201" y1="863.5" x2="214" y2="863.5" class="il"/>
+<text x="217" y="867" font-size="10.5" class="b s">XC7 PE</text>
+<text x="292" y="867" font-size="9" class="fn">service socket 230 V (110 V); power: sure</text>
+<text x="852" y="96" font-size="9" class="i">wire</text>
+<text x="1028" y="96" font-size="9" text-anchor="end" class="i">cabinet side</text>
+<text x="1047" y="96" font-size="9" class="i">leaves at</text>
+<text x="1286" y="96" font-size="9" text-anchor="middle" class="i">bundle legs (route, estimated)</text>
+<text x="1456" y="96" font-size="9" class="i">far end</text>
+<text x="1534" y="96" font-size="9" class="i">device</text>
+<text x="852" y="122" font-size="11.5" class="b">B2 (cable bundle 2): 15 cores, table-cabinet connector and encoder connector to the front table and the backgauge</text>
+<text x="852" y="136" font-size="9.5" class="fn">legs used: B2, B2-R, B2-S24, B2-F, B2-S11, B2-XC4</text>
+<text x="852" y="149" font-size="9.5" class="fn">trunk B2: Ø 24 mm, 3014 mm long, estimated ±200 mm</text>
+<text x="852" y="167" font-size="9" class="sh">1XC2</text>
+<text x="1028" y="167" font-size="9.5" text-anchor="end" class="fn">X10 31</text>
+<line x1="1031" y1="163.5" x2="1044" y2="163.5" class="il"/>
+<text x="1047" y="167" font-size="10.5" class="b">XC2 1</text>
+<line x1="1122" y1="163.5" x2="1450" y2="163.5" class="ls"/>
+<circle cx="1122" cy="163.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="163.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="156.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="165.5" font-size="8.5" text-anchor="middle" class="rt">B2 &gt; B2-R &gt; B2-S24</text>
+<text x="1456" y="167" font-size="10.5" class="b s">S24 21</text>
+<text x="1534" y="167" font-size="8" class="fn">saddle front limit switch</text>
+<text x="852" y="181" font-size="9" class="sh">1XC2</text>
+<text x="1028" y="181" font-size="9.5" text-anchor="end" class="fn">X10 31</text>
+<line x1="1031" y1="177.5" x2="1044" y2="177.5" class="il"/>
+<text x="1047" y="181" font-size="10.5" class="b">XC2 1</text>
+<line x1="1122" y1="177.5" x2="1450" y2="177.5" class="ls"/>
+<circle cx="1122" cy="177.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="177.5" r="2.4" class="dt"/>
+<rect x="1262" y="170.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="179.5" font-size="8.5" text-anchor="middle" class="rt">B2 &gt; B2-R</text>
+<text x="1456" y="181" font-size="10.5" class="b s">S27 21</text>
+<text x="1534" y="181" font-size="8" class="fn">saddle rear reference switch</text>
+<text x="852" y="195" font-size="9" class="sh">2XC2</text>
+<text x="1028" y="195" font-size="9.5" text-anchor="end" class="fn">PLC IN-A</text>
+<line x1="1031" y1="191.5" x2="1044" y2="191.5" class="il"/>
+<text x="1047" y="195" font-size="10.5" class="b">XC2 2</text>
+<line x1="1122" y1="191.5" x2="1450" y2="191.5" class="ls"/>
+<circle cx="1122" cy="191.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="191.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="184.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="193.5" font-size="8.5" text-anchor="middle" class="rt">B2 &gt; B2-R &gt; B2-S24</text>
+<text x="1456" y="195" font-size="10.5" class="b s">S24 22</text>
+<text x="1534" y="195" font-size="8" class="fn">saddle front limit switch</text>
+<text x="852" y="209" font-size="9" class="sh">3XC2</text>
+<text x="1028" y="209" font-size="9.5" text-anchor="end" class="fn">PLC IN-9</text>
+<line x1="1031" y1="205.5" x2="1044" y2="205.5" class="il"/>
+<text x="1047" y="209" font-size="10.5" class="b">XC2 3</text>
+<line x1="1122" y1="205.5" x2="1450" y2="205.5" class="ls"/>
+<circle cx="1122" cy="205.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="205.5" r="2.4" class="dt"/>
+<rect x="1262" y="198.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="207.5" font-size="8.5" text-anchor="middle" class="rt">B2 &gt; B2-R</text>
+<text x="1456" y="209" font-size="10.5" class="b s">S27 22</text>
+<text x="1534" y="209" font-size="8" class="fn">saddle rear reference switch</text>
+<text x="852" y="223" font-size="9" class="sh">4XC2</text>
+<text x="1028" y="223" font-size="9.5" text-anchor="end" class="fn">X11 6</text>
+<line x1="1031" y1="219.5" x2="1044" y2="219.5" class="il"/>
+<text x="1047" y="223" font-size="10.5" class="b">XC2 4</text>
+<line x1="1122" y1="219.5" x2="1450" y2="219.5" class="ls"/>
+<circle cx="1122" cy="219.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="219.5" r="2.4" class="dt"/>
+<rect x="1262" y="212.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="221.5" font-size="8.5" text-anchor="middle" class="rt">B2 &gt; B2-F</text>
+<text x="1456" y="223" font-size="10.5" class="b s">S10 3A</text>
+<text x="1534" y="223" font-size="8" class="fn">cut start button</text>
+<text x="852" y="237" font-size="9" class="sh">5XC2</text>
+<text x="1028" y="237" font-size="9.5" text-anchor="end" class="fn">BMR1 2</text>
+<line x1="1031" y1="233.5" x2="1044" y2="233.5" class="il"/>
+<text x="1047" y="237" font-size="10.5" class="b">XC2 5</text>
+<line x1="1122" y1="233.5" x2="1450" y2="233.5" class="ls"/>
+<circle cx="1122" cy="233.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="233.5" r="2.4" class="dt"/>
+<rect x="1262" y="226.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="235.5" font-size="8.5" text-anchor="middle" class="rt">B2 &gt; B2-F</text>
+<text x="1456" y="237" font-size="10.5" class="b s">S10 2A</text>
+<text x="1534" y="237" font-size="8" class="fn">cut start button</text>
+<text x="852" y="251" font-size="9" class="sh">6XC2</text>
+<text x="1028" y="251" font-size="9.5" text-anchor="end" class="fn">BMR1 3</text>
+<line x1="1031" y1="247.5" x2="1044" y2="247.5" class="il"/>
+<text x="1047" y="251" font-size="10.5" class="b">XC2 6</text>
+<line x1="1122" y1="247.5" x2="1450" y2="247.5" class="ls"/>
+<circle cx="1122" cy="247.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="247.5" r="2.4" class="dt"/>
+<rect x="1262" y="240.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="249.5" font-size="8.5" text-anchor="middle" class="rt">B2 &gt; B2-F</text>
+<text x="1456" y="251" font-size="10.5" class="b s">S10 4A</text>
+<text x="1534" y="251" font-size="8" class="fn">cut start button</text>
+<text x="852" y="265" font-size="9" class="sh">7XC2</text>
+<text x="1028" y="265" font-size="9.5" text-anchor="end" class="fn">BMR1 6</text>
+<line x1="1031" y1="261.5" x2="1044" y2="261.5" class="il"/>
+<text x="1047" y="265" font-size="10.5" class="b">XC2 7</text>
+<line x1="1122" y1="261.5" x2="1450" y2="261.5" class="ls"/>
+<circle cx="1122" cy="261.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="261.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="254.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="263.5" font-size="8.5" text-anchor="middle" class="rt">B2 &gt; B2-F &gt; B2-S11</text>
+<text x="1456" y="265" font-size="10.5" class="b s">S11 3A</text>
+<text x="1534" y="265" font-size="8" class="fn">cut start button</text>
+<text x="852" y="279" font-size="9" class="sh">8XC2</text>
+<text x="1028" y="279" font-size="9.5" text-anchor="end" class="fn">BMR1 7</text>
+<line x1="1031" y1="275.5" x2="1044" y2="275.5" class="il"/>
+<text x="1047" y="279" font-size="10.5" class="b">XC2 8</text>
+<line x1="1122" y1="275.5" x2="1450" y2="275.5" class="ls"/>
+<circle cx="1122" cy="275.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="275.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="268.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="277.5" font-size="8.5" text-anchor="middle" class="rt">B2 &gt; B2-F &gt; B2-S11</text>
+<text x="1456" y="279" font-size="10.5" class="b s">S11 2A</text>
+<text x="1534" y="279" font-size="8" class="fn">cut start button</text>
+<text x="852" y="293" font-size="9" class="sh">9XC2</text>
+<text x="1028" y="293" font-size="9.5" text-anchor="end" class="fn">BMR1 8</text>
+<line x1="1031" y1="289.5" x2="1044" y2="289.5" class="il"/>
+<text x="1047" y="293" font-size="10.5" class="b">XC2 9</text>
+<line x1="1122" y1="289.5" x2="1450" y2="289.5" class="ls"/>
+<circle cx="1122" cy="289.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="289.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="282.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="291.5" font-size="8.5" text-anchor="middle" class="rt">B2 &gt; B2-F &gt; B2-S11</text>
+<text x="1456" y="293" font-size="10.5" class="b s">S11 4A</text>
+<text x="1534" y="293" font-size="8" class="fn">cut start button</text>
+<text x="852" y="307" font-size="9" class="sh"></text>
+<text x="1028" y="307" font-size="9.5" text-anchor="end" class="fn">PLC IN-D</text>
+<line x1="1031" y1="303.5" x2="1044" y2="303.5" class="il"/>
+<text x="1047" y="307" font-size="10.5" class="b">XC4 1</text>
+<line x1="1122" y1="303.5" x2="1450" y2="303.5" class="ls"/>
+<circle cx="1122" cy="303.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="303.5" r="2.4" class="dt"/>
+<rect x="1257.3" y="296.5" width="57.4" height="11" class="rb"/>
+<text x="1286" y="305.5" font-size="8.5" text-anchor="middle" class="rt">B2-XC4 &gt; B2</text>
+<text x="1456" y="307" font-size="10.5" class="b s">BR40 I</text>
+<text x="1534" y="307" font-size="8" class="fn">backgauge position encoder</text>
+<text x="852" y="321" font-size="9" class="sh"></text>
+<text x="1028" y="321" font-size="9.5" text-anchor="end" class="fn">PLC IN-E</text>
+<line x1="1031" y1="317.5" x2="1044" y2="317.5" class="il"/>
+<text x="1047" y="321" font-size="10.5" class="b">XC4 2</text>
+<line x1="1122" y1="317.5" x2="1450" y2="317.5" class="ls"/>
+<circle cx="1122" cy="317.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="317.5" r="2.4" class="dt"/>
+<rect x="1257.3" y="310.5" width="57.4" height="11" class="rb"/>
+<text x="1286" y="319.5" font-size="8.5" text-anchor="middle" class="rt">B2-XC4 &gt; B2</text>
+<text x="1456" y="321" font-size="10.5" class="b s">BR40 B</text>
+<text x="1534" y="321" font-size="8" class="fn">backgauge position encoder</text>
+<text x="852" y="335" font-size="9" class="sh"></text>
+<text x="1028" y="335" font-size="9.5" text-anchor="end" class="fn">PLC IN-F</text>
+<line x1="1031" y1="331.5" x2="1044" y2="331.5" class="il"/>
+<text x="1047" y="335" font-size="10.5" class="b">XC4 3</text>
+<line x1="1122" y1="331.5" x2="1450" y2="331.5" class="ls"/>
+<circle cx="1122" cy="331.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="331.5" r="2.4" class="dt"/>
+<rect x="1257.3" y="324.5" width="57.4" height="11" class="rb"/>
+<text x="1286" y="333.5" font-size="8.5" text-anchor="middle" class="rt">B2-XC4 &gt; B2</text>
+<text x="1456" y="335" font-size="10.5" class="b s">BR40 A</text>
+<text x="1534" y="335" font-size="8" class="fn">backgauge position encoder</text>
+<text x="852" y="349" font-size="9" class="sh"></text>
+<text x="1028" y="349" font-size="9.5" text-anchor="end" class="fn">PLC IN-GND</text>
+<line x1="1031" y1="345.5" x2="1044" y2="345.5" class="il"/>
+<text x="1047" y="349" font-size="10.5" class="b">XC4 4</text>
+<line x1="1122" y1="345.5" x2="1450" y2="345.5" class="ls"/>
+<circle cx="1122" cy="345.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="345.5" r="2.4" class="dt"/>
+<rect x="1257.3" y="338.5" width="57.4" height="11" class="rb"/>
+<text x="1286" y="347.5" font-size="8.5" text-anchor="middle" class="rt">B2-XC4 &gt; B2</text>
+<text x="1456" y="349" font-size="10.5" class="b s">BR40 -</text>
+<text x="1534" y="349" font-size="8" class="fn">backgauge position encoder</text>
+<text x="852" y="363" font-size="9" class="sh"></text>
+<text x="1028" y="363" font-size="9.5" text-anchor="end" class="fn">PLC +24V</text>
+<line x1="1031" y1="359.5" x2="1044" y2="359.5" class="il"/>
+<text x="1047" y="363" font-size="10.5" class="b">XC4 5</text>
+<line x1="1122" y1="359.5" x2="1450" y2="359.5" class="ls"/>
+<circle cx="1122" cy="359.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="359.5" r="2.4" class="dt"/>
+<rect x="1257.3" y="352.5" width="57.4" height="11" class="rb"/>
+<text x="1286" y="361.5" font-size="8.5" text-anchor="middle" class="rt">B2-XC4 &gt; B2</text>
+<text x="1456" y="363" font-size="10.5" class="b s">BR40 +</text>
+<text x="1534" y="363" font-size="8" class="fn">backgauge position encoder</text>
+<text x="852" y="389" font-size="11.5" class="b">B4 (cable bundle 4): 37 cores, terminal strip in the cabinet to the main drive, the knife and the hydraulics</text>
+<text x="852" y="403" font-size="9.5" class="fn">legs used: B4, B4-R, B4-K, B4-Y01, B4-Y11, B4-S19, B4-Y10, B4-SQ1, B4-SQ2, B4-S13, B4-S14</text>
+<text x="852" y="416" font-size="9.5" class="fn">trunk B4: Ø 24 mm, 6354 mm long, estimated ±200 mm</text>
+<text x="852" y="434" font-size="9" class="sh"></text>
+<text x="1047" y="434" font-size="10.5" class="b">X10 1</text>
+<line x1="1122" y1="430.5" x2="1450" y2="430.5" class="ls"/>
+<circle cx="1122" cy="430.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="430.5" r="2.4" class="dt"/>
+<rect x="1278.3" y="423.5" width="15.4" height="11" class="rb"/>
+<text x="1286" y="432.5" font-size="8.5" text-anchor="middle" class="rt">B4</text>
+<text x="1456" y="434" font-size="10.5" class="b s">M1 U2</text>
+<text x="1534" y="434" font-size="8" class="fn">knife and hydraulics motor</text>
+<text x="852" y="448" font-size="9" class="sh"></text>
+<text x="1047" y="448" font-size="10.5" class="b">X10 2</text>
+<line x1="1122" y1="444.5" x2="1450" y2="444.5" class="ls"/>
+<circle cx="1122" cy="444.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="444.5" r="2.4" class="dt"/>
+<rect x="1278.3" y="437.5" width="15.4" height="11" class="rb"/>
+<text x="1286" y="446.5" font-size="8.5" text-anchor="middle" class="rt">B4</text>
+<text x="1456" y="448" font-size="10.5" class="b s">M1 V2</text>
+<text x="1534" y="448" font-size="8" class="fn">knife and hydraulics motor</text>
+<text x="852" y="462" font-size="9" class="sh"></text>
+<text x="1047" y="462" font-size="10.5" class="b">X10 3</text>
+<line x1="1122" y1="458.5" x2="1450" y2="458.5" class="ls"/>
+<circle cx="1122" cy="458.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="458.5" r="2.4" class="dt"/>
+<rect x="1278.3" y="451.5" width="15.4" height="11" class="rb"/>
+<text x="1286" y="460.5" font-size="8.5" text-anchor="middle" class="rt">B4</text>
+<text x="1456" y="462" font-size="10.5" class="b s">M1 W2</text>
+<text x="1534" y="462" font-size="8" class="fn">knife and hydraulics motor</text>
+<text x="852" y="476" font-size="9" class="sh"></text>
+<text x="1047" y="476" font-size="10.5" class="b">X10 4</text>
+<line x1="1122" y1="472.5" x2="1450" y2="472.5" class="ls"/>
+<circle cx="1122" cy="472.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="472.5" r="2.4" class="dt"/>
+<rect x="1278.3" y="465.5" width="15.4" height="11" class="rb"/>
+<text x="1286" y="474.5" font-size="8.5" text-anchor="middle" class="rt">B4</text>
+<text x="1456" y="476" font-size="10.5" class="b s">M1 V1</text>
+<text x="1534" y="476" font-size="8" class="fn">knife and hydraulics motor</text>
+<text x="852" y="490" font-size="9" class="sh"></text>
+<text x="1047" y="490" font-size="10.5" class="b">X10 5</text>
+<line x1="1122" y1="486.5" x2="1450" y2="486.5" class="ls"/>
+<circle cx="1122" cy="486.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="486.5" r="2.4" class="dt"/>
+<rect x="1278.3" y="479.5" width="15.4" height="11" class="rb"/>
+<text x="1286" y="488.5" font-size="8.5" text-anchor="middle" class="rt">B4</text>
+<text x="1456" y="490" font-size="10.5" class="b s">M1 W1</text>
+<text x="1534" y="490" font-size="8" class="fn">knife and hydraulics motor</text>
+<text x="852" y="504" font-size="9" class="sh"></text>
+<text x="1047" y="504" font-size="10.5" class="b">X10 6</text>
+<line x1="1122" y1="500.5" x2="1450" y2="500.5" class="ls"/>
+<circle cx="1122" cy="500.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="500.5" r="2.4" class="dt"/>
+<rect x="1278.3" y="493.5" width="15.4" height="11" class="rb"/>
+<text x="1286" y="502.5" font-size="8.5" text-anchor="middle" class="rt">B4</text>
+<text x="1456" y="504" font-size="10.5" class="b s">M1 U1</text>
+<text x="1534" y="504" font-size="8" class="fn">knife and hydraulics motor</text>
+<text x="852" y="518" font-size="9" class="sh">14X10</text>
+<text x="1047" y="518" font-size="10.5" class="b">X10 14</text>
+<line x1="1122" y1="514.5" x2="1450" y2="514.5" class="ls"/>
+<circle cx="1122" cy="514.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="514.5" r="2.4" class="dt"/>
+<rect x="1262" y="507.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="516.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-R</text>
+<text x="1456" y="518" font-size="10.5" class="b s">S5 21</text>
+<text x="1534" y="518" font-size="8" class="fn">belt-pulley cover interlock</text>
+<text x="852" y="532" font-size="9" class="sh">15X10</text>
+<text x="1047" y="532" font-size="10.5" class="b">X10 15</text>
+<line x1="1122" y1="528.5" x2="1450" y2="528.5" class="ls"/>
+<circle cx="1122" cy="528.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="528.5" r="2.4" class="dt"/>
+<rect x="1262" y="521.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="530.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-R</text>
+<text x="1456" y="532" font-size="10.5" class="b s">S5 22</text>
+<text x="1534" y="532" font-size="8" class="fn">belt-pulley cover interlock</text>
+<text x="852" y="546" font-size="9" class="sh">18X10</text>
+<text x="1047" y="546" font-size="10.5" class="b">X10 18</text>
+<line x1="1122" y1="542.5" x2="1450" y2="542.5" class="ls"/>
+<circle cx="1122" cy="542.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="542.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="535.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="544.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-K &gt; B4-Y01</text>
+<text x="1456" y="546" font-size="10.5" class="b s">Y01 +</text>
+<text x="1534" y="546" font-size="8" class="fn">knife-lock magnet</text>
+<text x="852" y="560" font-size="9" class="sh">19X10</text>
+<text x="1047" y="560" font-size="10.5" class="b">X10 19</text>
+<line x1="1122" y1="556.5" x2="1450" y2="556.5" class="ls"/>
+<circle cx="1122" cy="556.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="556.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="549.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="558.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-K &gt; B4-Y01</text>
+<text x="1456" y="560" font-size="10.5" class="b s">Y01 -</text>
+<text x="1534" y="560" font-size="8" class="fn">knife-lock magnet</text>
+<text x="852" y="574" font-size="9" class="sh">22X10</text>
+<text x="1047" y="574" font-size="10.5" class="b">X10 22</text>
+<line x1="1122" y1="570.5" x2="1450" y2="570.5" class="ls"/>
+<circle cx="1122" cy="570.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="570.5" r="2.4" class="dt"/>
+<rect x="1257.3" y="563.5" width="57.4" height="11" class="rb"/>
+<text x="1286" y="572.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-Y11</text>
+<text x="1456" y="574" font-size="10.5" class="b s">Y11 1</text>
+<text x="1534" y="574" font-size="8" class="fn">hydraulics magnet (clamping)</text>
+<text x="852" y="588" font-size="9" class="sh">23X10</text>
+<text x="1047" y="588" font-size="10.5" class="b">X10 23</text>
+<line x1="1122" y1="584.5" x2="1450" y2="584.5" class="ls"/>
+<circle cx="1122" cy="584.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="584.5" r="2.4" class="dt"/>
+<rect x="1257.3" y="577.5" width="57.4" height="11" class="rb"/>
+<text x="1286" y="586.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-Y11</text>
+<text x="1456" y="588" font-size="10.5" class="b s">Y11 2</text>
+<text x="1534" y="588" font-size="8" class="fn">hydraulics magnet (clamping)</text>
+<text x="852" y="602" font-size="9" class="sh">24X10</text>
+<text x="1047" y="602" font-size="10.5" class="b">X10 24</text>
+<line x1="1122" y1="598.5" x2="1450" y2="598.5" class="ls"/>
+<circle cx="1122" cy="598.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="598.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="591.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="600.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-R &gt; B4-S19</text>
+<text x="1456" y="602" font-size="10.5" class="b s">S19 13</text>
+<text x="1534" y="602" font-size="8" class="fn">clutch switch, knife change</text>
+<text x="852" y="616" font-size="9" class="sh">25X10</text>
+<text x="1047" y="616" font-size="10.5" class="b">X10 25</text>
+<line x1="1122" y1="612.5" x2="1450" y2="612.5" class="ls"/>
+<circle cx="1122" cy="612.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="612.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="605.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="614.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-R &gt; B4-S19</text>
+<text x="1456" y="616" font-size="10.5" class="b s">S19 14</text>
+<text x="1534" y="616" font-size="8" class="fn">clutch switch, knife change</text>
+<text x="852" y="630" font-size="9" class="sh">25X10</text>
+<text x="1047" y="630" font-size="10.5" class="b">X10 25</text>
+<line x1="1122" y1="626.5" x2="1450" y2="626.5" class="ls"/>
+<circle cx="1122" cy="626.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="626.5" r="2.4" class="dt"/>
+<rect x="1262" y="619.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="628.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-R</text>
+<text x="1456" y="630" font-size="10.5" class="b s">S5 13</text>
+<text x="1534" y="630" font-size="8" class="fn">belt-pulley cover interlock</text>
+<text x="852" y="644" font-size="9" class="sh">26X10</text>
+<text x="1047" y="644" font-size="10.5" class="b">X10 26</text>
+<line x1="1122" y1="640.5" x2="1450" y2="640.5" class="ls"/>
+<circle cx="1122" cy="640.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="640.5" r="2.4" class="dt"/>
+<rect x="1262" y="633.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="642.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-R</text>
+<text x="1456" y="644" font-size="10.5" class="b s">S5 14</text>
+<text x="1534" y="644" font-size="8" class="fn">belt-pulley cover interlock</text>
+<text x="852" y="658" font-size="9" class="sh">27X10</text>
+<text x="1047" y="658" font-size="10.5" class="b">X10 27</text>
+<line x1="1122" y1="654.5" x2="1450" y2="654.5" class="ls"/>
+<circle cx="1122" cy="654.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="654.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="647.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="656.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-R &gt; B4-Y10</text>
+<text x="1456" y="658" font-size="10.5" class="b s">Y10 +</text>
+<text x="1534" y="658" font-size="8" class="fn">cut clutch (with brake)</text>
+<text x="852" y="672" font-size="9" class="sh">28X10</text>
+<text x="1047" y="672" font-size="10.5" class="b">X10 28</text>
+<line x1="1122" y1="668.5" x2="1450" y2="668.5" class="ls"/>
+<circle cx="1122" cy="668.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="668.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="661.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="670.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-R &gt; B4-Y10</text>
+<text x="1456" y="672" font-size="10.5" class="b s">Y10 -</text>
+<text x="1534" y="672" font-size="8" class="fn">cut clutch (with brake)</text>
+<text x="852" y="686" font-size="9" class="sh">1X8</text>
+<text x="1047" y="686" font-size="10.5" class="b">X10 33</text>
+<line x1="1122" y1="682.5" x2="1450" y2="682.5" class="ls"/>
+<circle cx="1122" cy="682.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="682.5" r="2.4" class="dt"/>
+<rect x="1262" y="675.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="684.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-K</text>
+<text x="1456" y="686" font-size="10.5" class="b s">X8 1</text>
+<text x="1534" y="686" font-size="8" class="fn">knife sensors terminal strip</text>
+<text x="852" y="700" font-size="9" class="sh">36X10</text>
+<text x="1047" y="700" font-size="10.5" class="b">X10 36</text>
+<line x1="1122" y1="696.5" x2="1450" y2="696.5" class="ls"/>
+<circle cx="1122" cy="696.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="696.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="689.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="698.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-R &gt; B4-S19</text>
+<text x="1456" y="700" font-size="10.5" class="b s">S19 22</text>
+<text x="1534" y="700" font-size="8" class="fn">clutch switch, knife change</text>
+<text x="852" y="714" font-size="9" class="sh">2X8</text>
+<text x="1047" y="714" font-size="10.5" class="b">X10 37</text>
+<line x1="1122" y1="710.5" x2="1450" y2="710.5" class="ls"/>
+<circle cx="1122" cy="710.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="710.5" r="2.4" class="dt"/>
+<rect x="1262" y="703.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="712.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-K</text>
+<text x="1456" y="714" font-size="10.5" class="b s">X8 2</text>
+<text x="1534" y="714" font-size="8" class="fn">knife sensors terminal strip</text>
+<text x="852" y="728" font-size="9" class="sh">3X8</text>
+<text x="1047" y="728" font-size="10.5" class="b">X10 38</text>
+<line x1="1122" y1="724.5" x2="1450" y2="724.5" class="ls"/>
+<circle cx="1122" cy="724.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="724.5" r="2.4" class="dt"/>
+<rect x="1262" y="717.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="726.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-K</text>
+<text x="1456" y="728" font-size="10.5" class="b s">X8 3</text>
+<text x="1534" y="728" font-size="8" class="fn">knife sensors terminal strip</text>
+<text x="852" y="742" font-size="9" class="sh">4X8</text>
+<text x="1047" y="742" font-size="10.5" class="b">X10 39</text>
+<line x1="1122" y1="738.5" x2="1450" y2="738.5" class="ls"/>
+<circle cx="1122" cy="738.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="738.5" r="2.4" class="dt"/>
+<rect x="1262" y="731.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="740.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-K</text>
+<text x="1456" y="742" font-size="10.5" class="b s">X8 4</text>
+<text x="1534" y="742" font-size="8" class="fn">knife sensors terminal strip</text>
+<text x="852" y="756" font-size="9" class="sh">6X8</text>
+<text x="1047" y="756" font-size="10.5" class="b">X10 40</text>
+<line x1="1122" y1="752.5" x2="1450" y2="752.5" class="ls"/>
+<circle cx="1122" cy="752.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="752.5" r="2.4" class="dt"/>
+<rect x="1262" y="745.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="754.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-K</text>
+<text x="1456" y="756" font-size="10.5" class="b s">X8 6</text>
+<text x="1534" y="756" font-size="8" class="fn">knife sensors terminal strip</text>
+<text x="852" y="770" font-size="9" class="sh">5X8</text>
+<text x="1047" y="770" font-size="10.5" class="b">X10 42</text>
+<line x1="1122" y1="766.5" x2="1450" y2="766.5" class="ls"/>
+<circle cx="1122" cy="766.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="766.5" r="2.4" class="dt"/>
+<rect x="1262" y="759.5" width="48.1" height="11" class="rb"/>
+<text x="1286" y="768.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-K</text>
+<text x="1456" y="770" font-size="10.5" class="b s">X8 5</text>
+<text x="1534" y="770" font-size="8" class="fn">knife sensors terminal strip</text>
+<text x="852" y="784" font-size="9" class="sh">44X10</text>
+<text x="1047" y="784" font-size="10.5" class="b">X10 44</text>
+<line x1="1122" y1="780.5" x2="1450" y2="780.5" class="ls"/>
+<circle cx="1122" cy="780.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="780.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="773.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="782.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-R &gt; B4-S19</text>
+<text x="1456" y="784" font-size="10.5" class="b s">S19 21</text>
+<text x="1534" y="784" font-size="8" class="fn">clutch switch, knife change</text>
+<text x="852" y="798" font-size="9" class="sh">⏚X10</text>
+<text x="1047" y="798" font-size="10.5" class="b">X10 PE</text>
+<line x1="1122" y1="794.5" x2="1450" y2="794.5" class="ls"/>
+<circle cx="1122" cy="794.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="794.5" r="2.4" class="dt"/>
+<rect x="1240.9" y="787.5" width="90.2" height="11" class="rb"/>
+<text x="1286" y="796.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-K &gt; B4-Y01</text>
+<text x="1456" y="798" font-size="10.5" class="b s">Y01 PE</text>
+<text x="1534" y="798" font-size="8" class="fn">knife-lock magnet</text>
+<text x="852" y="812" font-size="9" class="sh">⏚X10</text>
+<text x="1047" y="812" font-size="10.5" class="b">X10 PE</text>
+<line x1="1122" y1="808.5" x2="1450" y2="808.5" class="ls"/>
+<circle cx="1122" cy="808.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="808.5" r="2.4" class="dt"/>
+<rect x="1257.3" y="801.5" width="57.4" height="11" class="rb"/>
+<text x="1286" y="810.5" font-size="8.5" text-anchor="middle" class="rt">B4 &gt; B4-Y11</text>
+<text x="1456" y="812" font-size="10.5" class="b s">Y11 PE</text>
+<text x="1534" y="812" font-size="8" class="fn">hydraulics magnet (clamping)</text>
+<text x="852" y="826" font-size="9" class="sh"></text>
+<text x="1047" y="826" font-size="10.5" class="b">X10 PE</text>
+<line x1="1122" y1="822.5" x2="1450" y2="822.5" class="ls"/>
+<circle cx="1122" cy="822.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="822.5" r="2.4" class="dt"/>
+<rect x="1278.3" y="815.5" width="15.4" height="11" class="rb"/>
+<text x="1286" y="824.5" font-size="8.5" text-anchor="middle" class="rt">B4</text>
+<text x="1456" y="826" font-size="10.5" class="b s">M1 PE</text>
+<text x="1534" y="826" font-size="8" class="fn">knife and hydraulics motor</text>
+<text x="852" y="842" font-size="10" class="i">on the machine: from the knife sensors' terminal strip X8 to the sensors (leg B4-K and its branches)</text>
+<text x="852" y="856" font-size="9" class="sh">1X8</text>
+<text x="1047" y="856" font-size="10.5" class="b">X8 1</text>
+<line x1="1122" y1="852.5" x2="1450" y2="852.5" class="ls"/>
+<circle cx="1122" cy="852.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="852.5" r="2.4" class="dt"/>
+<rect x="1252.6" y="845.5" width="66.8" height="11" class="rb"/>
+<text x="1286" y="854.5" font-size="8.5" text-anchor="middle" class="rt">B4-SQ1 &gt; B4-K</text>
+<text x="1456" y="856" font-size="10.5" class="b s">SQ1 1</text>
+<text x="1534" y="856" font-size="8" class="fn">knife lock sensor</text>
+<text x="852" y="870" font-size="9" class="sh">1X8</text>
+<text x="1047" y="870" font-size="10.5" class="b">X8 1</text>
+<line x1="1122" y1="866.5" x2="1450" y2="866.5" class="ls"/>
+<circle cx="1122" cy="866.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="866.5" r="2.4" class="dt"/>
+<rect x="1231.6" y="859.5" width="108.9" height="11" class="rb"/>
+<text x="1286" y="868.5" font-size="8.5" text-anchor="middle" class="rt">B4-SQ2 &gt; B4-SQ1 &gt; B4-K</text>
+<text x="1456" y="870" font-size="10.5" class="b s">SQ2 1</text>
+<text x="1534" y="870" font-size="8" class="fn">knife lock sensor</text>
+<text x="852" y="884" font-size="9" class="sh">1X8</text>
+<text x="1047" y="884" font-size="10.5" class="b">X8 1</text>
+<line x1="1122" y1="880.5" x2="1450" y2="880.5" class="ls"/>
+<circle cx="1122" cy="880.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="880.5" r="2.4" class="dt"/>
+<rect x="1252.6" y="873.5" width="66.8" height="11" class="rb"/>
+<text x="1286" y="882.5" font-size="8.5" text-anchor="middle" class="rt">B4-S13 &gt; B4-K</text>
+<text x="1456" y="884" font-size="10.5" class="b s">S13 1</text>
+<text x="1534" y="884" font-size="8" class="fn">knife position sensor (cam)</text>
+<text x="852" y="898" font-size="9" class="sh">1X8</text>
+<text x="1047" y="898" font-size="10.5" class="b">X8 1</text>
+<line x1="1122" y1="894.5" x2="1450" y2="894.5" class="ls"/>
+<circle cx="1122" cy="894.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="894.5" r="2.4" class="dt"/>
+<rect x="1252.6" y="887.5" width="66.8" height="11" class="rb"/>
+<text x="1286" y="896.5" font-size="8.5" text-anchor="middle" class="rt">B4-S14 &gt; B4-K</text>
+<text x="1456" y="898" font-size="10.5" class="b s">S14 1</text>
+<text x="1534" y="898" font-size="8" class="fn">knife position sensor (cam)</text>
+<text x="852" y="912" font-size="9" class="sh">2X8</text>
+<text x="1047" y="912" font-size="10.5" class="b">X8 2</text>
+<line x1="1122" y1="908.5" x2="1450" y2="908.5" class="ls"/>
+<circle cx="1122" cy="908.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="908.5" r="2.4" class="dt"/>
+<rect x="1252.6" y="901.5" width="66.8" height="11" class="rb"/>
+<text x="1286" y="910.5" font-size="8.5" text-anchor="middle" class="rt">B4-K &gt; B4-SQ1</text>
+<text x="1456" y="912" font-size="10.5" class="b s">SQ1 4</text>
+<text x="1534" y="912" font-size="8" class="fn">knife lock sensor</text>
+<text x="852" y="926" font-size="9" class="sh">3X8</text>
+<text x="1047" y="926" font-size="10.5" class="b">X8 3</text>
+<line x1="1122" y1="922.5" x2="1450" y2="922.5" class="ls"/>
+<circle cx="1122" cy="922.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="922.5" r="2.4" class="dt"/>
+<rect x="1231.6" y="915.5" width="108.9" height="11" class="rb"/>
+<text x="1286" y="924.5" font-size="8.5" text-anchor="middle" class="rt">B4-K &gt; B4-SQ1 &gt; B4-SQ2</text>
+<text x="1456" y="926" font-size="10.5" class="b s">SQ2 4</text>
+<text x="1534" y="926" font-size="8" class="fn">knife lock sensor</text>
+<text x="852" y="940" font-size="9" class="sh">5X8</text>
+<text x="1047" y="940" font-size="10.5" class="b">X8 5</text>
+<line x1="1122" y1="936.5" x2="1450" y2="936.5" class="ls"/>
+<circle cx="1122" cy="936.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="936.5" r="2.4" class="dt"/>
+<rect x="1252.6" y="929.5" width="66.8" height="11" class="rb"/>
+<text x="1286" y="938.5" font-size="8.5" text-anchor="middle" class="rt">B4-K &gt; B4-S13</text>
+<text x="1456" y="940" font-size="10.5" class="b s">S13 2</text>
+<text x="1534" y="940" font-size="8" class="fn">knife position sensor (cam)</text>
+<text x="852" y="954" font-size="9" class="sh">6X8</text>
+<text x="1047" y="954" font-size="10.5" class="b">X8 6</text>
+<line x1="1122" y1="950.5" x2="1450" y2="950.5" class="ls"/>
+<circle cx="1122" cy="950.5" r="2.4" class="dt"/>
+<circle cx="1450" cy="950.5" r="2.4" class="dt"/>
+<rect x="1252.6" y="943.5" width="66.8" height="11" class="rb"/>
+<text x="1286" y="952.5" font-size="8.5" text-anchor="middle" class="rt">B4-K &gt; B4-S14</text>
+<text x="1456" y="954" font-size="10.5" class="b s">S14 2</text>
+<text x="1534" y="954" font-size="8" class="fn">knife position sensor (cam)</text>
+<line x1="22" y1="988" x2="56" y2="988" class="ls"/>
+<text x="62" y="992" font-size="10.5" class="fn">sure</text>
+<line x1="107.1" y1="988" x2="141.1" y2="988" class="lq"/>
+<text x="147.1" y="992" font-size="10.5" class="fn">[?] unclear</text>
+<line x1="232.6" y1="988" x2="266.6" y2="988" class="le"/>
+<text x="272.6" y="992" font-size="10.5" class="fn">estimated</text>
+<line x1="346.6" y1="988" x2="380.6" y2="988" class="lw"/>
+<text x="386.6" y="992" font-size="10.5" class="fn">W (web)</text>
+<text x="449" y="992" font-size="10.5" class="fn">line = the core's evidence mark in merged_cores.csv; red = on the on-site list measure_list.md</text>
+<text x="22" y="1010" font-size="10.5" class="fn">Left: wire number as printed (grey), the cabinet wiring of a connector pin, the terminal or pin where the core leaves the cabinet. Middle: the bundle legs of scheme_3d/bundles.csv it runs through.</text>
+<text x="22" y="1026" font-size="10.5" class="fn">Right: the far terminal and its device. Routes are estimated (unseen legs ±200 mm); the 3D (three-dimensional) routes are in viewer/index.html.</text>
+<text x="22" y="1042" font-size="10.5" class="fn">Not drawn: 2 rows of merged_cores.csv (power 37, control 185), the same conductor as a drawn core or a superseded line; see netlist/merged_conflicts.csv.</text>
+<text x="22" y="1058" font-size="10.5" class="fn">Not drawn either: 13 machine wires (thread and line of its wires file) whose two ends sit at one item of the 3D scheme (a suppressor at its magnet, a bridge inside one device, X8 at S12), so no bundle carries them; length [?]:</text>
+<text x="34" y="1074" font-size="10.5" class="fn">control 89 Y01 + -&gt; V01 1; control 90 V01 2 -&gt; Y01 -; control 95 Y14 + -&gt; V14 1; control 96 V14 2 -&gt; Y14 -; control 103 Y11 1 -&gt; RC11 1</text>
+<text x="34" y="1090" font-size="10.5" class="fn">control 104 RC11 2 -&gt; Y11 2; control 118 Y10 + -&gt; V10 1; control 119 V10 2 -&gt; R10 1; control 120 R10 2 -&gt; Y10 -; control 148 S10 3A -&gt; S10 1A</text>
+<text x="34" y="1106" font-size="10.5" class="fn">control 158 S11 3A -&gt; S11 1A; control 173 X8 4 -&gt; S12 2; control 174 S12 1 -&gt; X8 1</text>
+</svg>

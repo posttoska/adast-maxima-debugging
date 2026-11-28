@@ -1,4 +1,4 @@
-contact_check electrical.glb: 485 items, 34 legs, FAIL 0; rules gap <= 1.0 mm, overlap <= 0.5 mm3 outside named passes, free span <= 300.0 mm, enclosure walls {'housing.cabinet': 2.0, 'housing.console': 2.0} mm (estimated), no item in the 15 stage-1 reserved spaces
+contact_check electrical.glb: 489 items, 34 legs, FAIL 0; rules gap <= 1.0 mm, overlap <= 0.5 mm3 outside named passes, free span <= 300.0 mm, enclosure walls {'housing.cabinet': 2.0, 'housing.console': 2.0} mm (estimated), no item in the 15 stage-1 reserved spaces
 PASS electrical.clip.B1-E4.c0 touches housing.console, electrical.bundle.B1-E4.s1, electrical.bundle.B1-E4.s0
 PASS electrical.clip.B1-E4.c1 touches housing.console, electrical.bundle.B1-E4.s1
 PASS electrical.clip.B1-E4.c2 touches housing.console, electrical.bundle.B1-E4.s2, electrical.bundle.B1-E4.s1
@@ -77,16 +77,16 @@ PASS electrical.clip.B2.c9 touches frame.foot_left, frame.support_left, floor.Z0
 PASS electrical.clip.B3-M3.c0 touches floor.Z0, electrical.bundle.B3.s4, electrical.bundle.B3-M3.s1, electrical.bundle.B3-M3.s0
 PASS electrical.clip.B3-M3.c1 touches floor.Z0, electrical.bundle.B3-M3.s1
 PASS electrical.clip.B3-M3.c10 touches floor.Z0, electrical.bundle.B3-M3.s3
-PASS electrical.clip.B3-M3.c11 touches floor.Z0, electrical.bundle.B3-M3.s3
-PASS electrical.clip.B3-M3.c12 touches floor.Z0, electrical.bundle.B3-M3.s3
-PASS electrical.clip.B3-M3.c13 touches safety_sensors.M3, electrical.bundle.B3-M3.s4
-PASS electrical.clip.B3-M3.c14 touches safety_sensors.M3, electrical.bundle.B3-M3.s4
+PASS electrical.clip.B3-M3.c11 touches floor.Z0, electrical.bundle.B3-M3.s4, electrical.bundle.B3-M3.s3
+PASS electrical.clip.B3-M3.c12 touches safety_sensors.M3, electrical.bundle.B3-M3.s7, electrical.bundle.B3-M3.s6
+PASS electrical.clip.B3-M3.c13 touches safety_sensors.M3, electrical.bundle.B3-M3.s8, electrical.bundle.B3-M3.s7
+PASS electrical.clip.B3-M3.c14 touches safety_sensors.M3, electrical.bundle.B3-M3.s8
 PASS electrical.clip.B3-M3.c2 touches floor.Z0, electrical.bundle.B3-M3.s2
 PASS electrical.clip.B3-M3.c3 touches floor.Z0, electrical.bundle.B3-M3.s2
 PASS electrical.clip.B3-M3.c4 touches floor.Z0, electrical.bundle.B3-M3.s2
 PASS electrical.clip.B3-M3.c5 touches floor.Z0, electrical.bundle.B3-M3.s2
 PASS electrical.clip.B3-M3.c6 touches floor.Z0, electrical.bundle.B3-M3.s2
-PASS electrical.clip.B3-M3.c7 touches floor.Z0, electrical.bundle.B3-M3.s2
+PASS electrical.clip.B3-M3.c7 touches floor.Z0, electrical.bundle.B3-M3.s3
 PASS electrical.clip.B3-M3.c8 touches floor.Z0, electrical.bundle.B3-M3.s3
 PASS electrical.clip.B3-M3.c9 touches floor.Z0, electrical.bundle.B3-M3.s3
 PASS electrical.clip.B3-Y3.c0 touches frame.table, electrical.bundle.B3.s8, electrical.bundle.B3-Y3.s1, electrical.bundle.B3-Y3.s0
@@ -277,7 +277,7 @@ PASS electrical.dev.white_box touches housing.console
 PASS electrical.mark.BR40 touches backgauge.encoder_BR40, electrical.clip.B2.c19, electrical.bundle.B2.s9, electrical.bundle.B2.s8
 PASS electrical.mark.M1 touches knife.m1_motor, electrical.bundle.B4.s15
 PASS electrical.mark.M2 touches backgauge.M2, electrical.bundle.B3.s13
-PASS electrical.mark.M3 touches safety_sensors.M3, electrical.bundle.B3-M3.s4
+PASS electrical.mark.M3 touches safety_sensors.M3, electrical.bundle.B3-M3.s8
 PASS electrical.mark.S10 touches safety_sensors.S10, frame.table, electrical.bundle.B2-F.s4
 PASS electrical.mark.S11 touches safety_sensors.S11, frame.table, electrical.bundle.B2-S11.s2
 PASS electrical.mark.S12 touches safety_sensors.S12, knife.gear_box, electrical.bundle.B4-K.s3
@@ -362,7 +362,7 @@ PASS MARKER S30 anchor body.S30 0.0 mm from safety_sensors.S30; mark.S30 0.0 mm 
 PASS MARKER M3 anchor body.M3 0.0 mm from safety_sensors.M3; mark.M3 0.0 mm from it, 0.0 mm from safety_sensors.M3; anchor to item 124.9 mm
 PASS MARKER Y3 anchor body.Y3 0.0 mm from safety_sensors.Y3; mark.Y3 0.0 mm from it, 0.0 mm from safety_sensors.Y3; anchor to item 24.9 mm
 PASS MARKER M1 anchor motor.M1 0.0 mm from knife.m1_motor; mark.M1 0.0 mm from it, 0.0 mm from knife.m1_motor; anchor to item 112.4 mm
-PASS MARKER Y10 anchor clutch.Y10 0.0 mm from knife.clutch_y10; mark.Y10 100.0 mm from it, 0.0 mm from knife.slip_rings; anchor to item 156.8 mm (marker on the -z face of knife.slip_rings; anchor to marker 157 mm; exception: marker at the slip rings, Y10's electrical feed point (section 22); anchor inside the clutch)
+PASS MARKER Y10 anchor clutch.Y10 0.0 mm from knife.clutch_y10; mark.Y10 100.0 mm from it, 0.0 mm from knife.slip_rings; anchor to item 156.8 mm (marker on the -z face of knife.slip_rings; anchor to marker 157 mm; exception: marker at the slip rings, Y10's electrical feed point in the route plan (sections/22_cables_terminals_routes.md); anchor inside the clutch)
 PASS MARKER Y01 anchor magnet.Y01 0.0 mm from knife.y01_magnet; mark.Y01 0.0 mm from it, 0.0 mm from knife.y01_magnet; anchor to item 39.9 mm
 PASS MARKER Y14 anchor brake.Y14 0.0 mm from clamp.brake_y14; mark.Y14 0.0 mm from it, 0.0 mm from clamp.brake_y14; anchor to item 79.9 mm
 PASS MARKER Y11 anchor valve.Y11 0.0 mm from clamp.valve_block_ov2; mark.Y11 0.0 mm from it, 0.0 mm from clamp.valve_block_ov2; anchor to item 59.9 mm
@@ -391,7 +391,7 @@ PASS leg B2-R longest free span 157 mm, ending at (-433, 180, 777)
 PASS leg B2-S24 longest free span 75 mm, ending at (-163, 340, 736)
 PASS leg B3 longest free span 276 mm, ending at (-96, 1680, 530)
 PASS leg B3-XC3 longest free span 75 mm, ending at (-1240, 110, 396)
-PASS leg B3-M3 longest free span 150 mm, ending at (235, 1119, 126)
+PASS leg B3-M3 longest free span 249 mm, ending at (88, 1109, 160)
 PASS leg B3-Y3 longest free span 275 mm, ending at (-47, 900, 589)
 PASS leg B4 longest free span 170 mm, ending at (1205, 330, 161)
 PASS leg B4-Y11 longest free span 258 mm, ending at (321, 320, 532)
@@ -472,7 +472,7 @@ PASS END B4-SQ2 from junction on B4-SQ1 0.0 mm
 PASS END B4-SQ2 to mark.SQ2 0.4 mm
 PASS END B4-Y01 from junction on B4-K 0.0 mm
 PASS END B4-Y01 to mark.Y01 0.4 mm
-PASS SLACK B5-S28s -> B5-S28r (moves with clamp, stroke 130 mm down): loop 239 mm >= rest gap 80 + stroke 130 = 210 mm; gap at full stroke 108 mm
+PASS SLACK B5-S28s -> B5-S28r (moves with clamp, stroke 130 mm down): loop 239 mm >= straight distance between the loop's ends at rest 80 + stroke 130 = 210 mm; straight distance between the loop's ends at full stroke 108 mm
 INFO backgauge.M2: stage-1 body that touches no other body; our items attach to it, it stays as built
 INFO clamp.valve_block_ov2: stage-1 body that touches no other body; our items attach to it, it stays as built
 INFO safety_sensors.M3: stage-1 body that touches no other body; our items attach to it, it stays as built

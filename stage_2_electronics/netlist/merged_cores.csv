@@ -1,0 +1,93 @@
+thread,line,wire,from_device,from_terminal,from_place,to_device,to_terminal,to_place,connector,pin,route,bundle,drawn,evidence,note
+power,37,,X5,,cabinet,TABLO,-,console,,,B1 > B1-T,B1,"no (same conductor or superseded, see merged_conflicts.csv)",sure,superseded row: its 0 V leaves the cabinet on terminal 45X10
+power,69,,X10,1,cabinet,M1,U2,machine,,,B4,B4,yes,sure,
+power,70,,X10,2,cabinet,M1,V2,machine,,,B4,B4,yes,sure,
+power,71,,X10,3,cabinet,M1,W2,machine,,,B4,B4,yes,sure,
+power,72,,X10,4,cabinet,M1,V1,machine,,,B4,B4,yes,sure,
+power,73,,X10,5,cabinet,M1,W1,machine,,,B4,B4,yes,sure,
+power,74,,X10,6,cabinet,M1,U1,machine,,,B4,B4,yes,sure,
+power,75,,X10,PE,cabinet,M1,PE,machine,,,B4,B4,yes,sure,
+power,88,,XC1,1,cabinet,M2,U1,machine,XC1,1,B3,B3,yes,sure,
+power,90,,XC1,2,cabinet,M2,V1,machine,XC1,2,B3,B3,yes,sure,
+power,92,,XC1,3,cabinet,M2,W1,machine,XC1,3,B3,B3,yes,sure,
+power,94,,XC1,PE,cabinet,M2,PE,machine,XC1,PE,B3,B3,yes,sure,
+power,109,,XC3,1,cabinet,M3,U1,machine,XC3,1,B3-XC3 > B3 > B3-M3,B3,yes,sure,
+power,110,,XC3,2,cabinet,M3,V1,machine,XC3,2,B3-XC3 > B3 > B3-M3,B3,yes,sure,
+power,111,,XC3,3,cabinet,M3,W1,machine,XC3,3,B3-XC3 > B3 > B3-M3,B3,yes,sure,
+power,112,,XC3,PE,cabinet,M3,PE,machine,XC3,PE,B3-XC3 > B3 > B3-M3,B3,yes,sure,
+power,113,,XC3,PE,cabinet,Y3,PE,machine,XC3,PE,B3-XC3 > B3 > B3-Y3,B3,yes,sure,
+power,116,,XC3,5,cabinet,Y3,1,machine,XC3,5,B3-XC3 > B3 > B3-Y3,B3,yes,sure,
+power,117,,Y3,2,machine,XC3,6,cabinet,XC3,6,B3-XC3 > B3 > B3-Y3,B3,yes,sure,
+power,118,,XC3,5,cabinet,C3,1,machine,XC3,5,B3-XC3 > B3 > B3-Y3,B3,yes,[?],"C3 is the suppression capacitor across Y3 (XC3 pins 5-6), at the valve"
+power,119,,C3,2,machine,XC3,6,cabinet,XC3,6,B3-XC3 > B3 > B3-Y3,B3,yes,[?],"C3 is the suppression capacitor across Y3 (XC3 pins 5-6), at the valve"
+control,6,7X10,X10,7,cabinet,E1,1,machine,,,B1 > B1-E1,B1,yes,sure,
+control,7,8X10,X10,8,cabinet,E2,1,machine,,,B1 > B1-E2,B1,yes,sure,
+control,8,11X10,E1,2,machine,X10,11,cabinet,,,B1 > B1-E1,B1,yes,sure,
+control,9,11X10,E2,2,machine,X10,11,cabinet,,,B1 > B1-E2,B1,yes,sure,
+control,12,9X10,X10,9,cabinet,E3,1,machine,,,B1 > B1-E3,B1,yes,sure,
+control,13,10X10,X10,10,cabinet,E4,1,machine,,,B1 > B1-E4,B1,yes,sure,
+control,14,13X10,E3,2,machine,X10,13,cabinet,,,B1 > B1-E3,B1,yes,sure,
+control,15,13X10,E4,2,machine,X10,13,cabinet,,,B1 > B1-E4,B1,yes,sure,
+control,24,14X10,X10,14,cabinet,S5,21,machine,,,B4 > B4-R,B4,yes,sure,
+control,25,15X10,S5,22,machine,X10,15,cabinet,,,B4 > B4-R,B4,yes,sure,
+control,26,15X10,X10,15,cabinet,S1,21,console,,,B1,B1,yes,sure,
+control,27,16X10,S1,22,console,X10,16,cabinet,,,B1,B1,yes,sure,
+control,85,⏚X10,Y01,PE,machine,X10,PE,cabinet,,,B4 > B4-K > B4-Y01,B4,yes,sure,
+control,88,18X10,X10,18,cabinet,Y01,+,machine,,,B4 > B4-K > B4-Y01,B4,yes,sure,
+control,91,19X10,Y01,-,machine,X10,19,cabinet,,,B4 > B4-K > B4-Y01,B4,yes,sure,
+control,94,20X10,X10,20,cabinet,Y14,+,machine,,,B1 > B5 > B5-Y14,B1,yes,sure,
+control,97,21X10,Y14,-,machine,X10,21,cabinet,,,B1 > B5 > B5-Y14,B1,yes,sure,
+control,99,⏚X10,Y11,PE,machine,X10,PE,cabinet,,,B4 > B4-Y11,B4,yes,sure,
+control,102,22X10,X10,22,cabinet,Y11,1,machine,,,B4 > B4-Y11,B4,yes,sure,
+control,105,23X10,Y11,2,machine,X10,23,cabinet,,,B4 > B4-Y11,B4,yes,sure,
+control,112,24X10,X10,24,cabinet,S19,13,machine,,,B4 > B4-R > B4-S19,B4,yes,sure,
+control,113,25X10,S19,14,machine,X10,25,cabinet,,,B4 > B4-R > B4-S19,B4,yes,sure,
+control,114,25X10,X10,25,cabinet,S5,13,machine,,,B4 > B4-R,B4,yes,sure,
+control,115,26X10,S5,14,machine,X10,26,cabinet,,,B4 > B4-R,B4,yes,sure,
+control,117,27X10,X10,27,cabinet,Y10,+,machine,,,B4 > B4-R > B4-Y10,B4,yes,sure,
+control,121,28X10,Y10,-,machine,X10,28,cabinet,,,B4 > B4-R > B4-Y10,B4,yes,sure,
+control,127,31X10,X10,31,cabinet,S30,13,machine,,,B1 > B5,B1,yes,sure,
+control,128,32X10,X10,32,cabinet,S28,13,machine,,,B1 > B5 > B5-S28 > B5-S28s > B5-S28r > B5-S28p,B1,yes,sure,
+control,129,1XC2,XC2,1,cabinet,S24,21,machine,XC2,1,B2 > B2-R > B2-S24,B2,yes,sure,
+control,130,1XC2,XC2,1,cabinet,S27,21,machine,XC2,1,B2 > B2-R,B2,yes,sure,
+control,131,2XC2,S24,22,machine,XC2,2,cabinet,XC2,2,B2 > B2-R > B2-S24,B2,yes,sure,
+control,133,3XC2,S27,22,machine,XC2,3,cabinet,XC2,3,B2 > B2-R,B2,yes,sure,
+control,135,29X10,S30,14,machine,X10,29,cabinet,,,B1 > B5,B1,yes,sure,
+control,137,30X10,S28,14,machine,X10,30,cabinet,,,B1 > B5 > B5-S28 > B5-S28s > B5-S28r > B5-S28p,B1,yes,sure,
+control,147,4XC2,XC2,4,cabinet,S10,3A,machine,XC2,4,B2 > B2-F,B2,yes,sure,
+control,149,5XC2,S10,2A,machine,XC2,5,cabinet,XC2,5,B2 > B2-F,B2,yes,sure,
+control,151,6XC2,S10,4A,machine,XC2,6,cabinet,XC2,6,B2 > B2-F,B2,yes,sure,
+control,157,7XC2,XC2,7,cabinet,S11,3A,machine,XC2,7,B2 > B2-F > B2-S11,B2,yes,sure,
+control,159,8XC2,S11,2A,machine,XC2,8,cabinet,XC2,8,B2 > B2-F > B2-S11,B2,yes,sure,
+control,161,9XC2,S11,4A,machine,XC2,9,cabinet,XC2,9,B2 > B2-F > B2-S11,B2,yes,sure,
+control,164,2X8,X10,37,cabinet,X8,2,machine,,,B4 > B4-K,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,165,2X8,X8,2,machine,SQ1,4,machine,,,B4-K > B4-SQ1,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,166,1X8,SQ1,1,machine,X8,1,machine,,,B4-SQ1 > B4-K,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,168,3X8,X10,38,cabinet,X8,3,machine,,,B4 > B4-K,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,169,3X8,X8,3,machine,SQ2,4,machine,,,B4-K > B4-SQ1 > B4-SQ2,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,170,1X8,SQ2,1,machine,X8,1,machine,,,B4-SQ2 > B4-SQ1 > B4-K,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,172,4X8,X10,39,cabinet,X8,4,machine,,,B4 > B4-K,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,177,5X8,X10,42,cabinet,X8,5,machine,,,B4 > B4-K,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,178,5X8,X8,5,machine,S13,2,machine,,,B4-K > B4-S13,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,179,1X8,S13,1,machine,X8,1,machine,,,B4-S13 > B4-K,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,181,6X8,X10,40,cabinet,X8,6,machine,,,B4 > B4-K,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,182,6X8,X8,6,machine,S14,2,machine,,,B4-K > B4-S14,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,183,1X8,S14,1,machine,X8,1,machine,,,B4-S14 > B4-K,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,184,1X8,X8,1,machine,X10,33,cabinet,,,B4 > B4-K,B4,yes,sure,X8 sits with the knife sensors; leg B4-K carries them 'via X8' (X8 place [?])
+control,185,33X10,X10,33,cabinet,TABLO,+24V,console,,,B1 > B1-T,B1,"no (same conductor or superseded, see merged_conflicts.csv)",sure,
+control,196,43X10,X10,43,cabinet,S30,21,machine,,,B1 > B5,B1,yes,sure,
+control,197,34X10,S30,22,machine,X10,34,cabinet,,,B1 > B5,B1,yes,sure,
+control,201,44X10,X10,44,cabinet,S19,21,machine,,,B4 > B4-R > B4-S19,B4,yes,sure,
+control,202,36X10,S19,22,machine,X10,36,cabinet,,,B4 > B4-R > B4-S19,B4,yes,sure,
+plc_drive,2,33X10,X10,33,cabinet,TABLO,+24V,console,,,B1 > B1-T,B1,yes,sure,
+plc_drive,3,45X10,X10,45,cabinet,TABLO,-,console,,,B1 > B1-T,B1,yes,sure,
+plc_drive,5,⏚X10,X10,PE,cabinet,TABLO,PE,console,,,B1 > B1-T,B1,yes,sure,
+plc_drive,6,3XC70,XC60,2,cabinet,XC70,3,console,XC70,3,B1-PLC > B1 > B1-T,B1,yes,sure,XC70 is the console plug of the TABLO link; XC60 is the PLC's port of the TABLO link
+plc_drive,7,2XC70,XC60,3,cabinet,XC70,2,console,XC70,2,B1-PLC > B1 > B1-T,B1,yes,sure,XC70 is the console plug of the TABLO link; XC60 is the PLC's port of the TABLO link
+plc_drive,8,5XC70,XC60,5,cabinet,XC70,5,console,XC70,5,B1-PLC > B1 > B1-T,B1,yes,sure,XC70 is the console plug of the TABLO link; XC60 is the PLC's port of the TABLO link
+plc_drive,9,,XC60,shell,cabinet,XC70,shell,console,XC70,shell,B1-PLC > B1 > B1-T,B1,yes,[?],XC70 is the console plug of the TABLO link; XC60 is the PLC's port of the TABLO link
+plc_drive,22,,BR40,I,machine,XC4,1,cabinet,XC4,1,B2-XC4 > B2,B2,yes,sure,
+plc_drive,23,,BR40,B,machine,XC4,2,cabinet,XC4,2,B2-XC4 > B2,B2,yes,sure,
+plc_drive,24,,BR40,A,machine,XC4,3,cabinet,XC4,3,B2-XC4 > B2,B2,yes,sure,
+plc_drive,25,,XC4,4,cabinet,BR40,-,machine,XC4,4,B2-XC4 > B2,B2,yes,sure,
+plc_drive,26,,XC4,5,cabinet,BR40,+,machine,XC4,5,B2-XC4 > B2,B2,yes,sure,

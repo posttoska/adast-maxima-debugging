@@ -1,0 +1,479 @@
+contact_check electrical.glb: 489 items, 34 legs, FAIL 0; rules gap <= 1.0 mm, overlap <= 0.5 mm3 outside named passes, free span <= 300.0 mm, enclosure walls {'housing.cabinet': 2.0, 'housing.console': 2.0} mm (estimated), no item in the 15 stage-1 reserved spaces
+PASS electrical.clip.B1-E4.c0 touches housing.console, electrical.bundle.B1-E4.s1, electrical.bundle.B1-E4.s0
+PASS electrical.clip.B1-E4.c1 touches housing.console, electrical.bundle.B1-E4.s1
+PASS electrical.clip.B1-E4.c2 touches housing.console, electrical.bundle.B1-E4.s2, electrical.bundle.B1-E4.s1
+PASS electrical.clip.B1.c0 touches housing.cabinet, electrical.bundle.B1.s2
+PASS electrical.clip.B1.c1 touches housing.cabinet, electrical.bundle.B1.s3
+PASS electrical.clip.B1.c10 touches housing.console, electrical.bundle.B1.s8
+PASS electrical.clip.B1.c11 touches housing.console, electrical.bundle.B1.s8
+PASS electrical.clip.B1.c12 touches housing.console, electrical.bundle.B1.s8
+PASS electrical.clip.B1.c13 touches housing.console, electrical.bundle.B1.s8
+PASS electrical.clip.B1.c14 touches housing.console, electrical.bundle.B1.s8
+PASS electrical.clip.B1.c15 touches housing.console, electrical.bundle.B1.s8
+PASS electrical.clip.B1.c16 touches housing.console, electrical.bundle.B1.s8
+PASS electrical.clip.B1.c17 touches housing.console, electrical.bundle.B1.s8
+PASS electrical.clip.B1.c18 touches housing.console, electrical.bundle.B1.s8
+PASS electrical.clip.B1.c19 touches housing.console, electrical.bundle.B1.s8, electrical.bundle.B1-E4.s0
+PASS electrical.clip.B1.c2 touches housing.cabinet, electrical.bundle.B1.s3
+PASS electrical.clip.B1.c20 touches housing.console, electrical.bundle.B1.s9
+PASS electrical.clip.B1.c3 touches housing.left_side_panel_front, electrical.bundle.B1.s3
+PASS electrical.clip.B1.c4 touches housing.left_side_panel_front, electrical.bundle.B1.s3
+PASS electrical.clip.B1.c5 touches frame.column_left, electrical.bundle.B1.s4
+PASS electrical.clip.B1.c6 touches frame.column_left, electrical.bundle.B1.s4
+PASS electrical.clip.B1.c7 touches frame.column_left, electrical.bundle.B1.s4
+PASS electrical.clip.B1.c8 touches housing.console, electrical.bundle.B1.s6, electrical.bundle.B1.s5, electrical.bundle.B1-E3.s0
+PASS electrical.clip.B1.c9 touches housing.console, electrical.bundle.B1.s8, electrical.bundle.B1.s7
+PASS electrical.clip.B2-F.c0 touches frame.table, electrical.bundle.B2.s7, electrical.bundle.B2.s6, electrical.bundle.B2-F.s1, electrical.bundle.B2-F.s0
+PASS electrical.clip.B2-F.c1 touches frame.table, electrical.bundle.B2-F.s1
+PASS electrical.clip.B2-F.c2 touches frame.table, electrical.bundle.B2-F.s1
+PASS electrical.clip.B2-F.c3 touches frame.table, electrical.bundle.B2-F.s2
+PASS electrical.clip.B2-F.c4 touches frame.table, electrical.bundle.B2-F.s2
+PASS electrical.clip.B2-R.c0 touches frame.foot_left, floor.Z0, electrical.bundle.B2.s5, electrical.bundle.B2.s4, electrical.bundle.B2-R.s2, electrical.bundle.B2-R.s1
+PASS electrical.clip.B2-R.c1 touches frame.foot_left, floor.Z0, electrical.bundle.B2-R.s2
+PASS electrical.clip.B2-R.c10 touches frame.table, electrical.bundle.B2-R.s4
+PASS electrical.clip.B2-R.c11 touches frame.table, electrical.bundle.B2-R.s5
+PASS electrical.clip.B2-R.c12 touches frame.table, electrical.bundle.B2-R.s5
+PASS electrical.clip.B2-R.c13 touches frame.table, electrical.bundle.B2-R.s5
+PASS electrical.clip.B2-R.c14 touches frame.table, electrical.bundle.B2-R.s5
+PASS electrical.clip.B2-R.c15 touches frame.table, electrical.bundle.B3-Y3.s5, electrical.bundle.B3-Y3.s1, electrical.bundle.B2-R.s5
+PASS electrical.clip.B2-R.c16 touches frame.table, electrical.bundle.B2-R.s5
+PASS electrical.clip.B2-R.c17 touches frame.table, electrical.bundle.B2-R.s5
+PASS electrical.clip.B2-R.c18 touches frame.table, electrical.bundle.B2-R.s5
+PASS electrical.clip.B2-R.c2 touches frame.foot_left, floor.Z0, electrical.bundle.B2-R.s2
+PASS electrical.clip.B2-R.c3 touches frame.foot_left, floor.Z0, electrical.bundle.B2-R.s2
+PASS electrical.clip.B2-R.c4 touches frame.support_left, electrical.bundle.B2-R.s3
+PASS electrical.clip.B2-R.c5 touches frame.support_left, electrical.bundle.B2-R.s3
+PASS electrical.clip.B2-R.c6 touches frame.support_left, electrical.bundle.B2-R.s3
+PASS electrical.clip.B2-R.c7 touches frame.support_left, electrical.bundle.B2-R.s3
+PASS electrical.clip.B2-R.c8 touches frame.support_left, electrical.bundle.B2-R.s3
+PASS electrical.clip.B2-R.c9 touches frame.table, electrical.bundle.B2-R.s4
+PASS electrical.clip.B2-S11.c0 touches frame.table, electrical.bundle.B2-S11.s0, electrical.bundle.B2-F.s4, electrical.bundle.B2-F.s3, electrical.bundle.B2-F.s2
+PASS electrical.clip.B2-S11.c1 touches frame.table, electrical.bundle.B2-S11.s0
+PASS electrical.clip.B2-S11.c2 touches frame.table, electrical.bundle.B2-S11.s0
+PASS electrical.clip.B2-S11.c3 touches frame.table, electrical.bundle.B2-S11.s0
+PASS electrical.clip.B2-S11.c4 touches frame.table, electrical.bundle.B2-S11.s0
+PASS electrical.clip.B2-S24.c0 touches frame.table, electrical.bundle.B2-S24.s1, electrical.bundle.B2-S24.s0, electrical.bundle.B2-R.s5
+PASS electrical.clip.B2-S24.c1 touches frame.table, electrical.bundle.B2-S24.s1
+PASS electrical.clip.B2.c0 touches frame.support_left, electrical.bundle.B2.s2
+PASS electrical.clip.B2.c1 touches frame.support_left, electrical.bundle.B2.s2
+PASS electrical.clip.B2.c10 touches frame.support_left, frame.base_front, electrical.bundle.B2.s5
+PASS electrical.clip.B2.c11 touches frame.support_left, frame.base_front, electrical.bundle.B2.s5
+PASS electrical.clip.B2.c12 touches frame.support_left, frame.base_front, electrical.bundle.B2.s5
+PASS electrical.clip.B2.c13 touches frame.support_left, frame.base_front, electrical.bundle.B2.s5
+PASS electrical.clip.B2.c14 touches frame.support_left, frame.base_front, electrical.bundle.B2.s5
+PASS electrical.clip.B2.c15 touches frame.table, electrical.bundle.B2.s6
+PASS electrical.clip.B2.c16 touches frame.table, electrical.bundle.B2.s7
+PASS electrical.clip.B2.c17 touches frame.table, electrical.bundle.B2.s7
+PASS electrical.clip.B2.c18 touches frame.table, electrical.bundle.B2.s7
+PASS electrical.clip.B2.c19 touches electrical.mark.BR40, electrical.bundle.B2.s9, electrical.bundle.B2.s8
+PASS electrical.clip.B2.c2 touches frame.support_left, electrical.bundle.B2.s2
+PASS electrical.clip.B2.c3 touches frame.support_left, electrical.bundle.B2.s2
+PASS electrical.clip.B2.c4 touches frame.foot_left, frame.support_left, electrical.bundle.B2.s3, electrical.bundle.B2.s2
+PASS electrical.clip.B2.c5 touches frame.foot_left, frame.support_left, floor.Z0, electrical.bundle.B2.s3
+PASS electrical.clip.B2.c6 touches frame.foot_left, frame.support_left, floor.Z0, electrical.bundle.B2.s4, electrical.bundle.B2.s3
+PASS electrical.clip.B2.c7 touches frame.foot_left, frame.support_left, floor.Z0, electrical.bundle.B2.s4
+PASS electrical.clip.B2.c8 touches frame.foot_left, frame.support_left, floor.Z0, electrical.bundle.B2.s4
+PASS electrical.clip.B2.c9 touches frame.foot_left, frame.support_left, floor.Z0, electrical.bundle.B2.s4
+PASS electrical.clip.B3-M3.c0 touches floor.Z0, electrical.bundle.B3.s4, electrical.bundle.B3-M3.s1, electrical.bundle.B3-M3.s0
+PASS electrical.clip.B3-M3.c1 touches floor.Z0, electrical.bundle.B3-M3.s1
+PASS electrical.clip.B3-M3.c10 touches floor.Z0, electrical.bundle.B3-M3.s3
+PASS electrical.clip.B3-M3.c11 touches floor.Z0, electrical.bundle.B3-M3.s4, electrical.bundle.B3-M3.s3
+PASS electrical.clip.B3-M3.c12 touches safety_sensors.M3, electrical.bundle.B3-M3.s7, electrical.bundle.B3-M3.s6
+PASS electrical.clip.B3-M3.c13 touches safety_sensors.M3, electrical.bundle.B3-M3.s8, electrical.bundle.B3-M3.s7
+PASS electrical.clip.B3-M3.c14 touches safety_sensors.M3, electrical.bundle.B3-M3.s8
+PASS electrical.clip.B3-M3.c2 touches floor.Z0, electrical.bundle.B3-M3.s2
+PASS electrical.clip.B3-M3.c3 touches floor.Z0, electrical.bundle.B3-M3.s2
+PASS electrical.clip.B3-M3.c4 touches floor.Z0, electrical.bundle.B3-M3.s2
+PASS electrical.clip.B3-M3.c5 touches floor.Z0, electrical.bundle.B3-M3.s2
+PASS electrical.clip.B3-M3.c6 touches floor.Z0, electrical.bundle.B3-M3.s2
+PASS electrical.clip.B3-M3.c7 touches floor.Z0, electrical.bundle.B3-M3.s3
+PASS electrical.clip.B3-M3.c8 touches floor.Z0, electrical.bundle.B3-M3.s3
+PASS electrical.clip.B3-M3.c9 touches floor.Z0, electrical.bundle.B3-M3.s3
+PASS electrical.clip.B3-Y3.c0 touches frame.table, electrical.bundle.B3.s8, electrical.bundle.B3-Y3.s1, electrical.bundle.B3-Y3.s0
+PASS electrical.clip.B3-Y3.c1 touches frame.table, electrical.bundle.B3-Y3.s5
+PASS electrical.clip.B3-Y3.c2 touches frame.table, electrical.bundle.B3-Y3.s6, electrical.bundle.B3-Y3.s5
+PASS electrical.clip.B3.c0 touches housing.cabinet, electrical.bundle.B3.s2
+PASS electrical.clip.B3.c1 touches housing.cabinet, electrical.bundle.B3.s2
+PASS electrical.clip.B3.c10 touches frame.support_left, electrical.bundle.B3.s6
+PASS electrical.clip.B3.c11 touches frame.support_left, electrical.bundle.B3.s6
+PASS electrical.clip.B3.c12 touches frame.support_left, electrical.bundle.B3.s6
+PASS electrical.clip.B3.c13 touches frame.support_left, electrical.bundle.B3.s6
+PASS electrical.clip.B3.c14 touches frame.support_left, electrical.bundle.B3.s6
+PASS electrical.clip.B3.c15 touches frame.table, electrical.bundle.B3.s7
+PASS electrical.clip.B3.c16 touches frame.table, electrical.bundle.B3.s8, electrical.bundle.B3.s7
+PASS electrical.clip.B3.c17 touches frame.table, electrical.bundle.B3.s8
+PASS electrical.clip.B3.c18 touches frame.table, electrical.bundle.B3.s8
+PASS electrical.clip.B3.c19 touches frame.table, electrical.bundle.B3.s8
+PASS electrical.clip.B3.c2 touches housing.cabinet, electrical.bundle.B3.s2
+PASS electrical.clip.B3.c20 touches frame.table, electrical.bundle.B3.s8
+PASS electrical.clip.B3.c21 touches frame.table, electrical.bundle.B3.s8
+PASS electrical.clip.B3.c22 touches frame.table, electrical.bundle.B3.s8
+PASS electrical.clip.B3.c23 touches frame.table, electrical.bundle.B3.s8
+PASS electrical.clip.B3.c24 touches frame.table, electrical.bundle.B3.s8
+PASS electrical.clip.B3.c25 touches frame.table, electrical.bundle.B3.s8
+PASS electrical.clip.B3.c26 touches frame.table, electrical.bundle.B3.s9
+PASS electrical.clip.B3.c27 touches frame.table, electrical.bundle.B3.s9, electrical.bundle.B3.s10
+PASS electrical.clip.B3.c28 touches backgauge.M2, electrical.bundle.B3.s12, electrical.bundle.B3.s11
+PASS electrical.clip.B3.c29 touches backgauge.M2, electrical.bundle.B3.s13, electrical.bundle.B3.s12
+PASS electrical.clip.B3.c3 touches housing.cabinet, electrical.bundle.B3.s3, electrical.bundle.B3.s2
+PASS electrical.clip.B3.c30 touches backgauge.M2, electrical.bundle.B3.s13
+PASS electrical.clip.B3.c4 touches housing.cabinet, floor.Z0, electrical.bundle.B3.s3
+PASS electrical.clip.B3.c5 touches floor.Z0, electrical.bundle.B3.s4
+PASS electrical.clip.B3.c6 touches frame.foot_left, frame.support_left, floor.Z0, electrical.bundle.B3.s4
+PASS electrical.clip.B3.c7 touches frame.foot_left, frame.support_left, floor.Z0, electrical.bundle.B3.s4
+PASS electrical.clip.B3.c8 touches frame.foot_left, frame.support_left, floor.Z0, electrical.bundle.B3.s4
+PASS electrical.clip.B3.c9 touches frame.foot_left, frame.support_left, floor.Z0, electrical.bundle.B3.s4
+PASS electrical.clip.B4-K.c0 touches frame.foot_right, frame.support_right, electrical.bundle.B4.s13, electrical.bundle.B4-K.s1, electrical.bundle.B4-K.s0
+PASS electrical.clip.B4-K.c1 touches frame.support_right, electrical.bundle.B4-K.s1
+PASS electrical.clip.B4-K.c2 touches frame.support_right, electrical.bundle.B4-K.s1
+PASS electrical.clip.B4-K.c3 touches frame.support_right, electrical.bundle.B4-K.s1
+PASS electrical.clip.B4-K.c4 touches frame.support_right, electrical.bundle.B4-K.s1
+PASS electrical.clip.B4-K.c5 touches frame.support_right, electrical.bundle.B4-K.s1
+PASS electrical.clip.B4-K.c6 touches knife.lock_cover, electrical.bundle.B4-S14.s0, electrical.bundle.B4-S13.s0, electrical.bundle.B4-K.s2
+PASS electrical.clip.B4-R.c0 touches floor.Z0, electrical.bundle.B4.s14, electrical.bundle.B4.s13, electrical.bundle.B4-R.s1, electrical.bundle.B4-R.s0
+PASS electrical.clip.B4-R.c1 touches floor.Z0, electrical.bundle.B4-R.s1
+PASS electrical.clip.B4-R.c2 touches floor.Z0, electrical.bundle.B4-R.s1
+PASS electrical.clip.B4-R.c3 touches floor.Z0, electrical.bundle.B4-R.s3, electrical.bundle.B4-R.s2
+PASS electrical.clip.B4-R.c4 touches housing.belt_pulley_cover, electrical.bundle.B4-R.s3
+PASS electrical.clip.B4-R.c5 touches housing.belt_pulley_cover, electrical.bundle.B4-R.s3
+PASS electrical.clip.B4-S19.c0 touches frame.foot_right, floor.Z0, electrical.bundle.B4-S19.s1, electrical.bundle.B4-S19.s0, electrical.bundle.B4-R.s1
+PASS electrical.clip.B4-S19.c1 touches frame.support_right, electrical.bundle.B4-S19.s2
+PASS electrical.clip.B4-S19.c2 touches frame.support_right, electrical.bundle.B4-S19.s2
+PASS electrical.clip.B4-S19.c3 touches frame.support_right, electrical.bundle.B4-S19.s2
+PASS electrical.clip.B4-Y10.c0 touches housing.belt_pulley_cover, electrical.bundle.B4-Y10.s1, electrical.bundle.B4-Y10.s0, electrical.bundle.B4-R.s3
+PASS electrical.clip.B4-Y10.c1 touches housing.belt_pulley_cover, electrical.bundle.B4-Y10.s1
+PASS electrical.clip.B4-Y10.c2 touches housing.belt_pulley_cover, electrical.bundle.B4-Y10.s2
+PASS electrical.clip.B4-Y10.c3 touches housing.belt_pulley_cover, electrical.bundle.B4-Y10.s2
+PASS electrical.clip.B4-Y10.c4 touches housing.belt_pulley_cover, electrical.bundle.B4-Y10.s2
+PASS electrical.clip.B4-Y11.c0 touches frame.table, electrical.bundle.B4.s10, electrical.bundle.B4-Y11.s1, electrical.bundle.B4-Y11.s0
+PASS electrical.clip.B4-Y11.c1 touches frame.table, electrical.bundle.B4-Y11.s1
+PASS electrical.clip.B4-Y11.c2 touches frame.table, electrical.bundle.B4-Y11.s2, electrical.bundle.B4-Y11.s1
+PASS electrical.clip.B4.c0 touches housing.cabinet, electrical.bundle.B4.s2
+PASS electrical.clip.B4.c1 touches housing.cabinet, electrical.bundle.B4.s2
+PASS electrical.clip.B4.c10 touches floor.Z0, electrical.bundle.B4.s5
+PASS electrical.clip.B4.c11 touches floor.Z0, electrical.bundle.B4.s6
+PASS electrical.clip.B4.c12 touches floor.Z0, electrical.bundle.B4.s6
+PASS electrical.clip.B4.c13 touches floor.Z0, electrical.bundle.B4.s6
+PASS electrical.clip.B4.c14 touches floor.Z0, electrical.bundle.B4.s6
+PASS electrical.clip.B4.c15 touches floor.Z0, electrical.bundle.B4.s6
+PASS electrical.clip.B4.c16 touches floor.Z0, electrical.bundle.B4.s7
+PASS electrical.clip.B4.c17 touches frame.base_front, electrical.bundle.B4.s8
+PASS electrical.clip.B4.c18 touches frame.base_front, electrical.bundle.B4.s8
+PASS electrical.clip.B4.c19 touches frame.base_front, electrical.bundle.B4.s8
+PASS electrical.clip.B4.c2 touches housing.cabinet, electrical.bundle.B4.s3
+PASS electrical.clip.B4.c20 touches frame.base_front, electrical.bundle.B4.s8
+PASS electrical.clip.B4.c21 touches frame.base_front, electrical.bundle.B4.s8
+PASS electrical.clip.B4.c22 touches frame.table, electrical.bundle.B4.s9
+PASS electrical.clip.B4.c23 touches frame.table, electrical.bundle.B4.s9, electrical.bundle.B4.s10
+PASS electrical.clip.B4.c24 touches frame.table, electrical.bundle.B4.s10
+PASS electrical.clip.B4.c25 touches frame.table, electrical.bundle.B4.s10
+PASS electrical.clip.B4.c26 touches frame.table, electrical.bundle.B4.s10
+PASS electrical.clip.B4.c27 touches frame.table, electrical.bundle.B4.s10
+PASS electrical.clip.B4.c28 touches frame.table, electrical.bundle.B4.s10
+PASS electrical.clip.B4.c29 touches frame.table, electrical.bundle.B4.s10
+PASS electrical.clip.B4.c3 touches housing.cabinet, electrical.bundle.B4.s4, electrical.bundle.B4.s3
+PASS electrical.clip.B4.c30 touches frame.table, electrical.bundle.B4.s10
+PASS electrical.clip.B4.c31 touches frame.support_right, electrical.bundle.B4.s11
+PASS electrical.clip.B4.c32 touches frame.support_right, electrical.bundle.B4.s11
+PASS electrical.clip.B4.c33 touches frame.support_right, electrical.bundle.B4.s11
+PASS electrical.clip.B4.c34 touches frame.support_right, electrical.bundle.B4.s11
+PASS electrical.clip.B4.c35 touches frame.support_right, electrical.bundle.B4.s11
+PASS electrical.clip.B4.c36 touches frame.support_right, electrical.bundle.B4.s11
+PASS electrical.clip.B4.c37 touches frame.foot_right, frame.support_right, floor.Z0, electrical.bundle.B4.s12
+PASS electrical.clip.B4.c38 touches frame.foot_right, frame.support_right, floor.Z0, electrical.bundle.B4.s13, electrical.bundle.B4.s12
+PASS electrical.clip.B4.c39 touches frame.foot_right, frame.support_right, floor.Z0, electrical.bundle.B4.s13
+PASS electrical.clip.B4.c4 touches housing.cabinet, electrical.bundle.B4.s4
+PASS electrical.clip.B4.c40 touches frame.foot_right, frame.support_right, floor.Z0, electrical.bundle.B4.s13
+PASS electrical.clip.B4.c41 touches frame.foot_right, frame.support_right, floor.Z0, electrical.bundle.B4.s13
+PASS electrical.clip.B4.c42 touches frame.foot_right, frame.support_right, floor.Z0, electrical.bundle.B4.s14, electrical.bundle.B4.s13
+PASS electrical.clip.B4.c43 touches floor.Z0, electrical.bundle.B4.s14
+PASS electrical.clip.B4.c5 touches housing.cabinet, electrical.bundle.B4.s4
+PASS electrical.clip.B4.c6 touches housing.cabinet, electrical.bundle.B4.s4
+PASS electrical.clip.B4.c7 touches housing.cabinet, electrical.bundle.B4.s4
+PASS electrical.clip.B4.c8 touches housing.cabinet, electrical.bundle.B4.s4
+PASS electrical.clip.B4.c9 touches housing.cabinet, electrical.bundle.B4.s4
+PASS electrical.clip.B5-S28.c0 touches frame.crossbar, electrical.pass.H2, electrical.bundle.B5.s6, electrical.bundle.B5-S28.s1, electrical.bundle.B5-S28.s0
+PASS electrical.clip.B5-S28.c1 touches clamp.guide_left, electrical.bundle.B5-S28.s1
+PASS electrical.clip.B5-S28.c2 touches clamp.guide_left, electrical.bundle.B5-S28.s1
+PASS electrical.clip.B5-S28.c3 touches clamp.guide_left, electrical.bundle.B5-S28s.s0, electrical.bundle.B5-S28.s1
+PASS electrical.clip.B5-S28r.c0 touches clamp.bar, electrical.bundle.B5-S28s.s4, electrical.bundle.B5-S28r.s0
+PASS electrical.clip.B5-S28r.c1 touches clamp.bar, electrical.bundle.B5-S28r.s0
+PASS electrical.clip.B5-S28r.c2 touches clamp.bar, electrical.bundle.B5-S28r.s2
+PASS electrical.clip.B5.c0 touches housing.cabinet, electrical.bundle.B5.s2, electrical.bundle.B5.s1
+PASS electrical.clip.B5.c1 touches housing.cabinet, electrical.bundle.B5.s2
+PASS electrical.clip.B5.c10 touches frame.crossbar, electrical.bundle.B5.s8
+PASS electrical.clip.B5.c11 touches frame.crossbar, electrical.bundle.B5.s8
+PASS electrical.clip.B5.c12 touches frame.crossbar, electrical.bundle.B5.s8
+PASS electrical.clip.B5.c13 touches frame.crossbar, electrical.bundle.B5.s8
+PASS electrical.clip.B5.c14 touches frame.crossbar, electrical.bundle.B5.s8
+PASS electrical.clip.B5.c15 touches frame.crossbar, electrical.bundle.B5.s9, electrical.bundle.B5.s8
+PASS electrical.clip.B5.c16 touches frame.crossbar, electrical.bundle.B5.s9
+PASS electrical.clip.B5.c2 touches housing.cabinet, electrical.bundle.B5.s3, electrical.bundle.B5.s2
+PASS electrical.clip.B5.c3 touches housing.cabinet, frame.column_left, electrical.bundle.B5.s4, electrical.bundle.B5.s3
+PASS electrical.clip.B5.c4 touches frame.column_left, electrical.bundle.B5.s4
+PASS electrical.clip.B5.c5 touches frame.column_left, electrical.bundle.B5.s4
+PASS electrical.clip.B5.c6 touches frame.column_left, electrical.bundle.B5.s5, electrical.bundle.B5.s4
+PASS electrical.clip.B5.c7 touches frame.crossbar, electrical.bundle.B5.s7, electrical.bundle.B5.s6
+PASS electrical.clip.B5.c8 touches frame.crossbar, electrical.bundle.B5.s8, electrical.bundle.B5.s7
+PASS electrical.clip.B5.c9 touches frame.crossbar, electrical.bundle.B5.s8
+PASS electrical.conn.XC1 touches housing.cabinet, electrical.bundle.B3.s0
+PASS electrical.conn.XC2 touches housing.cabinet, electrical.bundle.B2.s0
+PASS electrical.conn.XC3 touches housing.cabinet, electrical.bundle.B3-XC3.s0
+PASS electrical.conn.XC4 touches housing.cabinet, electrical.bundle.B2-XC4.s0
+PASS electrical.dev.BMR1 touches electrical.mount.plate
+PASS electrical.dev.E1 touches housing.console, electrical.pass.H3a, electrical.bundle.B1-E1.s1
+PASS electrical.dev.E2 touches housing.console, electrical.pass.H3b, electrical.bundle.B1-E2.s1
+PASS electrical.dev.E3 touches housing.console, electrical.pass.H4, electrical.bundle.B1-E3.s1
+PASS electrical.dev.E4 touches frame.column_right, electrical.bundle.B1-E4.s2
+PASS electrical.dev.FA1 touches electrical.mount.rail.R4, electrical.dev.KM1B, electrical.dev.FA2
+PASS electrical.dev.FA2 touches electrical.mount.rail.R4, electrical.dev.FA3, electrical.dev.FA1
+PASS electrical.dev.FA3 touches electrical.mount.rail.R4, electrical.dev.undesignated_R4_2, electrical.dev.FA2
+PASS electrical.dev.FA4 touches electrical.mount.rail.R7, electrical.dev.XC7
+PASS electrical.dev.K1 touches electrical.mount.rail.R2, electrical.dev.K2
+PASS electrical.dev.K2 touches electrical.mount.rail.R2, electrical.dev.K1
+PASS electrical.dev.KM1A touches electrical.mount.rail.R4, electrical.dev.QF2, electrical.dev.KM1B
+PASS electrical.dev.KM1B touches electrical.mount.rail.R4, electrical.dev.KM1A, electrical.dev.FA1
+PASS electrical.dev.KM2 touches electrical.mount.rail.R5, electrical.mount.duct.VL, electrical.dev.KM3
+PASS electrical.dev.KM3 touches electrical.mount.rail.R5, electrical.dev.KM4, electrical.dev.KM2
+PASS electrical.dev.KM4 touches electrical.mount.rail.R5, electrical.dev.KM8, electrical.dev.KM3
+PASS electrical.dev.KM6 touches electrical.mount.rail.R5, electrical.dev.KM8, electrical.dev.KM7
+PASS electrical.dev.KM7 touches electrical.mount.rail.R5, electrical.dev.KM6
+PASS electrical.dev.KM8 touches electrical.mount.rail.R5, electrical.dev.KM6, electrical.dev.KM4
+PASS electrical.dev.KT1 touches electrical.mount.rail.R4, electrical.mount.duct.VL, electrical.dev.KT2
+PASS electrical.dev.KT2 touches electrical.mount.rail.R4, electrical.dev.undesignated_R4_1, electrical.dev.KT1
+PASS electrical.dev.PE1 touches electrical.mount.rail.R3, electrical.mount.duct.VL, electrical.dev.X10
+PASS electrical.dev.PE2 touches electrical.mount.rail.R3, electrical.dev.X11, electrical.dev.X10
+PASS electrical.dev.PE3 touches electrical.mount.rail.R7, electrical.dev.XP, electrical.dev.X5
+PASS electrical.dev.PE_stud touches housing.cabinet
+PASS electrical.dev.PLC touches electrical.mount.plate, electrical.bundle.B1-PLC.s0
+PASS electrical.dev.Q1 touches housing.cabinet, electrical.pass.shaft_Q1
+PASS electrical.dev.Q2 touches housing.cabinet, electrical.pass.shaft_Q2
+PASS electrical.dev.QF1 touches electrical.mount.rail.R4, electrical.dev.undesignated_R4_1, electrical.dev.QF2
+PASS electrical.dev.QF2 touches electrical.mount.rail.R4, electrical.dev.QF1, electrical.dev.KM1A
+PASS electrical.dev.R14 touches electrical.mount.plate
+PASS electrical.dev.S1 touches housing.console, electrical.pass.shaft_S1, electrical.bundle.B1.s9
+PASS electrical.dev.S2 touches housing.cabinet, electrical.pass.shaft_S2
+PASS electrical.dev.S4 touches housing.cabinet, electrical.pass.shaft_S4
+PASS electrical.dev.T1 touches housing.cabinet
+PASS electrical.dev.TABLO touches housing.console, electrical.bundle.B1-T.s0
+PASS electrical.dev.UG50 touches electrical.mount.plate
+PASS electrical.dev.UZ1 touches electrical.mount.plate
+PASS electrical.dev.X10 touches electrical.mount.rail.R3, electrical.dev.PE2, electrical.dev.PE1, electrical.bundle.B4.s0, electrical.bundle.B1.s0
+PASS electrical.dev.X11 touches electrical.mount.rail.R3, electrical.dev.PE2
+PASS electrical.dev.X2 touches electrical.mount.plate
+PASS electrical.dev.X5 touches electrical.mount.rail.R7, electrical.dev.XC7, electrical.dev.PE3
+PASS electrical.dev.XC7 touches electrical.mount.rail.R7, electrical.dev.X5, electrical.dev.FA4
+PASS electrical.dev.XP touches electrical.mount.rail.R7, electrical.dev.ZF1, electrical.dev.PE3
+PASS electrical.dev.ZF1 touches electrical.mount.rail.R7, electrical.mount.duct.VL, electrical.dev.XP
+PASS electrical.dev.ZF2 touches electrical.mount.plate
+PASS electrical.dev.door_plate touches housing.cabinet
+PASS electrical.dev.terminal_block_1 touches housing.console
+PASS electrical.dev.terminal_block_2 touches housing.console
+PASS electrical.dev.toggle touches housing.console
+PASS electrical.dev.undesignated_R4_1 touches electrical.mount.rail.R4, electrical.dev.QF1, electrical.dev.KT2
+PASS electrical.dev.undesignated_R4_2 touches electrical.mount.rail.R4, electrical.dev.undesignated_R4_3, electrical.dev.FA3
+PASS electrical.dev.undesignated_R4_3 touches electrical.mount.rail.R4, electrical.dev.undesignated_R4_2
+PASS electrical.dev.white_box touches housing.console
+PASS electrical.mark.BR40 touches backgauge.encoder_BR40, electrical.clip.B2.c19, electrical.bundle.B2.s9, electrical.bundle.B2.s8
+PASS electrical.mark.M1 touches knife.m1_motor, electrical.bundle.B4.s15
+PASS electrical.mark.M2 touches backgauge.M2, electrical.bundle.B3.s13
+PASS electrical.mark.M3 touches safety_sensors.M3, electrical.bundle.B3-M3.s8
+PASS electrical.mark.S10 touches safety_sensors.S10, frame.table, electrical.bundle.B2-F.s4
+PASS electrical.mark.S11 touches safety_sensors.S11, frame.table, electrical.bundle.B2-S11.s2
+PASS electrical.mark.S12 touches safety_sensors.S12, knife.gear_box, electrical.bundle.B4-K.s3
+PASS electrical.mark.S13 touches safety_sensors.S13, knife.gear_box, electrical.bundle.B4-S13.s2
+PASS electrical.mark.S14 touches safety_sensors.S14, electrical.bundle.B4-S14.s1
+PASS electrical.mark.S19 touches safety_sensors.S19, electrical.bundle.B4-S19.s3
+PASS electrical.mark.S24 touches backgauge.S24, electrical.bundle.B2-S24.s3, electrical.bundle.B2-S24.s2
+PASS electrical.mark.S27 touches backgauge.S27, electrical.bundle.B2-R.s7
+PASS electrical.mark.S28 touches clamp.bar, electrical.pass.H6, electrical.bundle.B5-S28r.s3, electrical.bundle.B5-S28p.s0
+PASS electrical.mark.S30 touches safety_sensors.S30, electrical.bundle.B5.s9
+PASS electrical.mark.S5 touches safety_sensors.S5, housing.belt_pulley_cover, electrical.bundle.B4-R.s3
+PASS electrical.mark.SQ1 touches safety_sensors.SQ1, safety_sensors.SQ2, knife.y01_magnet, electrical.bundle.B4-SQ1.s2
+PASS electrical.mark.SQ2 touches safety_sensors.SQ1, safety_sensors.SQ2, knife.lock_cover, electrical.bundle.B4-SQ2.s2
+PASS electrical.mark.Y01 touches knife.y01_magnet, electrical.bundle.B4-Y01.s3
+PASS electrical.mark.Y10 touches knife.flywheel_2, knife.slip_rings, electrical.bundle.B4-Y10.s3
+PASS electrical.mark.Y11 touches clamp.valve_block_ov2, electrical.bundle.B4-Y11.s2
+PASS electrical.mark.Y14 touches clamp.brake_y14, electrical.bundle.B5-Y14.s1
+PASS electrical.mark.Y3 touches safety_sensors.Y3, electrical.bundle.B3-Y3.s7
+PASS electrical.mount.duct.D12 touches electrical.mount.plate, electrical.mount.duct.VR, electrical.mount.duct.VL
+PASS electrical.mount.duct.D23 touches electrical.pass.G2, electrical.pass.G1, electrical.mount.plate, electrical.mount.duct.VR, electrical.mount.duct.VL, electrical.bundle.B4.s1
+PASS electrical.mount.duct.D34 touches electrical.mount.plate, electrical.mount.duct.VR, electrical.mount.duct.VL
+PASS electrical.mount.duct.D45 touches electrical.mount.plate, electrical.mount.duct.VR, electrical.mount.duct.VL
+PASS electrical.mount.duct.D56 touches electrical.mount.plate, electrical.mount.duct.VR, electrical.mount.duct.VL
+PASS electrical.mount.duct.D67 touches electrical.mount.plate, electrical.mount.duct.VR, electrical.mount.duct.VL
+PASS electrical.mount.duct.VL touches electrical.mount.rail.R7, electrical.mount.rail.R5, electrical.mount.rail.R4, electrical.mount.rail.R3, electrical.mount.plate, electrical.mount.duct.D67
+PASS electrical.mount.duct.VR touches electrical.mount.rail.R7, electrical.mount.rail.R5, electrical.mount.rail.R4, electrical.mount.rail.R3, electrical.mount.plate, electrical.mount.duct.D67
+PASS electrical.mount.plate touches housing.cabinet, electrical.pass.G2, electrical.pass.G1, electrical.mount.rail.R7, electrical.mount.rail.R5, electrical.mount.rail.R4
+PASS electrical.mount.rail.R2 touches electrical.mount.plate, electrical.dev.K2, electrical.dev.K1
+PASS electrical.mount.rail.R3 touches electrical.mount.plate, electrical.mount.duct.VR, electrical.mount.duct.VL, electrical.dev.X11, electrical.dev.X10, electrical.dev.PE2
+PASS electrical.mount.rail.R4 touches electrical.mount.plate, electrical.mount.duct.VR, electrical.mount.duct.VL, electrical.dev.undesignated_R4_3, electrical.dev.undesignated_R4_2, electrical.dev.undesignated_R4_1
+PASS electrical.mount.rail.R5 touches electrical.mount.plate, electrical.mount.duct.VR, electrical.mount.duct.VL, electrical.dev.KM8, electrical.dev.KM7, electrical.dev.KM6
+PASS electrical.mount.rail.R7 touches electrical.mount.plate, electrical.mount.duct.VR, electrical.mount.duct.VL, electrical.dev.ZF1, electrical.dev.XP, electrical.dev.XC7
+PASS electrical.pass.G1 touches housing.cabinet, electrical.mount.plate, electrical.mount.duct.D23, electrical.bundle.B1.s2, electrical.bundle.B1.s1
+PASS electrical.pass.G2 touches housing.cabinet, electrical.mount.plate, electrical.mount.duct.D23, electrical.bundle.B4.s2, electrical.bundle.B4.s1
+PASS electrical.pass.H1 touches housing.console, frame.column_left, electrical.bundle.B1.s5, electrical.bundle.B1.s4
+PASS electrical.pass.H10 touches knife.lock_cover, electrical.bundle.B4-SQ2.s1, electrical.bundle.B4-SQ2.s0, electrical.bundle.B4-SQ1.s2, electrical.bundle.B4-SQ1.s1
+PASS electrical.pass.H11 touches knife.lock_cover, electrical.bundle.B4-Y01.s2, electrical.bundle.B4-Y01.s1, electrical.bundle.B4-Y01.s0
+PASS electrical.pass.H2 touches frame.column_left, frame.crossbar, electrical.clip.B5-S28.c0, electrical.bundle.B5.s6, electrical.bundle.B5.s5
+PASS electrical.pass.H3a touches housing.console, electrical.dev.E1, electrical.bundle.B1-E1.s1, electrical.bundle.B1-E1.s0
+PASS electrical.pass.H3b touches housing.console, electrical.dev.E2, electrical.bundle.B1-E2.s1, electrical.bundle.B1-E2.s0
+PASS electrical.pass.H4 touches housing.console, electrical.dev.E3, electrical.bundle.B1-E3.s1
+PASS electrical.pass.H5 touches housing.console, frame.column_right, electrical.bundle.B1-E4.s2
+PASS electrical.pass.H6 touches safety_sensors.S28, clamp.front_block, clamp.bar, electrical.mark.S28, electrical.bundle.B5-S28p.s0
+PASS electrical.pass.H8 touches housing.belt_pulley_cover, electrical.bundle.B4-R.s3
+PASS electrical.pass.H9 touches knife.lock_cover, electrical.bundle.B4-S14.s1, electrical.bundle.B4-S14.s0
+PASS electrical.pass.shaft_Q1 touches safety_sensors.Q1, housing.cabinet, electrical.dev.Q1
+PASS electrical.pass.shaft_Q2 touches safety_sensors.Q2, housing.cabinet, electrical.dev.Q2
+PASS electrical.pass.shaft_S1 touches safety_sensors.S1, housing.console, electrical.dev.S1
+PASS electrical.pass.shaft_S2 touches safety_sensors.S2, housing.cabinet, electrical.dev.S2
+PASS electrical.pass.shaft_S4 touches safety_sensors.S4, housing.cabinet, electrical.dev.S4
+PASS-THROUGH housing.cabinet inside electrical.pass.G1: legs B1, overlap outside the passage 0
+PASS-THROUGH housing.cabinet inside electrical.pass.G2: legs B4, overlap outside the passage 0
+PASS-THROUGH frame.column_left inside electrical.pass.H1: legs B1, overlap outside the passage 0
+PASS-THROUGH housing.console inside electrical.pass.H1: legs B1, overlap outside the passage 0
+PASS-THROUGH knife.lock_cover inside electrical.pass.H10: legs B4-SQ1, B4-SQ2, overlap outside the passage 0
+PASS-THROUGH knife.lock_cover inside electrical.pass.H11: legs B4-Y01, overlap outside the passage 0
+PASS-THROUGH frame.column_left inside electrical.pass.H2: legs B5, overlap outside the passage 0
+PASS-THROUGH housing.console inside electrical.pass.H3a: legs B1-E1, overlap outside the passage 0
+PASS-THROUGH housing.console inside electrical.pass.H3b: legs B1-E2, overlap outside the passage 0
+PASS-THROUGH housing.console inside electrical.pass.H4: legs B1-E3, overlap outside the passage 0
+PASS-THROUGH housing.console inside electrical.pass.H5: legs B1-E4, overlap outside the passage 0
+PASS-THROUGH clamp.bar inside electrical.pass.H6: legs B5-S28p, overlap outside the passage 0
+PASS-THROUGH clamp.front_block inside electrical.pass.H6: legs B5-S28p, overlap outside the passage 0
+PASS-THROUGH housing.belt_pulley_cover inside electrical.pass.H8: legs B4-R, overlap outside the passage 0
+PASS-THROUGH knife.lock_cover inside electrical.pass.H9: legs B4-S14, overlap outside the passage 0
+PASS MARKER Q1 anchor body.Q1 0.0 mm from safety_sensors.Q1; pass.shaft_Q1 0.0 mm from it, 0.0 mm from housing.cabinet; anchor to item 49.9 mm
+PASS MARKER Q2 anchor body.Q2 0.0 mm from safety_sensors.Q2; pass.shaft_Q2 0.0 mm from it, 0.0 mm from housing.cabinet; anchor to item 39.9 mm
+PASS MARKER S4 anchor body.S4 0.0 mm from safety_sensors.S4; pass.shaft_S4 0.0 mm from it, 0.0 mm from housing.cabinet; anchor to item 29.9 mm
+PASS MARKER S2 anchor body.S2 0.0 mm from safety_sensors.S2; pass.shaft_S2 0.0 mm from it, 0.0 mm from housing.cabinet; anchor to item 29.9 mm
+PASS MARKER S1 anchor body.S1 0.0 mm from safety_sensors.S1; pass.shaft_S1 0.0 mm from it, 0.0 mm from housing.console; anchor to item 37.9 mm
+PASS MARKER S10 anchor body.S10 0.0 mm from safety_sensors.S10; mark.S10 0.0 mm from it, 0.0 mm from safety_sensors.S10; anchor to item 14.9 mm
+PASS MARKER S11 anchor body.S11 0.0 mm from safety_sensors.S11; mark.S11 0.0 mm from it, 0.0 mm from safety_sensors.S11; anchor to item 14.9 mm
+PASS MARKER SQ1 anchor body.SQ1 0.0 mm from safety_sensors.SQ1; mark.SQ1 0.0 mm from it, 0.0 mm from safety_sensors.SQ1; anchor to item 0.0 mm
+PASS MARKER SQ2 anchor body.SQ2 0.0 mm from safety_sensors.SQ2; mark.SQ2 0.0 mm from it, 0.0 mm from safety_sensors.SQ2; anchor to item 11.9 mm
+PASS MARKER S12 anchor body.S12 0.0 mm from safety_sensors.S12; mark.S12 0.0 mm from it, 0.0 mm from safety_sensors.S12; anchor to item 8.9 mm
+PASS MARKER S13 anchor body.S13 0.0 mm from safety_sensors.S13; mark.S13 0.0 mm from it, 0.0 mm from safety_sensors.S13; anchor to item 24.4 mm
+PASS MARKER S14 anchor body.S14 0.0 mm from safety_sensors.S14; mark.S14 0.0 mm from it, 0.0 mm from safety_sensors.S14; anchor to item 24.9 mm
+PASS MARKER S5 anchor body.S5 0.0 mm from safety_sensors.S5; mark.S5 0.0 mm from it, 0.0 mm from safety_sensors.S5; anchor to item 47.4 mm
+PASS MARKER S19 anchor body.S19 0.0 mm from safety_sensors.S19; mark.S19 0.0 mm from it, 0.0 mm from safety_sensors.S19; anchor to item 0.0 mm
+PASS MARKER S28 anchor body.S28 0.0 mm from safety_sensors.S28; mark.S28 154.0 mm from it, 0.0 mm from clamp.bar; anchor to item 233.9 mm (marker on the +z face of clamp.bar; anchor to marker 234 mm; exception: S28 sits in its pocket in clamp.front_block; marker on the bar top above it, pocket leg B5-S28p reaches the switch body)
+PASS MARKER S30 anchor body.S30 0.0 mm from safety_sensors.S30; mark.S30 0.0 mm from it, 0.0 mm from safety_sensors.S30; anchor to item 14.9 mm
+PASS MARKER M3 anchor body.M3 0.0 mm from safety_sensors.M3; mark.M3 0.0 mm from it, 0.0 mm from safety_sensors.M3; anchor to item 124.9 mm
+PASS MARKER Y3 anchor body.Y3 0.0 mm from safety_sensors.Y3; mark.Y3 0.0 mm from it, 0.0 mm from safety_sensors.Y3; anchor to item 24.9 mm
+PASS MARKER M1 anchor motor.M1 0.0 mm from knife.m1_motor; mark.M1 0.0 mm from it, 0.0 mm from knife.m1_motor; anchor to item 112.4 mm
+PASS MARKER Y10 anchor clutch.Y10 0.0 mm from knife.clutch_y10; mark.Y10 100.0 mm from it, 0.0 mm from knife.slip_rings; anchor to item 156.8 mm (marker on the -z face of knife.slip_rings; anchor to marker 157 mm; exception: marker at the slip rings, Y10's electrical feed point in the route plan (sections/22_cables_terminals_routes.md); anchor inside the clutch)
+PASS MARKER Y01 anchor magnet.Y01 0.0 mm from knife.y01_magnet; mark.Y01 0.0 mm from it, 0.0 mm from knife.y01_magnet; anchor to item 39.9 mm
+PASS MARKER Y14 anchor brake.Y14 0.0 mm from clamp.brake_y14; mark.Y14 0.0 mm from it, 0.0 mm from clamp.brake_y14; anchor to item 79.9 mm
+PASS MARKER Y11 anchor valve.Y11 0.0 mm from clamp.valve_block_ov2; mark.Y11 0.0 mm from it, 0.0 mm from clamp.valve_block_ov2; anchor to item 59.9 mm
+PASS MARKER BR40 anchor sensor.BR40 0.0 mm from backgauge.encoder_BR40; mark.BR40 0.0 mm from it, 0.0 mm from backgauge.encoder_BR40; anchor to item 32.9 mm
+PASS MARKER S24 anchor sensor.S24 0.0 mm from backgauge.S24; mark.S24 0.0 mm from it, 0.0 mm from backgauge.S24; anchor to item 14.9 mm
+PASS MARKER S27 anchor sensor.S27 0.0 mm from backgauge.S27; mark.S27 0.0 mm from it, 0.0 mm from backgauge.S27; anchor to item 15.4 mm
+PASS MARKER M2 anchor motor.M2 0.0 mm from backgauge.M2; mark.M2 0.0 mm from it, 0.0 mm from backgauge.M2; anchor to item 114.9 mm
+PASS leg B1 longest free span 160 mm, ending at (507, -442, 1202)
+PASS leg B1-PLC longest free span 15 mm, ending at (-1287, 200, 1190)
+PASS leg B1-T longest free span 77 mm, ending at (238, -442, 1274)
+PASS leg B1-E1 longest free span 30 mm, ending at (-400, -424, 1202)
+PASS leg B1-E2 longest free span 30 mm, ending at (377, -424, 1202)
+PASS leg B1-E3 longest free span 193 mm, ending at (-770, -442, 1467)
+PASS leg B1-E4 longest free span 131 mm, ending at (740, -401, 1348)
+PASS leg B5 longest free span 156 mm, ending at (-1096, 158, 1497)
+PASS leg B5-Y14 longest free span 67 mm, ending at (0, 200, 1481)
+PASS leg B5-S28 longest free span 132 mm, ending at (-706, 156, 1276)
+PASS leg B5-S28s longest free span 242 mm, ending at (-640, 168, 1235)
+PASS leg B5-S28r longest free span 149 mm, ending at (-458, 59, 1261)
+PASS leg B5-S28p longest free span 0 mm, ending at (-490, 13, 1255)
+PASS leg B2 longest free span 166 mm, ending at (-1030, 50, 641)
+PASS leg B2-XC4 longest free span 169 mm, ending at (-1100, 50, 686)
+PASS leg B2-F longest free span 145 mm, ending at (-430, -723, 779)
+PASS leg B2-S11 longest free span 130 mm, ending at (-145, -723, 779)
+PASS leg B2-R longest free span 157 mm, ending at (-433, 180, 777)
+PASS leg B2-S24 longest free span 75 mm, ending at (-163, 340, 736)
+PASS leg B3 longest free span 276 mm, ending at (-96, 1680, 530)
+PASS leg B3-XC3 longest free span 75 mm, ending at (-1240, 110, 396)
+PASS leg B3-M3 longest free span 249 mm, ending at (88, 1109, 160)
+PASS leg B3-Y3 longest free span 275 mm, ending at (-47, 900, 589)
+PASS leg B4 longest free span 170 mm, ending at (1205, 330, 161)
+PASS leg B4-Y11 longest free span 258 mm, ending at (321, 320, 532)
+PASS leg B4-R longest free span 131 mm, ending at (1502, 248, 8)
+PASS leg B4-Y10 longest free span 145 mm, ending at (1544, 40, 220)
+PASS leg B4-S19 longest free span 175 mm, ending at (1370, 200, 476)
+PASS leg B4-K longest free span 130 mm, ending at (970, 244, 157)
+PASS leg B4-S13 longest free span 163 mm, ending at (1052, 158, 809)
+PASS leg B4-S14 longest free span 71 mm, ending at (895, 188, 832)
+PASS leg B4-SQ1 longest free span 177 mm, ending at (913, 348, 832)
+PASS leg B4-SQ2 longest free span 110 mm, ending at (912, 356, 932)
+PASS leg B4-Y01 longest free span 159 mm, ending at (949, 252, 960)
+PASS END B1 from dev.X10 0.0 mm
+PASS END B1 to dev.S1 0.0 mm
+PASS END B1-PLC from dev.PLC 0.0 mm
+PASS END B1-PLC to junction on B1 0.0 mm
+PASS END B1-T from junction on B1 0.0 mm
+PASS END B1-T to dev.TABLO 0.0 mm
+PASS END B1-E1 from junction on B1 0.0 mm
+PASS END B1-E1 to dev.E1 0.0 mm
+PASS END B1-E2 from junction on B1 0.0 mm
+PASS END B1-E2 to dev.E2 0.0 mm
+PASS END B1-E3 from junction on B1 0.0 mm
+PASS END B1-E3 to dev.E3 0.0 mm
+PASS END B1-E4 from junction on B1 0.0 mm
+PASS END B1-E4 to dev.E4 0.0 mm
+PASS END B5 from junction on B1 0.0 mm
+PASS END B5 to mark.S30 0.0 mm
+PASS END B5-Y14 from junction on B5 0.0 mm
+PASS END B5-Y14 to mark.Y14 0.0 mm
+PASS END B5-S28 from junction on B5 0.0 mm
+PASS END B5-S28 to clip.B5-S28.c3 0.0 mm
+PASS END B5-S28s from junction on B5-S28 0.0 mm
+PASS END B5-S28s to junction on B5-S28r 0.0 mm
+PASS END B5-S28r from junction on B5-S28s 0.0 mm
+PASS END B5-S28r to mark.S28 0.0 mm
+PASS END B5-S28p from mark.S28 0.0 mm
+PASS END B5-S28p to stage-1 safety_sensors.S28 0.0 mm
+PASS END B2 from conn.XC2 0.0 mm
+PASS END B2 to mark.BR40 0.4 mm
+PASS END B2-XC4 from conn.XC4 0.0 mm
+PASS END B2-XC4 to junction on B2 0.0 mm
+PASS END B2-F from junction on B2 0.0 mm
+PASS END B2-F to mark.S10 0.4 mm
+PASS END B2-S11 from junction on B2-F 0.0 mm
+PASS END B2-S11 to mark.S11 0.4 mm
+PASS END B2-R from junction on B2 0.0 mm
+PASS END B2-R to mark.S27 0.4 mm
+PASS END B2-S24 from junction on B2-R 0.0 mm
+PASS END B2-S24 to mark.S24 0.4 mm
+PASS END B3 from conn.XC1 0.0 mm
+PASS END B3 to mark.M2 0.4 mm
+PASS END B3-XC3 from conn.XC3 0.0 mm
+PASS END B3-XC3 to junction on B3 0.0 mm
+PASS END B3-M3 from junction on B3 0.0 mm
+PASS END B3-M3 to mark.M3 0.4 mm
+PASS END B3-Y3 from junction on B3 0.0 mm
+PASS END B3-Y3 to mark.Y3 0.4 mm
+PASS END B4 from dev.X10 0.0 mm
+PASS END B4 to mark.M1 0.4 mm
+PASS END B4-Y11 from junction on B4 0.0 mm
+PASS END B4-Y11 to mark.Y11 0.4 mm
+PASS END B4-R from junction on B4 0.0 mm
+PASS END B4-R to mark.S5 0.4 mm
+PASS END B4-Y10 from junction on B4-R 0.0 mm
+PASS END B4-Y10 to mark.Y10 0.4 mm
+PASS END B4-S19 from junction on B4-R 0.0 mm
+PASS END B4-S19 to mark.S19 0.4 mm
+PASS END B4-K from junction on B4 0.0 mm
+PASS END B4-K to mark.S12 0.4 mm
+PASS END B4-S13 from junction on B4-K 0.0 mm
+PASS END B4-S13 to mark.S13 0.4 mm
+PASS END B4-S14 from junction on B4-K 0.0 mm
+PASS END B4-S14 to mark.S14 0.4 mm
+PASS END B4-SQ1 from junction on B4-K 0.0 mm
+PASS END B4-SQ1 to mark.SQ1 0.4 mm
+PASS END B4-SQ2 from junction on B4-SQ1 0.0 mm
+PASS END B4-SQ2 to mark.SQ2 0.4 mm
+PASS END B4-Y01 from junction on B4-K 0.0 mm
+PASS END B4-Y01 to mark.Y01 0.4 mm
+PASS SLACK B5-S28s -> B5-S28r (moves with clamp, stroke 130 mm down): loop 239 mm >= straight distance between the loop's ends at rest 80 + stroke 130 = 210 mm; straight distance between the loop's ends at full stroke 108 mm
+INFO backgauge.M2: stage-1 body that touches no other body; our items attach to it, it stays as built
+INFO clamp.valve_block_ov2: stage-1 body that touches no other body; our items attach to it, it stays as built
+INFO safety_sensors.M3: stage-1 body that touches no other body; our items attach to it, it stays as built
+INFO safety_sensors.Y3: stage-1 body that touches no other body; our items attach to it, it stays as built

@@ -1,0 +1,183 @@
+Mutation run of stage_2_electronics/checks/run_checks.py (thread t5, integration).
+Written by stage_2_electronics/checks/mutation_run.py; rerun it, do not edit. Paths relative to the repository root; no time stamps, no temporary paths.
+
+copy (a new temporary folder outside the repository): stage_2_electronics (without __pycache__), stage_1_mechanics, .gitignore, .git, static_dynamic_memory/blocks/generation_002/artifacts/tables, static_dynamic_memory/blocks/generation_002/artifacts/anchors_index.csv and the 11 memory-block files named in source_path columns; not copied: the 88 photo and document paths of preparatory_data_analysis named there (checks 5 and 12 say SKIP for the part that needs them)
+baseline, run_checks.py in full in the copy (exit 0): check 1 PASS, check 2 PASS, check 3 PASS, check 4 PASS, check 5 SKIP, check 6 PASS, check 7 PASS, check 8 PASS, check 9 PASS, check 10 PASS, check 11 PASS, check 12 SKIP
+  source existence: SKIP for 4048 source references in folders that are not on this computer (photos, documents or the local memory block): preparatory_data_analysis (4048)
+  files equal to a photo, document, download or memory-block file 0 (compared with 1 of the 2 local folders; SKIP for the others: not on this computer)
+
+break 1 (check 1): stage_2_electronics/netlist/merged_devices.csv: all 2 rows of S30 dropped
+  expected: check 1 FAIL and a line naming the break
+  got: check 1 FAIL (exit 1); files back byte for byte: yes
+  line: missing in merged_devices.csv 1: S30
+  result: as expected
+
+break 1b (check 1): stage_2_electronics/schemes_2d/power_sheet1.svg, control_sheet5.svg, control_sheet6.svg, plc_sheet8.svg: S30 taken out of 11 texts of the sheet pages (none left)
+  expected: check 1 FAIL and a line naming the break
+  got: check 1 FAIL (exit 1); files back byte for byte: yes
+  line: missing as text on the 8 sheet pages 1: S30
+  result: as expected
+
+break 2 (check 2): stage_2_electronics/schemes_2d/power_sheet2.svg: sheet 2: column number 11 blanked on the ruler (row y 76.5, 1 text); it stays printed 1 time(s) off the ruler as a wire or terminal number
+  expected: check 2 FAIL and a line naming the break
+  got: check 2 FAIL (exit 1); files back byte for byte: yes
+  line: sheet 2: paths rows 48, column numbers used 31; ruler of power_sheet2.svg (row y 76.5) holds 31, of them used 30, missing 1 ([11]); two-digit labels off the ruler (wire and terminal numbers, not counted) 6
+  result: as expected
+
+break 2b (check 2): stage_2_electronics/schemes_2d/overview.svg: moved away (renamed overview.svg.moved)
+  expected: check 2 FAIL and a line naming the break
+  got: check 2 FAIL (exit 1); files back byte for byte: yes
+  line: SVG (Scalable Vector Graphics) pages present 9 of 10; missing overview.svg
+  result: as expected
+
+break 3 (check 3): stage_2_electronics/netlist/merged_wires.csv: line 2: to_device Q1 -> NOPE (no such device)
+  expected: check 3 FAIL and a line naming the break
+  got: check 3 FAIL (exit 1); files back byte for byte: yes
+  line: merged_wires.csv rows 448, ends 896, ends that are no device of merged_devices.csv (dangling) 1
+  line: line 2: XP -> NOPE
+  result: as expected
+
+break 4a (check 4): stage_2_electronics/netlist/merged_wires.csv: line 208 (wire 12UG50, no address) given IN-1, which is on wire 30X10
+  expected: check 4 FAIL and a line naming the break
+  got: check 4 FAIL (exit 1); files back byte for byte: yes
+  line: an address on more than one wire number, signal text or conductor (more than its rows in 12_568_plc_io.csv) 1: IN-1 (rows 3; wire numbers 2: 12UG50, 30X10; signals 2: S28 clamp plate | ~24V; separate conductors 2; table rows 1)
+  result: as expected
+
+break 4b (check 4): stage_2_electronics/netlist/merged_wires.csv: line 2 (XP L1 - Q1 L1, no wire number, no address) given IN-D and its signal text: same wire numbers, same signal, a second conductor
+  expected: check 4 FAIL and a line naming the break
+  got: check 4 FAIL (exit 1); files back byte for byte: yes
+  line: an address on more than one wire number, signal text or conductor (more than its rows in 12_568_plc_io.csv) 1: IN-D (rows 3; wire numbers 1: 1XC4; signals 1: encoder index pulse (BR40 - INDEX (I)); separate conductors 2; table rows 1)
+  result: as expected
+
+break 4c (check 4): stage_2_electronics/netlist/merged_wires.csv: OUT-9 taken off its 2 rows (lines 345, 441)
+  expected: check 4 FAIL and a line naming the break
+  got: check 4 FAIL (exit 1); files back byte for byte: yes
+  line: OUT-9: table device K1 through KM8 13-14; route ; NOT on it
+  result: as expected
+
+break 5a (check 5): stage_2_electronics/netlist/control_devices.csv: line 2: evidence 'sure' -> empty
+  expected: check 5 FAIL and a line naming the break
+  got: check 5 FAIL (exit 1); files back byte for byte: yes
+  line: no mark: netlist/control_devices.csv line 2
+  result: as expected
+
+break 5b (check 5): stage_2_electronics/netlist/power_wires.csv: line 2: source_path -> stage_1_mechanics/spec/no_such_file.md (a file that does not exist in a present folder)
+  expected: check 5 FAIL and a line naming the break
+  got: check 5 FAIL (exit 1); files back byte for byte: yes
+  line: source missing: netlist/power_wires.csv line 2: stage_1_mechanics/spec/no_such_file.md
+  result: as expected
+
+break 5c (check 5): stage_2_electronics/netlist/power_devices.csv: line 2: evidence sure -> [?], a row that measure_list.md does not name
+  expected: check 5 FAIL and a line naming the break
+  got: check 5 FAIL (exit 1); files back byte for byte: yes
+  line: not in measure_list.md: netlist/power_devices.csv line 2
+  result: as expected
+
+break 5d (check 5): stage_2_electronics/netlist/merged_wires.csv: line 2: evidence 'sure' -> empty (a merged row; its thread row unchanged)
+  expected: check 5 FAIL and a line naming the break
+  got: check 5 FAIL (exit 1); files back byte for byte: yes
+  line: no mark: netlist/merged_wires.csv line 2
+  line: merged row differs from its thread row: netlist/merged_wires.csv line 2 (evidence)
+  result: as expected
+
+break 5e (check 5): stage_2_electronics/netlist/merged_devices.csv: line 2: source_path -> stage_1_mechanics/spec/no_such_file.md (a merged row; a file that does not exist)
+  expected: check 5 FAIL and a line naming the break
+  got: check 5 FAIL (exit 1); files back byte for byte: yes
+  line: source missing: netlist/merged_devices.csv line 2: stage_1_mechanics/spec/no_such_file.md
+  line: merged row differs from its thread row: netlist/merged_devices.csv line 2 (source_path)
+  result: as expected
+
+break 5f (check 5): stage_2_electronics/netlist/merged_devices.csv: line 2: type_rating '' -> 'edited in the merged file only' (a cell no other part of check 5 reads)
+  expected: check 5 FAIL and a line naming the break
+  got: check 5 FAIL (exit 1); files back byte for byte: yes
+  line: merged row differs from its thread row: netlist/merged_devices.csv line 2 (type_rating)
+  result: as expected
+
+break 6a (check 6): stage_2_electronics/scheme_3d/placements.csv: line 89 mark.S30 (S30 on body.S30): x_mm 280.0 -> 285.0 (5 mm)
+  expected: check 6 FAIL and a line naming the break
+  got: check 6 FAIL (exit 1); files back byte for byte: yes
+  line: line 89 mark.S30: x_mm, y_mm, z_mm 5.0 mm from body.S30
+  result: as expected
+
+break 6b (check 6): stage_2_electronics/scheme_3d/electrical.glb: mark.S10 moved 5 mm off the face of safety_sensors.S10 it sits on (-Z); 489 nodes, only electrical.mark.S10 moved, by (0, 0, -5) mm (bounds read back)
+  expected: check 6 FAIL and a line naming the break
+  got: check 6 FAIL (exit 1); files back byte for byte: yes
+  line: FAIL MARKER S10: anchor body.S10 0.0 mm from safety_sensors.S10; mark.S10 5.0 mm from it, 3.0 mm from safety_sensors.S10
+  result: as expected
+
+break 7a (check 7): stage_2_electronics/scheme_3d/placements.csv: line 11 dev.BMR1: box_x_mm -1269.5 -> -1000.0
+  expected: check 7 FAIL and a line naming the break
+  got: check 7 FAIL (exit 1); files back byte for byte: yes
+  line: line 11 dev.BMR1 (cabinet): outside in X
+  result: as expected
+
+break 7b (check 7): stage_2_electronics/scheme_3d/placements.csv: line 64 dev.TABLO: box_y_mm -429.5 -> 570.5 (+1000 mm)
+  expected: check 7 FAIL and a line naming the break
+  got: check 7 FAIL (exit 1); files back byte for byte: yes
+  line: line 64 dev.TABLO (console): outside in Y
+  result: as expected
+
+break 8 (check 8): stage_2_electronics/scheme_3d/bundles.csv: line 2 B1: to_item dev.S1 -> nowhere
+  expected: check 8 FAIL and a line naming the break
+  got: check 8 FAIL (exit 1); files back byte for byte: yes
+  line: bundle legs 34, ends 68: clip of the same leg 1, junction on an existing leg 30, placements item 35, stage-1 device body 1; open ends 1
+  line: line 2 B1: nowhere
+  result: as expected
+
+break 9 (check 9): stage_2_electronics/scheme_3d/electrical.glb: dev.BMR1 (it touches only mount.plate) moved 5 mm off the plate (-X); 489 nodes, only electrical.dev.BMR1 moved, by (-5, 0, 0) mm (bounds read back). Not dev.UZ1: it has 5.5 mm to the cabinet door, so 5 mm leave it within the 1 mm contact rule of the door
+  expected: check 9 FAIL and a line naming the break
+  got: check 9 FAIL (exit 1); files back byte for byte: yes
+  line: FAIL electrical.dev.BMR1 touches - | in the air (nothing within 1 mm)
+  result: as expected
+
+break 9b (check 6 and 9): stage_2_electronics/scheme_3d/electrical.glb: mark.S10 pushed 5 mm into safety_sensors.S10 (+Z); 489 nodes, only electrical.mark.S10 moved, by (0, 0, 5) mm (bounds read back). Check 6 tests contact (at most 1 mm), not position, so it stays PASS; the overlap is check 9's to catch
+  expected: check 6 PASS, check 9 FAIL and a line naming the break
+  got: check 6 PASS, check 9 FAIL (exit 1); files back byte for byte: yes
+  line: FAIL electrical.mark.S10 touches safety_sensors.S10, frame.table | overlap safety_sensors.S10 678.7mm3
+  result: as expected
+
+break 10 (check 10): stage_1_mechanics/spec/frame.md: one byte (a space) appended
+  expected: check 10 FAIL and a line naming the break
+  got: check 10 FAIL (exit 1); files back byte for byte: yes
+  line: changed: stage_1_mechanics/spec/frame.md
+  line: git diff --quiet f52cc8e -- stage_1_mechanics: exit 1; git status --short -- stage_1_mechanics: 1 lines
+  result: as expected
+
+break 10b (check 10): stage_1_mechanics/parts/backgauge/mutants/bore_narrow/backgauge.md: moved out of stage_1_mechanics (a file git never tracked and ignores, so git status cannot see it go; the other untracked files stay: a loss, not a clone)
+  expected: check 10 FAIL and a line naming the break
+  got: check 10 FAIL (exit 1); files back byte for byte: yes
+  line: missing: stage_1_mechanics/parts/backgauge/mutants/bore_narrow/backgauge.md
+  line: git diff --quiet f52cc8e -- stage_1_mechanics: exit 0; git status --short -- stage_1_mechanics: 0 lines
+  result: as expected
+
+break 11 (check 11): stage_2_electronics/viewer/index.html: one line "://" appended after the page
+  expected: check 11 FAIL and a line naming the break
+  got: check 11 FAIL (exit 1); files back byte for byte: yes
+  line: viewer/index.html: network references (://, fetch(, XMLHttpRequest, <link, <img, <iframe, src=, @import, url(, import() 1 (://)
+  result: as expected
+
+break 12a (check 12): stage_2_electronics/sources.md: one line holding a Windows user-folder path (built at run time) appended
+  expected: check 12 FAIL and a line naming the break
+  got: check 12 FAIL (exit 1); files back byte for byte: yes
+  line: text files holding a user path or the user's name 1 (stage_2_electronics/sources.md)
+  result: as expected
+
+break 12b (check 12): stage_2_electronics/scheme_3d/renders/top.png: moved into stage_2_electronics/checks/ (an image outside the renders)
+  expected: check 12 FAIL and a line naming the break
+  got: check 12 FAIL (exit 1); files back byte for byte: yes
+  line: files under stage_2_electronics 62; photos, documents or images outside scheme_3d/renders 1 (stage_2_electronics/checks/top.png)
+  result: as expected
+
+break 12c (check 12): stage_1_mechanics/spec/frame.md: one byte appended: a changed path outside stage_2_electronics and .gitignore
+  expected: check 12 FAIL and a line naming the break
+  got: check 12 FAIL (exit 1); files back byte for byte: yes
+  line: git status: changed or new paths 42, outside stage_2_electronics and .gitignore 1 (stage_1_mechanics/spec/frame.md)
+  result: as expected
+
+end, run_checks.py in full in the copy after every break was put back (exit 0): statuses as the baseline: yes; checks.txt text as the baseline: yes
+files of stage_2_electronics in the copy that differ from the repository's: 1 (checks/checks.txt: the copy's own checks.txt, written by its own run)
+files of the repository changed by this run (stage_2_electronics apart from this report, stage_1_mechanics): 0
+
+reading: check 6 tests contact (item at most 1 mm from its own stage-1 body and its carrier), not position; an item pushed into its own body passes check 6 and is caught by check 9 (overlap), break 9b
+summary: breaks 27, as expected 27, skipped 0, not as expected 0
+result: PASS

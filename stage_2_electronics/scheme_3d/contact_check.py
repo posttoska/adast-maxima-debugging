@@ -1,7 +1,7 @@
 """Check 9 (contact) of episode 2: nothing of the electrical layer hangs in the air.
 
 Run:  python -B stage_2_electronics/scheme_3d/contact_check.py [electrical.glb] [placements.csv] [bundles.csv] [report.txt]
-      python -B stage_2_electronics/scheme_3d/contact_check.py --selftest   (six mutations, each must FAIL)
+      python -B stage_2_electronics/scheme_3d/contact_check.py --selftest   (eight mutations, each must FAIL)
 Defaults: the files next to this script; report contact_report.txt next to it. Exit 1 when FAIL > 0.
 
 Geometry is real mesh-to-mesh (manifold3d min_gap and intersection volume), in mm, machine coordinates, Z up,
@@ -110,7 +110,7 @@ def read_rows(path):
         return list(csv.DictReader(f))
 
 
-def run(glb, placements, bundles, report=None, mutate=None, mutate_legs=None):
+def run(glb, placements, bundles, report=None, mutate=None, mutate_legs=None, mutate_rows=None):
     s1, RES = bodies_s1(), reserved_s1()
     el = {k: v for k, v in load_glb(glb).items() if k.startswith("electrical.")}
     if mutate:
@@ -119,6 +119,8 @@ def run(glb, placements, bundles, report=None, mutate=None, mutate_legs=None):
     prow, brow = read_rows(placements), read_rows(bundles)
     if mutate_legs:
         brow = mutate_legs(brow)
+    if mutate_rows:
+        prow = mutate_rows(prow)
     passes = {}                                   # node -> names it may overlap
     for r in prow:
         passes.setdefault("electrical." + r["item"], set()).update("electrical." + p for p in r.get("passes", "").split("; ") if p)
@@ -133,9 +135,16 @@ def run(glb, placements, bundles, report=None, mutate=None, mutate_legs=None):
     PS = {k: v for k, v in E.items() if k.startswith("electrical.pass.")}   # holes, grommets, glands
     through = {}                                  # (pass items, stage-1 body) -> legs
 
+    OURS = ("dev", "mark", "conn", "mount", "pass", "clip", "bundle")
+    fast = {"electrical." + r["item"]: {("electrical." + f if f.split(".")[0] in OURS else f)
+                                        for f in r["fastened_to"].split("; ") if f}
+            for r in prow if r["item"].startswith("pass.")}
+
     def allowed(a, b):
-        if a.startswith("electrical.pass.") or b.startswith("electrical.pass."):
-            return True                           # a passage sits in its wall and carries its bundle
+        for p, x in ((a, b), (b, a)):             # rule 1: a pass may overlap only the bodies its fastened_to names
+            if p.startswith("electrical.pass."):  # and the segments and clips of the legs whose passes column names it
+                lx = x.split(".")[2] if x.split(".")[:2] in (["electrical", "bundle"], ["electrical", "clip"]) else ""
+                return x in fast.get(p, ()) or p[len("electrical."):] in legs.get(lx, {}).get("passes", "").split("; ")
         if b in passes.get(a, ()) or a in passes.get(b, ()):
             return True
         lg = lambda x: x.split(".")[2] if x.split(".")[1] in ("bundle", "clip") else None
@@ -292,7 +301,8 @@ def run(glb, placements, bundles, report=None, mutate=None, mutate_legs=None):
         st = "PASS" if at_end and not clipped and stroke > 0 and length >= rest + stroke else "FAIL"
         fails += st == "FAIL"
         lines.append(f"{st} SLACK {p} -> {g} (moves with {mv}, stroke {stroke:.0f} mm down): loop {length:.0f} mm >= "
-                     f"rest gap {rest:.0f} + stroke {stroke:.0f} = {rest + stroke:.0f} mm; gap at full stroke {full:.0f} mm"
+                     f"straight distance between the loop's ends at rest {rest:.0f} + stroke {stroke:.0f} = "
+                     f"{rest + stroke:.0f} mm; straight distance between the loop's ends at full stroke {full:.0f} mm"
                      + ("" if at_end else "; moving leg not at the loop's end") + ("; loop is clipped" if clipped else ""))
     # INFO: stage-1 bodies we attach to that touch no other stage-1 body
     used = sorted({n for v in touch_s1.values() for n in v if n != FLOOR and n not in WALL})
@@ -309,7 +319,7 @@ def run(glb, placements, bundles, report=None, mutate=None, mutate_legs=None):
 
 
 def selftest(glb, placements, bundles):
-    """Six mutations of the delivered layer; each must give FAIL > 0."""
+    """Eight mutations of the delivered layer; each must give FAIL > 0."""
     def up(el):            # first device box 50 mm up into the air
         k = next(k for k in sorted(el) if k.startswith("electrical.dev."))
         el[k] = el[k].copy(); el[k].apply_translation((0, 0, 50.0)); return el
@@ -336,12 +346,24 @@ def selftest(glb, placements, bundles):
                 p = r["path_mm"].split("; ")
                 r["path_mm"] = "; ".join((p[0], p[-1]))
         return rows
+    def unfasten(rows):    # pass.G1 no longer fastened to mount.plate, which it overlaps (tester 3, mutation 2)
+        for r in rows:
+            if r["item"] == "pass.G1":
+                r["fastened_to"] = "housing.cabinet"
+        return rows
+    def unpass(rows):      # pass.G1 dropped from the passes column of leg B1, which runs through it
+        for r in rows:
+            if r["leg"] == "B1":
+                r["passes"] = "; ".join(p for p in r["passes"].split("; ") if p != "pass.G1")
+        return rows
     ok = True
-    for name, f, fl in (("box up 50 mm", up, None), ("clips of one leg removed", noclip, None),
-                        ("marker sunk 10 mm", sink, None), ("cube hanging on bundle B1", hang, None),
-                        ("cube on the floor in envelope.clamp.pedal_link", reserved, None),
-                        ("slack loop pulled straight", None, taut)):
-        n, _, lines = run(glb, placements, bundles, mutate=f, mutate_legs=fl)
+    for name, f, fl, fr in (("box up 50 mm", up, None, None), ("clips of one leg removed", noclip, None, None),
+                            ("marker sunk 10 mm", sink, None, None), ("cube hanging on bundle B1", hang, None, None),
+                            ("cube on the floor in envelope.clamp.pedal_link", reserved, None, None),
+                            ("slack loop pulled straight", None, taut, None),
+                            ("pass.G1 not fastened to mount.plate", None, None, unfasten),
+                            ("pass.G1 dropped from leg B1's passes", None, unpass, None)):
+        n, _, lines = run(glb, placements, bundles, mutate=f, mutate_legs=fl, mutate_rows=fr)
         print(f"selftest {name}: FAIL {n} -> {'caught' if n else 'NOT CAUGHT'}")
         ok &= n > 0
     return ok

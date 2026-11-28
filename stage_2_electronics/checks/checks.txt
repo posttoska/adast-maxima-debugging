@@ -1,0 +1,76 @@
+Checks of stage_2_electronics against section 04 of the plan (thread t5, integration).
+Written by stage_2_electronics/checks/run_checks.py; rerun it, do not edit. Paths relative to the repository root.
+
+check 1 devices: PASS
+  11_568_devices.csv rows 84; not devices 10 (table titles 4, notes 4, sheet list and title block 2); device rows 74 (section 04: 74)
+  names after splitting groups and ranges 114; rules: (earth symbol) = PE, RC... = any RC<n>, R14 (sheet 7) = R14 with sheet 7
+  missing in merged_devices.csv 0
+  missing as text on the 8 sheet pages 0
+check 2 sheets: PASS
+  SVG (Scalable Vector Graphics) pages present 10 of 10
+  sheet 2: paths rows 48, column numbers used 31; ruler of power_sheet2.svg (row y 76.5) holds 32, of them used 31, missing 0; two-digit labels off the ruler (wire and terminal numbers, not counted) 6
+  sheet 3: paths rows 21, column numbers used 4; ruler of power_sheet3.svg (row y 76.5) holds 4, of them used 4, missing 0; two-digit labels off the ruler (wire and terminal numbers, not counted) 23
+  sheet 4: paths rows 30, column numbers used 18; ruler of control_sheet4.svg (row y 50, class d) holds 21, of them used 18, missing 0; two-digit labels off the ruler (wire and terminal numbers, not counted) 28
+  sheet 5: paths rows 45, column numbers used 13; ruler of control_sheet5.svg (row y 50, class d) holds 16, of them used 13, missing 0; two-digit labels off the ruler (wire and terminal numbers, not counted) 14
+  sheet 6: paths rows 33, column numbers used 18; ruler of control_sheet6.svg (row y 50, class d) holds 18, of them used 18, missing 0; two-digit labels off the ruler (wire and terminal numbers, not counted) 19
+  sheet 7: paths rows 13, column numbers used 13; ruler of control_sheet7.svg (row y 50, class d) holds 13, of them used 13, missing 0; two-digit labels off the ruler (wire and terminal numbers, not counted) 11
+  sheet 8: paths rows 21, column numbers used 5; ruler of plc_sheet8.svg (row y 50, class d) holds 5, of them used 5, missing 0; two-digit labels off the ruler (wire and terminal numbers, not counted) 0
+check 3 wires: PASS
+  merged_wires.csv rows 448, ends 896, ends that are no device of merged_devices.csv (dangling) 0
+check 4 PLC (programmable logic controller) addresses: PASS
+  addresses in merged_wires.csv 19; per address rows/wire numbers/signal texts/separate conductors (rows joined by a shared device terminal): +24V PLC 1/1/1/1, GND PLC 2/1/1/1, IN-0 2/1/1/1, IN-1 2/1/1/1, IN-2 2/1/1/1, IN-8 2/1/1/1, IN-9 2/1/1/1, IN-A 2/1/1/1, IN-D 2/1/1/1, IN-E 2/1/1/1, IN-F 2/1/1/1, IN-GND 3/2/2/1, OUT +24V 2/1/1/1, OUT-0 2/1/1/1, OUT-9 2/1/1/1, OUT-B 2/1/1/1, OUT-C 2/1/1/1, OUT-D 2/1/1/1, OUT-GND 2/1/1/1
+  12_568_plc_io.csv rows 41; addresses with a device 14 (section 04: 14)
+  an address on more than one wire number, signal text or conductor (more than its rows in 12_568_plc_io.csv) 0
+  INFO: IN-GND has 2 rows in the table itself (two signals by design), not a fault: 4XC4, 7XC4
+  IN-0: table device BMR1; route BMR1 24 - PLC IN-0; on it
+  IN-1: table device S28; route X10 30 - PLC IN-1 - S28 14; on it
+  IN-2: table device S30; route X10 29 - PLC IN-2 - S30 14; on it
+  IN-8: table device UZ1; route UZ1 K12 - PLC IN-8; on it
+  IN-9: table device S27; route XC2 3 - PLC IN-9 - S27 22; on it
+  IN-A: table device S24; route XC2 2 - PLC IN-A - S24 22; on it
+  IN-D: table device BR40; route XC4 1 - BR40 I - PLC IN-D; on it
+  IN-E: table device BR40; route XC4 2 - BR40 B - PLC IN-E; on it
+  IN-F: table device BR40; route XC4 3 - BR40 A - PLC IN-F; on it
+  OUT-0: table device K2; route PLC OUT-0 - K2 A1; on it
+  OUT-9: table device K1 through KM8 13-14; route PLC OUT-9 - KM8 13 - KM8 14 - K1 A1; on it
+  OUT-B: table device UZ1; route PLC OUT-B - UZ1 E3; on it
+  OUT-C: table device UZ1; route PLC OUT-C - UZ1 E4; on it
+  OUT-D: table device UZ1; route PLC OUT-D - UZ1 28; on it
+check 5 evidence: PASS
+  rows 1395 (6 thread netlists, 2 merged netlists, placements, bundles); without a mark 0; without a source 0; absolute source paths 0; source paths missing 0
+  rows not plain sure 248; of them not named in measure_list.md 0
+  merged netlists = the thread rows stacked in order (devices 176 of 176, wires 448 of 448): rows that differ 0
+check 6 anchors: PASS
+  anchors_index.csv rows 158, distinct names 146 (names listed by two parts 12, with two different points 0); designations of merged_devices.csv with an anchor 36
+  placements rows standing on an anchor 38; unknown anchor, not on body.<designation> although it exists, or x_mm/y_mm/z_mm more than 1 mm from the anchor point (spec/layout_3d.md: they restate it) 0; devices with an anchor but no row on it 0
+  drawn items (electrical.glb): MARKER lines of contact_check.py 27 (anchor in or on the device's own stage-1 body, item at most 1 mm from that body and from its carrier); other items on their own anchor (lamps, connectors) 8, anchor point at most 1 mm from the drawn box; faults 0
+  named exceptions of spec/layout_3d.md section 8 (item fastened next to its device body) 2: S28 (mark.S28 154.0 mm from safety_sensors.S28, fastened to clamp.bar); Y10 (mark.Y10 100.0 mm from knife.clutch_y10, fastened to knife.slip_rings)
+  INFO: placed from a stage-1 reference point, not body.<designation> or <kind>.<designation> (the box is checked by checks 7 and 9; spec/layout_3d.md: console devices against the inner face of the 2 mm front cover) 2: dev.TABLO 2.0 mm from display.T; dev.toggle 2.0 mm from ref.console_toggle
+  FF1 (light curtain, not fitted): boxes drawn 0
+check 7 boxes: PASS
+  limits: bounds of housing.cabinet and housing.console in stage_1_mechanics/out/assembly.glb; section 04 numbers the same: cabinet X -1420..-1250, Y -200..300, Z 0..1535; console X -835..850, Y -454..-394, Z 1190..1535
+  placements rows 113 = cabinet 58 + console 6 (boxes checked here) + on, through or outside a wall 14 (contact: check 9) + machine 35 (anchors: check 6; contact: check 9)
+  boxes outside their housing 0; wall items: pass.shaft_Q1, pass.shaft_Q2, pass.shaft_S4, pass.shaft_S2, pass.shaft_S1, dev.E1, dev.E2, dev.E3, conn.XC2, conn.XC4, conn.XC1, conn.XC3, pass.G1, pass.G2
+  pass items (holes, glands, shafts through a wall) in all 18
+check 8 bundles: PASS
+  bundle legs 34, ends 68: clip of the same leg 1, junction on an existing leg 30, placements item 36, stage-1 device body 1; open ends 0
+  INFO: machine wires carried by no bundle (local: their ends meet at one item or at one leg end, as integration_merge.py lists them) 13: control 89 Y01 +-V01 1; control 90 V01 2-Y01 -; control 95 Y14 +-V14 1; control 96 V14 2-Y14 -; control 103 Y11 1-RC11 1; control 104 RC11 2-Y11 2; control 118 Y10 +-V10 1; control 119 V10 2-R10 1; control 120 R10 2-Y10 -; control 148 S10 3A-S10 1A; control 158 S11 3A-S11 1A; control 173 X8 4-S12 2; control 174 S12 1-X8 1
+check 9 contact: PASS
+  contact_check.py rerun on the electrical layer (exit 0): report checks/contact_report_check9.txt, PASS 459, FAIL 0, INFO 4; same text as scheme_3d/contact_report.txt (thread t4): yes
+  electrical.glb nodes 489; in the viewer's data 489; missing 0
+check 10 stage 1 untouched: PASS
+  git diff --quiet f52cc8e -- stage_1_mechanics: exit 0; git status --short -- stage_1_mechanics: 0 lines
+  manifest files 858 (md5 with CRLF read as LF); on disk 858; changed 0; extra 0; missing 0
+  INFO: files with a time stamp after 2026-11-25 17:00 0 (a copy changes time stamps)
+check 11 viewer: PASS
+  viewer/index.html: network references (://, fetch(, XMLHttpRequest, <link, <img, <iframe, src=, @import, url(, import() 0
+  switch of the electrical layer ("Electrical layer, all of it"): present
+check 12 git and committed files: PASS
+  files under stage_2_electronics 62; photos, documents or images outside scheme_3d/renders 0
+  files equal to a photo, document, download or memory-block file 0
+  text files holding a user path or the user's name 0
+  git status: changed or new paths 41, outside stage_2_electronics and .gitignore 0
+  ignored files under stage_2_electronics other than __pycache__ 0
+
+summary: PASS 12, FAIL 0, SKIP 0
+result: PASS

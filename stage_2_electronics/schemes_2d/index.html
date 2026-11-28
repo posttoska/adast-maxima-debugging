@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adast Maxima MS 115 PS: electrical schemes (stage 2), index</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;margin:24px 32px;max-width:1150px;color:#111;line-height:1.45}h1{font-size:22px}h2{font-size:17px;margin-top:26px}table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:4px 8px;text-align:left;vertical-align:top}th{background:#eee}pre{background:#f4f4f4;padding:10px;border:1px solid #ddd}code{font-family:Consolas,monospace}</style>
+</head>
+<body>
+<h1>Adast Maxima MS 115 PS (serial 578.0009, 1998): electrical schemes, stage 2</h1>
+<p>The electrical installation of the paper guillotine, redrawn in 2026 from the wiring set 568-70.9001 [SCHÉMA ZAPOJENÍ] of 1998 and the cabinet photos (not original documents). The 2D (two-dimensional) sheet pages follow 568-70.9001 sheet by sheet with its column numbers; the overview and the connections page join them; the 3D (three-dimensional) electrical layer sits on the stage-1 mechanical model in one offline viewer. Every device, wire and number carries a source path and a mark: sure, [?] (unclear), estimated ±error or W (web source, weaker). Designations as printed on the sheets; PLC (programmable logic controller) addresses as IN-x and OUT-x. Text in English with Czech and Russian terms in brackets; sizes in mm (millimetres).</p>
+<h2>Pages: SVG (Scalable Vector Graphics) files that open in a browser</h2>
+<table><tr><th>Page</th><th>568 sheet</th><th>What it shows</th><th>Made by thread</th></tr>
+<tr><td><a href="power_sheet1.svg">power_sheet1.svg</a></td><td>sheet 1</td><td>tables, descriptions</td><td>t1 power</td></tr>
+<tr><td><a href="power_sheet2.svg">power_sheet2.svg</a></td><td>sheet 2</td><td>power circuits</td><td>t1 power</td></tr>
+<tr><td><a href="power_sheet3.svg">power_sheet3.svg</a></td><td>sheet 3</td><td>supply circuits</td><td>t1 power</td></tr>
+<tr><td><a href="control_sheet4.svg">control_sheet4.svg</a></td><td>sheet 4</td><td>lighting, main contactors, motor and cut-clutch contactors, time relays</td><td>t2 control</td></tr>
+<tr><td><a href="control_sheet5.svg">control_sheet5.svg</a></td><td>sheet 5</td><td>electromagnets, cut clutch, signals for the PLC, auxiliary relays K1 and K2</td><td>t2 control</td></tr>
+<tr><td><a href="control_sheet6.svg">control_sheet6.svg</a></td><td>sheet 6</td><td>connection of the cut-control module BMR1, inputs 1-18</td><td>t2 control</td></tr>
+<tr><td><a href="control_sheet7.svg">control_sheet7.svg</a></td><td>sheet 7</td><td>connection of the cut-control module BMR1, outputs 19-29 and supply</td><td>t2 control</td></tr>
+<tr><td><a href="plc_sheet8.svg">plc_sheet8.svg</a></td><td>sheet 8</td><td>PLC (programmable logic controller), console terminal TABLO, inverter UZ1 control side, encoder BR40</td><td>t3 plc_drive</td></tr>
+<tr><td><a href="overview.svg">overview.svg</a></td><td>sheets 1-8</td><td>overview: the whole machine on one page, each device once, cable bundles between cabinet, console and machine</td><td>t5 integration</td></tr>
+<tr><td><a href="connections.svg">connections.svg</a></td><td>sheets 1-8</td><td>connections: every core between cabinet, console and machine, by bundle, terminal and connector pin</td><td>t5 integration</td></tr>
+</table>
+<h2>Viewer, lists and data</h2><ul>
+<li><a href="../viewer/index.html">viewer/index.html</a>: 3D (three-dimensional) viewer: stage-1 mechanical model with the electrical layer, offline, with layer switches</li>
+<li><a href="../measure_list.md">measure_list.md</a>: on-site measure list: every [?] and estimated row, every photo-against-print difference, grouped cabinet, console, machine</li>
+<li><a href="../sources.md">sources.md</a>: sources: every source path with what it holds and its mark; what stays local</li>
+<li><a href="../checks/checks.txt">checks/checks.txt</a>: results of the 12 checks</li>
+<li><a href="../netlist/merged_devices.csv">netlist/merged_devices.csv</a>: merged device list (CSV, comma-separated values), column thread first</li>
+<li><a href="../netlist/merged_wires.csv">netlist/merged_wires.csv</a>: merged wire list</li>
+<li><a href="../netlist/merged_cores.csv">netlist/merged_cores.csv</a>: cores between cabinet, console and machine with their bundle route</li>
+<li><a href="../netlist/merged_conflicts.csv">netlist/merged_conflicts.csv</a>: where two threads disagree, with both values and a reading</li>
+<li><a href="../spec/power.md">spec/power.md</a>: spec of thread t1 power (sheets 1-3)</li>
+<li><a href="../spec/control.md">spec/control.md</a>: spec of thread t2 control (sheets 4-7)</li>
+<li><a href="../spec/plc_drive.md">spec/plc_drive.md</a>: spec of thread t3 plc_drive (sheet 8)</li>
+<li><a href="../spec/layout_3d.md">spec/layout_3d.md</a>: spec of thread t4 layout_3d (3D scheme, placements, bundles, contact check)</li>
+</ul>
+<h2>Rebuild and check</h2>
+<p>Run from the folder that holds stage_1_mechanics and stage_2_electronics (the repository root), in this order; each command ends with a result line, the last one writes checks/checks.txt. The sheet pages and the 3D layer are written by the thread scripts named in their specs. Stage 1 is only read, never written.</p>
+<pre><code>python -B stage_2_electronics/schemes_2d/integration_merge.py
+python -B stage_2_electronics/schemes_2d/integration_draw.py
+python -B stage_2_electronics/schemes_2d/integration_lists.py
+python -B stage_2_electronics/viewer/build_combined.py
+python -B stage_2_electronics/checks/run_checks.py</code></pre>
+<p>Two longer runs test the checks and the commands themselves. Each copies the repository into new temporary folders outside it, works only there and deletes nothing. mutation_run.py breaks each check on purpose, one break at a time, and shows that the check then fails (checks/mutation_report.txt). copy_run.py runs the five commands above word for word in three copies: the committed files, the committed files with the local tables, and the files a clone from GitHub holds; it compares what they write with the repository and names each line of checks.txt that differs, with its reason (checks/copy_report.txt). Run the copy run after run_checks.py: it compares with the current checks.txt.</p>
+<pre><code>python -B stage_2_electronics/checks/mutation_run.py
+python -B stage_2_electronics/checks/copy_run.py</code></pre>
+<h2>What the set does not know yet</h2><ul>
+<li>Cable routes are estimated: the bundles follow likely paths along the frame; legs nobody has seen are ±200 mm, the console end of bundle B1 ±100 mm.</li>
+<li>The cabinet is built as option B (X −1420 … −1250 mm). Option A would move the cabinet, Q1, Q2, S4, S2 and the connectors XC1-XC4 by +113 mm in X.</li>
+<li>S12, S13 and S14 (knife position sensors on the cam) are placeholders: their place, facing and cam reading are not known.</li>
+<li>FF1 (light curtain) is not fitted on this machine (its certificate entry is a dash); no box is drawn.</li>
+<li>4 bodies of the stage-1 model that our items attach to touch no other body (backgauge.M2, clamp.valve_block_ov2, safety_sensors.M3, safety_sensors.Y3); they stay as built, stage 1 is read-only.</li>
+<li>Every [?] and estimated row, and every place where a cabinet photo differs from the 568 print, is on the on-site measure list.</li>
+</ul>
+<p>Thread t5 (integration) wrote this page with schemes_2d/integration_draw.py.</p>
+</body>
+</html>
